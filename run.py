@@ -68,9 +68,11 @@ def create_app(config_name: str = None) -> Flask:
     return app
 
 
+# Create app instance for gunicorn
+app = create_app()
+
+
 if __name__ == '__main__':
-    app = create_app()
-    
     print("\n" + "="*60)
     print("FindFast Job Search API")
     print("="*60)
