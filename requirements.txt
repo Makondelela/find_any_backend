@@ -1,0 +1,17 @@
+# Core dependencies
+Flask==3.0.0
+Flask-CORS==4.0.0
+Werkzeug==3.0.1
+
+# Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+playwright==1.58.0
+
+# AI Filtering
+google-genai==0.1.0
+
+# Utilities
+python-dotenv==1.0.0
+gunicorn==21.2.0
+firebase-admin==6.4.0

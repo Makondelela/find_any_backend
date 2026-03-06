@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "sources": [
+      "NRI"
+    ],
+    "job_types": [
+      "Data Engineer",
+      "Data Analyst",
+      "Data Scientist",
+      "Data Architect",
+      "Business Intelligence",
+      "BI Developer",
+      "Machine Learning Engineer",
+      "Analytics Engineer",
+      "ETL Developer",
+      "Data Warehouse Developer",
+      "Data Quality Analyst",
+      "Data Governance Specialist",
+      "business analyst"
+    ],
+    "total_jobs": 1,
+    "jobs_by_source": {
+      "Network Recruitment": 1
+    },
+    "combined_at": "2026-03-06T17:18:59.234761+00:00"
+  },
+  "jobs": [
+    {
+      "title": "Junior Data Analyst (Backup and Storage Analyst)",
+      "company": "Network Recruitment International",
+      "location": "South Africa",
+      "salary": "Market Related",
+      "job_type": "Not specified",
+      "posted": "Recently",
+      "summary": "",
+      "url": "",
+      "job_id": "None",
+      "source": "Network Recruitment"
+    }
+  ]
+}
