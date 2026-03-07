@@ -12,8 +12,12 @@ import threading
 import os
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
 import firebase_admin
 from firebase_admin import credentials, auth, db as firebase_db
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Initialize Flask app with correct paths
 app = Flask(__name__,
