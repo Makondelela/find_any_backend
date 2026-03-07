@@ -37,8 +37,8 @@ root_logger.addHandler(_handler)
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-INPUT_FILE = "data_jobs_combined.json"
-OUTPUT_FILE = "data_jobs_descriptions.json"
+INPUT_FILE = "data/data_jobs_combined.json"
+OUTPUT_FILE = "data/data_jobs_descriptions.json"
 DELAY_MIN = 5.0  # Increased to reduce rate limiting
 DELAY_MAX = 10.0  # Increased to reduce rate limiting
 REQUEST_TIMEOUT = 90  # Increased timeout for slow-loading pages like PNet

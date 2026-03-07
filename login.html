@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | FindFast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body class="login-page">
+    <div id="wrapper">
+        <header id="header">
+            <nav class="navbar desktop-nav">
+                <div class="container nav-container">
+                    <div class="nav-header">
+                        <a href="index.html" class="logo">
+                            <img src="pictures/FindFast.png" alt="FindFast" width="172" height="72">
+                        </a>
+                        
+                        <ul class="nav-right">
+                            <li>
+                                <a href="login.html" class="btn-signin">Sign in</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="btn btn-primary">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#jobs">Job Listings</a></li>
+                            <li><a href="#companies">Companies</a></li>
+                            <li><a href="#submit-cv">Submit Your CV</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#help">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="navbar mobile-nav">
+                <div class="container mobile-container">
+                    <a href="index.html" class="logo">
+                        <img src="pictures/FindFast.png" alt="FindFast" width="95" height="40">
+                    </a>
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="login-container">
+                <form class="login-form" method="post" action="/login">
+                    <div class="form-group">
+                        <label for="login">Email</label>
+                        <input type="email" name="login" id="login" class="form-control" placeholder="Enter your email" required autocomplete="username">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="password-header">
+                            <label for="password">Password</label>
+                            <a href="#reset" class="reset-link">Reset Password</a>
+                        </div>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required autocomplete="current-password" maxlength="4096">
+                            <button type="button" class="btn-show-password" aria-label="Show password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                        
+                        <div class="divider">
+                            <span>- or -</span>
+                        </div>
+                        
+                        <div class="alternative-login">
+                            <a href="#passkey" class="btn-passkey">
+                                <i class="fas fa-qrcode"></i>
+                                <span>Use a Passkey</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-section">
+                            <h4>Designed for companies</h4>
+                        </div>
+                    </div>
+                    <div class="footer-grid">
+                        <div class="footer-about">
+                            <p>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems. Our products are designed for small to medium size companies willing to optimize their performance.</p>
+                            <p><a href="#contact" class="btn btn-lg btn-primary">Get in touch</a></p>
+                        </div>
+                        <div class="footer-contact">
+                            <p><strong>My Company</strong><br>
+                            8000 Marina Blvd, Suite 300<br>
+                            Brisbane CA 94005<br>
+                            United States</p>
+                            <ul class="contact-list">
+                                <li><i class="icon-phone"></i><a href="tel:+1 555-555-5556">+1 555-555-5556</a></li>
+                                <li><i class="icon-email"></i><a href="mailto:hello@mycompany.com">hello@mycompany.com</a></li>
+                            </ul>
+                            <div class="social-media">
+                                <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                                <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
+                                <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                                <a href="#" class="social-icon linkedin" aria-label="LinkedIn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>Copyright © Company name</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

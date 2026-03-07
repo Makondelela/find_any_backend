@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="app-title">
+                <i class="fas fa-briefcase"></i> Data Jobs Board
+            </h1>
+        </div>
+    </header>
+
+    <main class="main-content" style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+        <div style="text-align: center;">
+            <i class="fas fa-exclamation-triangle" style="font-size: 4rem; color: #f44336; margin-bottom: 1rem;"></i>
+            <h2 style="color: #1a237e; margin-bottom: 1rem;">404 - Page Not Found</h2>
+            <p style="color: #666; margin-bottom: 2rem;">The page you're looking for doesn't exist.</p>
+            <a href="/" class="btn-primary">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,89 +1,108 @@
-# Firebase Service Account Setup
+# Firebase Authentication Setup Guide
 
-## Current Status
+## Step 1: Create a Firebase Project
 
-✅ Frontend Firebase configured with web credentials  
-⚠️ Backend needs service account credentials
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Click "Add project" or select existing project
+3. Follow the setup wizard
 
-## Why Service Account?
+## Step 2: Enable Authentication
 
-The backend needs **Admin SDK credentials** to:
-- Read/write to Realtime Database without authentication
-- Run scraper pipeline with elevated permissions
-- Manage user data and scrape jobs
+1. In Firebase Console, go to **Build** → **Authentication**
+2. Click **Get Started**
+3. Enable **Email/Password** sign-in method
+4. Enable **Google** sign-in method
 
-## Quick Setup (3 steps)
+## Step 3: Get Firebase Configuration (Frontend)
 
-### Step 1: Go to Firebase Console
+1. In Firebase Console, go to **Project Settings** (gear icon)
+2. Scroll down to "Your apps"
+3. Click the **Web** icon `</>`
+4. Register your app
+5. Copy the `firebaseConfig` object
+6. Replace the config in `templates/login.html` (around line 108)
 
-Open: https://console.firebase.google.com/project/find-any-55a42/settings/serviceaccounts/adminsdk
-
-### Step 2: Generate New Private Key
-
-1. Click **"Generate New Private Key"** button
-2. Click **"Generate Key"** in the confirmation dialog
-3. A JSON file will download (e.g., `find-any-55a42-firebase-adminsdk-xxxxx.json`)
-
-### Step 3: Replace firebase.config.json
-
-Replace the contents of `c:\Users\Wanga\Desktop\Mako\Work\scrape\firebase.config.json` with the downloaded file contents.
-
-The file should look like:
-
-```json
-{
-  "type": "service_account",
-  "project_id": "find-any-55a42",
-  "private_key_id": "abc123def456...",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqh...\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-xxxxx@find-any-55a42.iam.gserviceaccount.com",
-  "client_id": "123456789012345678901",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs/firebase-adminsdk-xxxxx%40find-any-55a42.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+Example:
+```javascript
+const firebaseConfig = {
+    apiKey: "AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    authDomain: "your-app.firebaseapp.com",
+    projectId: "your-app",
+    storageBucket: "your-app.appspot.com",
+    messagingSenderId: "123456789",
+    appId: "1:123456789:web:xxxxx"
+};
 ```
 
-## Test the Backend
+## Step 4: Get Service Account Key (Backend)
 
-After adding credentials, restart the Flask server:
+1. In Firebase Console, go to **Project Settings** → **Service Accounts**
+2. Click **Generate New Private Key**
+3. Download the JSON file
+4. Rename it to `firebase-service-account.json`
+5. Place it in the project root directory (same folder as `app.py`)
+6. **IMPORTANT**: Add `firebase-service-account.json` to `.gitignore`
 
-```powershell
-cd c:\Users\Wanga\Desktop\Mako\Work\scrape
-.\.venv\Scripts\python.exe run.py
+## Step 5: Install Required Packages
+
+```bash
+pip install firebase-admin
 ```
 
-You should see:
-```
-Firebase initialized successfully
-```
+## Step 6: Update .gitignore
 
-## Security Note
-
-**IMPORTANT**: Never commit `firebase.config.json` to Git!
-
-Add to `.gitignore`:
+Add this line to `.gitignore`:
 ```
-firebase.config.json
+firebase-service-account.json
 ```
 
-The template `firebase.config.json.template` is safe to commit.
+## Step 7: Test the Setup
 
-## Troubleshooting
+1. Start your Flask server:
+   ```bash
+   python app.py
+   ```
 
-### "Firebase config not found"
-- Make sure file is named exactly `firebase.config.json`
-- Check file is in `scrape` folder (same level as `run.py`)
+2. Navigate to `http://localhost:5000/login`
 
-### "Permission denied"
-- The service account needs "Firebase Admin SDK Administrator Service Agent" role
-- Go to: https://console.cloud.google.com/iam-admin/iam?project=find-any-55a42
-- Find the service account email
-- Ensure it has correct permissions
+3. Try these login methods:
+   - Create a test user in Firebase Console (Authentication → Users → Add User)
+   - Use Google Sign-In button
+   - Test password reset
 
-### "Invalid private key"
-- Make sure you copied the entire JSON content
-- Private key should include `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----`
-- Don't modify the `\n` characters in the private key
+## Security Notes
+
+- ✅ Keep `firebase-service-account.json` private and never commit it
+- ✅ Use environment variables in production
+- ✅ Set up Firebase Security Rules
+- ✅ Enable app verification for Google Sign-In in production
+- ✅ Change `app.secret_key` to a secure random string
+
+## Optional: Create Test User via Firebase Console
+
+1. Go to **Authentication** → **Users** tab
+2. Click **Add User**
+3. Enter email and password
+4. Click **Add User**
+5. Use these credentials to test login
+
+## Production Deployment
+
+For production, use environment variables:
+
+```python
+# In app.py
+import os
+
+app.secret_key = os.environ.get('SECRET_KEY', 'dev-key')
+
+# For Firebase service account
+service_account_path = os.environ.get('FIREBASE_SERVICE_ACCOUNT', 'firebase-service-account.json')
+cred = credentials.Certificate(service_account_path)
+```
+
+Set environment variables:
+```bash
+export SECRET_KEY="your-random-secret-key"
+export FIREBASE_SERVICE_ACCOUNT="/path/to/service-account.json"
+```

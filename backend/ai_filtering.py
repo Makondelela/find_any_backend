@@ -8,21 +8,27 @@ Uses Google Gemini AI for advanced semantic understanding.
 import json
 import logging
 import re
+from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
 
 logger = logging.getLogger(__name__)
 
+# Get the base directory (project root)
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / 'data'
+
 # Load pre-extracted experience data once at module load
 EXPERIENCE_DATA = {}
 try:
-    with open('data_jobs_experience.json', 'r', encoding='utf-8') as f:
+    experience_file_path = DATA_DIR / 'data_jobs_experience.json'
+    with open(experience_file_path, 'r', encoding='utf-8') as f:
         exp_file = json.load(f)
         # Create lookup dictionary: job_id -> experience data
         for item in exp_file.get('experience', []):
             EXPERIENCE_DATA[item['job_id']] = item
-        logger.info(f"✓ Loaded experience data for {len(EXPERIENCE_DATA)} jobs")
+        logger.info(f"✓ Loaded experience data for {len(EXPERIENCE_DATA)} jobs from {experience_file_path}")
 except FileNotFoundError:
-    logger.warning("⚠️ data_jobs_experience.json not found - run extract_experience.py first")
+    logger.warning(f"⚠️ {experience_file_path} not found - run extract_experience.py first")
 except Exception as e:
     logger.warning(f"⚠️ Could not load experience data: {e}")
 

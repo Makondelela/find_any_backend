@@ -9,10 +9,10 @@ import random
 
 # Load both files
 print("Loading data...")
-with open('data_jobs_experience.json', 'r', encoding='utf-8') as f:
+with open('data/data_jobs_experience.json', 'r', encoding='utf-8') as f:
     exp_data = json.load(f)
 
-with open('data_jobs_descriptions.json', 'r', encoding='utf-8') as f:
+with open('data/data_jobs_descriptions.json', 'r', encoding='utf-8') as f:
     desc_data = json.load(f)
 
 # Create lookup dictionaries

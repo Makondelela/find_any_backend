@@ -38,15 +38,24 @@ def extract_experience_from_text(text: str) -> Optional[Dict[str, Any]]:
     
     # Extract numeric experience requirements FIRST (most reliable)
     patterns = [
-        # "minimum 3 years", "at least 5 years"
-        (r'(?:minimum|min|at least)\s*(?:of)?\s*(\d+)\s*(?:\+)?\s*(?:years?|yrs?)\s*(?:of)?\s*(?:experience|exp)?', 'minimum'),
-        # "4-7 years", "2 to 5 years"
-        (r'(\d+)\s*(?:[-–]|to)\s*(\d+)\+?\s*(?:years?|yrs?)\s*(?:of)?\s*(?:experience|exp)?', 'range'),
-        # "5+ years", "3 plus years"
-        (r'(\d+)\+\s*(?:years?|yrs?)\s*(?:of)?\s*(?:experience|exp)?', 'plus'),
-        # "3 years experience", "2 years of experience"
+
+        (r'(\d+)\s*(?:-|-|to)\s*(\d+)\s*(?:years?|yrs?)', 'range'),
+
+        (r'between\s*(\d+)\s*and\s*(\d+)\s*(?:years?|yrs?)', 'range'),
+
+        (r'from\s*(\d+)\s*to\s*(\d+)\s*(?:years?|yrs?)', 'range'),
+
+        (r'(\d+)\+\s*(?:years?|yrs?)', 'plus'),
+
+        (r'(?:minimum|min|at\s+least)\s*(?:of)?\s*(\d+)\s*(?:years?|yrs?)', 'minimum'),
+
+        (r'(?:more\s+than|over|greater\s+than)\s*(\d+)\s*(?:years?|yrs?)', 'minimum'),
+
+        (r'(?:less\s+than|under|up\s*to)\s*(\d+)\s*(?:years?|yrs?)', 'maximum'),
+
         (r'(\d+)\s*(?:years?|yrs?)\s*(?:of)?\s*(?:experience|exp)', 'exact'),
-    ]
+
+        ]
     
     for pattern, pattern_type in patterns:
         matches = list(re.finditer(pattern, text_lower))
@@ -123,8 +132,8 @@ def extract_experience_from_text(text: str) -> Optional[Dict[str, Any]]:
     return None
 
 
-def process_job_descriptions(input_file: str = 'data_jobs_descriptions.json', 
-                            output_file: str = 'data_jobs_experience.json') -> None:
+def process_job_descriptions(input_file: str = 'data/data_jobs_descriptions.json', 
+                            output_file: str = 'data/data_jobs_experience.json') -> None:
     """
     Process all job descriptions and extract experience requirements.
     

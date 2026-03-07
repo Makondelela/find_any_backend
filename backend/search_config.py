@@ -27,7 +27,13 @@ JOB_TYPES = [
     "Data Warehouse Developer",
     "Data Quality Analyst",
     "Data Governance Specialist",
-    "business analyst",
+    "Business Analyst",
+    "Software Developer",
+    "Developer",
+    "Software Engineer",
+    "Programmer",
+    "Software Tester",
+    "software",
 ]
 
 

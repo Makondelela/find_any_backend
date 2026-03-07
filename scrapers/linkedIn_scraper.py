@@ -19,10 +19,20 @@ import random
 import hashlib
 from datetime import datetime, timezone
 from typing import Optional
+from pathlib import Path
 
 import requests
 
-from search_config import DEFAULT_SEARCH_KEYWORDS
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
+
+try:
+    from search_config import JOB_TYPES
+    DEFAULT_SEARCH_KEYWORDS = JOB_TYPES
+except ImportError:
+    DEFAULT_SEARCH_KEYWORDS = ["Data Engineer", "Data Analyst", "Data Scientist", "Business Intelligence", 
+                               "Machine Learning Engineer", "AI Engineer", "Data Architect", "Analytics Engineer",
+                               "Software Developer", "Developer", "Software Engineer", "Programmer", "Software Tester"]
 
 # ── UTF-8 safe logging ────────────────────────────────────────────────────────
 root_logger = logging.getLogger()
@@ -38,7 +48,7 @@ log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
 API_BASE_URL = "http://localhost:3000/api"
-OUTPUT = "data_jobs_linkedin.json"
+OUTPUT = "data/data_jobs_linkedin.json"
 DELAY_MIN = 2.0
 DELAY_MAX = 4.0
 LOCATION = "South Africa"

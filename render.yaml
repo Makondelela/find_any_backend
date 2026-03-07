@@ -1,11 +1,17 @@
 services:
   - type: web
-    name: findfast-backend
+    name: findfast-job-portal
     env: python
+    region: oregon
+    plan: free
     buildCommand: pip install -r requirements.txt && playwright install chromium
-    startCommand: gunicorn run:app --bind 0.0.0.0:$PORT
+    startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
-      - key: FLASK_ENV
-        value: production
+      - key: FIREBASE_DATABASE_URL
+        value: https://find-any-55a42-default-rtdb.firebaseio.com/
+      - key: FLASK_SECRET_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false

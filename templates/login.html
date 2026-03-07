@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | FindFast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+</head>
+<body class="login-page">
+    <div id="wrapper">
+        <header id="header">
+            <nav class="navbar desktop-nav">
+                <div class="container nav-container">
+                    <div class="nav-header">
+                        <a href="/" class="logo">
+                            <span style="font-size: 1.8rem; font-weight: 700; color: #c09023;">FindFast</span>
+                        </a>
+                        
+                        <ul class="nav-right">
+                            <li>
+                                <a href="#contact" class="btn btn-primary">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="main-nav">
+                        <ul class="nav-menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#jobs">Job Listings</a></li>
+                            <li><a href="#companies">Companies</a></li>
+                            <li><a href="#submit-cv">Submit Your CV</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#help">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="navbar mobile-nav">
+                <div class="container mobile-container">
+                    <a href="/" class="logo">
+                        <span style="font-size: 1.2rem; font-weight: 700; color: #c09023;">FindFast</span>
+                    </a>
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="login-container">
+                <form class="login-form" id="authForm">
+                    <h2 id="formTitle" style="text-align: center; color: var(--text-primary); margin-bottom: 1.5rem; font-size: 1.75rem;">Log in to FindFast</h2>
+                    
+                    <div id="loginError" class="alert alert-error" style="display: none;"></div>
+                    
+                    <div class="form-group">
+                        <label for="login">Email</label>
+                        <input type="email" name="login" id="login" class="form-control" placeholder="Enter your email" required autocomplete="username">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="password-header">
+                            <label for="password">Password</label>
+                            <a href="#reset" class="reset-link" id="resetPasswordLink">Reset Password</a>
+                        </div>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required autocomplete="current-password" maxlength="4096">
+                            <button type="button" class="btn-show-password" aria-label="Show password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="confirmPasswordGroup" style="display: none;">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm your password" autocomplete="new-password" maxlength="4096">
+                            <button type="button" class="btn-show-password" aria-label="Show password" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Log in</button>
+                        
+                        <div class="divider">
+                            <span>- or -</span>
+                        </div>
+                        
+                        <div class="alternative-login">
+                            <button type="button" class="btn-passkey" id="googleSignInBtn">
+                                <i class="fab fa-google"></i>
+                                <span>Sign in with Google</span>
+                            </button>
+                        </div>
+                        
+                        <div class="signup-link">
+                            <span id="toggleText" style="color: var(--text-muted);">Don't have an account? </span>
+                            <a href="#toggle" id="toggleAuthMode" style="color: var(--primary-color); font-weight: 600;">Create Account</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>© 2026 FindFast - Your Job Search Made Easy</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
+        import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBoqWZN3NykJ_dmnYmhPZmxwswjnSAFplY",
+            authDomain: "find-any-55a42.firebaseapp.com",
+            projectId: "find-any-55a42",
+            storageBucket: "find-any-55a42.firebasestorage.app",
+            messagingSenderId: "756935502893",
+            appId: "1:756935502893:web:f876fb3b39a93bb962d0a1"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const googleProvider = new GoogleAuthProvider();
+        let isSignupMode = false;
+
+        // Show error message
+        function showError(message) {
+            const errorDiv = document.getElementById('loginError');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Toggle between login and signup modes
+        function toggleAuthMode() {
+            isSignupMode = !isSignupMode;
+            const formTitle = document.getElementById('formTitle');
+            const submitBtn = document.getElementById('submitBtn');
+            const confirmPasswordGroup = document.getElementById('confirmPasswordGroup');
+            const resetPasswordLink = document.getElementById('resetPasswordLink');
+            const toggleText = document.getElementById('toggleText');
+            const toggleLink = document.getElementById('toggleAuthMode');
+            const passwordInput = document.getElementById('password');
+            const confirmPasswordInput = document.getElementById('confirmPassword');
+            
+            if (isSignupMode) {
+                formTitle.textContent = 'Create Your Account';
+                submitBtn.textContent = 'Create Account';
+                confirmPasswordGroup.style.display = 'block';
+                confirmPasswordInput.required = true;
+                resetPasswordLink.style.display = 'none';
+                toggleText.textContent = 'Already have an account? ';
+                toggleLink.textContent = 'Log In';
+                passwordInput.autocomplete = 'new-password';
+            } else {
+                formTitle.textContent = 'Log in to FindFast';
+                submitBtn.textContent = 'Log in';
+                confirmPasswordGroup.style.display = 'none';
+                confirmPasswordInput.required = false;
+                resetPasswordLink.style.display = 'inline';
+                toggleText.textContent = "Don't have an account? ";
+                toggleLink.textContent = 'Create Account';
+                passwordInput.autocomplete = 'current-password';
+            }
+            
+            // Clear form
+            document.getElementById('login').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('confirmPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
+        }
+
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+
+        // Toggle confirm password visibility
+        document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
+            const confirmPasswordInput = document.getElementById('confirmPassword');
+            const icon = this.querySelector('i');
+            
+            if (confirmPasswordInput.type === 'password') {
+                confirmPasswordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                confirmPasswordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+
+        // Toggle between login and signup modes
+        document.getElementById('toggleAuthMode').addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleAuthMode();
+        });
+
+        // Form submission (handles both login and signup)
+        document.getElementById('authForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('login').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Validation for signup mode
+            if (isSignupMode) {
+                if (password.length < 6) {
+                    showError('Password must be at least 6 characters long.');
+                    return;
+                }
+                
+                if (password !== confirmPassword) {
+                    showError('Passwords do not match.');
+                    return;
+                }
+            }
+            
+            submitBtn.disabled = true;
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = isSignupMode ? 'Creating account...' : 'Logging in...';
+            
+            try {
+                let userCredential;
+                
+                if (isSignupMode) {
+                    userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                } else {
+                    userCredential = await signInWithEmailAndPassword(auth, email, password);
+                }
+                
+                const user = userCredential.user;
+                
+                // Get ID token
+                const token = await user.getIdToken();
+                
+                // Send token to backend
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token: token })
+                });
+                
+                if (response.ok) {
+                    if (isSignupMode) {
+                        alert('Account created successfully! Welcome to FindFast!');
+                    }
+                    window.location.href = '/';
+                } else {
+                    showError('Authentication failed. Please try again.');
+                }
+            } catch (error) {
+                console.error('Auth error:', error);
+                let errorMessage = '';
+                
+                if (isSignupMode) {
+                    switch (error.code) {
+                        case 'auth/email-already-in-use':
+                            errorMessage = 'This email is already registered. Please log in instead.';
+                            break;
+                        case 'auth/invalid-email':
+                            errorMessage = 'Invalid email address.';
+                            break;
+                        case 'auth/weak-password':
+                            errorMessage = 'Password is too weak. Use at least 6 characters.';
+                            break;
+                        default:
+                            errorMessage = 'Failed to create account. ' + error.message;
+                    }
+                } else {
+                    switch (error.code) {
+                        case 'auth/user-not-found':
+                        case 'auth/wrong-password':
+                        case 'auth/invalid-credential':
+                            errorMessage = 'Invalid email or password.';
+                            break;
+                        case 'auth/invalid-email':
+                            errorMessage = 'Invalid email address.';
+                            break;
+                        case 'auth/user-disabled':
+                            errorMessage = 'This account has been disabled.';
+                            break;
+                        case 'auth/too-many-requests':
+                            errorMessage = 'Too many failed attempts. Please try again later.';
+                            break;
+                        default:
+                            errorMessage = 'Login failed. ' + error.message;
+                    }
+                }
+                
+                showError(errorMessage);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            }
+        });
+
+        // Google Sign In
+        document.getElementById('googleSignInBtn').addEventListener('click', async () => {
+            try {
+                const result = await signInWithPopup(auth, googleProvider);
+                const user = result.user;
+                
+                // Get ID token
+                const token = await user.getIdToken();
+                
+                // Send token to backend
+                const response = await fetch('/api/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ token: token })
+                });
+                
+                if (response.ok) {
+                    window.location.href = '/';
+                } else {
+                    showError('Authentication failed. Please try again.');
+                }
+            } catch (error) {
+                console.error('Google sign-in error:', error);
+                
+                if (error.code !== 'auth/popup-closed-by-user') {
+                    showError('Google sign-in failed: ' + error.message);
+                }
+            }
+        });
+
+        // Password Reset
+        document.getElementById('resetPasswordLink').addEventListener('click', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('login').value;
+            
+            if (!email) {
+                showError('Please enter your email address first.');
+                return;
+            }
+            
+            try {
+                await sendPasswordResetEmail(auth, email);
+                alert('Password reset email sent! Check your inbox.');
+            } catch (error) {
+                console.error('Password reset error:', error);
+                showError('Failed to send reset email: ' + error.message);
+            }
+        });
+
+
+    </script>
+
+    <style>
+        .alert {
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+        }
+        
+        .alert-error {
+            background-color: #fee;
+            color: #c00;
+            border: 1px solid #fcc;
+        }
+    </style>
+</body>
+</html>

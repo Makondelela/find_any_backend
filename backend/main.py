@@ -98,7 +98,7 @@ class Careers24Scraper:
     """Scraper for Careers24.com (South Africa)"""
 
     BASE_URL = "https://www.careers24.com"
-    OUTPUT = "data_jobs_careers24.json"
+    OUTPUT = "data/data_jobs_careers24.json"
     MAX_PAGES = 20
     DELAY_MIN = 2.0
     DELAY_MAX = 4.5
@@ -306,7 +306,7 @@ class CareerJunctionScraper:
     """Scraper for CareerJunction.co.za (South Africa)"""
 
     BASE_URL = "https://www.careerjunction.co.za"
-    OUTPUT = "data_jobs_careerjunction.json"
+    OUTPUT = "data/data_jobs_careerjunction.json"
     PER_PAGE = 100
     MAX_PAGES = 20
     DELAY_MIN = 2.0
@@ -559,7 +559,7 @@ class PnetScraper:
     """Scraper for Pnet.co.za (South Africa) - requires Playwright"""
 
     BASE_URL = "https://www.pnet.co.za"
-    OUTPUT = "data_jobs_pnet.json"
+    OUTPUT = "data/data_jobs_pnet.json"
     MAX_PAGES = 5
     DELAY_MIN = 3.0
     DELAY_MAX = 6.0
@@ -767,7 +767,7 @@ class NRIScraper:
     BASE_API = "https://az-jhb-was-rescr-duda-api-prod-networkrecruitint.azurewebsites.net/PlacementPartnerXml"
     PAGE_SIZE = 200
     NICHE = "IT"
-    OUTPUT = "data_jobs_nri_api.json"
+    OUTPUT = "data/data_jobs_nri_api.json"
 
     HEADERS = {
         "User-Agent": (
@@ -988,7 +988,7 @@ class LinkedInScraper:
     """Scraper for LinkedIn using API"""
 
     API_BASE_URL = "http://localhost:3000/api"
-    OUTPUT = "data_jobs_linkedin.json"
+    OUTPUT = "data/data_jobs_linkedin.json"
     LOCATION = "South Africa"
     DATE_POSTED = "past_month"
     DELAY_MIN = 2.0
