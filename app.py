@@ -4,7 +4,7 @@ Flask Web Application for Job Scraping Portal
 Serves the FindFast job search interface and handles API requests.
 """
 
-from flask import Flask, render_template, jsonify, request, send_from_directory, session, redirect, url_for
+from flask import Flask, render_template, jsonify, request, session, redirect, url_for
 from functools import wraps
 import json
 import logging
@@ -24,8 +24,10 @@ app = Flask(__name__,
             template_folder='templates',
             static_folder='static')
 
-# Secret key for session management - use environment variable in production
-app.secret_key = os.environ.get('FLASK_SECRET_KEY', '5ede7d51b89678fb948fe097ccc119f471e9ce163f869e3f24a26bb4a3d9a25a')
+# Secret key for session management - must be set in environment variable
+if not os.environ.get('FLASK_SECRET_KEY'):
+    raise ValueError("FLASK_SECRET_KEY environment variable must be set")
+app.secret_key = os.environ.get('FLASK_SECRET_KEY')
 
 # Configure logging (must be before Firebase init)
 logging.basicConfig(
@@ -38,7 +40,10 @@ log = logging.getLogger(__name__)
 try:
     # Check if running on Render or other cloud platform
     firebase_config = os.environ.get('FIREBASE_CONFIG')
-    database_url = os.environ.get('FIREBASE_DATABASE_URL', 'https://find-any-55a42-default-rtdb.firebaseio.com/')
+    database_url = os.environ.get('FIREBASE_DATABASE_URL')
+    
+    if not database_url:
+        raise ValueError("FIREBASE_DATABASE_URL environment variable must be set")
     
     if firebase_config:
         # Use environment variable (JSON string) for credentials
@@ -231,6 +236,56 @@ def get_current_user():
             'success': False,
             'user': None
         })
+
+
+@app.route('/api/firebase-config')
+def get_firebase_config():
+    """Get Firebase client configuration (public data only)"""
+    try:
+        # These values are safe to expose to the frontend
+        # They're needed for Firebase client SDK initialization
+        firebase_config = os.environ.get('FIREBASE_CONFIG')
+        
+        if not firebase_config:
+            return jsonify({
+                'success': False,
+                'error': 'Firebase configuration not available'
+            }), 500
+        
+        # Parse the full config to extract only client-safe values
+        cred_dict = json.loads(firebase_config)
+        
+        # Extract only the public client configuration
+        client_config = {
+            'apiKey': os.environ.get('FIREBASE_API_KEY'),
+            'authDomain': f"{cred_dict.get('project_id')}.firebaseapp.com",
+            'projectId': cred_dict.get('project_id'),
+            'storageBucket': f"{cred_dict.get('project_id')}.firebasestorage.app",
+            'messagingSenderId': os.environ.get('FIREBASE_MESSAGING_SENDER_ID'),
+            'appId': os.environ.get('FIREBASE_APP_ID')
+        }
+        
+        return jsonify({
+            'success': True,
+            'config': client_config
+        })
+        
+    except Exception as e:
+        log.error(f"Error getting Firebase config: {e}")
+        return jsonify({
+            'success': False,
+            'error': 'Failed to load configuration'
+        }), 500
+
+
+@app.route('/api/admin-email')
+def get_admin_email():
+    """Get admin email for frontend checks"""
+    admin_email = os.environ.get('ADMIN_EMAIL', '')
+    return jsonify({
+        'success': True,
+        'adminEmail': admin_email
+    })
 
 # ══════════════════════════════════════════════════════════════════════════════
 # API ENDPOINTS

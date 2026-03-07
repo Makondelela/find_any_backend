@@ -512,6 +512,12 @@ function setupEventListeners() {
  * Refresh jobs (trigger scraping)
  */
 async function refreshJobs() {
+    // Check if user is admin
+    if (!currentUser || currentUser.email !== adminEmail) {
+        showToast('Only administrators can refresh job listings', 'error');
+        return;
+    }
+    
     if (!confirm('Update job listings? This may take a few minutes.')) {
         return;
     }
@@ -798,18 +804,32 @@ function clearAIFilter() {
 
 let currentUser = null;
 let userViewedJobs = new Set();
+let adminEmail = '';
 
 function initializeAuth() {
     const logoutBtn = document.getElementById('logoutBtn');
     const userInfo = document.getElementById('userInfo');
+    const refreshBtn = document.getElementById('refreshJobsBtn');
     
-    // Check if user is authenticated via backend session
-    fetch('/api/auth/user')
-        .then(r => r.json())
-        .then(data => {
-            if (data.success && data.user) {
-                currentUser = data.user;
-                userInfo.textContent = data.user.name || data.user.email;
+    // Fetch admin email and check authentication
+    Promise.all([
+        fetch('/api/admin-email').then(r => r.json()),
+        fetch('/api/auth/user').then(r => r.json())
+    ])
+        .then(([adminData, userData]) => {
+            if (adminData.success) {
+                adminEmail = adminData.adminEmail;
+            }
+            
+            if (userData.success && userData.user) {
+                currentUser = userData.user;
+                userInfo.textContent = userData.user.name || userData.user.email;
+                
+                // Hide refresh button if not admin
+                if (refreshBtn && currentUser.email !== adminEmail) {
+                    refreshBtn.style.display = 'none';
+                }
+                
                 loadUserHistory();
                 loadJobs();
             } else {

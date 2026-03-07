@@ -122,15 +122,22 @@
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
         import { getAuth, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, sendPasswordResetEmail, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';
 
-        // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBoqWZN3NykJ_dmnYmhPZmxwswjnSAFplY",
-            authDomain: "find-any-55a42.firebaseapp.com",
-            projectId: "find-any-55a42",
-            storageBucket: "find-any-55a42.firebasestorage.app",
-            messagingSenderId: "756935502893",
-            appId: "1:756935502893:web:f876fb3b39a93bb962d0a1"
-        };
+        // Fetch Firebase configuration from backend
+        let firebaseConfig;
+        try {
+            const response = await fetch('/api/firebase-config');
+            const data = await response.json();
+            if (data.success) {
+                firebaseConfig = data.config;
+            } else {
+                throw new Error('Failed to load Firebase configuration');
+            }
+        } catch (error) {
+            console.error('Error loading Firebase config:', error);
+            document.getElementById('loginError').textContent = 'Configuration error. Please contact support.';
+            document.getElementById('loginError').style.display = 'block';
+            throw error;
+        }
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
