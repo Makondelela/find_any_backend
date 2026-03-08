@@ -825,9 +825,15 @@ function initializeAuth() {
                 currentUser = userData.user;
                 userInfo.textContent = userData.user.name || userData.user.email;
                 
-                // Hide refresh button if not admin
-                if (refreshBtn && currentUser.email !== adminEmail) {
-                    refreshBtn.style.display = 'none';
+                // Hide refresh button and scraper status panel if not admin
+                if (currentUser.email !== adminEmail) {
+                    if (refreshBtn) {
+                        refreshBtn.style.display = 'none';
+                    }
+                    const scraperStatusPanel = document.getElementById('scraperStatusPanel');
+                    if (scraperStatusPanel) {
+                        scraperStatusPanel.style.display = 'none';
+                    }
                 }
                 
                 loadUserHistory();

@@ -812,9 +812,17 @@ def track_job():
                 'error': 'Missing username or job_id'
             }), 400
         
+        # Hash the job_id if it's a LinkedIn URL (contains 'http://' or 'https://')
+        import hashlib
+        firebase_node_id = job_id
+        if job_id.startswith('http://') or job_id.startswith('https://'):
+            # Hash the URL to create a valid Firebase node name
+            firebase_node_id = hashlib.md5(job_id.encode('utf-8')).hexdigest()
+            log.info(f"Hashed LinkedIn URL: {job_id} -> {firebase_node_id}")
+        
         # Check if already viewed in Firebase (prevent duplicates)
         try:
-            ref = firebase_db.reference(f'user_job_views/{username}/{job_id}')
+            ref = firebase_db.reference(f'user_job_views/{username}/{firebase_node_id}')
             existing = ref.get()
             
             if existing:
@@ -830,7 +838,7 @@ def track_job():
                 'job_url': job_url,
                 'viewed_at': datetime.now().isoformat()
             })
-            log.info(f"Job view saved to Firebase: user={username}, job={job_id}")
+            log.info(f"Job view saved to Firebase: user={username}, job={job_id}, firebase_node={firebase_node_id}")
             
             return jsonify({
                 'success': True,

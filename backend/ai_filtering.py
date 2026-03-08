@@ -7,6 +7,7 @@ Uses Google Gemini AI for advanced semantic understanding.
 
 import json
 import logging
+import os
 import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Tuple
@@ -33,7 +34,7 @@ except Exception as e:
     logger.warning(f"⚠️ Could not load experience data: {e}")
 
 # Google Gemini API Configuration
-GEMINI_API_KEY = "AIzaSyB9yYOOqHHw_-NC9zM68FcgQQVSYJRXjj8"
+GEMINI_API_KEY = ""
 API_AVAILABLE = False
 
 # Try to import Gemini with new package
