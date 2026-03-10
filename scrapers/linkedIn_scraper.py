@@ -26,13 +26,7 @@ import requests
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
 
-try:
-    from search_config import JOB_TYPES
-    DEFAULT_SEARCH_KEYWORDS = JOB_TYPES
-except ImportError:
-    DEFAULT_SEARCH_KEYWORDS = ["Data Engineer", "Data Analyst", "Data Scientist", "Business Intelligence", 
-                               "Machine Learning Engineer", "AI Engineer", "Data Architect", "Analytics Engineer",
-                               "Software Developer", "Developer", "Software Engineer", "Programmer", "Software Tester"]
+from search_config import DEFAULT_SEARCH_SLUGS
 
 # ── UTF-8 safe logging ────────────────────────────────────────────────────────
 root_logger = logging.getLogger()
@@ -192,7 +186,7 @@ def main(search_keywords: Optional[list[str]] = None):
     log.info(f"Date Filter: {DATE_POSTED}")
     
     # Use provided keywords or default
-    keywords = search_keywords if search_keywords else DEFAULT_SEARCH_KEYWORDS
+    keywords = search_keywords if search_keywords else DEFAULT_SEARCH_SLUGS
     
     all_jobs = []
     seen_keys = set()

@@ -65,7 +65,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from search_config import (
-    JOB_TYPES,
+    DEFAULT_SEARCH_SLUGS,
     parse_search_terms
 )
 
@@ -285,7 +285,7 @@ class Careers24Scraper:
         payload = {
             "meta": {
                 "source": "Careers24 ZA",
-                "job_types": JOB_TYPES,
+                "job_types": DEFAULT_SEARCH_SLUGS,
                 "slugs": slugs,
                 "total_jobs": len(all_jobs),
                 "scraped_at": datetime.now(timezone.utc).isoformat(),
@@ -311,18 +311,6 @@ class CareerJunctionScraper:
     MAX_PAGES = 20
     DELAY_MIN = 2.0
     DELAY_MAX = 4.0
-
-    SEARCH_KEYWORDS = [
-        "Data Engineer",
-        "Data Analyst",
-        "Data Scientist",
-        "Business Intelligence",
-        "BI Developer",
-        "Machine Learning",
-        "Data Architect",
-        "ETL Developer",
-        "Analytics Engineer",
-    ]
 
     HEADERS = {
         "User-Agent": (
@@ -514,7 +502,7 @@ class CareerJunctionScraper:
         log.info("=" * 60)
 
         # Use provided search keywords or fall back to default
-        keywords = search_keywords if search_keywords else DEFAULT_SEARCH_KEYWORDS
+        keywords = search_keywords if search_keywords else DEFAULT_SEARCH_SLUGS
 
         session = requests.Session()
         log.info("Warming up session ...")
@@ -538,7 +526,7 @@ class CareerJunctionScraper:
         payload = {
             "meta": {
                 "source": "CareerJunction ZA",
-                "job_types": JOB_TYPES,
+                "job_types": DEFAULT_SEARCH_SLUGS,
                 "keywords": keywords,
                 "total_jobs": len(all_jobs),
                 "scraped_at": datetime.now(timezone.utc).isoformat(),
@@ -744,7 +732,7 @@ class PnetScraper:
         payload = {
             "meta": {
                 "source": "Pnet ZA",
-                "job_types": JOB_TYPES,
+                "job_types": DEFAULT_SEARCH_SLUGS,
                 "slugs": slugs,
                 "total_jobs": len(all_jobs),
                 "scraped_at": datetime.now(timezone.utc).isoformat(),
@@ -780,48 +768,6 @@ class NRIScraper:
         "Referer": "https://www.networkrecruitmentinternational.com/",
     }
 
-    DATA_TITLE_KEYWORDS = [
-        "data engineer",
-        "data scientist",
-        "data analyst",
-        "data architect",
-        "data modell",
-        "data steward",
-        "data governance",
-        "data quality",
-        "data manager",
-        "data warehou",
-        "etl",
-        "elt ",
-        "analytics engineer",
-        "analytics manager",
-        "business intelligence",
-        " bi ",
-        "bi developer",
-        "bi analyst",
-        "bi architect",
-        "power bi",
-        "tableau",
-        "qlik",
-        "looker",
-        "machine learning",
-        "ml engineer",
-        "mlops",
-        "databricks",
-        "snowflake",
-        "dbt ",
-        "spark developer",
-        "big data",
-        "hadoop",
-        "lakehouse",
-        "data lake",
-        "reporting analyst",
-        "reporting developer",
-        "insights analyst",
-        "quantitative analyst",
-        "quant ",
-    ]
-
     @staticmethod
     def fetch_all_jobs() -> list[dict]:
         url = f"{NRIScraper.BASE_API}/api/getallnetworkrecruitmentadsvianiche"
@@ -850,7 +796,7 @@ class NRIScraper:
     def is_data_role(record: dict) -> bool:
         """Return True if job title contains data/analytics keyword."""
         title = str(record.get("job_title", "")).lower()
-        return any(kw in title for kw in NRIScraper.DATA_TITLE_KEYWORDS)
+        return any(kw.lower() in title for kw in DEFAULT_SEARCH_SLUGS)
 
     @staticmethod
     def clean_html(text: str) -> str:
@@ -901,7 +847,7 @@ class NRIScraper:
             return {
                 "meta": {
                     "source": "Network Recruitment International",
-                    "job_types": JOB_TYPES,
+                    "job_types": DEFAULT_SEARCH_SLUGS,
                     "total_jobs": 0,
                     "scraped_at": datetime.now(timezone.utc).isoformat(),
                 },
@@ -967,7 +913,7 @@ class NRIScraper:
         payload = {
             "meta": {
                 "source": "Network Recruitment International",
-                "job_types": JOB_TYPES,
+                "job_types": DEFAULT_SEARCH_SLUGS,
                 "niche": NRIScraper.NICHE,
                 "total_jobs": len(jobs),
                 "scraped_at": datetime.now(timezone.utc).isoformat(),
@@ -1176,7 +1122,7 @@ def combine_results(results: dict) -> None:
     combined = {
         "meta": {
             "sources": list(results.keys()),
-            "job_types": JOB_TYPES,
+            "job_types": DEFAULT_SEARCH_SLUGS,
             "total_jobs": len(all_jobs),
             "jobs_by_source": dict(source_counts),
             "combined_at": datetime.now(timezone.utc).isoformat(),
@@ -1230,7 +1176,7 @@ def print_summary(results: dict, combined: dict) -> None:
     print(" " * 15 + "JOB SCRAPING SUMMARY")
     print("=" * 70)
     print(f"\nJob Types Searched:")
-    for job_type in JOB_TYPES:
+    for job_type in DEFAULT_SEARCH_SLUGS:
         print(f"  • {job_type}")
 
     print(f"\nSources Scraped:")

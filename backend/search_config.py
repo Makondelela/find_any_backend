@@ -8,32 +8,80 @@ Used by:
   - pnet_scraper.py (standalone)
   - career24_scraper.py (standalone)
   - careerjunction_scraper.py (standalone)
+  - linkedIn_scraper.py (standalone)
+  - network_recruit_scraper.py (standalone)
 """
 
 # Search slugs and keywords are now provided by the user via the frontend modal
 # No default search terms - they must be passed to scrapers
 
-# Job type descriptions for metadata
-JOB_TYPES = [
+# Default search terms - single source of truth for all scrapers
+DEFAULT_SEARCH_SLUGS = [
+    # Data & Analytics
     "Data Engineer",
     "Data Analyst",
     "Data Scientist",
+    "Analytics Engineer",
     "Data Architect",
     "Business Intelligence",
+    "Analyst",
+    "BI Analyst",
     "BI Developer",
+    "Business Intelligence Analyst",
+    "Reporting Analyst",
+    "Insights Analyst",
+    "Decision Scientist",
+
+    # AI / Machine Learning
     "Machine Learning Engineer",
-    "Analytics Engineer",
-    "ETL Developer",
-    "Data Warehouse Developer",
-    "Data Quality Analyst",
-    "Data Governance Specialist",
-    "Business Analyst",
+    "ML Engineer",
+    "AI Engineer",
+    "Artificial Intelligence Engineer",
+    "AI Developer",
+    "Machine Learning Scientist",
+
+    # Software Development
+    "Software Engineer",
     "Software Developer",
     "Developer",
-    "Software Engineer",
     "Programmer",
+    "Application Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "Full Stack Developer",
+
+    # DevOps / Cloud
+    "DevOps Engineer",
+    "DevOps",
+    "Site Reliability Engineer",
+    "SRE",
+    "Cloud Engineer",
+    "Cloud Architect",
+    "Platform Engineer",
+    "AWS",
+    "Azure",
+    "cloud",
+    "Infrastructure Engineer",
+
+    # Cybersecurity
+    "Cyber Security",
+    "Cybersecurity",
+    "Cybersecurity Analyst",
+    "Security Engineer",
+    "Security Analyst",
+    "Information Security",
+    "Information Security Analyst",
+    "SOC Analyst",
+    "Threat Analyst",
+    "Penetration Tester",
+    "Ethical Hacker",
+    "Analyst",
+
+    # Testing / QA
     "Software Tester",
-    "software",
+    "QA Engineer",
+    "Quality Assurance Engineer",
+    "Test Engineer"
 ]
 
 

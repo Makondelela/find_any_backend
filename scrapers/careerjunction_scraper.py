@@ -53,7 +53,7 @@ from urllib.parse import urlencode, quote_plus
 import requests
 from bs4 import BeautifulSoup
 
-from search_config import DEFAULT_SEARCH_KEYWORDS
+from search_config import DEFAULT_SEARCH_SLUGS
 
 # ── UTF-8 safe logging ────────────────────────────────────────────────────────
 root_logger = logging.getLogger()
@@ -173,16 +173,6 @@ def parse_cards(soup: BeautifulSoup, keyword: str) -> list[dict]:
     
     Filters jobs to only include those with data-related terms in the title.
     """
-    # Data-related terms that should appear in job titles
-    DATA_TERMS = [
-        'data', 'analyst', 'analytics', 'engineer', 'scientist',
-        'bi', 'business intelligence', 'etl', 'sql', 'python',
-        'machine learning', 'ml', 'ai', 'artificial intelligence',
-        'architect', 'developer', 'warehouse', 'pipeline', 'integration',
-        'reporting', 'visualization', 'power bi', 'tableau', 'azure',
-        'aws', 'gcp', 'cloud', 'big data', 'spark', 'hadoop'
-    ]
-    
     jobs = []
     cards = soup.select("div.module.job-result")
     log.info(f"  Found {len(cards)} job cards")
@@ -199,7 +189,7 @@ def parse_cards(soup: BeautifulSoup, keyword: str) -> list[dict]:
             
             # ── Filter: Only keep jobs with data-related terms in title ──────
             title_lower = title.lower()
-            if not any(term in title_lower for term in DATA_TERMS):
+            if not any(term.lower() in title_lower for term in DEFAULT_SEARCH_SLUGS):
                 log.debug(f"  Skipping irrelevant job: {title}")
                 continue
 
@@ -315,7 +305,7 @@ def main():
     all_jobs  = []
     seen_keys = set()
 
-    for keyword in DEFAULT_SEARCH_KEYWORDS:
+    for keyword in DEFAULT_SEARCH_SLUGS:
         jobs = scrape_keyword(session, keyword)
         for job in jobs:
             key = job.get("job_id") or job.get("url") or f"{job['title']}|{job['company']}"
@@ -329,7 +319,7 @@ def main():
     payload = {
         "meta": {
             "source":     "CareerJunction ZA",
-            "keywords":   DEFAULT_SEARCH_KEYWORDS,
+            "keywords":   DEFAULT_SEARCH_SLUGS,
             "total_jobs": len(all_jobs),
             "scraped_at": datetime.now(timezone.utc).isoformat(),
         },

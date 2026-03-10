@@ -17,8 +17,14 @@ import sys
 import io
 import re
 from datetime import datetime, timezone
+from pathlib import Path
 
 import requests
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
+
+from search_config import DEFAULT_SEARCH_SLUGS
 
 # ── UTF-8 safe logging (Windows cp1252 fix) ─────────────────────────────────
 root_logger = logging.getLogger()
@@ -43,51 +49,6 @@ HEADERS = {
     "Origin": "https://www.networkrecruitmentinternational.com",
     "Referer": "https://www.networkrecruitmentinternational.com/",
 }
-
-# Keywords checked against job TITLE only — must unambiguously signal a data role.
-# Broad terms like "python", "sql", "data" alone are intentionally excluded
-# because they appear in nearly every IT job description.
-DATA_TITLE_KEYWORDS = [
-    "data engineer",
-    "data scientist",
-    "data analyst",
-    "data architect",
-    "data modell",       # modeller / modelling
-    "data steward",
-    "data governance",
-    "data quality",
-    "data manager",
-    "data warehou",      # warehouse / warehousing
-    "etl",
-    "elt ",
-    "analytics engineer",
-    "analytics manager",
-    "business intelligence",
-    " bi ",
-    "bi developer",
-    "bi analyst",
-    "bi architect",
-    "power bi",
-    "tableau",
-    "qlik",
-    "looker",
-    "machine learning",
-    "ml engineer",
-    "mlops",
-    "databricks",
-    "snowflake",
-    "dbt ",                # data build tool
-    "spark developer",
-    "big data",
-    "hadoop",
-    "lakehouse",
-    "data lake",
-    "reporting analyst",
-    "reporting developer",
-    "insights analyst",
-    "quantitative analyst",
-    "quant ",
-]
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -130,7 +91,7 @@ def is_data_job(record: dict) -> bool:
     Deliberately title-only to avoid false positives from description text.
     """
     title = str(record.get("job_title", "")).lower()
-    return any(kw in title for kw in DATA_TITLE_KEYWORDS)
+    return any(kw.lower() in title for kw in DEFAULT_SEARCH_SLUGS)
 
 
 def build_salary(record: dict) -> str:

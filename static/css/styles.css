@@ -1082,11 +1082,6 @@ h4 {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
 }
-    font-family: var(--font-family);
-    transition: all 0.3s ease;
-    min-width: 40px;
-    text-align: center;
-}
 
 .pagination-num:hover {
     background-color: var(--bg-light);
@@ -1544,7 +1539,7 @@ h4 {
     .container {
         padding: 0 10px;
     }
-}
+
 
 @media (max-width: 576px) {
     /* Force no horizontal overflow */
