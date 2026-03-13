@@ -78,8 +78,8 @@
       "software-tester",
       "software"
     ],
-    "total_jobs": 101,
-    "scraped_at": "2026-03-09T19:52:09.136124+00:00"
+    "total_jobs": 92,
+    "scraped_at": "2026-03-12T21:58:04.530579+00:00"
   },
   "jobs": [
     {
@@ -93,7 +93,7 @@
       "job_id": "2344454",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.675229+00:00"
+      "scraped_at": "2026-03-12T21:51:33.943578+00:00"
     },
     {
       "title": "Data Engineer",
@@ -106,46 +106,7 @@
       "job_id": "2345692",
       "posted": "09 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.676410+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "Western CapeRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343645-data-engineer-western-cape/",
-      "job_id": "2343645",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.677330+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "KwaZulu-NatalRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343644-data-engineer-kwazulu-natal/",
-      "job_id": "2343644",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.678175+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "GautengRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343643-data-engineer-gauteng/",
-      "job_id": "2343643",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.679022+00:00"
+      "scraped_at": "2026-03-12T21:51:33.944575+00:00"
     },
     {
       "title": "Junior Data Engineer",
@@ -158,20 +119,7 @@
       "job_id": "2345104",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.679842+00:00"
-    },
-    {
-      "title": "Data Engineer | Contract",
-      "company": "iqbusiness South Africa",
-      "location": "Cape Town",
-      "job_type": "Contract",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/now-hiring/5075-iqbusiness-south-africa/jobs/adverts/2344408-data-engineer-contract-cape-town/",
-      "job_id": "2344408",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.680630+00:00"
+      "scraped_at": "2026-03-12T21:51:33.945551+00:00"
     },
     {
       "title": "Mid to Senior Data Engineer",
@@ -184,7 +132,59 @@
       "job_id": "2345119",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.681448+00:00"
+      "scraped_at": "2026-03-12T21:51:33.946459+00:00"
+    },
+    {
+      "title": "Data Engineer | Contract",
+      "company": "iqbusiness South Africa",
+      "location": "Cape Town",
+      "job_type": "Contract",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/now-hiring/5075-iqbusiness-south-africa/jobs/adverts/2344408-data-engineer-contract-cape-town/",
+      "job_id": "2344408",
+      "posted": "04 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:33.947394+00:00"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Crayon Technologies (Pty) Ltd",
+      "location": "Western CapeRemote",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343645-data-engineer-western-cape/",
+      "job_id": "2343645",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:33.948316+00:00"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Crayon Technologies (Pty) Ltd",
+      "location": "GautengRemote",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343643-data-engineer-gauteng/",
+      "job_id": "2343643",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:33.949265+00:00"
+    },
+    {
+      "title": "Data Engineer",
+      "company": "Crayon Technologies (Pty) Ltd",
+      "location": "KwaZulu-NatalRemote",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343644-data-engineer-kwazulu-natal/",
+      "job_id": "2343644",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:33.950192+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -197,7 +197,7 @@
       "job_id": "2343640",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.682260+00:00"
+      "scraped_at": "2026-03-12T21:51:33.951129+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -210,7 +210,20 @@
       "job_id": "2343642",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:06.683065+00:00"
+      "scraped_at": "2026-03-12T21:51:33.952038+00:00"
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Dante Group (Pty) Ltd",
+      "location": "Johannesburg CBD",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2346077-data-analyst-johannesburg-cbd/",
+      "job_id": "2346077",
+      "posted": "10 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:42.845639+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -223,7 +236,7 @@
       "job_id": "2345062",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:20.128237+00:00"
+      "scraped_at": "2026-03-12T21:51:42.846089+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -236,20 +249,7 @@
       "job_id": "2345060",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:20.128667+00:00"
-    },
-    {
-      "title": "Senior Data Analyst",
-      "company": "Hire Resolve",
-      "location": "Johannesburg",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2345058-senior-data-analyst-johannesburg/",
-      "job_id": "2345058",
-      "posted": "06 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:20.129064+00:00"
+      "scraped_at": "2026-03-12T21:51:42.846477+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -262,7 +262,7 @@
       "job_id": "2345061",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:20.129455+00:00"
+      "scraped_at": "2026-03-12T21:51:42.846866+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -275,7 +275,46 @@
       "job_id": "2345059",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:20.129831+00:00"
+      "scraped_at": "2026-03-12T21:51:42.847242+00:00"
+    },
+    {
+      "title": "Senior Data Analyst",
+      "company": "Hire Resolve",
+      "location": "Johannesburg",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2345058-senior-data-analyst-johannesburg/",
+      "job_id": "2345058",
+      "posted": "06 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:42.847622+00:00"
+    },
+    {
+      "title": "Data Scientist / Data Analyst - (WhatsApp and Genesys Cloud Capabilities)",
+      "company": "Data Scientist / Data Analyst - (WhatsApp and Genesys Cloud Capabilities)",
+      "location": "Pretoria",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2346736-data-scientist-data-analyst-whatsapp-and-genesys-cloud-capabilities-pretoria/",
+      "job_id": "2346736",
+      "posted": "12 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:51:42.848251+00:00"
+    },
+    {
+      "title": "Data Scientist: Marketing",
+      "company": "Data Scientist: Marketing",
+      "location": "Johannesburg",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2345837-data-scientist-marketing-johannesburg/",
+      "job_id": "2345837",
+      "posted": "10 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:03.061457+00:00"
     },
     {
       "title": "Data Scientist",
@@ -288,7 +327,7 @@
       "job_id": "2341907",
       "posted": "23 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:38.184370+00:00"
+      "scraped_at": "2026-03-12T21:52:03.063245+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -301,7 +340,7 @@
       "job_id": "2340040",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:38.184771+00:00"
+      "scraped_at": "2026-03-12T21:52:03.064032+00:00"
     },
     {
       "title": "Data Scientist",
@@ -314,7 +353,7 @@
       "job_id": "2335817",
       "posted": "29 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:38.185155+00:00"
+      "scraped_at": "2026-03-12T21:52:03.064860+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -327,7 +366,7 @@
       "job_id": "2337088",
       "posted": "03 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:38.185846+00:00"
+      "scraped_at": "2026-03-12T21:52:03.065803+00:00"
     },
     {
       "title": "Data Engineer/Data Scientist",
@@ -340,7 +379,7 @@
       "job_id": "2333338",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:38.187069+00:00"
+      "scraped_at": "2026-03-12T21:52:03.066609+00:00"
     },
     {
       "title": "Data Solutions Architect (MS Fabric & Databricks)",
@@ -353,7 +392,7 @@
       "job_id": "2345631",
       "posted": "09 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.274913+00:00"
+      "scraped_at": "2026-03-12T21:52:05.829442+00:00"
     },
     {
       "title": "Solutions Architect – Data Protection",
@@ -366,7 +405,7 @@
       "job_id": "2343268",
       "posted": "27 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.275910+00:00"
+      "scraped_at": "2026-03-12T21:52:05.831295+00:00"
     },
     {
       "title": "Solutions Architect – Data Protection",
@@ -379,33 +418,7 @@
       "job_id": "2343269",
       "posted": "27 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.276361+00:00"
-    },
-    {
-      "title": "BI Developer (Mid-level)",
-      "company": "Hire Resolve",
-      "location": "Centurion",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2340782-bi-developer-mid-level-centurion/",
-      "job_id": "2340782",
-      "posted": "18 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.276911+00:00"
-    },
-    {
-      "title": "BI Developer (Mid-level)",
-      "company": "Hire Resolve",
-      "location": "Centurion",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2340780-bi-developer-mid-level-centurion/",
-      "job_id": "2340780",
-      "posted": "18 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.278349+00:00"
+      "scraped_at": "2026-03-12T21:52:05.832424+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -418,7 +431,7 @@
       "job_id": "2340783",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.278831+00:00"
+      "scraped_at": "2026-03-12T21:52:05.834528+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -431,7 +444,7 @@
       "job_id": "2340779",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.279498+00:00"
+      "scraped_at": "2026-03-12T21:52:05.835513+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -444,7 +457,33 @@
       "job_id": "2340781",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:42.279914+00:00"
+      "scraped_at": "2026-03-12T21:52:05.836439+00:00"
+    },
+    {
+      "title": "BI Developer (Mid-level)",
+      "company": "Hire Resolve",
+      "location": "Centurion",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2340782-bi-developer-mid-level-centurion/",
+      "job_id": "2340782",
+      "posted": "18 Feb 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:05.837311+00:00"
+    },
+    {
+      "title": "BI Developer (Mid-level)",
+      "company": "Hire Resolve",
+      "location": "Centurion",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2340780-bi-developer-mid-level-centurion/",
+      "job_id": "2340780",
+      "posted": "18 Feb 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:05.838186+00:00"
     },
     {
       "title": "Finance Business Intelligence (BI) Specialist",
@@ -457,33 +496,7 @@
       "job_id": "2345425",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.461148+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Virgin Active South Africa (Pty) Ltd",
-      "location": "Cape Town",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342010-data-analyst-cape-town/",
-      "job_id": "2342010",
-      "posted": "23 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.462116+00:00"
-    },
-    {
-      "title": "Analyst",
-      "company": "Analyst",
-      "location": "Pretoria",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2341840-analyst-pretoria/",
-      "job_id": "2341840",
-      "posted": "21 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.463048+00:00"
+      "scraped_at": "2026-03-12T21:52:09.235004+00:00"
     },
     {
       "title": "Promotions & Events Manager",
@@ -496,20 +509,7 @@
       "job_id": "2345444",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.465102+00:00"
-    },
-    {
-      "title": "Senior Accountant (Humansdorp)",
-      "company": "Sentraal-Suid Co-operative Ltd",
-      "location": "Eastern Cape",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344609-senior-accountant-humansdorp-eastern-cape/",
-      "job_id": "2344609",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.465886+00:00"
+      "scraped_at": "2026-03-12T21:52:09.237328+00:00"
     },
     {
       "title": "Territory Manager",
@@ -522,7 +522,20 @@
       "job_id": "2345007",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.466687+00:00"
+      "scraped_at": "2026-03-12T21:52:09.239328+00:00"
+    },
+    {
+      "title": "Senior Accountant (Humansdorp)",
+      "company": "Sentraal-Suid Co-operative Ltd",
+      "location": "Eastern Cape",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2344609-senior-accountant-humansdorp-eastern-cape/",
+      "job_id": "2344609",
+      "posted": "04 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:09.240165+00:00"
     },
     {
       "title": "National Planning & Data Optimisation Manager",
@@ -535,7 +548,33 @@
       "job_id": "2344694",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.467477+00:00"
+      "scraped_at": "2026-03-12T21:52:09.241099+00:00"
+    },
+    {
+      "title": "System Analyst (Finance)",
+      "company": "Transnet",
+      "location": "South Africa",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/now-hiring/61862-transnet/jobs/adverts/2346280-system-analyst-finance-south-africa/",
+      "job_id": "2346280",
+      "posted": "11 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:09.242039+00:00"
+    },
+    {
+      "title": "Head: Customer Service & Complaints",
+      "company": "Rand Mutual Admin Services",
+      "location": "Johannesburg CBD",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2344332-head-customer-service-complaints-johannesburg-cbd/",
+      "job_id": "2344332",
+      "posted": "04 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:09.242885+00:00"
     },
     {
       "title": "Head: Customer Service & Complaints",
@@ -548,20 +587,7 @@
       "job_id": "2344254",
       "posted": "03 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.468307+00:00"
-    },
-    {
-      "title": "System Support Analyst",
-      "company": "Minopex",
-      "location": "Johannesburg",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344175-system-support-analyst-johannesburg/",
-      "job_id": "2344175",
-      "posted": "03 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:45:45.469110+00:00"
+      "scraped_at": "2026-03-12T21:52:09.243739+00:00"
     },
     {
       "title": "BI Developer",
@@ -574,7 +600,7 @@
       "job_id": "2340315",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:05.482889+00:00"
+      "scraped_at": "2026-03-12T21:52:31.808969+00:00"
     },
     {
       "title": "SQL Developer",
@@ -587,20 +613,7 @@
       "job_id": "2341005",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:05.484472+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Data Analyst",
-      "location": "Cape Town",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2339103-data-analyst-cape-town/",
-      "job_id": "2339103",
-      "posted": "11 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:05.485738+00:00"
+      "scraped_at": "2026-03-12T21:52:31.809955+00:00"
     },
     {
       "title": "Mid-Level Power BI & Power Automate Developer",
@@ -613,7 +626,20 @@
       "job_id": "2338338",
       "posted": "09 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:05.486650+00:00"
+      "scraped_at": "2026-03-12T21:52:31.810900+00:00"
+    },
+    {
+      "title": "Power BI",
+      "company": "Merchants SA Pty Ltd",
+      "location": "Western Cape",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2335383-power-bi-western-cape/",
+      "job_id": "2335383",
+      "posted": "28 Jan 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:31.811711+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -626,7 +652,7 @@
       "job_id": "2343641",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:13.839125+00:00"
+      "scraped_at": "2026-03-12T21:52:38.787604+00:00"
     },
     {
       "title": "Machine Learning Data Engineer – Generative AI",
@@ -639,59 +665,7 @@
       "job_id": "2342493",
       "posted": "24 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:13.839909+00:00"
-    },
-    {
-      "title": "Senior ML/AI Engineer",
-      "company": "MSP Staffing (PTY) LTD",
-      "location": "Western CapeRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2329838-senior-ml-ai-engineer-western-cape/",
-      "job_id": "2329838",
-      "posted": "08 Jan 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:13.840725+00:00"
-    },
-    {
-      "title": "Senior ML/AI Engineer",
-      "company": "MSP Staffing (PTY) LTD",
-      "location": "GautengRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2329836-senior-ml-ai-engineer-gauteng/",
-      "job_id": "2329836",
-      "posted": "08 Jan 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:13.841566+00:00"
-    },
-    {
-      "title": "Senior ML/AI Engineer",
-      "company": "MSP Staffing (PTY) LTD",
-      "location": "KwaZulu-NatalRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2329837-senior-ml-ai-engineer-kwazulu-natal/",
-      "job_id": "2329837",
-      "posted": "08 Jan 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:13.842872+00:00"
-    },
-    {
-      "title": "BI Data Analyst I",
-      "company": "Nedbank Head Office",
-      "location": "South Africa",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342953-bi-data-analyst-i-south-africa/",
-      "job_id": "2342953",
-      "posted": "25 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:18.079877+00:00"
+      "scraped_at": "2026-03-12T21:52:38.788427+00:00"
     },
     {
       "title": "Data and Reporting Manager",
@@ -704,33 +678,20 @@
       "job_id": "2344197",
       "posted": "03 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.070701+00:00"
+      "scraped_at": "2026-03-12T21:52:51.888477+00:00"
     },
     {
-      "title": "Finance and Procurement Manager: Parts & Distribution Centre - Kia South Africa (Pty) Ltd",
+      "title": "BI Specialist",
       "company": "Motus Corporation",
-      "location": "Johannesburg",
+      "location": "Edenvale",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343792-finance-and-procurement-manager-parts-distribution-centre-kia-south-africa-pty-ltd-johannesburg/",
-      "job_id": "2343792",
-      "posted": "02 Mar 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2346712-bi-specialist-edenvale/",
+      "job_id": "2346712",
+      "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.071849+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Virgin Active South Africa (Pty) Ltd",
-      "location": "Cape Town",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342017-data-engineer-cape-town/",
-      "job_id": "2342017",
-      "posted": "23 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.072653+00:00"
+      "scraped_at": "2026-03-12T21:52:51.889312+00:00"
     },
     {
       "title": "Data Entry and Processing Specialist",
@@ -743,7 +704,7 @@
       "job_id": "2341046",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.073478+00:00"
+      "scraped_at": "2026-03-12T21:52:51.890356+00:00"
     },
     {
       "title": "Industrial Engineering Logistics Supervisor - Automotive Manufacturing",
@@ -756,20 +717,7 @@
       "job_id": "2340531",
       "posted": "17 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.075083+00:00"
-    },
-    {
-      "title": "Data Integration Engineer (Data Platform + Architecture)",
-      "company": "Dis-Chem Life",
-      "location": "Sandton",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2338879-data-integration-engineer-data-platform-architecture-sandton/",
-      "job_id": "2338879",
-      "posted": "10 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.075886+00:00"
+      "scraped_at": "2026-03-12T21:52:51.892003+00:00"
     },
     {
       "title": "Supply Chain Manager",
@@ -782,7 +730,7 @@
       "job_id": "2337240",
       "posted": "04 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.076767+00:00"
+      "scraped_at": "2026-03-12T21:52:51.892885+00:00"
     },
     {
       "title": "National Planning & Data Optimisation Manager",
@@ -795,7 +743,20 @@
       "job_id": "2333087",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:25.077582+00:00"
+      "scraped_at": "2026-03-12T21:52:51.893706+00:00"
+    },
+    {
+      "title": "BI Developer",
+      "company": "BI Developer",
+      "location": "Pretoria",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2333717-bi-developer-pretoria/",
+      "job_id": "2333717",
+      "posted": "21 Jan 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:52:51.894591+00:00"
     },
     {
       "title": "Business Analyst",
@@ -808,7 +769,7 @@
       "job_id": "2344483",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.721702+00:00"
+      "scraped_at": "2026-03-12T21:53:05.572213+00:00"
     },
     {
       "title": "Technical Business Analyst",
@@ -821,20 +782,20 @@
       "job_id": "2344546",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.722597+00:00"
+      "scraped_at": "2026-03-12T21:53:05.573151+00:00"
     },
     {
       "title": "Business Analyst",
-      "company": "Business Analyst",
-      "location": "Pretoria",
+      "company": "Unifi",
+      "location": "Stellenbosch",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342738-business-analyst-pretoria/",
-      "job_id": "2342738",
-      "posted": "25 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2346718-business-analyst-stellenbosch/",
+      "job_id": "2346718",
+      "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.723531+00:00"
+      "scraped_at": "2026-03-12T21:53:05.574032+00:00"
     },
     {
       "title": "Finance Business Analyst - Zambia",
@@ -847,7 +808,20 @@
       "job_id": "2343018",
       "posted": "26 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.724370+00:00"
+      "scraped_at": "2026-03-12T21:53:05.575192+00:00"
+    },
+    {
+      "title": "Business Analyst",
+      "company": "Business Analyst",
+      "location": "Pretoria",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2342738-business-analyst-pretoria/",
+      "job_id": "2342738",
+      "posted": "25 Feb 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:53:05.576256+00:00"
     },
     {
       "title": "Business Analyst (Financial Systems)",
@@ -860,59 +834,7 @@
       "job_id": "2342739",
       "posted": "25 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.725423+00:00"
-    },
-    {
-      "title": "Business Analyst and Systems Engineer",
-      "company": "Hire Resolve",
-      "location": "Midrand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342243-business-analyst-and-systems-engineer-midrand/",
-      "job_id": "2342243",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.726273+00:00"
-    },
-    {
-      "title": "Business Analyst and Systems Engineer",
-      "company": "Hire Resolve",
-      "location": "Midrand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342242-business-analyst-and-systems-engineer-midrand/",
-      "job_id": "2342242",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.727083+00:00"
-    },
-    {
-      "title": "Business Analyst and Systems Engineer",
-      "company": "Hire Resolve",
-      "location": "Midrand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342245-business-analyst-and-systems-engineer-midrand/",
-      "job_id": "2342245",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.727911+00:00"
-    },
-    {
-      "title": "Business Analyst and Systems Engineer",
-      "company": "Hire Resolve",
-      "location": "Midrand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342244-business-analyst-and-systems-engineer-midrand/",
-      "job_id": "2342244",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.728716+00:00"
+      "scraped_at": "2026-03-12T21:53:05.577259+00:00"
     },
     {
       "title": "Senior Project Manager",
@@ -925,7 +847,33 @@
       "job_id": "2345411",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:46:40.729508+00:00"
+      "scraped_at": "2026-03-12T21:53:05.578993+00:00"
+    },
+    {
+      "title": "Senior Project Manager",
+      "company": "Senior Project Manager",
+      "location": "Midrand",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2346615-senior-project-manager-midrand/",
+      "job_id": "2346615",
+      "posted": "12 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:53:05.579932+00:00"
+    },
+    {
+      "title": "Project Administrator",
+      "company": "Broll Property Group",
+      "location": "Johannesburg",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2345414-project-administrator-johannesburg/",
+      "job_id": "2345414",
+      "posted": "06 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:53:05.580806+00:00"
     },
     {
       "title": "Software Developer – Level 3 – Senior",
@@ -938,33 +886,46 @@
       "job_id": "2344547",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.102800+00:00"
+      "scraped_at": "2026-03-12T21:53:30.017677+00:00"
     },
     {
-      "title": "Senior Software Developer",
-      "company": "MSP Staffing (PTY) LTD",
-      "location": "Durbanville",
+      "title": "Software Engineer / Developer",
+      "company": "Helderberg Personnel cc",
+      "location": "Cape Winelands",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2341951-senior-software-developer-durbanville/",
-      "job_id": "2341951",
-      "posted": "23 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2322258-software-engineer-developer-cape-winelands/",
+      "job_id": "2322258",
+      "posted": "11 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.104132+00:00"
+      "scraped_at": "2026-03-12T21:53:30.018295+00:00"
     },
     {
-      "title": "Software Developer – Level 3 - Senior",
-      "company": "Tumaini Consulting",
-      "location": "Sandton",
+      "title": "Software Developer",
+      "company": "Unique Personnel",
+      "location": "East Rand",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2341981-software-developer-level-3-senior-sandton/",
-      "job_id": "2341981",
-      "posted": "23 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2346681-software-developer-east-rand/",
+      "job_id": "2346681",
+      "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.104967+00:00"
+      "scraped_at": "2026-03-12T21:53:30.019919+00:00"
+    },
+    {
+      "title": "Software Engineer / Developer",
+      "company": "Helderberg Personnel cc",
+      "location": "Cape Winelands",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2322237-software-engineer-developer-cape-winelands/",
+      "job_id": "2322237",
+      "posted": "11 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:53:30.020391+00:00"
     },
     {
       "title": "Senior Software Developer",
@@ -977,85 +938,33 @@
       "job_id": "2332454",
       "posted": "27 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.105823+00:00"
+      "scraped_at": "2026-03-12T21:53:30.021090+00:00"
     },
     {
-      "title": "Junior Application Software Developer",
-      "company": "E&D Recruiters",
-      "location": "East Rand",
+      "title": "Senior Software Developer",
+      "company": "MSP Staffing (PTY) LTD",
+      "location": "Durbanville",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334825-junior-application-software-developer-east-rand/",
-      "job_id": "2334825",
-      "posted": "24 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2341951-senior-software-developer-durbanville/",
+      "job_id": "2341951",
+      "posted": "23 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.106623+00:00"
+      "scraped_at": "2026-03-12T21:53:30.021729+00:00"
     },
     {
-      "title": "Embedded Software Developer - Production",
-      "company": "E&D Recruiters",
-      "location": "Pretoria",
+      "title": "Software Developer – Level 3 - Senior",
+      "company": "Tumaini Consulting",
+      "location": "Sandton",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334822-embedded-software-developer-production-pretoria/",
-      "job_id": "2334822",
-      "posted": "24 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2341981-software-developer-level-3-senior-sandton/",
+      "job_id": "2341981",
+      "posted": "23 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.107441+00:00"
-    },
-    {
-      "title": "Protocol Software Developer",
-      "company": "E&D Recruiters",
-      "location": "Pretoria",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334687-protocol-software-developer-pretoria/",
-      "job_id": "2334687",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.108242+00:00"
-    },
-    {
-      "title": "Junior Embedded Software Developer",
-      "company": "E&D Recruiters",
-      "location": "East Rand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334828-junior-embedded-software-developer-east-rand/",
-      "job_id": "2334828",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.109034+00:00"
-    },
-    {
-      "title": "Security Software Developer",
-      "company": "E&D Recruiters",
-      "location": "Pretoria",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334734-security-software-developer-pretoria/",
-      "job_id": "2334734",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.110203+00:00"
-    },
-    {
-      "title": "Junior Application Software Developer",
-      "company": "E&D Recruiters",
-      "location": "East Rand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334848-junior-application-software-developer-east-rand/",
-      "job_id": "2334848",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:04.111006+00:00"
+      "scraped_at": "2026-03-12T21:53:30.022128+00:00"
     },
     {
       "title": "Java Developer",
@@ -1068,7 +977,7 @@
       "job_id": "2344473",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.281233+00:00"
+      "scraped_at": "2026-03-12T21:53:30.022520+00:00"
     },
     {
       "title": "Java Developer",
@@ -1081,7 +990,33 @@
       "job_id": "2344472",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.282178+00:00"
+      "scraped_at": "2026-03-12T21:53:30.023593+00:00"
+    },
+    {
+      "title": "Junior Application Software Developer",
+      "company": "E&D Recruiters",
+      "location": "East Rand",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2334825-junior-application-software-developer-east-rand/",
+      "job_id": "2334825",
+      "posted": "24 Feb 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:53:30.025193+00:00"
+    },
+    {
+      "title": "Senior .Net Developer",
+      "company": "Senior .Net Developer",
+      "location": "Gauteng",
+      "job_type": "Contract",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2345870-senior-net-developer-gauteng/",
+      "job_id": "2345870",
+      "posted": "10 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:54:01.151517+00:00"
     },
     {
       "title": "Java Developer",
@@ -1094,7 +1029,20 @@
       "job_id": "2344474",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.283034+00:00"
+      "scraped_at": "2026-03-12T21:54:01.152907+00:00"
+    },
+    {
+      "title": "Junior CRM System Developer",
+      "company": "Sable International",
+      "location": "Kenilworth",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2346082-junior-crm-system-developer-kenilworth/",
+      "job_id": "2346082",
+      "posted": "10 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:54:01.153312+00:00"
     },
     {
       "title": "Web Developer",
@@ -1107,7 +1055,7 @@
       "job_id": "2341088",
       "posted": "03 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.283861+00:00"
+      "scraped_at": "2026-03-12T21:54:01.154769+00:00"
     },
     {
       "title": "Rating Developer",
@@ -1120,7 +1068,7 @@
       "job_id": "2344475",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.284693+00:00"
+      "scraped_at": "2026-03-12T21:54:01.155880+00:00"
     },
     {
       "title": "Specialist: Developer",
@@ -1133,72 +1081,7 @@
       "job_id": "2344460",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.285492+00:00"
-    },
-    {
-      "title": "Mid-Senior Java Developer",
-      "company": "Tumaini Consulting",
-      "location": "Pretoria",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344542-mid-senior-java-developer-pretoria/",
-      "job_id": "2344542",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.286320+00:00"
-    },
-    {
-      "title": "Senior Full Stack Developer",
-      "company": "Tumaini Consulting",
-      "location": "Johannesburg",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344535-senior-full-stack-developer-johannesburg/",
-      "job_id": "2344535",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.287116+00:00"
-    },
-    {
-      "title": "Webmaster / WordPress Developer",
-      "company": "Tumaini Consulting",
-      "location": "Sandton",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344551-webmaster-wordpress-developer-sandton/",
-      "job_id": "2344551",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.287912+00:00"
-    },
-    {
-      "title": "Senior Full-Stack Developer",
-      "company": "Goldman Tech Resourcing",
-      "location": "GautengRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344464-senior-full-stack-developer-gauteng/",
-      "job_id": "2344464",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:36.288778+00:00"
-    },
-    {
-      "title": "Senior Full-Stack Developer",
-      "company": "Goldman Tech Resourcing",
-      "location": "KwaZulu-NatalRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344465-senior-full-stack-developer-kwazulu-natal/",
-      "job_id": "2344465",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:47:44.830867+00:00"
+      "scraped_at": "2026-03-12T21:54:01.157948+00:00"
     },
     {
       "title": "Backend Engineer / Software Architect",
@@ -1211,20 +1094,7 @@
       "job_id": "2344458",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.834252+00:00"
-    },
-    {
-      "title": "Python Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "Johannesburg",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343648-python-engineer-johannesburg/",
-      "job_id": "2343648",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.835243+00:00"
+      "scraped_at": "2026-03-12T21:55:06.638769+00:00"
     },
     {
       "title": "Software Engineer (Algorithms)",
@@ -1237,7 +1107,20 @@
       "job_id": "2345027",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.836110+00:00"
+      "scraped_at": "2026-03-12T21:55:06.639905+00:00"
+    },
+    {
+      "title": "Python Engineer",
+      "company": "Crayon Technologies (Pty) Ltd",
+      "location": "Johannesburg",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343648-python-engineer-johannesburg/",
+      "job_id": "2343648",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-12T21:55:06.640327+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1250,7 +1133,7 @@
       "job_id": "2343566",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.837009+00:00"
+      "scraped_at": "2026-03-12T21:55:06.640837+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1263,7 +1146,7 @@
       "job_id": "2343562",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.837900+00:00"
+      "scraped_at": "2026-03-12T21:55:06.641234+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1276,7 +1159,7 @@
       "job_id": "2343565",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.838756+00:00"
+      "scraped_at": "2026-03-12T21:55:06.641633+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1289,7 +1172,7 @@
       "job_id": "2343564",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.839674+00:00"
+      "scraped_at": "2026-03-12T21:55:06.642021+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1302,33 +1185,33 @@
       "job_id": "2343563",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.840546+00:00"
+      "scraped_at": "2026-03-12T21:55:06.642421+00:00"
     },
     {
-      "title": "Senior DevOps Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "KwaZulu-NatalRemote",
-      "job_type": "Contract",
+      "title": "Excel Systems Developer",
+      "company": "Western Cape Recruitment",
+      "location": "Cape Town Northern Suburbs",
+      "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342879-senior-devops-engineer-kwazulu-natal/",
-      "job_id": "2342879",
-      "posted": "25 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2344996-excel-systems-developer-cape-town-northern-suburbs/",
+      "job_id": "2344996",
+      "posted": "09 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.841431+00:00"
+      "scraped_at": "2026-03-12T21:55:35.361811+00:00"
     },
     {
-      "title": "Senior DevOps Engineer",
-      "company": "Crayon Technologies (Pty) Ltd",
-      "location": "Western CapeRemote",
-      "job_type": "Contract",
+      "title": "Excel Systems Developer",
+      "company": "Western Cape Recruitment",
+      "location": "Cape Town Northern Suburbs",
+      "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2342881-senior-devops-engineer-western-cape/",
-      "job_id": "2342881",
-      "posted": "25 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2346247-excel-systems-developer-cape-town-northern-suburbs/",
+      "job_id": "2346247",
+      "posted": "11 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:48:54.842312+00:00"
+      "scraped_at": "2026-03-12T21:55:35.362184+00:00"
     },
     {
       "title": "Senior Test Automation Engineer",
@@ -1341,7 +1224,7 @@
       "job_id": "2340139",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:50:47.837192+00:00"
+      "scraped_at": "2026-03-12T21:56:54.949180+00:00"
     },
     {
       "title": "Test Analyst",
@@ -1354,7 +1237,7 @@
       "job_id": "2333118",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:50:47.838179+00:00"
+      "scraped_at": "2026-03-12T21:56:54.949638+00:00"
     },
     {
       "title": "Software Solutions Sales Executive (SaaS)",
@@ -1367,7 +1250,7 @@
       "job_id": "2344943",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:50:50.982499+00:00"
+      "scraped_at": "2026-03-12T21:56:58.410147+00:00"
     },
     {
       "title": "Software Solutions Sales Executive (SaaS)",
@@ -1380,20 +1263,20 @@
       "job_id": "2344968",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:50:50.983584+00:00"
+      "scraped_at": "2026-03-12T21:56:58.410918+00:00"
     },
     {
-      "title": "Manager: ERP Software Engineering",
-      "company": "The City of Cape Town",
-      "location": "Cape Town",
+      "title": "Senior Project Manager SAP, Infrastructure and Software Development",
+      "company": "AVI Limited",
+      "location": "Johannesburg",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343362-manager-erp-software-engineering-cape-town/",
-      "job_id": "2343362",
-      "posted": "27 Feb 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2346614-senior-project-manager-sap-infrastructure-and-software-development-johannesburg/",
+      "job_id": "2346614",
+      "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-09T19:50:50.987714+00:00"
+      "scraped_at": "2026-03-12T21:56:58.411664+00:00"
     }
   ]
 }
