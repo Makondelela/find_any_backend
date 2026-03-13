@@ -55,7 +55,22 @@
       "Software Tester",
       "QA Engineer",
       "Quality Assurance Engineer",
-      "Test Engineer"
+      "Test Engineer",
+      "IT Support",
+      "Technical Support",
+      "Support Engineer",
+      "Application Support",
+      "Production Support",
+      "Customer Support Engineer",
+      "Systems Support",
+      "Help Desk",
+      "Service Desk",
+      "Desktop Support",
+      "NOC Engineer",
+      "Network Operations Center",
+      "IT Operations",
+      "Operations Engineer",
+      "Technical Operations"
     ],
     "slugs": [
       "data-engineer",
@@ -78,8 +93,8 @@
       "software-tester",
       "software"
     ],
-    "total_jobs": 92,
-    "scraped_at": "2026-03-12T21:58:04.530579+00:00"
+    "total_jobs": 88,
+    "scraped_at": "2026-03-13T19:21:57.681384+00:00"
   },
   "jobs": [
     {
@@ -93,7 +108,7 @@
       "job_id": "2344454",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.943578+00:00"
+      "scraped_at": "2026-03-13T19:15:23.798113+00:00"
     },
     {
       "title": "Data Engineer",
@@ -106,7 +121,7 @@
       "job_id": "2345692",
       "posted": "09 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.944575+00:00"
+      "scraped_at": "2026-03-13T19:15:23.799815+00:00"
     },
     {
       "title": "Junior Data Engineer",
@@ -119,7 +134,7 @@
       "job_id": "2345104",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.945551+00:00"
+      "scraped_at": "2026-03-13T19:15:23.800823+00:00"
     },
     {
       "title": "Mid to Senior Data Engineer",
@@ -132,7 +147,7 @@
       "job_id": "2345119",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.946459+00:00"
+      "scraped_at": "2026-03-13T19:15:23.801791+00:00"
     },
     {
       "title": "Data Engineer | Contract",
@@ -145,7 +160,7 @@
       "job_id": "2344408",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.947394+00:00"
+      "scraped_at": "2026-03-13T19:15:23.802701+00:00"
     },
     {
       "title": "Data Engineer",
@@ -158,7 +173,7 @@
       "job_id": "2343645",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.948316+00:00"
+      "scraped_at": "2026-03-13T19:15:23.803736+00:00"
     },
     {
       "title": "Data Engineer",
@@ -171,7 +186,7 @@
       "job_id": "2343643",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.949265+00:00"
+      "scraped_at": "2026-03-13T19:15:23.804691+00:00"
     },
     {
       "title": "Data Engineer",
@@ -184,7 +199,7 @@
       "job_id": "2343644",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.950192+00:00"
+      "scraped_at": "2026-03-13T19:15:23.805676+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -197,7 +212,7 @@
       "job_id": "2343640",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.951129+00:00"
+      "scraped_at": "2026-03-13T19:15:23.806664+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -210,7 +225,7 @@
       "job_id": "2343642",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:33.952038+00:00"
+      "scraped_at": "2026-03-13T19:15:23.807666+00:00"
     },
     {
       "title": "Data Analyst",
@@ -223,7 +238,7 @@
       "job_id": "2346077",
       "posted": "10 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.845639+00:00"
+      "scraped_at": "2026-03-13T19:15:35.268596+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -236,7 +251,7 @@
       "job_id": "2345062",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.846089+00:00"
+      "scraped_at": "2026-03-13T19:15:35.269009+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -249,7 +264,7 @@
       "job_id": "2345060",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.846477+00:00"
+      "scraped_at": "2026-03-13T19:15:35.269769+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -262,7 +277,7 @@
       "job_id": "2345061",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.846866+00:00"
+      "scraped_at": "2026-03-13T19:15:35.270188+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -275,7 +290,7 @@
       "job_id": "2345059",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.847242+00:00"
+      "scraped_at": "2026-03-13T19:15:35.270571+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -288,7 +303,7 @@
       "job_id": "2345058",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.847622+00:00"
+      "scraped_at": "2026-03-13T19:15:35.270953+00:00"
     },
     {
       "title": "Data Scientist / Data Analyst - (WhatsApp and Genesys Cloud Capabilities)",
@@ -301,7 +316,7 @@
       "job_id": "2346736",
       "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:51:42.848251+00:00"
+      "scraped_at": "2026-03-13T19:15:35.271572+00:00"
     },
     {
       "title": "Data Scientist: Marketing",
@@ -314,20 +329,7 @@
       "job_id": "2345837",
       "posted": "10 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.061457+00:00"
-    },
-    {
-      "title": "Data Scientist",
-      "company": "Unifi",
-      "location": "Stellenbosch",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2341907-data-scientist-stellenbosch/",
-      "job_id": "2341907",
-      "posted": "23 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.063245+00:00"
+      "scraped_at": "2026-03-13T19:15:53.405835+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -340,7 +342,7 @@
       "job_id": "2340040",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.064032+00:00"
+      "scraped_at": "2026-03-13T19:15:53.406690+00:00"
     },
     {
       "title": "Data Scientist",
@@ -353,7 +355,7 @@
       "job_id": "2335817",
       "posted": "29 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.064860+00:00"
+      "scraped_at": "2026-03-13T19:15:53.407071+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -366,7 +368,7 @@
       "job_id": "2337088",
       "posted": "03 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.065803+00:00"
+      "scraped_at": "2026-03-13T19:15:53.407490+00:00"
     },
     {
       "title": "Data Engineer/Data Scientist",
@@ -379,7 +381,7 @@
       "job_id": "2333338",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:03.066609+00:00"
+      "scraped_at": "2026-03-13T19:15:53.407864+00:00"
     },
     {
       "title": "Data Solutions Architect (MS Fabric & Databricks)",
@@ -392,7 +394,7 @@
       "job_id": "2345631",
       "posted": "09 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.829442+00:00"
+      "scraped_at": "2026-03-13T19:15:58.129439+00:00"
     },
     {
       "title": "Solutions Architect – Data Protection",
@@ -405,7 +407,7 @@
       "job_id": "2343268",
       "posted": "27 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.831295+00:00"
+      "scraped_at": "2026-03-13T19:15:58.129923+00:00"
     },
     {
       "title": "Solutions Architect – Data Protection",
@@ -418,7 +420,7 @@
       "job_id": "2343269",
       "posted": "27 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.832424+00:00"
+      "scraped_at": "2026-03-13T19:15:58.130380+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -431,7 +433,7 @@
       "job_id": "2340783",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.834528+00:00"
+      "scraped_at": "2026-03-13T19:15:58.131867+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -444,20 +446,7 @@
       "job_id": "2340779",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.835513+00:00"
-    },
-    {
-      "title": "BI Developer (Mid-level)",
-      "company": "Hire Resolve",
-      "location": "Centurion",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2340781-bi-developer-mid-level-centurion/",
-      "job_id": "2340781",
-      "posted": "18 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.836439+00:00"
+      "scraped_at": "2026-03-13T19:15:58.132272+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -470,7 +459,7 @@
       "job_id": "2340782",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.837311+00:00"
+      "scraped_at": "2026-03-13T19:15:58.132679+00:00"
     },
     {
       "title": "BI Developer (Mid-level)",
@@ -483,7 +472,20 @@
       "job_id": "2340780",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:05.838186+00:00"
+      "scraped_at": "2026-03-13T19:15:58.133116+00:00"
+    },
+    {
+      "title": "BI Developer (Mid-level)",
+      "company": "Hire Resolve",
+      "location": "Centurion",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2340781-bi-developer-mid-level-centurion/",
+      "job_id": "2340781",
+      "posted": "18 Feb 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:15:58.133524+00:00"
     },
     {
       "title": "Finance Business Intelligence (BI) Specialist",
@@ -496,7 +498,20 @@
       "job_id": "2345425",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.235004+00:00"
+      "scraped_at": "2026-03-13T19:16:00.781205+00:00"
+    },
+    {
+      "title": "Data & BI Developer",
+      "company": "First Technology Pty Ltd",
+      "location": "Midrand",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2347150-data-bi-developer-midrand/",
+      "job_id": "2347150",
+      "posted": "13 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:16:00.782070+00:00"
     },
     {
       "title": "Promotions & Events Manager",
@@ -509,7 +524,7 @@
       "job_id": "2345444",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.237328+00:00"
+      "scraped_at": "2026-03-13T19:16:00.782491+00:00"
     },
     {
       "title": "Territory Manager",
@@ -522,7 +537,7 @@
       "job_id": "2345007",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.239328+00:00"
+      "scraped_at": "2026-03-13T19:16:00.783294+00:00"
     },
     {
       "title": "Senior Accountant (Humansdorp)",
@@ -535,20 +550,7 @@
       "job_id": "2344609",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.240165+00:00"
-    },
-    {
-      "title": "National Planning & Data Optimisation Manager",
-      "company": "RPO Recruitment",
-      "location": "Cape Town",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344694-national-planning-data-optimisation-manager-cape-town/",
-      "job_id": "2344694",
-      "posted": "05 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.241099+00:00"
+      "scraped_at": "2026-03-13T19:16:00.783680+00:00"
     },
     {
       "title": "System Analyst (Finance)",
@@ -561,7 +563,20 @@
       "job_id": "2346280",
       "posted": "11 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.242039+00:00"
+      "scraped_at": "2026-03-13T19:16:00.784085+00:00"
+    },
+    {
+      "title": "National Planning & Data Optimisation Manager",
+      "company": "RPO Recruitment",
+      "location": "Cape Town",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2344694-national-planning-data-optimisation-manager-cape-town/",
+      "job_id": "2344694",
+      "posted": "05 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:16:00.784476+00:00"
     },
     {
       "title": "Head: Customer Service & Complaints",
@@ -574,20 +589,7 @@
       "job_id": "2344332",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.242885+00:00"
-    },
-    {
-      "title": "Head: Customer Service & Complaints",
-      "company": "Rand Mutual Admin Services",
-      "location": "Johannesburg CBD",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344254-head-customer-service-complaints-johannesburg-cbd/",
-      "job_id": "2344254",
-      "posted": "03 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:09.243739+00:00"
+      "scraped_at": "2026-03-13T19:16:00.784884+00:00"
     },
     {
       "title": "BI Developer",
@@ -600,7 +602,7 @@
       "job_id": "2340315",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:31.808969+00:00"
+      "scraped_at": "2026-03-13T19:16:22.439479+00:00"
     },
     {
       "title": "SQL Developer",
@@ -613,7 +615,7 @@
       "job_id": "2341005",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:31.809955+00:00"
+      "scraped_at": "2026-03-13T19:16:22.439860+00:00"
     },
     {
       "title": "Mid-Level Power BI & Power Automate Developer",
@@ -626,20 +628,7 @@
       "job_id": "2338338",
       "posted": "09 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:31.810900+00:00"
-    },
-    {
-      "title": "Power BI",
-      "company": "Merchants SA Pty Ltd",
-      "location": "Western Cape",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2335383-power-bi-western-cape/",
-      "job_id": "2335383",
-      "posted": "28 Jan 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:31.811711+00:00"
+      "scraped_at": "2026-03-13T19:16:22.440241+00:00"
     },
     {
       "title": "AI/ML Data Engineer",
@@ -652,7 +641,7 @@
       "job_id": "2343641",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:38.787604+00:00"
+      "scraped_at": "2026-03-13T19:16:31.229957+00:00"
     },
     {
       "title": "Machine Learning Data Engineer – Generative AI",
@@ -665,7 +654,7 @@
       "job_id": "2342493",
       "posted": "24 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:38.788427+00:00"
+      "scraped_at": "2026-03-13T19:16:31.230349+00:00"
     },
     {
       "title": "Data and Reporting Manager",
@@ -678,7 +667,7 @@
       "job_id": "2344197",
       "posted": "03 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.888477+00:00"
+      "scraped_at": "2026-03-13T19:16:40.157506+00:00"
     },
     {
       "title": "BI Specialist",
@@ -691,7 +680,7 @@
       "job_id": "2346712",
       "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.889312+00:00"
+      "scraped_at": "2026-03-13T19:16:40.158752+00:00"
     },
     {
       "title": "Data Entry and Processing Specialist",
@@ -704,7 +693,7 @@
       "job_id": "2341046",
       "posted": "18 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.890356+00:00"
+      "scraped_at": "2026-03-13T19:16:40.159151+00:00"
     },
     {
       "title": "Industrial Engineering Logistics Supervisor - Automotive Manufacturing",
@@ -717,7 +706,7 @@
       "job_id": "2340531",
       "posted": "17 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.892003+00:00"
+      "scraped_at": "2026-03-13T19:16:40.159897+00:00"
     },
     {
       "title": "Supply Chain Manager",
@@ -730,7 +719,7 @@
       "job_id": "2337240",
       "posted": "04 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.892885+00:00"
+      "scraped_at": "2026-03-13T19:16:40.160355+00:00"
     },
     {
       "title": "National Planning & Data Optimisation Manager",
@@ -743,7 +732,7 @@
       "job_id": "2333087",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.893706+00:00"
+      "scraped_at": "2026-03-13T19:16:40.160755+00:00"
     },
     {
       "title": "BI Developer",
@@ -756,7 +745,7 @@
       "job_id": "2333717",
       "posted": "21 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:52:51.894591+00:00"
+      "scraped_at": "2026-03-13T19:16:40.161190+00:00"
     },
     {
       "title": "Business Analyst",
@@ -769,7 +758,7 @@
       "job_id": "2344483",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.572213+00:00"
+      "scraped_at": "2026-03-13T19:16:49.779785+00:00"
     },
     {
       "title": "Technical Business Analyst",
@@ -782,7 +771,7 @@
       "job_id": "2344546",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.573151+00:00"
+      "scraped_at": "2026-03-13T19:16:49.780404+00:00"
     },
     {
       "title": "Business Analyst",
@@ -795,7 +784,7 @@
       "job_id": "2346718",
       "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.574032+00:00"
+      "scraped_at": "2026-03-13T19:16:49.780828+00:00"
     },
     {
       "title": "Finance Business Analyst - Zambia",
@@ -808,7 +797,7 @@
       "job_id": "2343018",
       "posted": "26 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.575192+00:00"
+      "scraped_at": "2026-03-13T19:16:49.781227+00:00"
     },
     {
       "title": "Business Analyst",
@@ -821,7 +810,7 @@
       "job_id": "2342738",
       "posted": "25 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.576256+00:00"
+      "scraped_at": "2026-03-13T19:16:49.781708+00:00"
     },
     {
       "title": "Business Analyst (Financial Systems)",
@@ -834,7 +823,7 @@
       "job_id": "2342739",
       "posted": "25 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.577259+00:00"
+      "scraped_at": "2026-03-13T19:16:49.782557+00:00"
     },
     {
       "title": "Senior Project Manager",
@@ -847,7 +836,7 @@
       "job_id": "2345411",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.578993+00:00"
+      "scraped_at": "2026-03-13T19:16:49.782981+00:00"
     },
     {
       "title": "Senior Project Manager",
@@ -860,7 +849,7 @@
       "job_id": "2346615",
       "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.579932+00:00"
+      "scraped_at": "2026-03-13T19:16:49.783473+00:00"
     },
     {
       "title": "Project Administrator",
@@ -873,20 +862,7 @@
       "job_id": "2345414",
       "posted": "06 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:05.580806+00:00"
-    },
-    {
-      "title": "Software Developer – Level 3 – Senior",
-      "company": "Tumaini Consulting",
-      "location": "Sandton",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344547-software-developer-level-3-senior-sandton/",
-      "job_id": "2344547",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.017677+00:00"
+      "scraped_at": "2026-03-13T19:16:49.783934+00:00"
     },
     {
       "title": "Software Engineer / Developer",
@@ -899,7 +875,20 @@
       "job_id": "2322258",
       "posted": "11 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.018295+00:00"
+      "scraped_at": "2026-03-13T19:17:19.379236+00:00"
+    },
+    {
+      "title": "Software Developer – Level 3 – Senior",
+      "company": "Tumaini Consulting",
+      "location": "Sandton",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2344547-software-developer-level-3-senior-sandton/",
+      "job_id": "2344547",
+      "posted": "04 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:17:19.379646+00:00"
     },
     {
       "title": "Software Developer",
@@ -912,7 +901,20 @@
       "job_id": "2346681",
       "posted": "12 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.019919+00:00"
+      "scraped_at": "2026-03-13T19:17:19.380026+00:00"
+    },
+    {
+      "title": "Senior Software Developer",
+      "company": "Persona Staff",
+      "location": "Cape Town Northern Suburbs",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2332454-senior-software-developer-cape-town-northern-suburbs/",
+      "job_id": "2332454",
+      "posted": "13 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:17:19.380431+00:00"
     },
     {
       "title": "Software Engineer / Developer",
@@ -925,20 +927,7 @@
       "job_id": "2322237",
       "posted": "11 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.020391+00:00"
-    },
-    {
-      "title": "Senior Software Developer",
-      "company": "Persona Staff",
-      "location": "Cape Town Northern Suburbs",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2332454-senior-software-developer-cape-town-northern-suburbs/",
-      "job_id": "2332454",
-      "posted": "27 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.021090+00:00"
+      "scraped_at": "2026-03-13T19:17:19.380813+00:00"
     },
     {
       "title": "Senior Software Developer",
@@ -951,7 +940,7 @@
       "job_id": "2341951",
       "posted": "23 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.021729+00:00"
+      "scraped_at": "2026-03-13T19:17:19.381196+00:00"
     },
     {
       "title": "Software Developer – Level 3 - Senior",
@@ -964,7 +953,7 @@
       "job_id": "2341981",
       "posted": "23 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.022128+00:00"
+      "scraped_at": "2026-03-13T19:17:19.381577+00:00"
     },
     {
       "title": "Java Developer",
@@ -977,7 +966,7 @@
       "job_id": "2344473",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.022520+00:00"
+      "scraped_at": "2026-03-13T19:17:19.381968+00:00"
     },
     {
       "title": "Java Developer",
@@ -990,33 +979,7 @@
       "job_id": "2344472",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.023593+00:00"
-    },
-    {
-      "title": "Junior Application Software Developer",
-      "company": "E&D Recruiters",
-      "location": "East Rand",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2334825-junior-application-software-developer-east-rand/",
-      "job_id": "2334825",
-      "posted": "24 Feb 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:53:30.025193+00:00"
-    },
-    {
-      "title": "Senior .Net Developer",
-      "company": "Senior .Net Developer",
-      "location": "Gauteng",
-      "job_type": "Contract",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2345870-senior-net-developer-gauteng/",
-      "job_id": "2345870",
-      "posted": "10 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.151517+00:00"
+      "scraped_at": "2026-03-13T19:17:19.382364+00:00"
     },
     {
       "title": "Java Developer",
@@ -1029,7 +992,33 @@
       "job_id": "2344474",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.152907+00:00"
+      "scraped_at": "2026-03-13T19:17:19.382750+00:00"
+    },
+    {
+      "title": "Senior .Net Developer",
+      "company": "Senior .Net Developer",
+      "location": "Gauteng",
+      "job_type": "Contract",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2345870-senior-net-developer-gauteng/",
+      "job_id": "2345870",
+      "posted": "10 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:17:48.180033+00:00"
+    },
+    {
+      "title": "Draughtsperson Programmer",
+      "company": "Draughtsperson Programmer",
+      "location": "Cape Town Northern Suburbs",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2347004-draughtsperson-programmer-cape-town-northern-suburbs/",
+      "job_id": "2347004",
+      "posted": "13 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:17:48.180490+00:00"
     },
     {
       "title": "Junior CRM System Developer",
@@ -1042,46 +1031,33 @@
       "job_id": "2346082",
       "posted": "10 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.153312+00:00"
+      "scraped_at": "2026-03-13T19:17:48.181034+00:00"
     },
     {
-      "title": "Web Developer",
-      "company": "Anchora",
-      "location": "GautengRemote",
+      "title": "Excel Systems Developer",
+      "company": "Western Cape Recruitment",
+      "location": "Cape Town Northern Suburbs",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2341088-web-developer-gauteng/",
-      "job_id": "2341088",
-      "posted": "03 Mar 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2344996-excel-systems-developer-cape-town-northern-suburbs/",
+      "job_id": "2344996",
+      "posted": "13 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.154769+00:00"
+      "scraped_at": "2026-03-13T19:17:48.183491+00:00"
     },
     {
-      "title": "Rating Developer",
-      "company": "Goldman Tech Resourcing",
-      "location": "Johannesburg",
+      "title": "Excel Systems Developer",
+      "company": "Western Cape Recruitment",
+      "location": "Cape Town Northern Suburbs",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344475-rating-developer-johannesburg/",
-      "job_id": "2344475",
-      "posted": "04 Mar 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2347111-excel-systems-developer-cape-town-northern-suburbs/",
+      "job_id": "2347111",
+      "posted": "13 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.155880+00:00"
-    },
-    {
-      "title": "Specialist: Developer",
-      "company": "MSP Staffing (PTY) LTD",
-      "location": "Edenvale",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344460-specialist-developer-edenvale/",
-      "job_id": "2344460",
-      "posted": "04 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:54:01.157948+00:00"
+      "scraped_at": "2026-03-13T19:17:48.183857+00:00"
     },
     {
       "title": "Backend Engineer / Software Architect",
@@ -1094,7 +1070,7 @@
       "job_id": "2344458",
       "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.638769+00:00"
+      "scraped_at": "2026-03-13T19:19:01.914092+00:00"
     },
     {
       "title": "Software Engineer (Algorithms)",
@@ -1107,7 +1083,7 @@
       "job_id": "2345027",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.639905+00:00"
+      "scraped_at": "2026-03-13T19:19:01.914769+00:00"
     },
     {
       "title": "Python Engineer",
@@ -1120,33 +1096,7 @@
       "job_id": "2343648",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.640327+00:00"
-    },
-    {
-      "title": "Senior Full Stack Software Engineer",
-      "company": "Hire Resolve",
-      "location": "Cape TownRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343566-senior-full-stack-software-engineer-cape-town/",
-      "job_id": "2343566",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.640837+00:00"
-    },
-    {
-      "title": "Senior Full Stack Software Engineer",
-      "company": "Hire Resolve",
-      "location": "Cape TownRemote",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2343562-senior-full-stack-software-engineer-cape-town/",
-      "job_id": "2343562",
-      "posted": "02 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.641234+00:00"
+      "scraped_at": "2026-03-13T19:19:01.915203+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1159,7 +1109,33 @@
       "job_id": "2343565",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.641633+00:00"
+      "scraped_at": "2026-03-13T19:19:01.915598+00:00"
+    },
+    {
+      "title": "Senior Full Stack Software Engineer",
+      "company": "Hire Resolve",
+      "location": "Cape TownRemote",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343566-senior-full-stack-software-engineer-cape-town/",
+      "job_id": "2343566",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:19:01.915986+00:00"
+    },
+    {
+      "title": "Senior Full Stack Software Engineer",
+      "company": "Hire Resolve",
+      "location": "Cape TownRemote",
+      "job_type": "Permanent",
+      "salary": "Not specified",
+      "summary": "",
+      "url": "https://www.careers24.com/jobs/adverts/2343562-senior-full-stack-software-engineer-cape-town/",
+      "job_id": "2343562",
+      "posted": "02 Mar 2026",
+      "source": "Careers24",
+      "scraped_at": "2026-03-13T19:19:01.916385+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1172,7 +1148,7 @@
       "job_id": "2343564",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.642021+00:00"
+      "scraped_at": "2026-03-13T19:19:01.916761+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1185,33 +1161,20 @@
       "job_id": "2343563",
       "posted": "02 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:06.642421+00:00"
+      "scraped_at": "2026-03-13T19:19:01.917144+00:00"
     },
     {
-      "title": "Excel Systems Developer",
-      "company": "Western Cape Recruitment",
-      "location": "Cape Town Northern Suburbs",
+      "title": "Rating Developer",
+      "company": "Goldman Tech Resourcing",
+      "location": "Johannesburg",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2344996-excel-systems-developer-cape-town-northern-suburbs/",
-      "job_id": "2344996",
-      "posted": "09 Mar 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2344475-rating-developer-johannesburg/",
+      "job_id": "2344475",
+      "posted": "04 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:35.361811+00:00"
-    },
-    {
-      "title": "Excel Systems Developer",
-      "company": "Western Cape Recruitment",
-      "location": "Cape Town Northern Suburbs",
-      "job_type": "Permanent",
-      "salary": "Not specified",
-      "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2346247-excel-systems-developer-cape-town-northern-suburbs/",
-      "job_id": "2346247",
-      "posted": "11 Mar 2026",
-      "source": "Careers24",
-      "scraped_at": "2026-03-12T21:55:35.362184+00:00"
+      "scraped_at": "2026-03-13T19:19:33.204482+00:00"
     },
     {
       "title": "Senior Test Automation Engineer",
@@ -1224,7 +1187,7 @@
       "job_id": "2340139",
       "posted": "16 Feb 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:56:54.949180+00:00"
+      "scraped_at": "2026-03-13T19:20:44.694196+00:00"
     },
     {
       "title": "Test Analyst",
@@ -1237,7 +1200,7 @@
       "job_id": "2333118",
       "posted": "20 Jan 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:56:54.949638+00:00"
+      "scraped_at": "2026-03-13T19:20:44.694949+00:00"
     },
     {
       "title": "Software Solutions Sales Executive (SaaS)",
@@ -1250,7 +1213,7 @@
       "job_id": "2344943",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:56:58.410147+00:00"
+      "scraped_at": "2026-03-13T19:20:47.612255+00:00"
     },
     {
       "title": "Software Solutions Sales Executive (SaaS)",
@@ -1263,20 +1226,20 @@
       "job_id": "2344968",
       "posted": "05 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:56:58.410918+00:00"
+      "scraped_at": "2026-03-13T19:20:47.613066+00:00"
     },
     {
-      "title": "Senior Project Manager SAP, Infrastructure and Software Development",
-      "company": "AVI Limited",
-      "location": "Johannesburg",
+      "title": "Solution Architect (Cloud & Software Engineering) - Cape Town",
+      "company": "Solution Architect (Cloud & Software Engineering) - Cape Town",
+      "location": "Cape Town",
       "job_type": "Permanent",
       "salary": "Not specified",
       "summary": "",
-      "url": "https://www.careers24.com/jobs/adverts/2346614-senior-project-manager-sap-infrastructure-and-software-development-johannesburg/",
-      "job_id": "2346614",
-      "posted": "12 Mar 2026",
+      "url": "https://www.careers24.com/jobs/adverts/2347010-solution-architect-cloud-software-engineering-cape-town-cape-town/",
+      "job_id": "2347010",
+      "posted": "13 Mar 2026",
       "source": "Careers24",
-      "scraped_at": "2026-03-12T21:56:58.411664+00:00"
+      "scraped_at": "2026-03-13T19:20:47.613493+00:00"
     }
   ]
 }

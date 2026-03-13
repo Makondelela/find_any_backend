@@ -81,7 +81,25 @@ DEFAULT_SEARCH_SLUGS = [
     "Software Tester",
     "QA Engineer",
     "Quality Assurance Engineer",
-    "Test Engineer"
+    "Test Engineer",
+
+
+    # IT Support / Technical Support
+    "IT Support",
+    "Technical Support",
+    "Support Engineer",
+    "Application Support",
+    "Production Support",
+    "Customer Support Engineer",
+    "Systems Support",
+    "Help Desk",
+    "Service Desk",
+    "Desktop Support",
+    "NOC Engineer",
+    "Network Operations Center",
+    "IT Operations",
+    "Operations Engineer",
+    "Technical Operations",
 ]
 
 

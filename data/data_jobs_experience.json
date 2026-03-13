@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "total_jobs": 3649,
-    "jobs_with_experience": 2862,
-    "jobs_without_experience": 787,
+    "total_jobs": 3746,
+    "jobs_with_experience": 2930,
+    "jobs_without_experience": 816,
     "breakdown": {
-      "junior": 541,
-      "mid": 1416,
-      "senior": 905,
-      "with_numeric_years": 2862
+      "junior": 553,
+      "mid": 1449,
+      "senior": 928,
+      "with_numeric_years": 2930
     }
   },
   "experience": [
@@ -29202,6 +29202,782 @@
       "level": "junior",
       "raw_text": "2+ years",
       "has_requirement": true
+    },
+    {
+      "job_id": "2347150",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of\n3\nyears",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347004",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347111",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347010",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635165",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635173",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635219",
+      "min_years": 5,
+      "max_years": 8,
+      "level": "mid",
+      "raw_text": "5 - 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635157",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635222",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635210",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635220",
+      "min_years": 8,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "8-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635158",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: principal",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635170",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635227",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635212",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635200",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635195",
+      "min_years": 30,
+      "max_years": 30,
+      "level": "senior",
+      "raw_text": "over 30 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635156",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2633730",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635172",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635217",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635164",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635199",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635211",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635175",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "minimum of 7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635152",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "minimum\n7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635207",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635201",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635174",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635160",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635155",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635154",
+      "min_years": 15,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "15+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635205",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635162",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4152422",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161774",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4152268",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005592/Caity",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005590/Mfund",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005593/Caity",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005594/Rein",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005595/Rein",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "7 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007516/STU",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007403/DAP",
+      "min_years": 4,
+      "max_years": 4,
+      "level": "mid",
+      "raw_text": "4 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005529/Mfund",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005514/Ally",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007323/DAP",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007402/DAP",
+      "min_years": 1,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "1-2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005427/Raees",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-aristo-sourcing-4384242400",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analytics-engineer-at-parvana-4385373854",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-ai-analyst-at-executiveplacements-com-4384212709",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2-3years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/solution-architect-at-control-risks-4385327984",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-architect-at-ovations-talent-sourcing-4383123067",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/cloud-solution-architect-at-penta-consulting-4385374272",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/cloud-solutions-architect-remote-at-techconnect-it-solutions-4384215305",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/head-of-bos-enterprise-architecture-at-ericsson-4384210633",
+      "min_years": 12,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "12+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-dataorbis-4383099000",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/manager-fraud-intelligence-and-analytics-at-momo-from-mtn-4384847699",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/salaried-financial-advisor-at-old-mutual-south-africa-4366383491",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-analyst-ii-at-fnb-south-africa-4383123286",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-analyst-at-job-duck-4385525174",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/team-lead-business-intelligence-reporting-at-digioutsource-4384260201",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-executiveplacements-com-4384222350",
+      "min_years": 4,
+      "max_years": 4,
+      "level": "mid",
+      "raw_text": "4 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-at-watu-credit-4385180344",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-visualization-engineer-remote-at-north-star-staffing-4385329896",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-warehouse-engineer-at-parvana-4385381494",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/continuous-improvement-specialist-at-merchants-4384216861",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/econometric-data-analyst-remote-at-north-star-staffing-4385338696",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/process-governance-data-analyst-at-the-building-company-4383087720",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-cloud-specialist-at-indsafri-4383017336",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-enrichment-specialist-south-africa-at-dedicated-it-4384880044",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/deputy-at-north-west-university-noordwes-universiteit-4383102475",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-intermediate-bellville-12-month-contract-at-smart4-energy-4383093097",
+      "min_years": 4,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "4-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/agile-business-analyst-at-smart4-energy-4383083902",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "minimum 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-solutions-analyst-at-hollard-insurance-4383539600",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-ilr-at-parvana-4348711305",
+      "min_years": 2,
+      "max_years": null,
+      "level": "junior",
+      "raw_text": "2+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-software-engineer-typescript-%2442-hr-remote-at-crossing-hurdles-4384241881",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-developer-at-intx-insurance-software-4383115936",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/front-end-developer-at-somewhere-4382442179",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/graduate-engineer-at-smec-an-sj-group-company-4372360805",
+      "min_years": 0,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "0- 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-intermediate-flutter-developer-at-waltworks-4383071588",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-typescript-%2442-hr-remote-at-crossing-hurdles-4384249106",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/visualization-engineer-%2465-hr-remote-at-crossing-hurdles-4383570724",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-at-intx-insurance-software-4383131461",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4385307306",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4385196930",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4385316022",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-engineer-ii-cape-town-at-morae-4384237790",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-tester-fintech-payments-at-black-pen-recruitment-4385366511",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4385318010",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4385311224",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/administrative-assistant-south-africa-at-remoteva-4385399658",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ncv-computer-science-software-development-pl1-x-2-at-thekwini-tvet-college-4382581808",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/administrative-assistant-south-africa-at-remoteva-4385506341",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/administrative-assistant-south-africa-at-remoteva-4385508301",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/administrative-assistant-south-africa-at-remoteva-4385501665",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
     }
   ]
 }

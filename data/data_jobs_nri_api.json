@@ -55,13 +55,136 @@
       "Software Tester",
       "QA Engineer",
       "Quality Assurance Engineer",
-      "Test Engineer"
+      "Test Engineer",
+      "IT Support",
+      "Technical Support",
+      "Support Engineer",
+      "Application Support",
+      "Production Support",
+      "Customer Support Engineer",
+      "Systems Support",
+      "Help Desk",
+      "Service Desk",
+      "Desktop Support",
+      "NOC Engineer",
+      "Network Operations Center",
+      "IT Operations",
+      "Operations Engineer",
+      "Technical Operations"
     ],
     "niche": "IT",
-    "total_jobs": 85,
-    "scraped_at": "2026-03-12T22:05:22.544613+00:00"
+    "total_jobs": 94,
+    "scraped_at": "2026-03-13T19:29:05.289011+00:00"
   },
   "jobs": [
+    {
+      "title": "Senior Business Intelligence Developer",
+      "company": "Network Recruitment International",
+      "location": "Western Cape > Cape Town: Southern Suburbs",
+      "region": "Western Cape",
+      "town": "Cape Town: Southern Suburbs",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Are you driven by data and passionate about turning complex information into meaningful insights that influence real business decisions? This opportunity offers a chance to work in a structured, data ",
+      "brief_description": "Are you driven by data and passionate about turning complex information into meaningful insights that influence real business decisions? This opportunity offers a chance to work in a structured, data focused environment where your expertise will directly support strategic and operational outcomes within a well established financial setting.",
+      "detail_description": "Company and Job Description You will join a high performing technology team operating within a regulated and detail oriented industry. The role focuses on delivering reliable reporting and analytical solutions that empower stakeholders across the business. This position is ideal for an experienced BI professional who enjoys ownership, problem solving and collaborating with both technical and non technical teams. Exposure to modern data platforms and the ability to influence solution design are key benefits of this opportunity. Key Responsibilities Gather and translate business requirements into clear data and reporting solutions Design and develop end to end business intelligence solutions Integrate data from various systems to create accurate and trusted datasets Build data models that support reporting and analytical needs Develop reports and dashboards that provide actionable insights Support and guide junior team members within the BI function Job Experience and Skills Required Degree in Information Systems Computer Science or a related discipline Minimum of five years experience in a business intelligence development role Proven delivery of data focused projects within a corporate environment Strong SQL capability Experience with Power BI or Qlik Solid understanding of data modelling concepts High level of numerical ability Strong analytical and logical thinking Confident communication across different business levels Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005592/Caity",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005592/Caity",
+      "vacancy_ref": "BIT005592/Caity",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.267801+00:00"
+    },
+    {
+      "title": "NOC Engineer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Are you a highly skilled NOC Engineer with a passion for maintaining high‑availability environments and resolving complex technical issues? This is an exciting opportunity to join a dynamic organisati",
+      "brief_description": "Are you a highly skilled NOC Engineer with a passion for maintaining high‑availability environments and resolving complex technical issues? This is an exciting opportunity to join a dynamic organisation where you will support critical infrastructure and ensure seamless operational performance",
+      "detail_description": "Our client is a respected technology‑driven organisation focused on delivering secure, reliable, and high‑performing infrastructure services. As a NOC Engineer , you will be responsible for monitoring, maintaining, and supporting their network and compute environment, ensuring the uninterrupted availability of systems and services. You will work with a range of modern tools and platforms, collaborate with Tier 2 and Tier 3 teams, and play a key role in identifying issues, performing root‑cause analysis, implementing fixes, and improving system stability. This role is ideal for someone with strong technical abilities, excellent troubleshooting skills, and a customer‑focused approach. Key Responsibilities: Monitor network devices, servers, applications, and compute infrastructure using tools such as Site24x7, Zabbix, and SolarWinds. Respond to alerts, troubleshoot incidents, and escalate issues according to SLA and escalation procedures. Document incidents, service requests, and resolutions using Jira Service Desk. Perform routine system maintenance, health checks, and security compliance tasks. Conduct root‑cause analysis and implement preventative and corrective actions. Manage OS and third‑party software patching across data centres and client devices. Ensure that backups run successfully and adhere to company retention policies. Install, configure, and maintain routers, switches, firewalls, and associated software. Manage ticket queues with timely communication and resolution. Collaborate with Tier 2, Tier 3, and external vendors to resolve complex technical issues. Support change management activities, including upgrades, improvements, and maintenance. Monitor vulnerabilities and suspicious activity to ensure network health. Provide phone, email, and ticket-based support within SLA targets. Participate in the after‑hours on‑call rotation for critical incident response. Job Experience and Skills Required: Education: Diploma or Degree in Information Technology, Computer Science, or a related field. Experience: 5&ndash;7 years&rsquo; experience in a NOC, IT operations, or network support role. Experience with Jira Service Desk or similar ITSM platforms. Skills: Strong understanding of networking protocols (TCP/IP, DNS, and DHCP). Knowledge of IP addressing and subnetting. Experience with monitoring tools, such as Zabbix, SolarWinds, Nagios, PRTG, or Site24x7. Strong troubleshooting and analytical skills. Active Directory administration experience. Familiarity with firewalls, VPNs, and routing fundamentals. Knowledge of Windows Server (2016, 2019, and 2022) and Linux. Experience administering Microsoft 365, Intune, and Azure. Virtualisation experience (VMware and/or Hyper‑V). Experience with backup tools, such as Veeam or Commvault. Strong communication, documentation, and time management skills. Ability to work well under pressure with a high level of customer service focus. Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers Data Analysts IT Support Technicians Test Analysts DevOps Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Mfundo Mthembu IT Recruitment specialist Connect with me on LinkedIn!: www.linkedin.com/in/mfundo-mthembu-614413200",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005590/Mfund",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005590/Mfund",
+      "vacancy_ref": "BIT005590/Mfund",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.268229+00:00"
+    },
+    {
+      "title": "Systems Analyst",
+      "company": "Network Recruitment International",
+      "location": "Western Cape > Cape Town: Southern Suburbs",
+      "region": "Western Cape",
+      "town": "Cape Town: Southern Suburbs",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Do you enjoy understanding how systems truly work and improving them to support critical business operations? This role offers an opportunity to work in a data intensive investment environment where a",
+      "brief_description": "Do you enjoy understanding how systems truly work and improving them to support critical business operations? This role offers an opportunity to work in a data intensive investment environment where attention to detail, problem solving and system insight are highly valued.",
+      "detail_description": "Company and Job Description You will form part of a technology focused team that works closely with investment professionals to ensure the reliability and accuracy of key business systems. The role centres on supporting, configuring and analysing systems used within an asset management setting. You will gain exposure to financial instruments, market data and complex calculations while contributing to system stability and process improvement. This position is well suited to an analytical individual who enjoys both technical investigation and business interaction. Key Responsibilities Monitor daily system performance and overall stability Ensure accuracy and integrity of business and market data Analyse system behaviour to identify issues and improvement opportunities Implement configuration changes based on business requirements Test new functionality and financial instruments to confirm correct system output Work with vendors and internal technology teams to support system changes Job Experience and Skills Required Degree in Commerce Business Science or Science with a focus on investments finance mathematics or accounting One to two years experience in a systems analysis or technology focused role Exposure to system support configuration or data analysis environments Basic exposure to programming or scripting Strong analytical and numerical ability Confident problem solving skills Ability to manage complexity and prioritise tasks Clear communication with both technical and business stakeholders Interest in financial systems and market instruments Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005593/Caity",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005593/Caity",
+      "vacancy_ref": "BIT005593/Caity",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.268456+00:00"
+    },
+    {
+      "title": "Senior Mobile Developer (React Native)",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg East",
+      "region": "Gauteng",
+      "town": "Johannesburg East",
+      "job_type": "Not specified",
+      "salary": "R50000.00 - R65000.00 per annum",
+      "summary": "Our client is looking for a skilled Senior Mobile Developer to join their team and help build, maintain, and enhance their mobile and web solutions. If you are passionate about mobile technologies, Re",
+      "brief_description": "Our client is looking for a skilled Senior Mobile Developer to join their team and help build, maintain, and enhance their mobile and web solutions. If you are passionate about mobile technologies, React Native, and creating high-quality, scalable applications, this role is for you.",
+      "detail_description": "Responsibilities: Build, test, and deploy mobile apps using React Native. Develop web portals using React JS and Typescript. Support existing functionality and develop new components. Understand product and domain elements; collaborate with business analysts to refine and implement requirements. Refactor and improve code to maintain adaptability and long-term maintainability. Work effectively both independently and within a team, adhering to software development standards and processes. Evaluate and improve application performance and high availability. Create unit and integrated system tests to ensure developed functionality works as intended. Produce technical documentation explaining system components and usage. Perform root cause analysis on bugs and implement fixes in an integrated system. Deploy applications on servers when required. Execute functional test scenarios (development testing). Analyse and enhance existing code and system functionality according to business needs. Manage mobile app stores, developer accounts, and related services. Requirements: Grade 12 / Matric with a relevant tertiary qualification in IT or Computer/Engineering Sciences, or Matric with at least 5 years of relevant development experience. Minimum 5 years&rsquo; experience as a mobile developer in a software development environment. Experience using API services to integrate with mobile applications. Experience building API services (.NET Framework) for mobile integration. Experience designing and maintaining relational databases. Proficiency in accessing mobile device components (camera, geolocation) and deploying these features. Ability to mentor team members and work collaboratively. Solid understanding of SDLC processes, tools, and Agile software development methodologies. Skills & Technologies: React Native, React JS, Javascript, Typescript C#.NET, Microsoft .NET Framework Mobile store deployments: iOS, Android, Huawei API integration: Web/RESTful services, XML, JSON Relational databases: Microsoft SQL Server Azure DevOps: Repos, CI pipelines, and releases Strong understanding of OOP principles, design patterns, and best practices Experience with Google Services, Firebase, Sentry Tools: Visual Studio, VS Code, Android Studio, XCode, SoapUI/Postman Advantageous: Experience with .NET Core, Web API, MVC Knowledge of security vulnerabilities and impact on solutions Experience monitoring and optimizing mobile app performance and security For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Reinie Du Preez Senior Specialist Recruitment Consultant rdpreez@networkrecruitment.co.za",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005594/Rein",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005594/Rein",
+      "vacancy_ref": "BIT005594/Rein",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.268729+00:00"
+    },
+    {
+      "title": "Natural Adabas Developer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg East",
+      "region": "Gauteng",
+      "town": "Johannesburg East",
+      "job_type": "Not specified",
+      "salary": "R60000.00 - R75000.00 per annum",
+      "summary": "An industry leader in the automotive sector is looking for a skilled Natural Adabas Developer to join their team. This role focuses on the development, optimization, and integration of core systems in",
+      "brief_description": "An industry leader in the automotive sector is looking for a skilled Natural Adabas Developer to join their team. This role focuses on the development, optimization, and integration of core systems in a dynamic mainframe environment.",
+      "detail_description": "Key Responsibilities: Design, develop, and implement complex Natural Adabas applications. Analyze system requirements and translate them into scalable and efficient solutions. Optimize existing systems for performance, reliability, and maintainability. Collaborate with stakeholders to identify and resolve technical challenges. Ensure adherence to best practices, coding standards, and security protocols. Manage the integration of Natural Adabas systems with other technologies. Requirements: 3&ndash;7 years of experience in Natural Adabas development. Expertise in mainframe environments and Adabas database management. Advanced knowledge of Natural programming and Adabas utilities. Proven experience leading development projects and mentoring teams. Strong understanding of SDLC and Agile methodologies. Excellent problem-solving, analytical, and decision-making skills. Outstanding communication and leadership abilities. Nice to Have: Experience with Predict or similar dictionary tools. Knowledge of modern integration techniques and tools. Familiarity with cloud technologies and migration strategies. For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Reinie Du Preez Senior Specialist Recruitment Consultant rdpreez@networkrecruitment.co.za",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005595/Rein",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005595/Rein",
+      "vacancy_ref": "BIT005595/Rein",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.268903+00:00"
+    },
+    {
+      "title": "Senior Front End Developer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "A leading technology company in the mining industry is looking for a Senior Front End Developer to join their growing team!",
+      "brief_description": "A leading technology company in the mining industry is looking for a Senior Front End Developer to join their growing team!",
+      "detail_description": "Job Description: Develop and enhance Windows Forms UI for C# desktop applications Focus on usability, visual consistency, and strong user experience Translate user and business requirements into intuitive interfaces Modernise and improve existing UI designs with strong attention to detail Key Responsibilities: Design and develop Windows Forms UI for new and existing modules Ensure consistent look, feel, and usability across the application Implement and optimise UI using WinForms and Telerik controls Modernise legacy interfaces to improve layout, workflow, and user experience Identify and resolve usability issues and UI inconsistencies Collaborate with stakeholders and users to translate feedback into UI improvements Develop custom controls and reusable UI components where needed Maintain clean, well-documented front-end code following UI standards Conduct thorough UI testing , including edge-case scenarios Support UI design discussions, mock-ups, documentation, and demonstrations Job Experience and Skills Required: Degree or diploma in Computer Science, Computer Engineering, Information Science, or related field 5+ years&rsquo; experience developing software with strong C# Windows Forms UI expertise Proven ability to design, enhance, and maintain complex desktop application interfaces Strong experience with WinForms architecture, Telerik controls, and custom UI components Proficiency in .NET Framework, Windows Services, WCF, and Entity Framework Solid understanding of UI/UX principles, object-oriented design, and clean coding practices Advantageous: experience with engineering software, REST APIs, WinUI, or Xamarin/.NET MAUI Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. Connect with me on LinkedIn! https://www.linkedin.com/in/stuart-dube-a22871309/",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007516/STU",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007516/STU",
+      "vacancy_ref": "ITE007516/STU",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.269136+00:00"
+    },
     {
       "title": "Data Scientist",
       "company": "Network Recruitment International",
@@ -72,13 +195,13 @@
       "salary": "Not specified",
       "summary": "Opportunity for Data Scientist who lives for tough problems, messy data, and the thrill of building AI solutions that actually get used!",
       "brief_description": "Opportunity for Data Scientist who lives for tough problems, messy data, and the thrill of building AI solutions that actually get used!",
-      "detail_description": "Join a hands‑on, collaborative team that genuinely enjoys the work. Our Client partners closely with the business, dive deep into their challenges, and design practical, high‑impact solutions. You&rsquo;ll work with modern tools and platforms like SAS, Python, SQL, AWS, and SAS Viya, and build everything from exploratory analyses to full production‑ready models. With our Client you can expect variety, ownership and growth. Responsibilities: Build and deploy statistical + machine learning models using SAS, Python, and SQL Design & implement AI-driven solutions for complex business challenges Own the data pipeline: source, clean, prepare, explore, and analyse Crack logic problems and bring structure to unstructured challenges Create visualizations and dashboards to tell stories with data Work in modern environments using AWS and SAS Viya Requirements: Honours / Master&rsquo;s / PhD in a quantitative field Deep understanding of statistics & modelling theory 4 years of experience building & deploying ML/statistical models Strong data‑wrangling and preparation skills Exposure to cloud platforms (AWS) and SAS Viya Experience with visualization tools (SAS Visual Analytics or similar) Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers/Engineers/Architects Data Analytics Specialists PM/BA/Scrum Masters DevOps and Infrastructure Experts If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information contact: Samkelisiwe Makhanye Recruitment Consultant 011 622 9526",
+      "detail_description": "Join a hands‑on, collaborative team that genuinely enjoys their work. Our client partners closely with businesses, dives deep into challenges, and designs practical, high‑impact solutions. You&rsquo;ll work with modern tools and platforms, like SAS, Python, SQL, AWS, and SAS Viya, and build everything from exploratory analyses to full production‑ready models. With our client, you can expect variety, ownership and growth. Responsibilities: Build and deploy statistical & machine learning models using SAS, Python, and SQL Design & implement AI-driven solutions for complex business challenges Own the data pipeline: Source, clean, prepare, explore, and analyse Crack logic problems and bring structure to unstructured challenges Create visualizations and dashboards to tell stories with data Work in modern environments using AWS and SAS Viya Requirements: Honours / Master&rsquo;s / PhD in a quantitative field Deep understanding of statistics & modelling theory 4 years of experience building & deploying ML/statistical models Strong data‑wrangling and preparation skills Exposure to cloud platforms (AWS) and SAS Viya Experience with visualization tools (SAS Visual Analytics or similar) Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers/Engineers/Architects Data Analytics Specialists PM/BA/Scrum Masters DevOps and Infrastructure Experts If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information contact: Samkelisiwe Makhanye Recruitment Consultant 011 622 9526",
       "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005583/Sam",
       "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005583/Sam",
       "vacancy_ref": "BIT005583/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.520653+00:00"
+      "scraped_at": "2026-03-13T19:29:05.269343+00:00"
     },
     {
       "title": "Native Mobile Developers",
@@ -88,15 +211,15 @@
       "town": "Cape Town: City Bowl",
       "job_type": "Not specified",
       "salary": "Not specified",
-      "summary": "Looking for passionate Mobile Developers who can design, build, and scale high‑quality mobile applications across Android and iOS frameworks",
-      "brief_description": "Looking for passionate Mobile Developers who can design, build, and scale high‑quality mobile applications across Android and iOS frameworks",
-      "detail_description": "Our clients are always on the look-out for Native Mobile Developers. Whether your strength is Kotlin, Swift, Angular, or Ionic, I want to help developers who care about performance, usability, and creating apps that users love. As a specialist IT Recruiter, I would love to help you find your next role: Requirements: Completed Bachelor's qualification 5 years of experience building and maintain high‑quality mobile apps (iOS, Android, Hybrid) A problem‑solver who thinks creatively and logically Apply now to join my database! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers/Engineers/Architects Data Analytics Specialists PM/BA/Scrum Masters DevOps and Infrastructure Experts If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information contact: Samkelisiwe Makhanye Recruitment Consultant 011 622 9526",
+      "summary": "Looking for passionate Mobile Developers who can design, build, and scale high‑quality mobile applications across Android and iOS frameworks.",
+      "brief_description": "Looking for passionate Mobile Developers who can design, build, and scale high‑quality mobile applications across Android and iOS frameworks.",
+      "detail_description": "Our clients are always on the look-out for Native Mobile Developers. Whether your strength is in Kotlin, Swift, Angular, or Ionic, I want to help Developers who care about performance, usability, and creating apps that users love. As a Specialist IT Recruiter, I would love to help you find your next role! Requirements: Completed Bachelor's qualification 5 years of experience building and maintaining high‑quality mobile apps (iOS, Android, and hybrid) A problem‑solver who thinks creatively and logically Apply now to join my database! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers/Engineers/Architects Data Analytics Specialists PM/BA/Scrum Masters DevOps and Infrastructure Experts If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information contact: Samkelisiwe Makhanye Recruitment Consultant 011 622 9526",
       "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005584/Sam",
       "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005584/Sam",
       "vacancy_ref": "BIT005584/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.520820+00:00"
+      "scraped_at": "2026-03-13T19:29:05.269480+00:00"
     },
     {
       "title": "Senior Business Analyst",
@@ -107,14 +230,14 @@
       "job_type": "Not specified",
       "salary": "Not specified",
       "summary": "Looking to influence meaningful system change while collaborating with skilled professionals in a fast moving investment environment? This opportunity offers exposure to complex platforms, data driven",
-      "brief_description": "Looking to influence meaningful system change while collaborating with skilled professionals in a fast moving investment environment? This opportunity offers exposure to complex platforms, data driven decision making and long term career growth within a stable and forward thinking organisation.",
-      "detail_description": "Company and Job Description This role sits within a technology focused delivery team supporting investment related operations. The successful individual will help turn commercial needs into technology solutions that enhance workflow, accuracy and performance. You will operate in an environment that values insight, ownership and continuous optimisation, while offering autonomy and professional respect. You will gain the chance to work on impactful initiatives that support strategic objectives while contributing to well structured and scalable systems. Key Responsibilities Translate operational requirements into clear system focused outcomes Create detailed solution and requirement documentation Evaluate existing platforms and identify improvement opportunities Partner with internal teams and external service providers to deliver enhancements Support testing activities and ensure quality aligned delivery Guide and support less experienced team members Foster productive relationships across business units Job Experience and Skills Required Degree in information systems computer science or a related field Minimum of five years working in a business analysis capacity within technology driven environments Demonstrated involvement in successful project execution Exposure to financial services will be beneficial Strong understanding of data structures and reporting concepts Confidence in interpreting business information and system logic Ability to engage stakeholders at all levels Clear written and verbal communication Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
+      "brief_description": "Looking to influence meaningful system change while collaborating with skilled professionals in a fast moving investment environment? This opportunity offers exposure to complex platforms, data driven decision making and long-term career growth within a stable and forward thinking organisation.",
+      "detail_description": "This role sits within a technology focused delivery team supporting investment related operations. The successful individual will help turn commercial needs into technology solutions that enhance workflow, accuracy and performance. You will operate in an environment that values insight, ownership and continuous optimisation, while offering autonomy and professional respect. You will gain the chance to work on impactful initiatives that support strategic objectives while contributing to well structured and scalable systems. Key Responsibilities: Translate operational requirements into clear system focused outcomes Create detailed solution and requirement documentation Evaluate existing platforms and identify improvement opportunities Partner with internal teams and external service providers to deliver enhancements Support testing activities and ensure quality aligned delivery Guide and support less experienced team members Foster productive relationships across business units Job Experience and Skills Required: Degree in Information Systems, Computer Science or a related field Minimum of 5 years working in a business analysis capacity within technology driven environments Demonstrated involvement in successful project execution Exposure to financial services will be beneficial Strong understanding of data structures and reporting concepts Confidence in interpreting business information and system logic Ability to engage stakeholders at all levels Clear written and verbal communication Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
       "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005581/Caity",
       "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005581/Caity",
       "vacancy_ref": "BIT005581/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.521054+00:00"
+      "scraped_at": "2026-03-13T19:29:05.269696+00:00"
     },
     {
       "title": "Senior Mobile Developer (React Native)",
@@ -124,15 +247,15 @@
       "town": "Pretoria North",
       "job_type": "Not specified",
       "salary": "Not specified",
-      "summary": "Are you an experienced React Native specialist who enjoys building high‑performance mobile applications and delivering scalable, production‑ready software? This opportunity is perfect for a senior dev",
-      "brief_description": "Are you an experienced React Native specialist who enjoys building high‑performance mobile applications and delivering scalable, production‑ready software? This opportunity is perfect for a senior developer looking to contribute to high‑impact mobile and web solutions in a fast‑paced environment.",
-      "detail_description": "An established organisation within the financial services sector is seeking a Senior Mobile Developer (React Native) to join their software development team. The successful candidate will be responsible for developing and refining mobile and web applications, improving existing functionality, and contributing to architectural and performance enhancements. You&rsquo;ll collaborate closely with analysts and technical teams to interpret requirements, build well‑structured code, diagnose system issues, and ensure optimal application performance. This role requires a self‑driven, detail‑oriented individual who can work effectively in both team and independent settings. Key Responsibilities: Build, test, and deploy mobile applications using React Native . Build and deploy web portals using React JS (Typescript) . Develop and enhance new and existing components. Work with analysts to refine requirements and translate them into technical solutions. Improve code quality through refactoring and best‑practice implementation. Create unit tests, integration tests, and technical documentation. Conduct root‑cause analysis and resolve system issues. Manage mobile app store deployments (iOS, Android, Huawei). Perform functional testing and support quality testing phases. Integrate mobile applications with API services. Maintain application servers and support deployment processes. Job Experience and Skills Required Education: Grade 12 / Matric. IT-related degree/diploma OR Matric with 5+ years relevant mobile development experience. Experience: Minimum 5 years mobile development experience in a professional environment. Strong experience integrating mobile apps with API services. Experience building backend API services using .NET Framework . Proficient in relational database design and development. Experience accessing device components (camera, geolocation, etc.). Familiarity with SDLC, Agile methodologies, and development standards. Technical Skills: React Native, JavaScript, Typescript. React Native best practices & mobile architecture patterns. .NET / C#.NET (advantageous). RESTful APIs, XML, JSON. SQL Server & relational databases. Mobile store deployment for iOS, Android, and Huawei. Google Services, Firebase, Sentry. Azure DevOps (repos, CI pipelines, release management). Git, UML documentation tools. Toolsets: Visual Studio/VS Code, Android Studio, Xcode, Postman/SoapUI. Beneficial: .NET Core, Web API, MVC Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Data Engineers Software Developers Infrastructure specialists QA/Test Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles. For more information, contact: Mfundo Mthembu Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/mfundo-mthembu-614413200",
+      "summary": "Are you an experienced React Native specialist who enjoys building high‑performance mobile applications and delivering scalable, production‑ready software? This opportunity is perfect for a Senior Dev",
+      "brief_description": "Are you an experienced React Native specialist who enjoys building high‑performance mobile applications and delivering scalable, production‑ready software? This opportunity is perfect for a Senior Developer looking to contribute to high‑impact mobile and web solutions in a fast‑paced environment.",
+      "detail_description": "An established organisation within the financial services sector is seeking a Senior Mobile Developer (React Native) to join their software development team. The successful candidate will be responsible for developing and refining mobile and web applications, improving existing functionality, and contributing to architectural and performance enhancements. You&rsquo;ll collaborate closely with analysts and technical teams to interpret requirements, build well‑structured code, diagnose system issues, and ensure optimal application performance. This role requires a self‑driven, detail‑oriented individual who can work effectively in both team and independent settings. Key Responsibilities: Build, test, and deploy mobile applications using React Native . Build and deploy web portals using React.js (TypeScript) . Develop and enhance new and existing components. Work with analysts to refine requirements and translate them into technical solutions. Improve code quality through refactoring and best‑practice implementation. Create unit tests, integration tests, and technical documentation. Conduct root‑cause analysis and resolve system issues. Manage mobile app store deployments (iOS, Android, and Huawei). Perform functional testing and support quality testing phases. Integrate mobile applications with API services. Maintain application servers and support deployment processes. Job Experience and Skills Required: Education: Grade 12 / Matric. IT-related Degree/Diploma OR Matric with 5+ years' relevant mobile development experience. Experience: Minimum 5 years' mobile development experience in a professional environment. Strong experience integrating mobile apps with API services. Experience building backend API services using .NET Framework . Proficient in relational database design and development. Experience accessing device components (camera, geolocation, etc.). Familiarity with SDLC, Agile methodologies, and development standards. Technical Skills: React Native, JavaScript, and TypeScript. React Native best practices & mobile architecture patterns. .NET / C#.NET (advantageous). RESTful APIs, XML, and JSON. SQL Server & relational databases. Mobile store deployment for iOS, Android, and Huawei. Google Services, Firebase, and Sentry. Azure DevOps (repos, CI pipelines, and release management). Git and UML documentation tools. Toolsets: Visual Studio/VS Code, Android Studio, Xcode, and Postman/SoapUI. Beneficial: .Net Core, Web API, and MVC. Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Data Engineers Software Developers Infrastructure specialists QA/Test Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles. For more information, contact: Mfundo Mthembu Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/mfundo-mthembu-614413200",
       "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005586/Mfund",
       "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005586/Mfund",
       "vacancy_ref": "BIT005586/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.521420+00:00"
+      "scraped_at": "2026-03-13T19:29:05.270033+00:00"
     },
     {
       "title": "Security Analyst L1/L2",
@@ -144,13 +267,13 @@
       "salary": "Not specified",
       "summary": "A great opportunity for an experienced Security Analyst to monitor, investigate, and respond to threats across Microsoft 365, Azure, and enterprise security environments. Ideal for someone strong in S",
       "brief_description": "A great opportunity for an experienced Security Analyst to monitor, investigate, and respond to threats across Microsoft 365, Azure, and enterprise security environments. Ideal for someone strong in SIEM/SOAR, threat detection, and cloud security.",
-      "detail_description": "An established organisation is seeking a Security Analyst (L1/L2) to strengthen its security posture across cloud and on‑prem environments. The role focuses on Microsoft Sentinel, Defender, Azure security, network monitoring, and data protection. You&rsquo;ll handle alerts, respond to incidents, and collaborate with IT teams to reduce risk and improve detection capabilities. Key Responsibilities: Monitor, triage, and investigate alerts using Microsoft Sentinel . Respond to incidents (malware, phishing, identity compromise, data loss). Tune analytics rules, playbooks, automation, and dashboards. Operate the Microsoft Defender security suite (Endpoint, Identity, Cloud Apps, Office 365). Investigate threats via Defender XDR and support vulnerability remediation. Monitor and secure Azure identities, workloads, access policies, and logging. Support firewall and network security operations. Maintain incident response playbooks and documentation. Assist with vulnerability management and remediation tracking. Monitor Microsoft Purview (DLP, data classification, compliance alerts). Contribute to security policies and continuous improvement efforts. Job Experience & Skills Required Experience: 3+ years Security Analyst / SOC / cybersecurity experience. Strong experience with Microsoft 365 and Azure security. Proven incident response and threat investigation capability. Technical Skills: Microsoft Sentinel (SIEM/SOAR). Microsoft Defender suite (Endpoint, Identity, Cloud Apps, Office 365). Azure IAM, networking, security controls, Conditional Access, MFA, RBAC. Purview (DLP, information protection, compliance). Understanding of MITRE ATT&CK, SIEM concepts, cloud security fundamentals. Network security fundamentals (firewalls, VPN, IDS/IPS). Soft Skills: Strong analytical and problem‑solving skills. Clear communicator under pressure. High attention to detail; accountable and reliable. Ability to work independently and collaboratively. Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Data Engineers Software Developers Infrastructure specialists QA/Test Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles. For more information, contact: Mfundo Mthembu Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/mfundo-mthembu-614413200",
+      "detail_description": "An established organisation is seeking a Security Analyst (L1/L2) to strengthen its security posture across cloud and on‑prem environments. The role focuses on Microsoft Sentinel, Defender, Azure security, network monitoring, and data protection. You&rsquo;ll handle alerts, respond to incidents, and collaborate with IT teams to reduce risk and improve detection capabilities. Key Responsibilities: Monitor, triage, and investigate alerts using Microsoft Sentinel . Respond to incidents (malware, phishing, identity compromise, and data loss). Tune analytics rules, playbooks, automation, and dashboards. Operate the Microsoft Defender security suite (Endpoint, Identity, Cloud Apps, and Office 365). Investigate threats via Defender XDR and support vulnerability remediation. Monitor and secure Azure identities, workloads, access policies, and logging. Support firewall and network security operations. Maintain incident response playbooks and documentation. Assist with vulnerability management and remediation tracking. Monitor Microsoft Purview (DLP, data classification, and compliance alerts). Contribute to security policies and continuous improvement efforts. Job Experience & Skills Required: Experience: 3+ years' Security Analyst / SOC / cybersecurity experience. Strong experience with Microsoft 365 and Azure security. Proven incident response and threat investigation capability. Technical Skills: Microsoft Sentinel (SIEM/SOAR). Microsoft Defender suite (Endpoint, Identity, Cloud Apps, and Office 365). Azure IAM, networking, security controls, conditional access, MFA, and RBAC. Purview (DLP, information protection, and compliance). Understanding of MITRE ATT&CK, SIEM concepts, cloud security fundamentals. Network security fundamentals (firewalls, VPN, and IDS/IPS). Soft Skills: Strong analytical and problem‑solving skills. Clear communicator under pressure. High attention to detail, accountable and reliable. Ability to work independently and collaboratively. Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Data Engineers Software Developers Infrastructure specialists QA/Test Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles. For more information, contact: Mfundo Mthembu Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/mfundo-mthembu-614413200",
       "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005587/Mfund",
       "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005587/Mfund",
       "vacancy_ref": "BIT005587/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.521680+00:00"
+      "scraped_at": "2026-03-13T19:29:05.270277+00:00"
     },
     {
       "title": "Java Developer",
@@ -168,7 +291,7 @@
       "vacancy_ref": "BIT005578/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.522862+00:00"
+      "scraped_at": "2026-03-13T19:29:05.270649+00:00"
     },
     {
       "title": "Senior Angular Developer",
@@ -186,7 +309,7 @@
       "vacancy_ref": "BIT005579/Raees",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.523304+00:00"
+      "scraped_at": "2026-03-13T19:29:05.270837+00:00"
     },
     {
       "title": "Power BI Developer",
@@ -204,7 +327,7 @@
       "vacancy_ref": "BIT005580/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.523789+00:00"
+      "scraped_at": "2026-03-13T19:29:05.271103+00:00"
     },
     {
       "title": "Senior Java Developer",
@@ -222,7 +345,7 @@
       "vacancy_ref": "ITE007510/LM",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.524199+00:00"
+      "scraped_at": "2026-03-13T19:29:05.271256+00:00"
     },
     {
       "title": "Java Developer",
@@ -240,7 +363,7 @@
       "vacancy_ref": "BIT005572/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.524556+00:00"
+      "scraped_at": "2026-03-13T19:29:05.271439+00:00"
     },
     {
       "title": "Mobile Software Developer",
@@ -258,7 +381,7 @@
       "vacancy_ref": "BIT005574/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.524906+00:00"
+      "scraped_at": "2026-03-13T19:29:05.271615+00:00"
     },
     {
       "title": "Senior Full Stack Developer",
@@ -276,7 +399,7 @@
       "vacancy_ref": "BIT005570/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.525463+00:00"
+      "scraped_at": "2026-03-13T19:29:05.271897+00:00"
     },
     {
       "title": "Information Security Manager",
@@ -294,7 +417,7 @@
       "vacancy_ref": "BIT005571/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.526079+00:00"
+      "scraped_at": "2026-03-13T19:29:05.272180+00:00"
     },
     {
       "title": "Senior Mobile Developer",
@@ -312,7 +435,7 @@
       "vacancy_ref": "BIT005575/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.526603+00:00"
+      "scraped_at": "2026-03-13T19:29:05.272426+00:00"
     },
     {
       "title": "Infrastructure and DevOps Lead",
@@ -330,7 +453,7 @@
       "vacancy_ref": "BIT005563/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.527111+00:00"
+      "scraped_at": "2026-03-13T19:29:05.272714+00:00"
     },
     {
       "title": "Senior Mobile Developer (React Native)",
@@ -348,7 +471,7 @@
       "vacancy_ref": "BIT005569/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.527414+00:00"
+      "scraped_at": "2026-03-13T19:29:05.272865+00:00"
     },
     {
       "title": "Software Engineer",
@@ -366,7 +489,7 @@
       "vacancy_ref": "BIT005561/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.527853+00:00"
+      "scraped_at": "2026-03-13T19:29:05.273156+00:00"
     },
     {
       "title": "IDP Developer",
@@ -384,7 +507,7 @@
       "vacancy_ref": "BIT005562/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.528148+00:00"
+      "scraped_at": "2026-03-13T19:29:05.273424+00:00"
     },
     {
       "title": "Security Analyst L1 / L2 (Microsoft Cloud & Security)",
@@ -402,7 +525,7 @@
       "vacancy_ref": "ITE007504/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.528327+00:00"
+      "scraped_at": "2026-03-13T19:29:05.273821+00:00"
     },
     {
       "title": "Full Stack .NET Desktop Developer (WinForms)",
@@ -420,7 +543,7 @@
       "vacancy_ref": "ITE007503/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.528573+00:00"
+      "scraped_at": "2026-03-13T19:29:05.274089+00:00"
     },
     {
       "title": "Senior Python Developer",
@@ -438,7 +561,7 @@
       "vacancy_ref": "BIT005557/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.528877+00:00"
+      "scraped_at": "2026-03-13T19:29:05.274558+00:00"
     },
     {
       "title": "SysAdmin/DevOps",
@@ -456,7 +579,7 @@
       "vacancy_ref": "BIT005542/Jess",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529045+00:00"
+      "scraped_at": "2026-03-13T19:29:05.274759+00:00"
     },
     {
       "title": "Flutter Developer",
@@ -474,7 +597,7 @@
       "vacancy_ref": "BIT005543/Jess",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529153+00:00"
+      "scraped_at": "2026-03-13T19:29:05.274879+00:00"
     },
     {
       "title": "Junior Flutter Developer",
@@ -492,7 +615,7 @@
       "vacancy_ref": "BIT005546/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529344+00:00"
+      "scraped_at": "2026-03-13T19:29:05.275116+00:00"
     },
     {
       "title": "Junior SysAdmin / DevOps Engineer",
@@ -510,7 +633,7 @@
       "vacancy_ref": "BIT005547/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529497+00:00"
+      "scraped_at": "2026-03-13T19:29:05.275296+00:00"
     },
     {
       "title": "Ruby on Rails Developer",
@@ -528,7 +651,7 @@
       "vacancy_ref": "BIT005548/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529656+00:00"
+      "scraped_at": "2026-03-13T19:29:05.275469+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -546,7 +669,7 @@
       "vacancy_ref": "BIT005539/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.529890+00:00"
+      "scraped_at": "2026-03-13T19:29:05.275724+00:00"
     },
     {
       "title": ".NET Mobile App Developer",
@@ -564,7 +687,7 @@
       "vacancy_ref": "ITE007495/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.530146+00:00"
+      "scraped_at": "2026-03-13T19:29:05.276023+00:00"
     },
     {
       "title": "Senior Software Engineer (Hybrid / Remote)",
@@ -582,7 +705,7 @@
       "vacancy_ref": "ITE007384/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.530301+00:00"
+      "scraped_at": "2026-03-13T19:29:05.276194+00:00"
     },
     {
       "title": "Full Stack Java Developer",
@@ -600,7 +723,7 @@
       "vacancy_ref": "ITE007398/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.530438+00:00"
+      "scraped_at": "2026-03-13T19:29:05.276340+00:00"
     },
     {
       "title": "Front-End Developer (Angular.js)",
@@ -618,7 +741,7 @@
       "vacancy_ref": "ITE007480/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.530571+00:00"
+      "scraped_at": "2026-03-13T19:29:05.276480+00:00"
     },
     {
       "title": "Implementation Developer",
@@ -636,7 +759,25 @@
       "vacancy_ref": "BIT005531/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.530888+00:00"
+      "scraped_at": "2026-03-13T19:29:05.276812+00:00"
+    },
+    {
+      "title": "Intermediate Desktop Support Specialist",
+      "company": "Network Recruitment International",
+      "location": "Western Cape > Cape Town: Northern Suburbs",
+      "region": "Western Cape",
+      "town": "Cape Town: Northern Suburbs",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "We are seeking a motivated and innovative intermediate-level Desktop and Application Support Engineer to join our dynamic IT team. This role offers an exceptional opportunity to gain hands-on experien",
+      "brief_description": "We are seeking a motivated and innovative intermediate-level Desktop and Application Support Engineer to join our dynamic IT team. This role offers an exceptional opportunity to gain hands-on experience across diverse technology platforms while working alongside experienced senior engineers in a supportive environment.",
+      "detail_description": "Key Responsibilities: Desktop & End-User Support: Provide first- and second-line technical support for desktop, laptop, and mobile devices Troubleshoot and resolve hardware, software, and connectivity issues across Windows, macOS, and Linux operating systems Manage user account creation, modifications, and access permission Install, configure, and maintain desktop applications and software updates Document support tickets with detailed resolution steps and maintain accurate records Network & Infrastructure Support: Support and maintain Meraki-based LAN and WiFi infrastructure Assist with network troubleshooting, including connectivity issues and performance optimization Monitor network health and respond to alerts Cloud & Application Support: Provide support for Azure cloud-hosted services and infrastructure Troubleshoot and resolve issues with in-house developed applications Work closely with the development team to report bugs and assist with application testing Support application deployments and updates across various platforms General IT Operations: Participate in IT projects and infrastructure improvements Contribute innovative ideas for process improvements and automation Assist with IT asset management and inventory tracking Required: Technical Skills: Basic understanding of Windows, macOS, and Linux operating systems, and Office 365 applications Fundamental knowledge of networking concepts (TCP/IP, DNS, DHCP, and VLANs) Familiarity with cloud platforms, particularly Microsoft Azure (or a willingness to learn) Basic troubleshooting and diagnostic skills Understanding of Active Directory and user management principles Education & Experience: Relevant IT qualification (Diploma, Degree, or Certification) OR 4 years of experience in a helpdesk or IT support role Certifications, such as CompTIA A+, Network+, or Microsoft certifications, are advantageous Don't miss out, apply today!",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007403/DAP",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007403/DAP",
+      "vacancy_ref": "ITE007403/DAP",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.277006+00:00"
     },
     {
       "title": "Intermediate Software Engineer (.NET MAUI/Xamarin)",
@@ -654,7 +795,7 @@
       "vacancy_ref": "ITE007474/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.531236+00:00"
+      "scraped_at": "2026-03-13T19:29:05.277220+00:00"
     },
     {
       "title": "Junior Data Analyst (Backup and Storage Analyst)",
@@ -672,7 +813,7 @@
       "vacancy_ref": "NWA004363/BOM",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.531509+00:00"
+      "scraped_at": "2026-03-13T19:29:05.277379+00:00"
     },
     {
       "title": "Business Developer Manager (Africa)",
@@ -690,7 +831,7 @@
       "vacancy_ref": "NES024688/Dione",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.532123+00:00"
+      "scraped_at": "2026-03-13T19:29:05.277573+00:00"
     },
     {
       "title": "Software Engineer",
@@ -708,7 +849,7 @@
       "vacancy_ref": "BIT005526/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.532748+00:00"
+      "scraped_at": "2026-03-13T19:29:05.277909+00:00"
     },
     {
       "title": "Senior Back-End Developer",
@@ -726,7 +867,7 @@
       "vacancy_ref": "BIT005527/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.532971+00:00"
+      "scraped_at": "2026-03-13T19:29:05.278101+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -744,7 +885,25 @@
       "vacancy_ref": "BIT005528/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.533276+00:00"
+      "scraped_at": "2026-03-13T19:29:05.278386+00:00"
+    },
+    {
+      "title": "NOC Engineer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Are you a highly skilled NOC Engineer with a passion for maintaining high‑availability environments and resolving complex technical issues? This is an exciting opportunity to join a dynamic organisati",
+      "brief_description": "Are you a highly skilled NOC Engineer with a passion for maintaining high‑availability environments and resolving complex technical issues? This is an exciting opportunity to join a dynamic organisation where you will support critical infrastructure and ensure seamless operational performance.",
+      "detail_description": "Our client is a respected technology‑driven organisation focused on delivering secure, reliable, and high‑performing infrastructure services. As a NOC Engineer , you will be responsible for monitoring, maintaining, and supporting their network and compute environment, ensuring the uninterrupted availability of systems and services. You will work with a range of modern tools and platforms, collaborate with Tier 2 and Tier 3 teams, and play a key role in identifying issues, performing root‑cause analysis, implementing fixes, and improving system stability. This role is ideal for someone with strong technical abilities, excellent troubleshooting skills, and a customer‑focused approach. Key Responsibilities: Monitor network devices, servers, applications, and compute infrastructure using tools such as Site24x7, Zabbix, and SolarWinds. Respond to alerts, troubleshoot incidents, and escalate issues according to SLA and escalation procedures. Document incidents, service requests, and resolutions using Jira Service Desk. Perform routine system maintenance, health checks, and security compliance tasks. Conduct root‑cause analysis and implement preventative and corrective actions. Manage OS and third‑party software patching across data centres and client devices. Ensure that backups run successfully and adhere to company retention policies. Install, configure, and maintain routers, switches, firewalls, and associated software. Manage ticket queues with timely communication and resolution. Collaborate with Tier 2, Tier 3, and external vendors to resolve complex technical issues. Support change management activities, including upgrades, improvements, and maintenance. Monitor vulnerabilities and suspicious activity to ensure network health. Provide phone, email, and ticket-based support within SLA targets. Participate in the after‑hours on‑call rotation for critical incident response. Job Experience and Skills Required: Education: Diploma or Degree in Information Technology, Computer Science, or a related field. Experience: 5&ndash;7 years&rsquo; experience in a NOC, IT operations, or network support role. Experience with Jira Service Desk or similar ITSM platforms. Skills: Strong understanding of networking protocols (TCP/IP, DNS, and DHCP). Knowledge of IP addressing and subnetting. Experience with monitoring tools, such as Zabbix, SolarWinds, Nagios, PRTG, or Site24x7. Strong troubleshooting and analytical skills. Active Directory administration experience. Familiarity with firewalls, VPNs, and routing fundamentals. Knowledge of Windows Server (2016, 2019, and 2022) and Linux. Experience administering Microsoft 365, Intune, and Azure. Virtualisation experience (VMware and/or Hyper‑V). Experience with backup tools, such as Veeam or Commvault. Strong communication, documentation, and time management skills. Ability to work well under pressure with a high level of customer service focus. Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers Data Analysts IT Support Technicians Test Analysts DevOps Engineers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Mfundo Mthembu IT Recruitment specialist Connect with me on LinkedIn!: www.linkedin.com/in/mfundo-mthembu-614413200",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005529/Mfund",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005529/Mfund",
+      "vacancy_ref": "BIT005529/Mfund",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.278720+00:00"
     },
     {
       "title": "Senior Machine Learning Engineer",
@@ -762,7 +921,7 @@
       "vacancy_ref": "BIT005530/Mfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.533605+00:00"
+      "scraped_at": "2026-03-13T19:29:05.279025+00:00"
     },
     {
       "title": "Senior Developer",
@@ -780,7 +939,7 @@
       "vacancy_ref": "ITE007486/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.533832+00:00"
+      "scraped_at": "2026-03-13T19:29:05.279252+00:00"
     },
     {
       "title": "Data Operations and Technical Support Analyst",
@@ -798,7 +957,7 @@
       "vacancy_ref": "ITE006874/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534148+00:00"
+      "scraped_at": "2026-03-13T19:29:05.279598+00:00"
     },
     {
       "title": "Junior Data Analyst",
@@ -816,7 +975,7 @@
       "vacancy_ref": "ITE007016/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534316+00:00"
+      "scraped_at": "2026-03-13T19:29:05.279744+00:00"
     },
     {
       "title": "Senior Systems Developer",
@@ -834,7 +993,7 @@
       "vacancy_ref": "ITE007308/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534480+00:00"
+      "scraped_at": "2026-03-13T19:29:05.279922+00:00"
     },
     {
       "title": ".NET MAUI Mobile App Developer",
@@ -852,7 +1011,7 @@
       "vacancy_ref": "ITE007360/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534673+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280113+00:00"
     },
     {
       "title": "Automation Developer",
@@ -870,7 +1029,7 @@
       "vacancy_ref": "ITE007369/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534800+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280233+00:00"
     },
     {
       "title": "Intermediate Software Engineer",
@@ -888,7 +1047,7 @@
       "vacancy_ref": "ITE007370/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.534988+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280425+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -906,7 +1065,7 @@
       "vacancy_ref": "ITE007371/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535084+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280519+00:00"
     },
     {
       "title": "Software Engineer",
@@ -924,7 +1083,7 @@
       "vacancy_ref": "ITE007372/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535198+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280627+00:00"
     },
     {
       "title": "Intermediate C# .NET Software Developer",
@@ -942,7 +1101,7 @@
       "vacancy_ref": "ITE007376/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535385+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280804+00:00"
     },
     {
       "title": "Graduate Software Engineer",
@@ -960,7 +1119,7 @@
       "vacancy_ref": "ITE007437/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535550+00:00"
+      "scraped_at": "2026-03-13T19:29:05.280966+00:00"
     },
     {
       "title": "Graduate Data Scientist",
@@ -978,7 +1137,7 @@
       "vacancy_ref": "ITE007447/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535740+00:00"
+      "scraped_at": "2026-03-13T19:29:05.281168+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -996,7 +1155,7 @@
       "vacancy_ref": "ITE007448/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.535903+00:00"
+      "scraped_at": "2026-03-13T19:29:05.281322+00:00"
     },
     {
       "title": "DevOps & Infrastructure Lead",
@@ -1014,7 +1173,7 @@
       "vacancy_ref": "BIT005287/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536099+00:00"
+      "scraped_at": "2026-03-13T19:29:05.281507+00:00"
     },
     {
       "title": "Senior Machine Learning Engineer",
@@ -1032,7 +1191,7 @@
       "vacancy_ref": "BIT005519/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536267+00:00"
+      "scraped_at": "2026-03-13T19:29:05.281659+00:00"
     },
     {
       "title": "Software Engineer",
@@ -1050,7 +1209,7 @@
       "vacancy_ref": "BIT005520/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536412+00:00"
+      "scraped_at": "2026-03-13T19:29:05.281798+00:00"
     },
     {
       "title": "Flutter Developer",
@@ -1068,7 +1227,7 @@
       "vacancy_ref": "BIT005518/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536681+00:00"
+      "scraped_at": "2026-03-13T19:29:05.282064+00:00"
     },
     {
       "title": "Technical Business Analyst",
@@ -1086,7 +1245,7 @@
       "vacancy_ref": "ITE007479/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536828+00:00"
+      "scraped_at": "2026-03-13T19:29:05.282208+00:00"
     },
     {
       "title": "DevOps Engineer",
@@ -1104,7 +1263,25 @@
       "vacancy_ref": "BIT005517/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.536978+00:00"
+      "scraped_at": "2026-03-13T19:29:05.282354+00:00"
+    },
+    {
+      "title": "L2 IT Support Engineer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Do you excel at restoring order when systems fail, navigating complex technical issues with calm confidence, and ensuring users experience seamless IT service? A prominent organisation is strengthenin",
+      "brief_description": "Do you excel at restoring order when systems fail, navigating complex technical issues with calm confidence, and ensuring users experience seamless IT service? A prominent organisation is strengthening its support function and is searching for an L2 Engineer who thrives in fast-paced environments, enjoys solving multifaceted problems, and can elevate the stability of enterprise technology. If you are the type who brings clarity, accuracy, and initiative to every ticket, you&rsquo;ll feel right at home here.",
+      "detail_description": "🌐 About This Role: You&rsquo;ll be part of an energetic IT operations team responsible for supporting essential business systems and handling escalations that require deeper technical insight. This role blends hands-on troubleshooting, systems administration, service delivery, and ongoing improvements to the IT environment. You&rsquo;ll operate within Microsoft ecosystems, engage with cloud-driven technologies, and follow ITIL-aligned processes that shape reliable IT service across the organisation. 🧰 Key Duties & Daily Impact: Resolve second-line incidents across desktops, servers, applications, and network layers Support core network infrastructure, including VLANs, routers, switches, and VPNs Conduct routine system updates, patching, preventative maintenance, and monitoring Apply ITIL methodologies across incidents, problems, changes, and service requests Collaborate closely with L1 analysts and escalate effectively to senior technical teams 🎯 Your Expertise: 3&ndash;5 years of hands-on L2 support experience in a corporate environment Microsoft certifications (Microsoft 365, Azure Fundamentals/Administrator, or equivalent) Strong grasp of Windows operating systems, AD, DNS, DHCP, Exchange, and GPO Experience with cloud-enabled environments (Microsoft 365, Azure, and hybrid setups) Solid understanding of networking basics and troubleshooting (TCP/IP, routing, and wireless) Exposure to ITIL principles with practical application in daily support For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com/it I also specialise in recruiting in the following: Full Stack, Backend & Senior Engineering Roles Python, Java, PHP & .NET Development DevOps, Cloud & Infrastructure Engineering Data Engineering, Analytics & Architecture Product, Platform & Enterprise Technology Roles If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Ally-Jane Volmink Specialist Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/ally-jane-volmink-19185925b",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005514/Ally",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005514/Ally",
+      "vacancy_ref": "BIT005514/Ally",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.282606+00:00"
     },
     {
       "title": "ServiceNow Software Engineer",
@@ -1122,7 +1299,7 @@
       "vacancy_ref": "BIT005515/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.537263+00:00"
+      "scraped_at": "2026-03-13T19:29:05.282873+00:00"
     },
     {
       "title": "Senior Full Stack Software Engineer",
@@ -1140,7 +1317,7 @@
       "vacancy_ref": "BIT005512/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.537544+00:00"
+      "scraped_at": "2026-03-13T19:29:05.283141+00:00"
     },
     {
       "title": "Python Developer",
@@ -1158,7 +1335,7 @@
       "vacancy_ref": "BIT005510/Raees",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.537698+00:00"
+      "scraped_at": "2026-03-13T19:29:05.283289+00:00"
     },
     {
       "title": "Senior Developer (Back-End)",
@@ -1176,7 +1353,7 @@
       "vacancy_ref": "BIT005276/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.537850+00:00"
+      "scraped_at": "2026-03-13T19:29:05.283437+00:00"
     },
     {
       "title": "Implementation Developer",
@@ -1194,7 +1371,7 @@
       "vacancy_ref": "BIT005508/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.538358+00:00"
+      "scraped_at": "2026-03-13T19:29:05.283726+00:00"
     },
     {
       "title": "Senior Full Stack Python Developer",
@@ -1212,7 +1389,7 @@
       "vacancy_ref": "BIT005509/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.538989+00:00"
+      "scraped_at": "2026-03-13T19:29:05.284005+00:00"
     },
     {
       "title": "Senior Full Stack Python Developer",
@@ -1230,7 +1407,7 @@
       "vacancy_ref": "BIT005500/Raees",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.539217+00:00"
+      "scraped_at": "2026-03-13T19:29:05.284205+00:00"
     },
     {
       "title": "Data Scientist",
@@ -1248,7 +1425,7 @@
       "vacancy_ref": "BIT005504/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.539395+00:00"
+      "scraped_at": "2026-03-13T19:29:05.284370+00:00"
     },
     {
       "title": "Senior Full Stack Python Developer",
@@ -1266,7 +1443,7 @@
       "vacancy_ref": "BIT005501/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.539695+00:00"
+      "scraped_at": "2026-03-13T19:29:05.284598+00:00"
     },
     {
       "title": "ServiceNow Software Engineer",
@@ -1284,7 +1461,7 @@
       "vacancy_ref": "BIT005502/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.539952+00:00"
+      "scraped_at": "2026-03-13T19:29:05.284802+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -1302,7 +1479,7 @@
       "vacancy_ref": "BIT005463/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.540230+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285084+00:00"
     },
     {
       "title": "Senior Full Stack Developer",
@@ -1320,7 +1497,7 @@
       "vacancy_ref": "BIT005452/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.540426+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285278+00:00"
     },
     {
       "title": "Data Engineer/Analyst",
@@ -1338,7 +1515,7 @@
       "vacancy_ref": "BIT005455/Jess",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.540574+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285424+00:00"
     },
     {
       "title": "Power Platform Developer",
@@ -1356,7 +1533,7 @@
       "vacancy_ref": "BIT005461/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.540831+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285662+00:00"
     },
     {
       "title": "Natural Adabas Developer",
@@ -1374,7 +1551,7 @@
       "vacancy_ref": "BIT005294/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.540983+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285803+00:00"
     },
     {
       "title": "Intermediate Full Stack Developer",
@@ -1392,7 +1569,7 @@
       "vacancy_ref": "BIT005451/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.541154+00:00"
+      "scraped_at": "2026-03-13T19:29:05.285977+00:00"
     },
     {
       "title": "BI Developer",
@@ -1410,7 +1587,7 @@
       "vacancy_ref": "BIT005444/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.541470+00:00"
+      "scraped_at": "2026-03-13T19:29:05.286260+00:00"
     },
     {
       "title": "Senior Full Stack Developer",
@@ -1428,7 +1605,25 @@
       "vacancy_ref": "BIT005450/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.541718+00:00"
+      "scraped_at": "2026-03-13T19:29:05.286485+00:00"
+    },
+    {
+      "title": "Desktop Support Specialist",
+      "company": "Network Recruitment International",
+      "location": "Western Cape > Cape Town: Northern Suburbs",
+      "region": "Western Cape",
+      "town": "Cape Town: Northern Suburbs",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "An established IT services business is seeking a hands-on IT technical support professional to provide onsite first- and second-line support. This role is ideal for someone confident supporting users ",
+      "brief_description": "An established IT services business is seeking a hands-on IT technical support professional to provide onsite first- and second-line support. This role is ideal for someone confident supporting users across hardware, Microsoft 365, identity management, and core network troubleshooting.",
+      "detail_description": "Essential Requirements (Non-Negotiable): Technical Skills & Experience: Proven experience in an onsite IT support or service desk role (first- and second-line support) Strong hands-on experience supporting Windows desktops and laptops Practical knowledge of Microsoft 365 (Outlook, Teams, OneDrive, and SharePoint) Experience managing identities and access in Active Directory / Entra ID (Azure AD) Proven experience with user onboarding and offboarding (account setup and access management) Solid hardware troubleshooting skills (PCs, laptops, printers, and peripherals) Basic networking knowledge (TCP/IP, LAN, Wi-Fi, and VPN troubleshooting) Experience using ticketing systems and maintaining accurate support documentation User Support & Communication: Strong customer service mindset &ndash; comfortable supporting non-technical users Clear verbal and written communication skills Ability to provide user training and system guidance Professional, patient, and approachable attitude Organisation & Work Ethic: Ability to manage multiple tasks and prioritise effectively Comfortable working independently in an onsite environment Strong attention to detail when documenting and following procedures Reliable, punctual, and responsive during business hours Security & Professional Standards: Understanding of IT security principles and data protection practices Ability to handle sensitive information confidentially Commitment to following company IT policies and compliance requirements Education: Relevant IT qualification or equivalent practical experience If you meet all of the above essential requirements and are looking for a stable onsite IT support role where you can take ownership and make an impact, we&rsquo;d love to hear from you.",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007323/DAP",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007323/DAP",
+      "vacancy_ref": "ITE007323/DAP",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.286656+00:00"
     },
     {
       "title": "Intermediate Mobile Developers - iOS",
@@ -1446,25 +1641,43 @@
       "vacancy_ref": "BIT005288/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.541943+00:00"
+      "scraped_at": "2026-03-13T19:29:05.286861+00:00"
     },
     {
-      "title": "Data Scientist",
+      "title": "Desktop Support Specialist",
       "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
+      "location": "Gauteng > Centurion",
       "region": "Gauteng",
-      "town": "Johannesburg North",
+      "town": "Centurion",
       "job_type": "Not specified",
-      "salary": "From R850 000 per annum",
-      "summary": "Join a group that values curious thinkers and enjoys solving real challenges through meaningful data work. This opportunity is perfect for someone who enjoys exploring information, understanding patte",
-      "brief_description": "Join a group that values curious thinkers and enjoys solving real challenges through meaningful data work. This opportunity is perfect for someone who enjoys exploring information, understanding patterns, and creating practical solutions that support real decisions.",
-      "detail_description": "Join a team that values thoughtful work, open communication and genuine collaboration. You will be part of an environment that encourages new ideas and supports continuous learning. The organisation focuses on practical solutions that make a real difference and offers a space where your contributions are recognised and respected. This position gives you the chance to deepen your technical abilities, influence strategic direction and gain wide exposure across the business. If you enjoy bringing clarity to complex situations, this role offers an excellent platform for growth and impact. Key Responsibilities: Create analytical outcomes that improve business understanding Explore information sources and prepare structured data sets for review Present insights through clear visual communication Support the design of advanced digital tools and modern analytical systems Job Experience and Skills Required: A strong academic background in a numerically focused field Solid practical exposure to analytical methods Experience working with contemporary data programs Familiarity with cloud technology and large digital environments Ability to communicate information in a clear and engaging manner Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005434/Caity",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005434/Caity",
-      "vacancy_ref": "BIT005434/Caity",
+      "salary": "Market Related",
+      "summary": "We are seeking a motivated and innovative Junior Desktop and Application Support Engineer to join our dynamic IT team. This role offers an exceptional opportunity to gain hands-on experience across di",
+      "brief_description": "We are seeking a motivated and innovative Junior Desktop and Application Support Engineer to join our dynamic IT team. This role offers an exceptional opportunity to gain hands-on experience across diverse technology platforms while working alongside experienced senior engineers in a supportive environment.",
+      "detail_description": "Key Responsibilities: Desktop & End-User Support: Provide first- and second-line technical support for desktop, laptop, and mobile devices Troubleshoot and resolve hardware, software, and connectivity issues across Windows, macOS, and Linux operating systems Manage user account creation, modifications, and access permissions Install, configure, and maintain desktop applications and software updates Document support tickets with detailed resolution steps and maintain accurate records Network & Infrastructure Support: Support and maintain Meraki-based LAN and WiFi infrastructure Assist with network troubleshooting, including connectivity issues and performance optimization Monitor network health and respond to alerts Cloud & Application Support: Provide support for Azure cloud-hosted services and infrastructure Troubleshoot and resolve issues with in-house developed applications Work closely with the development team to report bugs and assist with application testing Support application deployments and updates across various platforms General IT Operations: Participate in IT projects and infrastructure improvements Contribute innovative ideas for process improvements and automation Assist with IT asset management and inventory tracking Required Qualifications: Technical Skills: Basic understanding of Windows, macOS, and Linux operating systems, Office 365 Applications Fundamental knowledge of networking concepts (TCP/IP, DNS, DHCP, and VLANs) Familiarity with cloud platforms, particularly Microsoft Azure (or willingness to learn) Basic troubleshooting and diagnostic skills Understanding of Active Directory and user management principles Education & Experience: Relevant IT qualification (Diploma, Degree, or Certification) OR 1-2 years of experience in a helpdesk or IT support role Certifications such as CompTIA A+, Network+, or Microsoft Certifications are advantageous Personal Attributes: Self-motivated and proactive - Able to work independently without constant supervision Go-getter mentality - Takes initiative and seeks out solutions rather than waiting for direction Innovative thinking - Brings fresh ideas and creative approaches to problem-solving Hard-working and dedicated - Committed to delivering excellent service and going the extra mile Fast learner - Eager to acquire new skills and adapt to evolving technologies Strong communication skills - Able to explain technical concepts to non-technical users Team player - Collaborative while also capable of independent work Customer service oriented - Patient, professional, and user-focused What We Offer: Professional Development: Mentorship from experienced senior engineers Hands-on exposure to enterprise-grade technologies, including Meraki networking and Azure cloud infrastructure Opportunity to work across the full technology stack - from desktop support to cloud services Experience supporting in-house developed applications alongside the development team Diverse learning environment with exposure to all mainstream operating systems Work Environment: Trust-based environment where initiative and self-management are valued Collaborative team that supports innovation and new ideas Opportunity to make meaningful contributions and see the impact of your work Technology Exposure: Cisco Meraki networking ecosystem (LAN/WiFi) Microsoft Azure cloud platform In-house developed applications and systems Multi-platform environment (Windows, macOS, and Linux) Modern IT infrastructure and tools",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007402/DAP",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007402/DAP",
+      "vacancy_ref": "ITE007402/DAP",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.542115+00:00"
+      "scraped_at": "2026-03-13T19:29:05.287147+00:00"
+    },
+    {
+      "title": "Federal ICT Associate (IT Support Engineer)",
+      "company": "Network Recruitment International",
+      "location": "Western Cape > Cape Town: Northern Suburbs",
+      "region": "Western Cape",
+      "town": "Cape Town: Northern Suburbs",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "A large, fast-paced organisation is seeking a reliable and service-driven Federal ICT Associate to join its IT Department. This role is focused on providing high-quality ICT support to internal users,",
+      "brief_description": "A large, fast-paced organisation is seeking a reliable and service-driven Federal ICT Associate to join its IT Department. This role is focused on providing high-quality ICT support to internal users, maintaining systems and networks, and supporting business applications to ensure operational continuity across offices and events. The successful candidate will work closely with the ICT Manager and broader teams to deliver stable, secure, and responsive IT services.",
+      "detail_description": "This opportunity suits someone who enjoys hands-on IT support, problem-solving, and working in a dynamic, high-pressure environment. Key Responsibilities: Provide professional ICT support to staff and stakeholders across applications, hardware, and infrastructure. Install, configure, test, and maintain networks, operating systems, software, and system management tools . Perform fault finding on desktops and laptops when tickets are logged. Provide basic troubleshooting on LAN/WAN, Wi-Fi, and IP networks , escalating where required. Set up laptops, desktops, printers, phones, and replacement equipment. Maintain and administer Windows Server, Windows Desktop, Mac OS, antivirus systems, and Office 365 . Manage and respond to tickets through the service desk system, ensuring timely resolution and escalation. Support meetings, conferences, and off-site events with ICT setup and testing. Assist with the implementation, upgrading, and support of business applications. Maintain ICT asset registers, equipment records, and procurement documentation. Obtain quotes for hardware and services and ensure that equipment is tracked and signed in/out correctly. Travel to regional offices for support and events when required. Minimum Requirements: National Senior Certificate (Matric). Certificate or Diploma in IT or a related field. Minimum 2 years&rsquo; experience in an ICT / IT support role. Experience supporting Microsoft Office applications . Experience with Windows operating systems , installations, and troubleshooting. Exposure to network setups and issue resolution . Experience troubleshooting desktop and laptop hardware. Basic to intermediate knowledge of computer hardware and networking . Technical Exposure: Windows Server and Desktop environments. Active Directory administration. Office 365 administration. LAN/WAN, Wi-Fi, and IP networking. Antivirus and endpoint protection. Ticketing systems and service desk workflows. Skills & Attributes: Strong communication skills. High attention to detail. Excellent time management and organisation. Able to work independently and take initiative. Performs well under pressure. Comfortable supporting demanding users and environments. Additional South African language advantageous. Additional Requirements: Valid driver&rsquo;s licence advantageous. Access to a reliable, insured vehicle. High level of confidentiality, integrity, and professionalism. Ability to meet tight deadlines in a high-pressure environment. What&rsquo;s On Offer: Permanent role with probation period. Exposure to a broad ICT environment. Dynamic, fast-paced working environment. Opportunity to grow within a professional IT team. Market-related remuneration. Apply Now! For more information contact: Raees Sadek IT Recruitment Researcher 011 622 9526",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005427/Raees",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005427/Raees",
+      "vacancy_ref": "BIT005427/Raees",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-03-13T19:29:05.287396+00:00"
     },
     {
       "title": "Mobile Developer",
@@ -1482,7 +1695,7 @@
       "vacancy_ref": "BIT005431/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.542523+00:00"
+      "scraped_at": "2026-03-13T19:29:05.287613+00:00"
     },
     {
       "title": "Information Security Engineer",
@@ -1500,7 +1713,7 @@
       "vacancy_ref": "ITE007470/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.542895+00:00"
+      "scraped_at": "2026-03-13T19:29:05.287793+00:00"
     },
     {
       "title": "Python Developer",
@@ -1518,7 +1731,7 @@
       "vacancy_ref": "BIT005416/Ally",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.543211+00:00"
+      "scraped_at": "2026-03-13T19:29:05.288096+00:00"
     },
     {
       "title": "Senior Full Stack Java Developer",
@@ -1536,7 +1749,7 @@
       "vacancy_ref": "ITE007466/LM",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.543540+00:00"
+      "scraped_at": "2026-03-13T19:29:05.288396+00:00"
     },
     {
       "title": "Data Analyst",
@@ -1554,43 +1767,7 @@
       "vacancy_ref": "ITE007469/LM",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.543772+00:00"
-    },
-    {
-      "title": "BI Developer",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg East",
-      "region": "Gauteng",
-      "town": "Johannesburg East",
-      "job_type": "Not specified",
-      "salary": "Not specified",
-      "summary": "We are seeking a highly skilled Business Intelligence (BI) Developer. In this role, you&rsquo;ll be instrumental in transforming complex data into insightful dashboards, reports, and analytics that su",
-      "brief_description": "We are seeking a highly skilled Business Intelligence (BI) Developer. In this role, you&rsquo;ll be instrumental in transforming complex data into insightful dashboards, reports, and analytics that support strategic decision-making across the business.",
-      "detail_description": "Key Responsibilities: Design, develop, and maintain BI solutions, including reports, dashboards, and data models. Collaborate with stakeholders to gather and translate business requirements into technical specifications. Optimize data flows and enhance reporting processes using tools such as Power BI, SQL, and other BI platforms. Ensure data accuracy, integrity, and consistency across reporting solutions. Support the ongoing development and improvement of the company&rsquo;s data infrastructure. Presentations and client focus. Requirements: 4 years of experience as a BI Developer and Analyst. Strong proficiency in Microsoft BI stack, SQL, SSAS and SSIS. Experience working with relational databases and data warehouses. Experience: Azure Data Services or similar cloud platforms. Understanding of ETL processes, data modelling and data reporting techniques. Apply now! For more IT jobs, please visit www.networkrecruitmentinternational.com If you have not had any response in two weeks, please consider the application unsuccessful. For more information contact: Samkelisiwe Makhanye Recruitment Consultant 011 622 9526",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005411/Sam",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005411/Sam",
-      "vacancy_ref": "BIT005411/Sam",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.543912+00:00"
-    },
-    {
-      "title": "Natural Developer",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg East",
-      "region": "Gauteng",
-      "town": "Johannesburg East",
-      "job_type": "Not specified",
-      "salary": "R800000 - R900000 per annum",
-      "summary": "Do you enjoy working with core enterprise systems and databases? We are looking for Natural Developers &mdash; individuals who are passionate about software development using Natural and ADABAS tools,",
-      "brief_description": "Do you enjoy working with core enterprise systems and databases? We are looking for Natural Developers &mdash; individuals who are passionate about software development using Natural and ADABAS tools, and eager to grow their skills in real-world applications. If you have a solid technical foundation, enjoy tackling database challenges, and want to contribute to meaningful solutions in a collaborative environment, we want to hear from you.",
-      "detail_description": "About the Role: As a Natural Developer, you will help design, build, and support software that interacts with ADABAS database systems used across key business platforms. Your work will help users access, organize, and process data efficiently &mdash; contributing to systems that power real operational outcomes. Why You&rsquo;ll Enjoy Working Here: Join a supportive engineering team with room to learn and grow Work on live systems that matter to the business Gain exposure to mainframe environments and enterprise databases Contribute ideas in a cooperative, feedback-driven culture Develop real technical expertise in legacy and integrated systems Your Key Responsibilities: Assist with the design and development of Natural/ADABAS applications Write, test, and maintain clean, efficient code Collaborate with technical leads and stakeholders to deliver features Debug and troubleshoot database logic and application issues Support enhancements and updates to existing systems Learn and apply best practices in development and database design What You Bring: Some experience with or interest in Natural programming and ADABAS databases, or foundational software development skills Understanding of programming fundamentals and data structures Analytical problem-solving skills and attention to detail Good communication and teamwork mindset A desire to learn and take on new technical challenges Apply Today! For more exciting Finance vacancies, please visit: https://www.networkrecruitmentinternational.com/it I also specialise in recruiting in the following: Software Developers (Full Stack / Backend / Frontend) PHP, Java, and .NET Development Roles DevOps & Cloud Engineering Positions Data & Infrastructure Opportunities Product & Project-Focused Tech Roles If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Ally-Jane Volmink Specialist Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/ally-jane-volmink-19185925b",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005412/Ally",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005412/Ally",
-      "vacancy_ref": "BIT005412/Ally",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-03-12T22:05:22.544242+00:00"
+      "scraped_at": "2026-03-13T19:29:05.288625+00:00"
     }
   ]
 }

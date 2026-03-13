@@ -55,7 +55,22 @@
       "Software Tester",
       "QA Engineer",
       "Quality Assurance Engineer",
-      "Test Engineer"
+      "Test Engineer",
+      "IT Support",
+      "Technical Support",
+      "Support Engineer",
+      "Application Support",
+      "Production Support",
+      "Customer Support Engineer",
+      "Systems Support",
+      "Help Desk",
+      "Service Desk",
+      "Desktop Support",
+      "NOC Engineer",
+      "Network Operations Center",
+      "IT Operations",
+      "Operations Engineer",
+      "Technical Operations"
     ],
     "slugs": [
       "data-engineer",
@@ -79,7 +94,7 @@
       "software"
     ],
     "total_jobs": 357,
-    "scraped_at": "2026-03-12T22:05:19.797307+00:00"
+    "scraped_at": "2026-03-13T19:29:00.735611+00:00"
   },
   "jobs": [
     {
@@ -93,7 +108,7 @@
       "job_id": "4159699",
       "posted": "2026-03-10T12:26:17+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.743057+00:00"
+      "scraped_at": "2026-03-13T19:26:33.601398+00:00"
     },
     {
       "title": "Data Engineer",
@@ -106,7 +121,7 @@
       "job_id": "4152836",
       "posted": "2026-03-08T13:47:16+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.744740+00:00"
+      "scraped_at": "2026-03-13T19:26:33.603003+00:00"
     },
     {
       "title": "Data Engineer/Data Architect",
@@ -119,7 +134,7 @@
       "job_id": "4151968",
       "posted": "2026-03-12T14:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.747389+00:00"
+      "scraped_at": "2026-03-13T19:26:33.604614+00:00"
     },
     {
       "title": "MES DATA ENGINEER - Master Data Leader- Saudi Arabia",
@@ -132,7 +147,7 @@
       "job_id": "4161308",
       "posted": "2026-03-12T11:18:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.749812+00:00"
+      "scraped_at": "2026-03-13T19:26:33.606175+00:00"
     },
     {
       "title": "Data Engineer - Hybrid",
@@ -145,7 +160,7 @@
       "job_id": "4152195",
       "posted": "2026-03-12T08:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.751506+00:00"
+      "scraped_at": "2026-03-13T19:26:33.607743+00:00"
     },
     {
       "title": "Intermediate Data Engineer (with GCP)",
@@ -158,7 +173,7 @@
       "job_id": "4161075",
       "posted": "2026-03-12T04:59:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.754777+00:00"
+      "scraped_at": "2026-03-13T19:26:33.609371+00:00"
     },
     {
       "title": "Data/Software Engineer",
@@ -171,7 +186,7 @@
       "job_id": "4151136",
       "posted": "2026-03-11T08:01:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.759304+00:00"
+      "scraped_at": "2026-03-13T19:26:33.611841+00:00"
     },
     {
       "title": "Data Engineer",
@@ -184,7 +199,7 @@
       "job_id": "4160262",
       "posted": "2026-03-11T07:27:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.762579+00:00"
+      "scraped_at": "2026-03-13T19:26:33.614142+00:00"
     },
     {
       "title": "Data Engineer",
@@ -197,7 +212,7 @@
       "job_id": "4048338",
       "posted": "2026-03-11T00:07:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.764673+00:00"
+      "scraped_at": "2026-03-13T19:26:33.615766+00:00"
     },
     {
       "title": "Data Engineer",
@@ -210,7 +225,7 @@
       "job_id": "4150072",
       "posted": "2026-03-10T03:57:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.767940+00:00"
+      "scraped_at": "2026-03-13T19:26:33.617214+00:00"
     },
     {
       "title": "DATA ENGINEER - JOHANNESBURG",
@@ -223,7 +238,7 @@
       "job_id": "4158682",
       "posted": "2026-03-09T11:16:35+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.770242+00:00"
+      "scraped_at": "2026-03-13T19:26:33.618766+00:00"
     },
     {
       "title": "Data Specialist / Data Engineer / Data Analyst",
@@ -236,7 +251,7 @@
       "job_id": "4158597",
       "posted": "2026-03-09T02:08:50+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.771875+00:00"
+      "scraped_at": "2026-03-13T19:26:33.620226+00:00"
     },
     {
       "title": "Intermediate Data Engineer",
@@ -249,7 +264,7 @@
       "job_id": "4157354",
       "posted": "2026-03-06T07:21:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.773657+00:00"
+      "scraped_at": "2026-03-13T19:26:33.621881+00:00"
     },
     {
       "title": "Data and Power BI Engineer",
@@ -262,7 +277,7 @@
       "job_id": "4159193",
       "posted": "2026-03-10T06:25:03+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.775514+00:00"
+      "scraped_at": "2026-03-13T19:26:33.623415+00:00"
     },
     {
       "title": "Data Engineer",
@@ -275,7 +290,7 @@
       "job_id": "4155842",
       "posted": "2026-03-04T10:47:02+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.777257+00:00"
+      "scraped_at": "2026-03-13T19:26:33.625089+00:00"
     },
     {
       "title": "Data Engineer/Analyst",
@@ -288,7 +303,7 @@
       "job_id": "4146372",
       "posted": "2026-03-04T01:21:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.779173+00:00"
+      "scraped_at": "2026-03-13T19:26:33.626861+00:00"
     },
     {
       "title": "Data Engineer (Azure)",
@@ -301,7 +316,7 @@
       "job_id": "4152461",
       "posted": "2026-02-26T10:13:18+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.781620+00:00"
+      "scraped_at": "2026-03-13T19:26:33.628465+00:00"
     },
     {
       "title": "Senior Data Engineer",
@@ -314,7 +329,7 @@
       "job_id": "4160648",
       "posted": "2026-03-11T04:23:37+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.783960+00:00"
+      "scraped_at": "2026-03-13T19:26:33.629957+00:00"
     },
     {
       "title": "Data Engineer - Finance",
@@ -327,7 +342,7 @@
       "job_id": "4142434",
       "posted": "2026-02-25T16:01:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.786408+00:00"
+      "scraped_at": "2026-03-13T19:26:33.631536+00:00"
     },
     {
       "title": "Data Engineer",
@@ -340,7 +355,7 @@
       "job_id": "4141874",
       "posted": "2026-02-25T10:01:18+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.788165+00:00"
+      "scraped_at": "2026-03-13T19:26:33.633369+00:00"
     },
     {
       "title": "Data Specialist / Data Engineer / Data Analyst (Junior / Intermediate / Senior)",
@@ -353,7 +368,7 @@
       "job_id": "4152084",
       "posted": "2026-03-12T15:53:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.789851+00:00"
+      "scraped_at": "2026-03-13T19:26:33.634854+00:00"
     },
     {
       "title": "senior data engineer",
@@ -366,7 +381,7 @@
       "job_id": "4059617",
       "posted": "2026-03-10T09:50:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.791803+00:00"
+      "scraped_at": "2026-03-13T19:26:33.636447+00:00"
     },
     {
       "title": "Senior Data Engineer",
@@ -379,7 +394,7 @@
       "job_id": "4150076",
       "posted": "2026-03-10T00:48:45+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.794086+00:00"
+      "scraped_at": "2026-03-13T19:26:33.637939+00:00"
     },
     {
       "title": "Cloud Data Engineer",
@@ -392,7 +407,7 @@
       "job_id": "4159854",
       "posted": "2026-03-10T08:54:52+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.796025+00:00"
+      "scraped_at": "2026-03-13T19:26:33.639509+00:00"
     },
     {
       "title": "Senior Data Engineer (GCP)",
@@ -405,7 +420,7 @@
       "job_id": "4149305",
       "posted": "2026-03-07T14:49:54+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:02:53.798479+00:00"
+      "scraped_at": "2026-03-13T19:26:33.640989+00:00"
     },
     {
       "title": "Data Analyst",
@@ -418,7 +433,7 @@
       "job_id": "4151043",
       "posted": "2026-03-11T14:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.242570+00:00"
+      "scraped_at": "2026-03-13T19:26:40.457574+00:00"
     },
     {
       "title": "Data Analyst",
@@ -431,7 +446,7 @@
       "job_id": "4146754",
       "posted": "2026-03-09T15:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.246051+00:00"
+      "scraped_at": "2026-03-13T19:26:40.460572+00:00"
     },
     {
       "title": "Data Analyst - Irene",
@@ -444,7 +459,7 @@
       "job_id": "4161598",
       "posted": "2026-03-12T10:09:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.251456+00:00"
+      "scraped_at": "2026-03-13T19:26:40.465882+00:00"
     },
     {
       "title": "Data Analyst - Near Real Time Analytics (Contract) - Gauteng/Hybrid - ISB8500122",
@@ -457,7 +472,7 @@
       "job_id": "4100977",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.253087+00:00"
+      "scraped_at": "2026-03-13T19:26:40.467524+00:00"
     },
     {
       "title": "Data / AI Analyst",
@@ -470,7 +485,7 @@
       "job_id": "4161208",
       "posted": "2026-03-12T07:47:14+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.254491+00:00"
+      "scraped_at": "2026-03-13T19:26:40.468962+00:00"
     },
     {
       "title": "Data Analyst",
@@ -483,7 +498,7 @@
       "job_id": "4160761",
       "posted": "2026-03-11T14:45:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.256111+00:00"
+      "scraped_at": "2026-03-13T19:26:40.470651+00:00"
     },
     {
       "title": "Data Analyst",
@@ -496,7 +511,7 @@
       "job_id": "4160608",
       "posted": "2026-03-11T12:40:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.259264+00:00"
+      "scraped_at": "2026-03-13T19:26:40.472231+00:00"
     },
     {
       "title": "Data Analyst",
@@ -509,7 +524,7 @@
       "job_id": "4136728",
       "posted": "2026-03-11T02:52:18+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.261054+00:00"
+      "scraped_at": "2026-03-13T19:26:40.473857+00:00"
     },
     {
       "title": "Data Analyst",
@@ -522,7 +537,7 @@
       "job_id": "4134611",
       "posted": "2026-03-11T02:39:39+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.263267+00:00"
+      "scraped_at": "2026-03-13T19:26:40.475514+00:00"
     },
     {
       "title": "Data Analyst",
@@ -535,7 +550,7 @@
       "job_id": "4150464",
       "posted": "2026-03-11T02:01:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.264853+00:00"
+      "scraped_at": "2026-03-13T19:26:40.477642+00:00"
     },
     {
       "title": "Data Analyst",
@@ -548,7 +563,7 @@
       "job_id": "4159969",
       "posted": "2026-03-10T15:12:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.267875+00:00"
+      "scraped_at": "2026-03-13T19:26:40.483101+00:00"
     },
     {
       "title": "Data Analyst",
@@ -561,7 +576,7 @@
       "job_id": "4150093",
       "posted": "2026-03-10T11:13:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.270143+00:00"
+      "scraped_at": "2026-03-13T19:26:40.484643+00:00"
     },
     {
       "title": "Data Analysts",
@@ -574,7 +589,7 @@
       "job_id": "4150064",
       "posted": "2026-03-10T07:03:54+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.272074+00:00"
+      "scraped_at": "2026-03-13T19:26:40.486015+00:00"
     },
     {
       "title": "Data Analyst",
@@ -587,7 +602,7 @@
       "job_id": "4159721",
       "posted": "2026-03-10T01:30:49+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.275222+00:00"
+      "scraped_at": "2026-03-13T19:26:40.487460+00:00"
     },
     {
       "title": "Data Analyst",
@@ -600,7 +615,7 @@
       "job_id": "4159283",
       "posted": "2026-03-10T00:04:48+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.277098+00:00"
+      "scraped_at": "2026-03-13T19:26:40.488920+00:00"
     },
     {
       "title": "Data Analyst",
@@ -613,7 +628,7 @@
       "job_id": "4159065",
       "posted": "2026-03-09T14:37:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.278747+00:00"
+      "scraped_at": "2026-03-13T19:26:40.490412+00:00"
     },
     {
       "title": "Data Analyst (iGaming) JHB/DBN",
@@ -626,7 +641,7 @@
       "job_id": "4122135",
       "posted": "2026-03-04T08:14:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.280900+00:00"
+      "scraped_at": "2026-03-13T19:26:40.491887+00:00"
     },
     {
       "title": "Data Analyst",
@@ -639,7 +654,7 @@
       "job_id": "4149517",
       "posted": "2026-03-09T08:01:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.285148+00:00"
+      "scraped_at": "2026-03-13T19:26:40.493501+00:00"
     },
     {
       "title": "Data Analyst",
@@ -652,7 +667,7 @@
       "job_id": "4155640",
       "posted": "2026-03-04T01:36:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.288799+00:00"
+      "scraped_at": "2026-03-13T19:26:40.495733+00:00"
     },
     {
       "title": "Data Analyst",
@@ -665,7 +680,7 @@
       "job_id": "4158036",
       "posted": "2026-03-06T12:32:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.294362+00:00"
+      "scraped_at": "2026-03-13T19:26:40.498696+00:00"
     },
     {
       "title": "Data Analyst",
@@ -678,7 +693,7 @@
       "job_id": "4148489",
       "posted": "2026-03-06T03:22:33+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.296711+00:00"
+      "scraped_at": "2026-03-13T19:26:40.500280+00:00"
     },
     {
       "title": "Data Analyst",
@@ -691,7 +706,7 @@
       "job_id": "4147748",
       "posted": "2026-03-05T16:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.298448+00:00"
+      "scraped_at": "2026-03-13T19:26:40.501857+00:00"
     },
     {
       "title": "Data Analyst (Sandton)",
@@ -704,7 +719,7 @@
       "job_id": "4147518",
       "posted": "2026-03-05T13:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:02.300112+00:00"
+      "scraped_at": "2026-03-13T19:26:40.503424+00:00"
     },
     {
       "title": "Data Scientist (Pipeline)",
@@ -717,7 +732,7 @@
       "job_id": "4146921",
       "posted": "2026-03-09T00:20:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.189668+00:00"
+      "scraped_at": "2026-03-13T19:26:48.337965+00:00"
     },
     {
       "title": "Data Scientist",
@@ -730,7 +745,7 @@
       "job_id": "4160971",
       "posted": "2026-03-12T00:17:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.191301+00:00"
+      "scraped_at": "2026-03-13T19:26:48.339443+00:00"
     },
     {
       "title": "Data Scientist",
@@ -743,7 +758,7 @@
       "job_id": "4151744",
       "posted": "2026-03-12T02:18:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.193110+00:00"
+      "scraped_at": "2026-03-13T19:26:48.341027+00:00"
     },
     {
       "title": "Data Scientist",
@@ -756,7 +771,7 @@
       "job_id": "4161077",
       "posted": "2026-03-12T01:59:41+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.195207+00:00"
+      "scraped_at": "2026-03-13T19:26:48.342521+00:00"
     },
     {
       "title": "Data Scientist",
@@ -769,7 +784,7 @@
       "job_id": "4151738",
       "posted": "2026-03-12T00:20:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.198085+00:00"
+      "scraped_at": "2026-03-13T19:26:48.344597+00:00"
     },
     {
       "title": "DATA SCIENTIST, George, Western Cape (Office based)",
@@ -782,7 +797,7 @@
       "job_id": "4070994",
       "posted": "2026-03-11T11:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.200555+00:00"
+      "scraped_at": "2026-03-13T19:26:48.346677+00:00"
     },
     {
       "title": "Data Scientist",
@@ -795,7 +810,7 @@
       "job_id": "4160231",
       "posted": "2026-03-11T08:23:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.202183+00:00"
+      "scraped_at": "2026-03-13T19:26:48.348139+00:00"
     },
     {
       "title": "Data Scientist",
@@ -808,7 +823,7 @@
       "job_id": "4160538",
       "posted": "2026-03-11T03:09:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.203679+00:00"
+      "scraped_at": "2026-03-13T19:26:48.349588+00:00"
     },
     {
       "title": "Data Scientist (Junior to Mid-Level)",
@@ -821,7 +836,7 @@
       "job_id": "4159490",
       "posted": "2026-03-10T09:57:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.205276+00:00"
+      "scraped_at": "2026-03-13T19:26:48.351131+00:00"
     },
     {
       "title": "Pricing Data Scientist",
@@ -834,7 +849,7 @@
       "job_id": "4159309",
       "posted": "2026-03-10T07:13:34+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.206964+00:00"
+      "scraped_at": "2026-03-13T19:26:48.352568+00:00"
     },
     {
       "title": "Data Scientist - Stellenbosch / Hybrid - R950K PA",
@@ -847,7 +862,7 @@
       "job_id": "4158488",
       "posted": "2026-03-09T09:37:43+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.210442+00:00"
+      "scraped_at": "2026-03-13T19:26:48.354149+00:00"
     },
     {
       "title": "Data Scientist",
@@ -860,7 +875,7 @@
       "job_id": "4149518",
       "posted": "2026-03-09T08:01:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.214405+00:00"
+      "scraped_at": "2026-03-13T19:26:48.355705+00:00"
     },
     {
       "title": "Data Scientist",
@@ -873,7 +888,7 @@
       "job_id": "4149513",
       "posted": "2026-03-09T07:01:20+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.217195+00:00"
+      "scraped_at": "2026-03-13T19:26:48.358148+00:00"
     },
     {
       "title": "Data Scientist",
@@ -886,7 +901,7 @@
       "job_id": "4157576",
       "posted": "2026-03-06T10:22:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.220180+00:00"
+      "scraped_at": "2026-03-13T19:26:48.359744+00:00"
     },
     {
       "title": "Data Scientist",
@@ -899,7 +914,7 @@
       "job_id": "4148137",
       "posted": "2026-03-06T06:03:23+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.222024+00:00"
+      "scraped_at": "2026-03-13T19:26:48.362365+00:00"
     },
     {
       "title": "Data Scientist",
@@ -912,7 +927,7 @@
       "job_id": "4157349",
       "posted": "2026-03-06T04:24:17+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.225169+00:00"
+      "scraped_at": "2026-03-13T19:26:48.363966+00:00"
     },
     {
       "title": "Data Scientist",
@@ -925,7 +940,7 @@
       "job_id": "4148421",
       "posted": "2026-03-06T03:25:33+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.228141+00:00"
+      "scraped_at": "2026-03-13T19:26:48.365472+00:00"
     },
     {
       "title": "Data Scientist",
@@ -938,7 +953,7 @@
       "job_id": "4148301",
       "posted": "2026-03-06T01:47:48+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.230468+00:00"
+      "scraped_at": "2026-03-13T19:26:48.366933+00:00"
     },
     {
       "title": "Data Scientist Lead - Pretoria - up to R1.5mil per annum",
@@ -951,7 +966,7 @@
       "job_id": "4146102",
       "posted": "2026-03-05T15:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.232120+00:00"
+      "scraped_at": "2026-03-13T19:26:48.368416+00:00"
     },
     {
       "title": "Data Scientist (Sandton)",
@@ -964,7 +979,7 @@
       "job_id": "4147499",
       "posted": "2026-03-05T13:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.233811+00:00"
+      "scraped_at": "2026-03-13T19:26:48.369983+00:00"
     },
     {
       "title": "Data Scientist (SQL & Python) - Stellenbosch, Cape Town - up to R950k per annum",
@@ -977,7 +992,7 @@
       "job_id": "4155605",
       "posted": "2026-03-04T07:59:43+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.235424+00:00"
+      "scraped_at": "2026-03-13T19:26:48.371535+00:00"
     },
     {
       "title": "Data Scientist (Python & SQL) - Johannesburg - up to R960k CTC",
@@ -990,7 +1005,7 @@
       "job_id": "4155587",
       "posted": "2026-03-04T07:52:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.237474+00:00"
+      "scraped_at": "2026-03-13T19:26:48.373150+00:00"
     },
     {
       "title": "BUSINESS / DATA SCIENTIST",
@@ -1003,7 +1018,7 @@
       "job_id": "4155717",
       "posted": "2026-03-04T07:38:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.240973+00:00"
+      "scraped_at": "2026-03-13T19:26:48.374626+00:00"
     },
     {
       "title": "Data Scientist",
@@ -1016,7 +1031,7 @@
       "job_id": "4146949",
       "posted": "2026-03-04T01:25:20+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.243797+00:00"
+      "scraped_at": "2026-03-13T19:26:48.376106+00:00"
     },
     {
       "title": "Graduate Actuary / Data Scientist",
@@ -1029,7 +1044,7 @@
       "job_id": "4146108",
       "posted": "2026-03-04T04:31:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:10.245606+00:00"
+      "scraped_at": "2026-03-13T19:26:48.377544+00:00"
     },
     {
       "title": "Data Architect - Banking (Hadoop / Big Data Mandatory)",
@@ -1042,7 +1057,7 @@
       "job_id": "4150158",
       "posted": "2026-03-10T15:01:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.848808+00:00"
+      "scraped_at": "2026-03-13T19:26:55.720042+00:00"
     },
     {
       "title": "Data Architect",
@@ -1055,7 +1070,7 @@
       "job_id": "4069508",
       "posted": "2026-03-05T12:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.850582+00:00"
+      "scraped_at": "2026-03-13T19:26:55.721511+00:00"
     },
     {
       "title": "Data Architect",
@@ -1068,7 +1083,7 @@
       "job_id": "4156121",
       "posted": "2026-03-04T10:58:20+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.852398+00:00"
+      "scraped_at": "2026-03-13T19:26:55.723034+00:00"
     },
     {
       "title": "Data Architect",
@@ -1081,7 +1096,7 @@
       "job_id": "4155696",
       "posted": "2026-03-04T07:37:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.854184+00:00"
+      "scraped_at": "2026-03-13T19:26:55.724698+00:00"
     },
     {
       "title": "Data Solutions Architect (MS Fabric & Databricks)",
@@ -1094,7 +1109,7 @@
       "job_id": "4158534",
       "posted": "2026-03-09T07:41:02+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.855853+00:00"
+      "scraped_at": "2026-03-13T19:26:55.726320+00:00"
     },
     {
       "title": "Data Solution Architect",
@@ -1107,7 +1122,7 @@
       "job_id": "4142810",
       "posted": "2026-02-26T10:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.859084+00:00"
+      "scraped_at": "2026-03-13T19:26:55.727929+00:00"
     },
     {
       "title": "Senior Data Warehouse Developer",
@@ -1120,7 +1135,7 @@
       "job_id": "4160533",
       "posted": "2026-03-11T10:48:50+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.860677+00:00"
+      "scraped_at": "2026-03-13T19:26:55.729839+00:00"
     },
     {
       "title": "Data Modeler",
@@ -1133,7 +1148,7 @@
       "job_id": "4142826",
       "posted": "2026-02-26T10:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.862316+00:00"
+      "scraped_at": "2026-03-13T19:26:55.731420+00:00"
     },
     {
       "title": "Software Engineer",
@@ -1146,7 +1161,7 @@
       "job_id": "4151882",
       "posted": "2026-03-12T06:06:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.866768+00:00"
+      "scraped_at": "2026-03-13T19:26:55.735738+00:00"
     },
     {
       "title": "Senior Machine Learning Engineer",
@@ -1159,7 +1174,7 @@
       "job_id": "4151899",
       "posted": "2026-03-12T08:47:46+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.868205+00:00"
+      "scraped_at": "2026-03-13T19:26:55.737135+00:00"
     },
     {
       "title": "DevOps & Infrastructure Lead",
@@ -1172,7 +1187,7 @@
       "job_id": "4152212",
       "posted": "2026-03-12T19:05:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.869755+00:00"
+      "scraped_at": "2026-03-13T19:26:55.738469+00:00"
     },
     {
       "title": "DevOps Engineer",
@@ -1185,7 +1200,7 @@
       "job_id": "4151307",
       "posted": "2026-03-11T09:57:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.871148+00:00"
+      "scraped_at": "2026-03-13T19:26:55.739828+00:00"
     },
     {
       "title": "Production Planner Luxury Yachts",
@@ -1198,7 +1213,7 @@
       "job_id": "4150850",
       "posted": "2026-03-11T12:01:31+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.872678+00:00"
+      "scraped_at": "2026-03-13T19:26:55.741326+00:00"
     },
     {
       "title": "Data Engineering and Architecture Lead - Johannesburg - up to R1.8mil CTC",
@@ -1211,7 +1226,7 @@
       "job_id": "4149964",
       "posted": "2026-03-10T12:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.876603+00:00"
+      "scraped_at": "2026-03-13T19:26:55.744793+00:00"
     },
     {
       "title": "Applications Architect",
@@ -1224,7 +1239,7 @@
       "job_id": "4150175",
       "posted": "2026-03-10T09:32:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.878237+00:00"
+      "scraped_at": "2026-03-13T19:26:55.746238+00:00"
     },
     {
       "title": "SAP Functional Consultant_BW/4HANA (Contract) - Gauteng/Hybrid - ISB3800495",
@@ -1237,7 +1252,7 @@
       "job_id": "4108161",
       "posted": "2026-03-10T17:01:50+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.881428+00:00"
+      "scraped_at": "2026-03-13T19:26:55.748036+00:00"
     },
     {
       "title": "Senior Developer (Back-End)",
@@ -1250,7 +1265,7 @@
       "job_id": "4148693",
       "posted": "2026-03-07T03:41:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.884224+00:00"
+      "scraped_at": "2026-03-13T19:26:55.749543+00:00"
     },
     {
       "title": "Junior Account Manager",
@@ -1263,7 +1278,7 @@
       "job_id": "4148601",
       "posted": "2026-03-06T06:51:55+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.885642+00:00"
+      "scraped_at": "2026-03-13T19:26:55.750962+00:00"
     },
     {
       "title": "Infrastructure and DevOps Lead",
@@ -1276,7 +1291,7 @@
       "job_id": "4157433",
       "posted": "2026-03-06T00:31:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.887170+00:00"
+      "scraped_at": "2026-03-13T19:26:55.752354+00:00"
     },
     {
       "title": "Senior Full Stack Developer_Kotlin/Java/Python/CSharp (Contract) - Gauteng/Hybrid - ISB2002515",
@@ -1289,7 +1304,7 @@
       "job_id": "4092908",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.888675+00:00"
+      "scraped_at": "2026-03-13T19:26:55.753778+00:00"
     },
     {
       "title": "ERP Secialist: Distribution",
@@ -1302,7 +1317,7 @@
       "job_id": "4148048",
       "posted": "2026-03-06T07:38:34+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:18.890099+00:00"
+      "scraped_at": "2026-03-13T19:26:55.755162+00:00"
     },
     {
       "title": "Business Intelligence Team Lead",
@@ -1315,7 +1330,7 @@
       "job_id": "4160357",
       "posted": "2026-03-11T09:46:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.594318+00:00"
+      "scraped_at": "2026-03-13T19:27:04.929330+00:00"
     },
     {
       "title": "Business Intelligence (BI) Analyst",
@@ -1328,7 +1343,7 @@
       "job_id": "4146207",
       "posted": "2026-03-10T13:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.595792+00:00"
+      "scraped_at": "2026-03-13T19:27:04.930773+00:00"
     },
     {
       "title": "Senior Business Intelligence Developer",
@@ -1341,7 +1356,7 @@
       "job_id": "4161568",
       "posted": "2026-03-12T02:03:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.597282+00:00"
+      "scraped_at": "2026-03-13T19:27:04.932228+00:00"
     },
     {
       "title": "Senior Business Intelligence Analyst",
@@ -1354,7 +1369,7 @@
       "job_id": "4161578",
       "posted": "2026-03-12T08:13:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.598764+00:00"
+      "scraped_at": "2026-03-13T19:27:04.933692+00:00"
     },
     {
       "title": "Finance Business Intelligence (BI) Specialist",
@@ -1367,7 +1382,7 @@
       "job_id": "4158032",
       "posted": "2026-03-06T08:01:38+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.600371+00:00"
+      "scraped_at": "2026-03-13T19:27:04.935252+00:00"
     },
     {
       "title": "Business Intelligence Data Analyst/Developer",
@@ -1380,7 +1395,7 @@
       "job_id": "4087589",
       "posted": "2026-03-10T14:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.603327+00:00"
+      "scraped_at": "2026-03-13T19:27:04.936665+00:00"
     },
     {
       "title": "Senior Developer - Business Intelligence",
@@ -1393,7 +1408,7 @@
       "job_id": "4160072",
       "posted": "2026-03-10T18:06:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.604880+00:00"
+      "scraped_at": "2026-03-13T19:27:04.938082+00:00"
     },
     {
       "title": "Subject Matter Expert - Analytics & Business Intelligence",
@@ -1406,7 +1421,7 @@
       "job_id": "4160066",
       "posted": "2026-03-10T17:58:59+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.606329+00:00"
+      "scraped_at": "2026-03-13T19:27:04.939561+00:00"
     },
     {
       "title": "Chartered Accountant | Business Intelligence & Group Reporting",
@@ -1419,7 +1434,7 @@
       "job_id": "4147850",
       "posted": "2026-03-05T22:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.609001+00:00"
+      "scraped_at": "2026-03-13T19:27:04.941817+00:00"
     },
     {
       "title": "Business Intelligence Developer",
@@ -1432,7 +1447,7 @@
       "job_id": "4153696",
       "posted": "2026-03-01T02:14:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.612935+00:00"
+      "scraped_at": "2026-03-13T19:27:04.943422+00:00"
     },
     {
       "title": "Commercial Business Intelligence Analyst",
@@ -1445,7 +1460,7 @@
       "job_id": "4144992",
       "posted": "2026-02-28T17:01:03+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.616442+00:00"
+      "scraped_at": "2026-03-13T19:27:04.945665+00:00"
     },
     {
       "title": "Data Scientist (Business Intelligence)",
@@ -1458,7 +1473,7 @@
       "job_id": "4143863",
       "posted": "2026-02-27T12:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.618059+00:00"
+      "scraped_at": "2026-03-13T19:27:04.947208+00:00"
     },
     {
       "title": "Business Intelligence Officer",
@@ -1471,7 +1486,7 @@
       "job_id": "4143663",
       "posted": "2026-02-28T16:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.619649+00:00"
+      "scraped_at": "2026-03-13T19:27:04.948746+00:00"
     },
     {
       "title": "Senior BI Developer",
@@ -1484,7 +1499,7 @@
       "job_id": "4161013",
       "posted": "2026-03-12T01:34:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.621092+00:00"
+      "scraped_at": "2026-03-13T19:27:04.950155+00:00"
     },
     {
       "title": "Senior BI Developer",
@@ -1497,7 +1512,7 @@
       "job_id": "4109529",
       "posted": "2026-03-09T09:55:57+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.622613+00:00"
+      "scraped_at": "2026-03-13T19:27:04.952082+00:00"
     },
     {
       "title": "Junior IT (BI Analyst)",
@@ -1510,7 +1525,7 @@
       "job_id": "4150286",
       "posted": "2026-03-12T05:59:17+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.624407+00:00"
+      "scraped_at": "2026-03-13T19:27:04.953592+00:00"
     },
     {
       "title": "Senior BI Developer",
@@ -1523,7 +1538,7 @@
       "job_id": "4158808",
       "posted": "2026-03-09T00:35:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.626115+00:00"
+      "scraped_at": "2026-03-13T19:27:04.955175+00:00"
     },
     {
       "title": "Data Analyst / BI Analyst",
@@ -1536,7 +1551,7 @@
       "job_id": "4158165",
       "posted": "2026-03-08T10:37:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.627730+00:00"
+      "scraped_at": "2026-03-13T19:27:04.956720+00:00"
     },
     {
       "title": "BI Engineer",
@@ -1549,7 +1564,7 @@
       "job_id": "4129733",
       "posted": "2026-03-11T08:11:43+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.630942+00:00"
+      "scraped_at": "2026-03-13T19:27:04.958242+00:00"
     },
     {
       "title": "AI Platform Implementation Consultant / BI Engineer",
@@ -1562,7 +1577,7 @@
       "job_id": "4137300",
       "posted": "2026-03-11T00:56:38+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.632588+00:00"
+      "scraped_at": "2026-03-13T19:27:04.959942+00:00"
     },
     {
       "title": "BI Developer",
@@ -1575,7 +1590,7 @@
       "job_id": "4157018",
       "posted": "2026-03-05T09:29:02+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.634112+00:00"
+      "scraped_at": "2026-03-13T19:27:04.961921+00:00"
     },
     {
       "title": "Finance Systems & Transformation Analyst",
@@ -1588,7 +1603,7 @@
       "job_id": "4161322",
       "posted": "2026-03-12T01:47:23+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.635572+00:00"
+      "scraped_at": "2026-03-13T19:27:04.963364+00:00"
     },
     {
       "title": "Front-End BI Developer (Python / Big Data / Analytics) (Contract) - Gauteng/Hybrid - ISB1001252",
@@ -1601,7 +1616,7 @@
       "job_id": "4092911",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.637111+00:00"
+      "scraped_at": "2026-03-13T19:27:04.964872+00:00"
     },
     {
       "title": "Junior Business Analyst - BI",
@@ -1614,7 +1629,7 @@
       "job_id": "4143718",
       "posted": "2026-03-05T09:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.638660+00:00"
+      "scraped_at": "2026-03-13T19:27:04.966435+00:00"
     },
     {
       "title": "Agentic AI & BI Engineer (SysOps)- Midrand",
@@ -1627,7 +1642,7 @@
       "job_id": "4141661",
       "posted": "2026-03-06T16:01:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:25.641089+00:00"
+      "scraped_at": "2026-03-13T19:27:04.967812+00:00"
     },
     {
       "title": "BI Developer",
@@ -1640,7 +1655,7 @@
       "job_id": "4145233",
       "posted": "2026-03-03T07:09:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.050659+00:00"
+      "scraped_at": "2026-03-13T19:27:12.445494+00:00"
     },
     {
       "title": "Data / SQL Developer / Power BI Developer (Banking)",
@@ -1653,7 +1668,7 @@
       "job_id": "4160513",
       "posted": "2026-03-11T06:50:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.055101+00:00"
+      "scraped_at": "2026-03-13T19:27:12.448543+00:00"
     },
     {
       "title": "BI Developer",
@@ -1666,7 +1681,7 @@
       "job_id": "4144329",
       "posted": "2026-02-28T06:20:03+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.056796+00:00"
+      "scraped_at": "2026-03-13T19:27:12.450005+00:00"
     },
     {
       "title": "BI Developer",
@@ -1679,7 +1694,7 @@
       "job_id": "4144563",
       "posted": "2026-02-28T03:30:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.059465+00:00"
+      "scraped_at": "2026-03-13T19:27:12.451461+00:00"
     },
     {
       "title": "Intermediate BI/ Data Warehouse Developer - Cape Town - up to R700k per annum",
@@ -1692,7 +1707,7 @@
       "job_id": "4152438",
       "posted": "2026-02-26T09:45:58+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.061062+00:00"
+      "scraped_at": "2026-03-13T19:27:12.452992+00:00"
     },
     {
       "title": "BI Analyst / Developer (Senior)",
@@ -1705,7 +1720,7 @@
       "job_id": "4142749",
       "posted": "2026-02-26T05:39:30+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.062699+00:00"
+      "scraped_at": "2026-03-13T19:27:12.454565+00:00"
     },
     {
       "title": "BI Developer",
@@ -1718,7 +1733,7 @@
       "job_id": "4152558",
       "posted": "2026-02-26T03:05:57+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.065865+00:00"
+      "scraped_at": "2026-03-13T19:27:12.456107+00:00"
     },
     {
       "title": "BI Developer",
@@ -1731,7 +1746,7 @@
       "job_id": "4141620",
       "posted": "2026-02-25T05:13:33+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.071840+00:00"
+      "scraped_at": "2026-03-13T19:27:12.460535+00:00"
     },
     {
       "title": "BI Developer",
@@ -1744,7 +1759,7 @@
       "job_id": "4141730",
       "posted": "2026-02-25T00:42:14+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.073299+00:00"
+      "scraped_at": "2026-03-13T19:27:12.463316+00:00"
     },
     {
       "title": "Power BI Developer",
@@ -1757,7 +1772,7 @@
       "job_id": "4152136",
       "posted": "2026-03-12T01:09:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.076271+00:00"
+      "scraped_at": "2026-03-13T19:27:12.480680+00:00"
     },
     {
       "title": "Power BI Developer",
@@ -1770,7 +1785,7 @@
       "job_id": "4159284",
       "posted": "2026-03-10T04:34:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.077723+00:00"
+      "scraped_at": "2026-03-13T19:27:12.483610+00:00"
     },
     {
       "title": "Junior BI Developer",
@@ -1783,7 +1798,7 @@
       "job_id": "4146129",
       "posted": "2026-03-04T08:01:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.079317+00:00"
+      "scraped_at": "2026-03-13T19:27:12.485173+00:00"
     },
     {
       "title": "SQL - BI Developer / DBA / Data Analyst / Support",
@@ -1796,7 +1811,7 @@
       "job_id": "3496838",
       "posted": "2026-03-03T07:31:49+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.080847+00:00"
+      "scraped_at": "2026-03-13T19:27:12.486706+00:00"
     },
     {
       "title": "Senior BI Developer",
@@ -1809,7 +1824,7 @@
       "job_id": "4145106",
       "posted": "2026-03-02T00:35:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.082335+00:00"
+      "scraped_at": "2026-03-13T19:27:12.488233+00:00"
     },
     {
       "title": "Senior Power BI Developer & Business Analyst",
@@ -1822,7 +1837,7 @@
       "job_id": "4152471",
       "posted": "2026-02-26T10:15:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.085214+00:00"
+      "scraped_at": "2026-03-13T19:27:12.492971+00:00"
     },
     {
       "title": "Oracle and Cognos Developer (Senior)",
@@ -1835,7 +1850,7 @@
       "job_id": "4133656",
       "posted": "2026-02-25T17:01:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:32.092517+00:00"
+      "scraped_at": "2026-03-13T19:27:12.500381+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -1848,7 +1863,7 @@
       "job_id": "4159712",
       "posted": "2026-03-10T12:38:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.492834+00:00"
+      "scraped_at": "2026-03-13T19:27:21.468684+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -1861,7 +1876,7 @@
       "job_id": "4093710",
       "posted": "2026-03-09T03:59:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.494397+00:00"
+      "scraped_at": "2026-03-13T19:27:21.470866+00:00"
     },
     {
       "title": "Data Scientist & Machine Learning Engineer",
@@ -1874,7 +1889,7 @@
       "job_id": "4059748",
       "posted": "2026-03-03T03:01:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.496034+00:00"
+      "scraped_at": "2026-03-13T19:27:21.472375+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -1887,7 +1902,7 @@
       "job_id": "4152981",
       "posted": "2026-02-27T06:02:16+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.497575+00:00"
+      "scraped_at": "2026-03-13T19:27:21.473837+00:00"
     },
     {
       "title": "AI / ML Engineer",
@@ -1900,7 +1915,7 @@
       "job_id": "4159302",
       "posted": "2026-03-10T05:26:33+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.500498+00:00"
+      "scraped_at": "2026-03-13T19:27:21.476843+00:00"
     },
     {
       "title": "AI / ML Engineer",
@@ -1913,7 +1928,7 @@
       "job_id": "4153091",
       "posted": "2026-02-27T05:46:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.502005+00:00"
+      "scraped_at": "2026-03-13T19:27:21.478438+00:00"
     },
     {
       "title": "AI Engineer",
@@ -1926,7 +1941,7 @@
       "job_id": "4153622",
       "posted": "2026-03-10T01:14:51+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.508439+00:00"
+      "scraped_at": "2026-03-13T19:27:21.484276+00:00"
     },
     {
       "title": "CNC Facilitator Application Engineer",
@@ -1939,7 +1954,7 @@
       "job_id": "3869928",
       "posted": "2026-03-10T15:37:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.511610+00:00"
+      "scraped_at": "2026-03-13T19:27:21.485717+00:00"
     },
     {
       "title": "Azure Solutions Engineer / Architect",
@@ -1952,7 +1967,7 @@
       "job_id": "4155554",
       "posted": "2026-03-04T07:37:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.515173+00:00"
+      "scraped_at": "2026-03-13T19:27:21.488655+00:00"
     },
     {
       "title": "AI Engineer",
@@ -1965,7 +1980,7 @@
       "job_id": "4161634",
       "posted": "2026-03-12T08:42:01+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.516965+00:00"
+      "scraped_at": "2026-03-13T19:27:21.490042+00:00"
     },
     {
       "title": "AWS Data Engineer",
@@ -1978,7 +1993,7 @@
       "job_id": "4161593",
       "posted": "2026-03-12T09:31:44+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.518762+00:00"
+      "scraped_at": "2026-03-13T19:27:21.491461+00:00"
     },
     {
       "title": "Advanced Level 2 Engineer (L3 Capability)",
@@ -1991,7 +2006,7 @@
       "job_id": "4160965",
       "posted": "2026-03-12T02:15:46+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.520187+00:00"
+      "scraped_at": "2026-03-13T19:27:21.493765+00:00"
     },
     {
       "title": "AI Engineer",
@@ -2004,7 +2019,7 @@
       "job_id": "4160534",
       "posted": "2026-03-11T11:55:22+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.521708+00:00"
+      "scraped_at": "2026-03-13T19:27:21.495310+00:00"
     },
     {
       "title": "Mechatronics Engineer Intern",
@@ -2017,7 +2032,7 @@
       "job_id": "4147326",
       "posted": "2026-03-05T11:01:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.524790+00:00"
+      "scraped_at": "2026-03-13T19:27:21.498177+00:00"
     },
     {
       "title": "MS 365 Identity, Access & Endpoint Engineer",
@@ -2030,7 +2045,7 @@
       "job_id": "4155677",
       "posted": "2026-03-04T08:54:59+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.528520+00:00"
+      "scraped_at": "2026-03-13T19:27:21.501341+00:00"
     },
     {
       "title": "MS 365 Collaboration & Communications Engineer",
@@ -2043,7 +2058,7 @@
       "job_id": "4155590",
       "posted": "2026-03-04T07:54:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.530115+00:00"
+      "scraped_at": "2026-03-13T19:27:21.502851+00:00"
     },
     {
       "title": "Senior AWS Data Engineer - AI Industrialization & MLOps (Contract) - Gauteng/Hybrid - ISB1501462",
@@ -2056,7 +2071,7 @@
       "job_id": "4135613",
       "posted": "2026-03-04T10:59:58+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.531542+00:00"
+      "scraped_at": "2026-03-13T19:27:21.504256+00:00"
     },
     {
       "title": "Test Engineer: Cleanroom",
@@ -2069,7 +2084,7 @@
       "job_id": "4158914",
       "posted": "2026-03-09T01:08:34+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:40.532933+00:00"
+      "scraped_at": "2026-03-13T19:27:21.505755+00:00"
     },
     {
       "title": "Analytics Engineer",
@@ -2082,7 +2097,7 @@
       "job_id": "4151967",
       "posted": "2026-03-12T14:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.259402+00:00"
+      "scraped_at": "2026-03-13T19:27:29.167766+00:00"
     },
     {
       "title": "Senior Data Platform & Analytics Engineer",
@@ -2095,7 +2110,7 @@
       "job_id": "4160970",
       "posted": "2026-03-12T07:45:01+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.260998+00:00"
+      "scraped_at": "2026-03-13T19:27:29.169342+00:00"
     },
     {
       "title": "Data Analytics Engineer",
@@ -2108,7 +2123,7 @@
       "job_id": "4047352",
       "posted": "2026-03-11T06:28:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.262545+00:00"
+      "scraped_at": "2026-03-13T19:27:29.170817+00:00"
     },
     {
       "title": "Technical Lead: Data Engineering",
@@ -2121,7 +2136,7 @@
       "job_id": "4150773",
       "posted": "2026-03-11T11:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.265466+00:00"
+      "scraped_at": "2026-03-13T19:27:29.173691+00:00"
     },
     {
       "title": "Head of Data Engineering, Analytics and Automation",
@@ -2134,7 +2149,7 @@
       "job_id": "4145341",
       "posted": "2026-03-08T10:01:09+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.266847+00:00"
+      "scraped_at": "2026-03-13T19:27:29.176607+00:00"
     },
     {
       "title": "Junior AI Engineer - Enterprise Data & Analytics Hub (Contract) - Gauteng/Hybrid - ISB1101970",
@@ -2147,7 +2162,7 @@
       "job_id": "4135530",
       "posted": "2026-03-04T11:02:23+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.269626+00:00"
+      "scraped_at": "2026-03-13T19:27:29.179513+00:00"
     },
     {
       "title": "Senior Data Analyst - Near Real Time Analytics (Contract) - Gauteng/Hybrid - ISB8501551",
@@ -2160,7 +2175,7 @@
       "job_id": "4100974",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.272560+00:00"
+      "scraped_at": "2026-03-13T19:27:29.182393+00:00"
     },
     {
       "title": "Senior Director: Business Systems & Analytics",
@@ -2173,7 +2188,7 @@
       "job_id": "4152053",
       "posted": "2026-03-12T04:49:45+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.273975+00:00"
+      "scraped_at": "2026-03-13T19:27:29.183787+00:00"
     },
     {
       "title": "SCADA Engineer - Renewable Energy focussed",
@@ -2186,7 +2201,7 @@
       "job_id": "4153668",
       "posted": "2026-03-10T18:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.276950+00:00"
+      "scraped_at": "2026-03-13T19:27:29.187175+00:00"
     },
     {
       "title": "Data & Analytics Lead - Mining & Industrial Analytics (Centurion)",
@@ -2199,7 +2214,7 @@
       "job_id": "4148206",
       "posted": "2026-03-06T12:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.284011+00:00"
+      "scraped_at": "2026-03-13T19:27:29.191622+00:00"
     },
     {
       "title": "Industrial Engineer: Performance Optimisation",
@@ -2212,7 +2227,7 @@
       "job_id": "4145828",
       "posted": "2026-03-08T16:01:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.286733+00:00"
+      "scraped_at": "2026-03-13T19:27:29.193611+00:00"
     },
     {
       "title": "Senior Director: Business Systems & Analytics",
@@ -2225,7 +2240,7 @@
       "job_id": "4148095",
       "posted": "2026-03-06T03:29:24+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.291481+00:00"
+      "scraped_at": "2026-03-13T19:27:29.196438+00:00"
     },
     {
       "title": "Mobile Engineer",
@@ -2238,7 +2253,7 @@
       "job_id": "4152041",
       "posted": "2026-03-12T15:01:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.295425+00:00"
+      "scraped_at": "2026-03-13T19:27:29.199319+00:00"
     },
     {
       "title": "Application Engineer",
@@ -2251,7 +2266,7 @@
       "job_id": "4151950",
       "posted": "2026-03-12T14:01:09+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:48.299065+00:00"
+      "scraped_at": "2026-03-13T19:27:29.202265+00:00"
     },
     {
       "title": "ETL/ELT Developer",
@@ -2264,7 +2279,7 @@
       "job_id": "4159837",
       "posted": "2026-03-10T02:49:54+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.658936+00:00"
+      "scraped_at": "2026-03-13T19:27:36.749637+00:00"
     },
     {
       "title": "Snaplogic Developer",
@@ -2277,7 +2292,7 @@
       "job_id": "3521237",
       "posted": "2026-03-10T09:09:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.660459+00:00"
+      "scraped_at": "2026-03-13T19:27:36.751198+00:00"
     },
     {
       "title": "Full Stack Data Warehouse Developer - Johannesburg - up to R900k per annum",
@@ -2290,7 +2305,7 @@
       "job_id": "4149958",
       "posted": "2026-03-10T12:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.666310+00:00"
+      "scraped_at": "2026-03-13T19:27:36.756996+00:00"
     },
     {
       "title": "Data Warehouse Developer",
@@ -2303,7 +2318,7 @@
       "job_id": "4146955",
       "posted": "2026-03-04T10:04:46+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.670491+00:00"
+      "scraped_at": "2026-03-13T19:27:36.762572+00:00"
     },
     {
       "title": "SQL-DB Developer",
@@ -2316,7 +2331,7 @@
       "job_id": "4156461",
       "posted": "2026-03-05T07:39:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.672145+00:00"
+      "scraped_at": "2026-03-13T19:27:36.764055+00:00"
     },
     {
       "title": "Senior SQL Developer (12 Months Contract)",
@@ -2329,7 +2344,7 @@
       "job_id": "4036460",
       "posted": "2026-03-02T08:29:09+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.678417+00:00"
+      "scraped_at": "2026-03-13T19:27:36.769812+00:00"
     },
     {
       "title": "Full Stack Data Warehouse Developer",
@@ -2342,7 +2357,7 @@
       "job_id": "4143883",
       "posted": "2026-02-27T12:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.685934+00:00"
+      "scraped_at": "2026-03-13T19:27:36.774687+00:00"
     },
     {
       "title": "Data Warehouse Developer",
@@ -2355,7 +2370,7 @@
       "job_id": "4152540",
       "posted": "2026-02-26T08:12:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.688913+00:00"
+      "scraped_at": "2026-03-13T19:27:36.779256+00:00"
     },
     {
       "title": "Splunk Front End Developer (Contract) - Gauteng/Hybrid- ISB8500244",
@@ -2368,7 +2383,7 @@
       "job_id": "4100798",
       "posted": "2026-03-12T10:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.693680+00:00"
+      "scraped_at": "2026-03-13T19:27:36.783579+00:00"
     },
     {
       "title": "Super Senior SAP Datasphere Developer (Contract) South Africa/Hybrid",
@@ -2381,7 +2396,7 @@
       "job_id": "4151949",
       "posted": "2026-03-12T14:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:03:55.696654+00:00"
+      "scraped_at": "2026-03-13T19:27:36.786383+00:00"
     },
     {
       "title": "Data Warehouse Developer",
@@ -2394,7 +2409,7 @@
       "job_id": "4149515",
       "posted": "2026-03-09T07:01:20+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:03.171195+00:00"
+      "scraped_at": "2026-03-13T19:27:43.567065+00:00"
     },
     {
       "title": "Senior Data Analyst (Power BI & Microsoft Fabric) - Johannesburg - up to R1.2mil per annum",
@@ -2407,7 +2422,7 @@
       "job_id": "4149944",
       "posted": "2026-03-10T12:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:03.215658+00:00"
+      "scraped_at": "2026-03-13T19:27:43.587417+00:00"
     },
     {
       "title": "Data Analyst (SQL | SSIS | SSRS | Power BI)",
@@ -2420,7 +2435,7 @@
       "job_id": "4149498",
       "posted": "2026-03-08T12:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:03.218705+00:00"
+      "scraped_at": "2026-03-13T19:27:43.590557+00:00"
     },
     {
       "title": "Technical Data Developer",
@@ -2433,7 +2448,7 @@
       "job_id": "4152109",
       "posted": "2026-03-12T16:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:03.226220+00:00"
+      "scraped_at": "2026-03-13T19:27:43.597867+00:00"
     },
     {
       "title": "BI Data Analyst/ Consultant",
@@ -2446,7 +2461,7 @@
       "job_id": "4151568",
       "posted": "2026-03-12T02:45:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:03.230796+00:00"
+      "scraped_at": "2026-03-13T19:27:43.602350+00:00"
     },
     {
       "title": "Data Quality Analyst",
@@ -2459,7 +2474,7 @@
       "job_id": "4159884",
       "posted": "2026-03-10T11:40:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.741238+00:00"
+      "scraped_at": "2026-03-13T19:27:50.369475+00:00"
     },
     {
       "title": "Data Business Analyst (JHB)",
@@ -2472,7 +2487,7 @@
       "job_id": "4159995",
       "posted": "2026-03-10T15:37:19+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.761273+00:00"
+      "scraped_at": "2026-03-13T19:27:50.385265+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2485,7 +2500,7 @@
       "job_id": "4155688",
       "posted": "2026-03-04T09:02:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.763090+00:00"
+      "scraped_at": "2026-03-13T19:27:50.386858+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2498,7 +2513,7 @@
       "job_id": "4145209",
       "posted": "2026-03-03T05:31:41+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.764720+00:00"
+      "scraped_at": "2026-03-13T19:27:50.388458+00:00"
     },
     {
       "title": "Quality Analyst",
@@ -2511,7 +2526,7 @@
       "job_id": "4083966",
       "posted": "2026-03-08T20:48:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.767882+00:00"
+      "scraped_at": "2026-03-13T19:27:50.392342+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -2524,7 +2539,7 @@
       "job_id": "4152107",
       "posted": "2026-03-12T02:20:54+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.769493+00:00"
+      "scraped_at": "2026-03-13T19:27:50.394528+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -2537,7 +2552,7 @@
       "job_id": "4159807",
       "posted": "2026-03-10T06:26:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.771004+00:00"
+      "scraped_at": "2026-03-13T19:27:50.396092+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2550,7 +2565,7 @@
       "job_id": "4153106",
       "posted": "2026-02-27T06:50:22+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.772932+00:00"
+      "scraped_at": "2026-03-13T19:27:50.397632+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2563,7 +2578,7 @@
       "job_id": "4143389",
       "posted": "2026-02-26T05:47:26+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.774565+00:00"
+      "scraped_at": "2026-03-13T19:27:50.399188+00:00"
     },
     {
       "title": "Data Analyst - Fraud & Risk (18 MONTH CONTRACT)",
@@ -2576,7 +2591,7 @@
       "job_id": "4082473",
       "posted": "2026-02-25T16:01:09+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.776195+00:00"
+      "scraped_at": "2026-03-13T19:27:50.400825+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2589,7 +2604,7 @@
       "job_id": "4142282",
       "posted": "2026-02-25T12:15:35+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.777853+00:00"
+      "scraped_at": "2026-03-13T19:27:50.402468+00:00"
     },
     {
       "title": "Quality Assurance Analyst (QA)",
@@ -2602,7 +2617,7 @@
       "job_id": "4161386",
       "posted": "2026-03-12T12:27:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.779573+00:00"
+      "scraped_at": "2026-03-13T19:27:50.404119+00:00"
     },
     {
       "title": "JUNIOR DATA ANALYST",
@@ -2615,7 +2630,7 @@
       "job_id": "4147190",
       "posted": "2026-03-05T10:01:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:12.782656+00:00"
+      "scraped_at": "2026-03-13T19:27:50.407302+00:00"
     },
     {
       "title": "Data Governance specialist",
@@ -2628,7 +2643,7 @@
       "job_id": "4150254",
       "posted": "2026-03-10T15:01:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.905764+00:00"
+      "scraped_at": "2026-03-13T19:27:59.337438+00:00"
     },
     {
       "title": "Data Specification Specialist (Hybrid)",
@@ -2641,7 +2656,7 @@
       "job_id": "4156821",
       "posted": "2026-03-05T08:43:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.907371+00:00"
+      "scraped_at": "2026-03-13T19:27:59.339059+00:00"
     },
     {
       "title": "Data Management Specialist",
@@ -2654,7 +2669,7 @@
       "job_id": "4148466",
       "posted": "2026-03-06T15:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.909099+00:00"
+      "scraped_at": "2026-03-13T19:27:59.340601+00:00"
     },
     {
       "title": "Senior Data Scientist (Databricks Specialist)",
@@ -2667,7 +2682,7 @@
       "job_id": "4116497",
       "posted": "2026-02-26T21:01:22+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.910737+00:00"
+      "scraped_at": "2026-03-13T19:27:59.342279+00:00"
     },
     {
       "title": "Marketing Data and Analytics specialist",
@@ -2680,7 +2695,7 @@
       "job_id": "4153192",
       "posted": "2026-02-27T10:18:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.912240+00:00"
+      "scraped_at": "2026-03-13T19:27:59.343868+00:00"
     },
     {
       "title": "Lead BI and Data Analytics Specialist",
@@ -2693,7 +2708,7 @@
       "job_id": "4144120",
       "posted": "2026-02-27T15:01:26+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.913756+00:00"
+      "scraped_at": "2026-03-13T19:27:59.345400+00:00"
     },
     {
       "title": "SYSTEMS SPECIALIST / DATA ANALYST - FM2470",
@@ -2706,7 +2721,7 @@
       "job_id": "4146152",
       "posted": "2026-03-04T08:01:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.915266+00:00"
+      "scraped_at": "2026-03-13T19:27:59.346872+00:00"
     },
     {
       "title": "Data Integration Specialist",
@@ -2719,7 +2734,7 @@
       "job_id": "4154966",
       "posted": "2026-03-03T10:56:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.916813+00:00"
+      "scraped_at": "2026-03-13T19:27:59.348483+00:00"
     },
     {
       "title": "Data Professional",
@@ -2732,7 +2747,7 @@
       "job_id": "4158541",
       "posted": "2026-03-09T05:13:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.918320+00:00"
+      "scraped_at": "2026-03-13T19:27:59.349979+00:00"
     },
     {
       "title": "Data Integration Specialist",
@@ -2745,7 +2760,7 @@
       "job_id": "4143069",
       "posted": "2026-02-26T13:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.919919+00:00"
+      "scraped_at": "2026-03-13T19:27:59.353068+00:00"
     },
     {
       "title": "Senior Data Consultant",
@@ -2758,7 +2773,7 @@
       "job_id": "4142797",
       "posted": "2026-02-26T10:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.940359+00:00"
+      "scraped_at": "2026-03-13T19:27:59.378105+00:00"
     },
     {
       "title": "Client Insights & CRM Specialist",
@@ -2771,7 +2786,7 @@
       "job_id": "4157950",
       "posted": "2026-03-06T14:17:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.943462+00:00"
+      "scraped_at": "2026-03-13T19:27:59.381548+00:00"
     },
     {
       "title": "Short term pricing Actuary",
@@ -2784,7 +2799,46 @@
       "job_id": "4156414",
       "posted": "2026-03-05T04:10:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:21.945070+00:00"
+      "scraped_at": "2026-03-13T19:27:59.384484+00:00"
+    },
+    {
+      "title": "Investment Business Analyst",
+      "company": "The Talent Experts",
+      "location": "Claremont",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "You're a confident and analyticalBusiness Analystwith deep Asset Management experience and a strong grasp of the investment value chain. Experience deliveringBAartefacts across Transfer Agency, Fund Administration or Front Office environments is essential. A relevant tertiary qualification or recognisedBAcertification will strengthen your application. You'll engage keybusinessand technology stakeholders to elicit, analyse and document complex regulatory and operational requirements, producing hi",
+      "url": "https://www.pnet.co.za/jobs--Investment-Business-Analyst-Claremont-The-Talent-Experts--4152422-inline.html",
+      "job_id": "4152422",
+      "posted": "2026-03-13T10:01:06+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.469833+00:00"
+    },
+    {
+      "title": "Business Analyst (12 Months Contract)",
+      "company": "Amasiko Group",
+      "location": "Sandton",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Business Analyst* Amasiko Group - Furthermore, will act as the key link betweenbusinessstakeholders, project managers and developers to ensure that system solutions align with strategy,businessneeds and governance standards.BusinessAnalysis & Requirements Management * Engage to elicit, document, and validatebusiness,functional, and non-functional requirements. * DevelopBusinessRequirements Specifications (BRS), Functional Requirements Documents (FRD), and User Stories with clear acceptance crite",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-12-Months-Contract-Sandton-Amasiko-Group--4161774-inline.html",
+      "job_id": "4161774",
+      "posted": "2026-03-13T07:48:04+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.471493+00:00"
+    },
+    {
+      "title": "Business Analyst",
+      "company": "Headhunters",
+      "location": "Sandton, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Our client in the Healthcare / Medical Aid Industry is looking to employ aBusiness Analystto join their team based in Sandton, Gauteng. *BusinessAnalysis certification (e.g. BABOK, CBAP). * Information Technology,BusinessAnalysis or related degree / diploma. * 3-5 Years'BusinessAnalysis or related experience (e.g. Testing orBusinessSystems Analysis). *Businessacumen and basic understanding of UX and UI design principles.BusinessAnalysis & Solution Delivery * Gather, analyse, validate and transla",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Sandton-South-Africa-Headhunters--4152268-inline.html",
+      "job_id": "4152268",
+      "posted": "2026-03-13T04:41:59+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.473119+00:00"
     },
     {
       "title": "BUSINESS ANALYST(12 MONTHS FIXED-TERM CONTRACT)",
@@ -2797,7 +2851,7 @@
       "job_id": "4161733",
       "posted": "2026-03-12T22:25:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.447725+00:00"
+      "scraped_at": "2026-03-13T19:28:08.474663+00:00"
     },
     {
       "title": "Business Analyst (Intermediate)",
@@ -2808,9 +2862,9 @@
       "summary": "Minimum 3 years as aBusiness Analyst.Business Analyst,Johannesburg, Hybrid, Financial Services, Agile, Scrum, CBAP, CCBA, PMI-PBA, Requirements Management, Jira, Confluence, Visio, Lucidchart, Solution Design, Analytical Skills * Evaluate tasks impactingbusinessfunctions, new setups, or upstream / downstream components. * Identify newbusinessneeds and prepare Solution Design documents for offering gaps. * Identify future roadmap items, stay updated on industry trends, and deliverbusiness/ insura",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-Intermediate-Johannesburg-Parvana--4152135-inline.html",
       "job_id": "4152135",
-      "posted": "2026-03-12T09:21:17+02:00",
+      "posted": "2026-03-12T16:24:49+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.449324+00:00"
+      "scraped_at": "2026-03-13T19:28:08.476288+00:00"
     },
     {
       "title": "Business Analyst",
@@ -2821,9 +2875,9 @@
       "summary": "The successful candidate will function as the link betweenbusinessobjectives and technology development capabilities. * Developbusinessrequirement specifications through well-facilitated discussions and interviews with relevant . * Responsible for looking at tickets, following up withBusinesswhen feedback is required and following up with . * Document existingbusinessprocesses and develop and document newbusinessprocesses. * Primary interface between and technical resources for the development o",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-Goldenrule--4124620-inline.html",
       "job_id": "4124620",
-      "posted": "2026-03-12T03:08:40+02:00",
+      "posted": "2026-03-12T03:02:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.450924+00:00"
+      "scraped_at": "2026-03-13T19:28:08.477904+00:00"
     },
     {
       "title": "Business Analyst (CPT)",
@@ -2834,9 +2888,9 @@
       "summary": "Group Procurement requires aBusiness Analystwith procurement-related experience and understanding to assist with the planning, design, development and rollout of efficientbusiness,procurement and operational systems that support organisational functions and processes across the Sanlam Group. The Group Procurement team within Shared Services has an opportunity for aBusiness Analystbased in Bellville, Cape Town. * 3 - 5 years' experience asBusiness Analyste.g. CBAP will be advantageous in Financia",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-CPT-Cape-Town-Santam-Insurance-Head-Office--4158139-inline.html",
       "job_id": "4158139",
-      "posted": "2026-03-07T02:30:28+02:00",
+      "posted": "2026-03-07T05:51:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.452358+00:00"
+      "scraped_at": "2026-03-13T19:28:08.479351+00:00"
     },
     {
       "title": "Business Analyst/R920 000/Ormonde",
@@ -2849,7 +2903,7 @@
       "job_id": "4151356",
       "posted": "2026-03-11T17:01:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.453740+00:00"
+      "scraped_at": "2026-03-13T19:28:08.480764+00:00"
     },
     {
       "title": "Business Analyst - 6 Months Contract",
@@ -2862,33 +2916,7 @@
       "job_id": "4151361",
       "posted": "2026-03-06T17:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.455292+00:00"
-    },
-    {
-      "title": "Business Analyst (Student Information Systems)",
-      "company": "Parvana",
-      "location": "Cape Town",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Develop deep knowledge of the existing SIS product and userbusinessprocesses. Translatebusiness,product, and client requirements into product features and solutions, and assist the with feature improvements and roadmap input. Ensure allbusinessconditions are met. * 2+ years ofBusinessAnalysis experience. * Knowledge ofBusinessprocess design principles and concepts. * Analysis and design ofbusinessprocesses and functionality for custom client system implementations.",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Student-Information-Systems-Cape-Town-Parvana--4106515-inline.html",
-      "job_id": "4106515",
-      "posted": "2026-03-11T06:14:18+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.456869+00:00"
-    },
-    {
-      "title": "Business Analyst (Technology)",
-      "company": "Parvana",
-      "location": "Cape Town",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Eliciting, accurately documenting, and validating detailedbusinessrequirements from various internal teams. * Preparing clear and comprehensive documentation, includingbusinessprocess flows, user stories, and test scripts. * 3-8 years of provenbusinessanalysis experience within financial services, consulting or investment operations.BusinessAnalysis, Credit Investment, Agile/Scrum, UAT, SQL, Power BI, Data Mapping, User Stories, JIRA, ETL, Stakeholder Management, Financial Instruments, Process F",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Technology-Cape-Town-Parvana--4133859-inline.html",
-      "job_id": "4133859",
-      "posted": "2026-03-11T06:01:33+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.458425+00:00"
+      "scraped_at": "2026-03-13T19:28:08.482299+00:00"
     },
     {
       "title": "Business Analyst",
@@ -2899,22 +2927,9 @@
       "summary": "Evaluating tasks that imply changes to thebusinessfunction, require new setup, or potentially affect upstream/downstream components. * Working closely with to identify newbusinessrequirements and designbusinesssolutions. * Preparing Solution Design documents for identified gaps in the current offering based on client-receivedbusinessrequirements. * Deliveringbusiness/insurance training (Train the ). Functional Analysis, SDLC, Solution Design, Gap Analysis, UML, Configuration Mgmt, Stakeholder En",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-Johannesburg-Parvana--4135070-inline.html",
       "job_id": "4135070",
-      "posted": "2026-03-11T01:40:09+02:00",
+      "posted": "2026-03-11T06:22:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.460589+00:00"
-    },
-    {
-      "title": "Business Analyst (Lending)",
-      "company": "Parvana",
-      "location": "Johannesburg",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Analysing customerbusinessneeds through liaising with to elicit, discuss, communicate and validate requirements for changes tobusinessprocesses. * Understandingbusinessprocess management andbusinessrequirements of the customers and translating them to specific software requirements. Financial services, culture, Agile,businessneeds, software requirements, documentation, testing, lending, development lifecycle, UML, end users",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Lending-Johannesburg-Parvana--4095757-inline.html",
-      "job_id": "4095757",
-      "posted": "2026-03-11T01:19:10+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.464809+00:00"
+      "scraped_at": "2026-03-13T19:28:08.483833+00:00"
     },
     {
       "title": "Business Analyst (ILR)",
@@ -2925,9 +2940,48 @@
       "summary": "Collaborate closely with to deeply understand theirbusinessneeds. * Translatebusinessprocesses into clear and specific software requirements. Financial services, culture, Agile, innovation, stakeholders,businessneeds, requirements, documentation, test cases, experience, regression testing, development lifecycle, UML, end users",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-ILR-Johannesburg-Parvana--4095736-inline.html",
       "job_id": "4095736",
-      "posted": "2026-03-11T00:22:14+02:00",
+      "posted": "2026-03-11T05:03:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.467466+00:00"
+      "scraped_at": "2026-03-13T19:28:08.485322+00:00"
+    },
+    {
+      "title": "Business Analyst (Lending)",
+      "company": "Parvana",
+      "location": "Johannesburg",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Analysing customerbusinessneeds through liaising with to elicit, discuss, communicate and validate requirements for changes tobusinessprocesses. * Understandingbusinessprocess management andbusinessrequirements of the customers and translating them to specific software requirements. Financial services, culture, Agile,businessneeds, software requirements, documentation, testing, lending, development lifecycle, UML, end users",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Lending-Johannesburg-Parvana--4095757-inline.html",
+      "job_id": "4095757",
+      "posted": "2026-03-11T04:07:55+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.487369+00:00"
+    },
+    {
+      "title": "Business Analyst (Student Information Systems)",
+      "company": "Parvana",
+      "location": "Cape Town",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Develop deep knowledge of the existing SIS product and userbusinessprocesses. Translatebusiness,product, and client requirements into product features and solutions, and assist the with feature improvements and roadmap input. Ensure allbusinessconditions are met. * 2+ years ofBusinessAnalysis experience. * Knowledge ofBusinessprocess design principles and concepts. * Analysis and design ofbusinessprocesses and functionality for custom client system implementations.",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Student-Information-Systems-Cape-Town-Parvana--4106515-inline.html",
+      "job_id": "4106515",
+      "posted": "2026-03-11T04:18:59+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.488971+00:00"
+    },
+    {
+      "title": "Business Analyst (Technology)",
+      "company": "Parvana",
+      "location": "Cape Town",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Eliciting, accurately documenting, and validating detailedbusinessrequirements from various internal teams. * Preparing clear and comprehensive documentation, includingbusinessprocess flows, user stories, and test scripts. * 3-8 years of provenbusinessanalysis experience within financial services, consulting or investment operations.BusinessAnalysis, Credit Investment, Agile/Scrum, UAT, SQL, Power BI, Data Mapping, User Stories, JIRA, ETL, Stakeholder Management, Financial Instruments, Process F",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Technology-Cape-Town-Parvana--4133859-inline.html",
+      "job_id": "4133859",
+      "posted": "2026-03-11T03:12:01+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.490537+00:00"
     },
     {
       "title": "Business Analyst - (Payments)",
@@ -2940,20 +2994,7 @@
       "job_id": "4149828",
       "posted": "2026-03-10T10:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.470835+00:00"
-    },
-    {
-      "title": "Business Analyst",
-      "company": "The HR Company",
-      "location": "Durban",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Our client, a leading distributor and wholesaler of industrial equipment, requires aBusiness Analystfor their Durban branch. This role requires the management ofbusinessintelligence, analytics, and reporting solutions. * Responsible for developing and managing a data warehouse for thebusiness,including all ETL processes required to ensure consistency and accuracy of reporting. * Defining and delivering metrics, reporting platforms and analytical models vital for tracking and managing thebusiness",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Durban-The-HR-Company--4150016-inline.html",
-      "job_id": "4150016",
-      "posted": "2026-03-10T11:06:50+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.472641+00:00"
+      "scraped_at": "2026-03-13T19:28:08.491995+00:00"
     },
     {
       "title": "Business Analyst",
@@ -2966,7 +3007,20 @@
       "job_id": "4149654",
       "posted": "2026-03-10T08:01:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.474130+00:00"
+      "scraped_at": "2026-03-13T19:28:08.493461+00:00"
+    },
+    {
+      "title": "Business Analyst",
+      "company": "The HR Company",
+      "location": "Durban",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Our client, a leading distributor and wholesaler of industrial equipment, requires aBusiness Analystfor their Durban branch. This role requires the management ofbusinessintelligence, analytics, and reporting solutions. * Responsible for developing and managing a data warehouse for thebusiness,including all ETL processes required to ensure consistency and accuracy of reporting. * Defining and delivering metrics, reporting platforms and analytical models vital for tracking and managing thebusiness",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Durban-The-HR-Company--4150016-inline.html",
+      "job_id": "4150016",
+      "posted": "2026-03-10T06:18:33+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.494902+00:00"
     },
     {
       "title": "Business Analyst",
@@ -2979,20 +3033,7 @@
       "job_id": "4146961",
       "posted": "2026-03-04T20:01:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.475596+00:00"
-    },
-    {
-      "title": "Business Analyst",
-      "company": "A1L Digital",
-      "location": "Johannesburg - Southern Suburbs",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Our client in telecoms sector is seeking a professionalBusiness Analyston a contract duration of 6 months. *BAapproach / activities",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Johannesburg-Southern-Suburbs-A1L-Digital--4158834-inline.html",
-      "job_id": "4158834",
-      "posted": "2026-03-09T07:26:14+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.476991+00:00"
+      "scraped_at": "2026-03-13T19:28:08.496748+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3005,7 +3046,20 @@
       "job_id": "4158225",
       "posted": "2026-03-09T05:50:48+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.478635+00:00"
+      "scraped_at": "2026-03-13T19:28:08.498227+00:00"
+    },
+    {
+      "title": "Business Analyst",
+      "company": "A1L Digital",
+      "location": "Johannesburg - Southern Suburbs",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Our client in telecoms sector is seeking a professionalBusiness Analyston a contract duration of 6 months. *BAapproach / activities",
+      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Johannesburg-Southern-Suburbs-A1L-Digital--4158834-inline.html",
+      "job_id": "4158834",
+      "posted": "2026-03-09T02:57:54+02:00",
+      "source": "Pnet",
+      "scraped_at": "2026-03-13T19:28:08.499611+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3016,9 +3070,9 @@
       "summary": "Our client is looking for aBusiness Analystto join their team in Midrand. You should have at least 4 years experience as aBAin the Financial Services industry. * Minimum of 4-5 years'BusinessAnalysis experience in the financial services industry * Ability to effectively translatebusinessrequirements in technology terminology. * Ability to explain technical issues back tobusinessfor decision making.",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-Midrand-RAD-Resources--4149191-inline.html",
       "job_id": "4149191",
-      "posted": "2026-03-07T04:51:46+02:00",
+      "posted": "2026-03-07T03:35:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.480295+00:00"
+      "scraped_at": "2026-03-13T19:28:08.501021+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3029,9 +3083,9 @@
       "summary": "This role is ideal for aBusiness Analystwith strong domain experience in supply chain, logistics, or retail, who enjoys working closely with to drive process improvement andbusinessefficiency. We are recruiting for an experienced SeniorBusiness Analystto join a well-established organisation operating in a fast-paced, operationally complex environment. SeniorBusiness Analyst* Minimum 5 years' experience as aBusiness AnalystImportant: This position is 100% office-based in Century City, Cape Town a",
       "url": "https://www.pnet.co.za/jobs--Business-Analyst-Cape-Town-Northern-Suburbs-Network-IT--4147877-inline.html",
       "job_id": "4147877",
-      "posted": "2026-03-06T04:37:34+02:00",
+      "posted": "2026-03-06T02:07:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.482424+00:00"
+      "scraped_at": "2026-03-13T19:28:08.502499+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3044,20 +3098,7 @@
       "job_id": "4157263",
       "posted": "2026-03-05T18:16:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.483858+00:00"
-    },
-    {
-      "title": "Business Process Analyst",
-      "company": "Government Employees Medical Scheme - GEMS",
-      "location": "Pretoria",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "The position ofBusinessProcessAnalystis vacant. TheBusinessProcessAnalystwill report directly to the and forms part of the Office of the Chief Operations Officer Division. *BusinessRequirements Gathering: Engage to collect, validate, and documentbusinessrequirements that will inform process optimisation or system enhancements. * System Integration Awareness: Understand howbusinessprocesses interact with ICT systems. Work collaboratively with ICT andbusinessteams to ensure that process improvemen",
-      "url": "https://www.pnet.co.za/jobs--Business-Process-Analyst-Pretoria-Government-Employees-Medical-Scheme-GEMS--4160238-inline.html",
-      "job_id": "4160238",
-      "posted": "2026-03-11T08:36:21+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.485298+00:00"
+      "scraped_at": "2026-03-13T19:28:08.503894+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3070,7 +3111,7 @@
       "job_id": "4156774",
       "posted": "2026-03-05T10:51:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.486872+00:00"
+      "scraped_at": "2026-03-13T19:28:08.505473+00:00"
     },
     {
       "title": "Business Analyst",
@@ -3083,33 +3124,7 @@
       "job_id": "4156679",
       "posted": "2026-03-05T09:31:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.489289+00:00"
-    },
-    {
-      "title": "Business Analyst",
-      "company": "Recruit Duo",
-      "location": "Centurion",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Document requirements inBusinessRequirement Specifications (BRS) and user stories, and obtain • Collaborate closely with the to ensure a clear understanding ofbusinessrequirements • Act as the communication liaison between the transactional system vendor andbusinessstakeholders",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-Centurion-Recruit-Duo--4147163-inline.html",
-      "job_id": "4147163",
-      "posted": "2026-03-05T09:01:09+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.490878+00:00"
-    },
-    {
-      "title": "Business Analyst (SAP S/4HANA",
-      "company": "QE Services",
-      "location": "Woodstock",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "CertifiedBusiness Analystwith 8+ years'BAexperience - My client based in Woodstock is currently looking for aBusiness Analyst(SAP S/4HANA) to join their team on a contract basis. * Ability to work independently and manageBAdeliverables end-to-end * RecognisedBusinessAnalysis certification * Relevant tertiary qualification in IT,Business,or related field (preferred) * Plan and strategise the overallBusinessAnalysis approach and deliverables * Elicit, analyse, and documentbusinessand system requir",
-      "url": "https://www.pnet.co.za/jobs--Business-Analyst-SAP-S-4HANA-Woodstock-QE-Services--4147008-inline.html",
-      "job_id": "4147008",
-      "posted": "2026-03-05T09:01:05+02:00",
-      "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:28.492481+00:00"
+      "scraped_at": "2026-03-13T19:28:08.507051+00:00"
     },
     {
       "title": "Intermediate Software Developer",
@@ -3122,7 +3137,7 @@
       "job_id": "4161320",
       "posted": "2026-03-12T12:15:31+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.404867+00:00"
+      "scraped_at": "2026-03-13T19:28:16.760502+00:00"
     },
     {
       "title": "Software Developer",
@@ -3135,7 +3150,7 @@
       "job_id": "4151639",
       "posted": "2026-03-12T10:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.406546+00:00"
+      "scraped_at": "2026-03-13T19:28:16.762190+00:00"
     },
     {
       "title": "SOFTWARE DEVELOPER (12 MONTHS FIXED-TERM CONTRACT)",
@@ -3148,7 +3163,7 @@
       "job_id": "4161732",
       "posted": "2026-03-12T22:19:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.407962+00:00"
+      "scraped_at": "2026-03-13T19:28:16.763724+00:00"
     },
     {
       "title": "Software Developer - Camunda BPM",
@@ -3161,7 +3176,7 @@
       "job_id": "4161724",
       "posted": "2026-03-12T20:29:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.409516+00:00"
+      "scraped_at": "2026-03-13T19:28:16.765321+00:00"
     },
     {
       "title": "Software Developer",
@@ -3174,7 +3189,7 @@
       "job_id": "4152440",
       "posted": "2026-03-08T04:49:48+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.410955+00:00"
+      "scraped_at": "2026-03-13T19:28:16.766764+00:00"
     },
     {
       "title": "Software Developer",
@@ -3187,7 +3202,7 @@
       "job_id": "4161212",
       "posted": "2026-03-12T09:41:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.412337+00:00"
+      "scraped_at": "2026-03-13T19:28:16.768203+00:00"
     },
     {
       "title": "Software Developer",
@@ -3200,7 +3215,7 @@
       "job_id": "4151553",
       "posted": "2026-03-08T01:03:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.413707+00:00"
+      "scraped_at": "2026-03-13T19:28:16.769643+00:00"
     },
     {
       "title": "Intermediate Software Developer",
@@ -3213,7 +3228,7 @@
       "job_id": "4161577",
       "posted": "2026-03-12T07:06:03+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.415157+00:00"
+      "scraped_at": "2026-03-13T19:28:16.771073+00:00"
     },
     {
       "title": "Software Developer - Camuda",
@@ -3226,7 +3241,7 @@
       "job_id": "3784699",
       "posted": "2026-03-12T05:38:31+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.416730+00:00"
+      "scraped_at": "2026-03-13T19:28:16.772661+00:00"
     },
     {
       "title": "Software Developer II",
@@ -3239,7 +3254,7 @@
       "job_id": "4161550",
       "posted": "2026-03-12T00:19:59+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.418174+00:00"
+      "scraped_at": "2026-03-13T19:28:16.774988+00:00"
     },
     {
       "title": "Software Developer",
@@ -3252,7 +3267,7 @@
       "job_id": "4150907",
       "posted": "2026-03-11T12:01:31+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.419962+00:00"
+      "scraped_at": "2026-03-13T19:28:16.776769+00:00"
     },
     {
       "title": "Protocol Software Developer",
@@ -3265,7 +3280,7 @@
       "job_id": "4150933",
       "posted": "2026-03-11T05:20:33+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.422296+00:00"
+      "scraped_at": "2026-03-13T19:28:16.778230+00:00"
     },
     {
       "title": "Software Developer",
@@ -3278,7 +3293,7 @@
       "job_id": "4150674",
       "posted": "2026-03-11T01:06:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.423763+00:00"
+      "scraped_at": "2026-03-13T19:28:16.779668+00:00"
     },
     {
       "title": "Software Developers",
@@ -3291,7 +3306,7 @@
       "job_id": "4158555",
       "posted": "2026-03-09T10:16:56+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.425387+00:00"
+      "scraped_at": "2026-03-13T19:28:16.781232+00:00"
     },
     {
       "title": "Software Developer",
@@ -3304,7 +3319,7 @@
       "job_id": "4158805",
       "posted": "2026-03-09T02:34:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.427142+00:00"
+      "scraped_at": "2026-03-13T19:28:16.782779+00:00"
     },
     {
       "title": "Software Developer (Atoll)",
@@ -3317,7 +3332,7 @@
       "job_id": "4129141",
       "posted": "2026-03-06T10:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.428720+00:00"
+      "scraped_at": "2026-03-13T19:28:16.784171+00:00"
     },
     {
       "title": "Software Developer",
@@ -3330,7 +3345,7 @@
       "job_id": "4147967",
       "posted": "2026-03-06T01:55:57+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.430293+00:00"
+      "scraped_at": "2026-03-13T19:28:16.785639+00:00"
     },
     {
       "title": "Skilled Software Developer",
@@ -3343,7 +3358,7 @@
       "job_id": "4142940",
       "posted": "2026-02-26T12:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.431922+00:00"
+      "scraped_at": "2026-03-13T19:28:16.787218+00:00"
     },
     {
       "title": "SOFTWARE DEVELOPER (FULL STACK)",
@@ -3356,7 +3371,7 @@
       "job_id": "4161057",
       "posted": "2026-03-12T08:56:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.433351+00:00"
+      "scraped_at": "2026-03-13T19:28:16.788624+00:00"
     },
     {
       "title": "Intermediate Software Developer",
@@ -3369,7 +3384,7 @@
       "job_id": "4144813",
       "posted": "2026-02-28T09:08:46+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.434753+00:00"
+      "scraped_at": "2026-03-13T19:28:16.790953+00:00"
     },
     {
       "title": "Junior Software Developer",
@@ -3382,7 +3397,7 @@
       "job_id": "4151587",
       "posted": "2026-03-08T08:01:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.436286+00:00"
+      "scraped_at": "2026-03-13T19:28:16.792990+00:00"
     },
     {
       "title": "Software Developer (Flutter / Mobile), Pretoria, R120k pm",
@@ -3395,7 +3410,7 @@
       "job_id": "4151309",
       "posted": "2026-03-12T07:01:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.437870+00:00"
+      "scraped_at": "2026-03-13T19:28:16.794577+00:00"
     },
     {
       "title": "Software Developer II (C# / Camunda)",
@@ -3408,7 +3423,7 @@
       "job_id": "4161238",
       "posted": "2026-03-12T10:36:44+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.439365+00:00"
+      "scraped_at": "2026-03-13T19:28:16.796103+00:00"
     },
     {
       "title": "Software Developer",
@@ -3421,7 +3436,7 @@
       "job_id": "4153207",
       "posted": "2026-02-27T02:31:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.440753+00:00"
+      "scraped_at": "2026-03-13T19:28:16.797644+00:00"
     },
     {
       "title": "Junior Software Developer",
@@ -3434,7 +3449,7 @@
       "job_id": "4161570",
       "posted": "2026-03-12T02:06:00+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:36.442139+00:00"
+      "scraped_at": "2026-03-13T19:28:16.800670+00:00"
     },
     {
       "title": "Developer",
@@ -3447,7 +3462,7 @@
       "job_id": "4083021",
       "posted": "2026-03-12T18:33:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.584941+00:00"
+      "scraped_at": "2026-03-13T19:28:24.817191+00:00"
     },
     {
       "title": "Developer - Microsoft BizTalk/Azure",
@@ -3460,7 +3475,7 @@
       "job_id": "4160672",
       "posted": "2026-03-11T13:38:34+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.586358+00:00"
+      "scraped_at": "2026-03-13T19:28:24.818619+00:00"
     },
     {
       "title": "Channel Developers (Chanel Sales Manager)",
@@ -3473,7 +3488,7 @@
       "job_id": "4150668",
       "posted": "2026-03-11T01:00:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.587732+00:00"
+      "scraped_at": "2026-03-13T19:28:24.820019+00:00"
     },
     {
       "title": "Creatio Developer",
@@ -3486,7 +3501,7 @@
       "job_id": "4147709",
       "posted": "2026-03-10T09:07:46+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.589154+00:00"
+      "scraped_at": "2026-03-13T19:28:24.821480+00:00"
     },
     {
       "title": "Rating Developer - Gauteng",
@@ -3499,7 +3514,7 @@
       "job_id": "4130728",
       "posted": "2026-03-06T16:01:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.590625+00:00"
+      "scraped_at": "2026-03-13T19:28:24.823009+00:00"
     },
     {
       "title": "IDP Developer",
@@ -3512,7 +3527,7 @@
       "job_id": "4157378",
       "posted": "2026-03-06T06:09:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.592021+00:00"
+      "scraped_at": "2026-03-13T19:28:24.824442+00:00"
     },
     {
       "title": "Intermediate Developer",
@@ -3525,7 +3540,7 @@
       "job_id": "4147636",
       "posted": "2026-03-05T05:45:14+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.593404+00:00"
+      "scraped_at": "2026-03-13T19:28:24.825851+00:00"
     },
     {
       "title": "Developer",
@@ -3538,7 +3553,7 @@
       "job_id": "4146219",
       "posted": "2026-03-04T04:30:38+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.594771+00:00"
+      "scraped_at": "2026-03-13T19:28:24.827239+00:00"
     },
     {
       "title": "Natural Adabas Developer",
@@ -3551,7 +3566,7 @@
       "job_id": "4145244",
       "posted": "2026-03-03T07:53:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.596153+00:00"
+      "scraped_at": "2026-03-13T19:28:24.828626+00:00"
     },
     {
       "title": "Natural Adabas Developer",
@@ -3564,7 +3579,7 @@
       "job_id": "4145107",
       "posted": "2026-03-02T05:26:09+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.597548+00:00"
+      "scraped_at": "2026-03-13T19:28:24.830042+00:00"
     },
     {
       "title": "Developer",
@@ -3577,7 +3592,7 @@
       "job_id": "4143888",
       "posted": "2026-02-27T12:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.600639+00:00"
+      "scraped_at": "2026-03-13T19:28:24.831522+00:00"
     },
     {
       "title": "Intermediate Developer (Dynamics 365/ X++)",
@@ -3590,7 +3605,7 @@
       "job_id": "4127144",
       "posted": "2026-02-26T08:56:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.603163+00:00"
+      "scraped_at": "2026-03-13T19:28:24.832900+00:00"
     },
     {
       "title": "Developer",
@@ -3603,7 +3618,7 @@
       "job_id": "4143326",
       "posted": "2026-02-26T01:58:58+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.604608+00:00"
+      "scraped_at": "2026-03-13T19:28:24.834264+00:00"
     },
     {
       "title": "ADABAS Developer",
@@ -3616,7 +3631,7 @@
       "job_id": "4152883",
       "posted": "2026-02-26T00:46:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.606032+00:00"
+      "scraped_at": "2026-03-13T19:28:24.835649+00:00"
     },
     {
       "title": "Natural Developer",
@@ -3629,7 +3644,7 @@
       "job_id": "4141665",
       "posted": "2026-02-25T06:18:43+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.607491+00:00"
+      "scraped_at": "2026-03-13T19:28:24.837499+00:00"
     },
     {
       "title": "Business Dev Exec - Namola",
@@ -3642,7 +3657,7 @@
       "job_id": "4054144",
       "posted": "2026-02-27T00:07:59+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.609006+00:00"
+      "scraped_at": "2026-03-13T19:28:24.839375+00:00"
     },
     {
       "title": "Mid-Level Developer",
@@ -3655,7 +3670,7 @@
       "job_id": "4124607",
       "posted": "2026-03-11T15:01:19+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.616218+00:00"
+      "scraped_at": "2026-03-13T19:28:24.845444+00:00"
     },
     {
       "title": "Full-Stack Delphi Developer",
@@ -3668,7 +3683,7 @@
       "job_id": "4147375",
       "posted": "2026-03-10T12:01:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.617720+00:00"
+      "scraped_at": "2026-03-13T19:28:24.846978+00:00"
     },
     {
       "title": "Full-Stack Web Developer",
@@ -3681,7 +3696,7 @@
       "job_id": "4144557",
       "posted": "2026-03-10T11:01:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.619207+00:00"
+      "scraped_at": "2026-03-13T19:28:24.848477+00:00"
     },
     {
       "title": "Full Stack Developer (3D Specialisation)",
@@ -3694,7 +3709,7 @@
       "job_id": "4106313",
       "posted": "2026-03-10T00:22:16+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.620619+00:00"
+      "scraped_at": "2026-03-13T19:28:24.849923+00:00"
     },
     {
       "title": "Senior Full Stack Developer",
@@ -3707,7 +3722,7 @@
       "job_id": "4118856",
       "posted": "2026-03-09T13:02:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:44.622034+00:00"
+      "scraped_at": "2026-03-13T19:28:24.851331+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3720,7 +3735,7 @@
       "job_id": "4154734",
       "posted": "2026-03-11T09:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.901080+00:00"
+      "scraped_at": "2026-03-13T19:28:32.962692+00:00"
     },
     {
       "title": "Software Engineer (Level N)",
@@ -3733,7 +3748,7 @@
       "job_id": "4151703",
       "posted": "2026-03-12T11:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.902870+00:00"
+      "scraped_at": "2026-03-13T19:28:32.964127+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3746,7 +3761,7 @@
       "job_id": "4161078",
       "posted": "2026-03-12T00:57:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.905876+00:00"
+      "scraped_at": "2026-03-13T19:28:32.970980+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3759,7 +3774,7 @@
       "job_id": "4098620",
       "posted": "2026-03-11T09:33:40+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.907337+00:00"
+      "scraped_at": "2026-03-13T19:28:32.974229+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3772,7 +3787,7 @@
       "job_id": "4150804",
       "posted": "2026-03-11T06:36:31+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.908886+00:00"
+      "scraped_at": "2026-03-13T19:28:32.975834+00:00"
     },
     {
       "title": "Software Engineer (Snr)",
@@ -3785,7 +3800,7 @@
       "job_id": "3479136",
       "posted": "2026-03-11T04:55:15+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.911837+00:00"
+      "scraped_at": "2026-03-13T19:28:32.978823+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3798,7 +3813,7 @@
       "job_id": "4129727",
       "posted": "2026-03-11T03:16:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.913314+00:00"
+      "scraped_at": "2026-03-13T19:28:32.980328+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3811,7 +3826,7 @@
       "job_id": "4150316",
       "posted": "2026-03-10T11:05:30+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.914746+00:00"
+      "scraped_at": "2026-03-13T19:28:32.981808+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3824,7 +3839,7 @@
       "job_id": "4157373",
       "posted": "2026-03-06T06:53:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.916139+00:00"
+      "scraped_at": "2026-03-13T19:28:32.983256+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3837,7 +3852,7 @@
       "job_id": "4148133",
       "posted": "2026-03-06T06:21:54+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.917515+00:00"
+      "scraped_at": "2026-03-13T19:28:32.984695+00:00"
     },
     {
       "title": "Senior Software Engineer",
@@ -3850,7 +3865,7 @@
       "job_id": "4113176",
       "posted": "2026-03-12T12:46:47+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.918907+00:00"
+      "scraped_at": "2026-03-13T19:28:32.986290+00:00"
     },
     {
       "title": "Manager Software Engineer",
@@ -3863,7 +3878,7 @@
       "job_id": "4147560",
       "posted": "2026-03-05T14:01:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.923325+00:00"
+      "scraped_at": "2026-03-13T19:28:32.987952+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3876,7 +3891,7 @@
       "job_id": "4146156",
       "posted": "2026-03-04T05:00:03+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.926369+00:00"
+      "scraped_at": "2026-03-13T19:28:32.989417+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3889,7 +3904,7 @@
       "job_id": "4155405",
       "posted": "2026-03-03T14:38:26+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.929912+00:00"
+      "scraped_at": "2026-03-13T19:28:32.991456+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3902,7 +3917,7 @@
       "job_id": "4154459",
       "posted": "2026-03-02T13:09:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.931618+00:00"
+      "scraped_at": "2026-03-13T19:28:32.992966+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3915,7 +3930,7 @@
       "job_id": "4154218",
       "posted": "2026-03-02T06:14:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.933308+00:00"
+      "scraped_at": "2026-03-13T19:28:32.994476+00:00"
     },
     {
       "title": "Software Engineer (DCBS Collections)",
@@ -3928,7 +3943,7 @@
       "job_id": "4153268",
       "posted": "2026-02-27T09:07:45+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.934716+00:00"
+      "scraped_at": "2026-03-13T19:28:32.995906+00:00"
     },
     {
       "title": "Senior Software Engineer - CPT (Onsite)",
@@ -3941,7 +3956,7 @@
       "job_id": "4161201",
       "posted": "2026-03-12T05:55:34+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.936446+00:00"
+      "scraped_at": "2026-03-13T19:28:32.997418+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3954,7 +3969,7 @@
       "job_id": "4152949",
       "posted": "2026-02-27T01:57:58+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.937891+00:00"
+      "scraped_at": "2026-03-13T19:28:32.998859+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3967,7 +3982,7 @@
       "job_id": "4152672",
       "posted": "2026-02-26T12:47:32+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.939579+00:00"
+      "scraped_at": "2026-03-13T19:28:33.000367+00:00"
     },
     {
       "title": "Software engineer",
@@ -3980,7 +3995,7 @@
       "job_id": "4152553",
       "posted": "2026-02-26T08:21:52+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.942282+00:00"
+      "scraped_at": "2026-03-13T19:28:33.001835+00:00"
     },
     {
       "title": "Software Engineer",
@@ -3993,7 +4008,7 @@
       "job_id": "4152867",
       "posted": "2026-02-26T08:04:27+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.944808+00:00"
+      "scraped_at": "2026-03-13T19:28:33.003282+00:00"
     },
     {
       "title": "Mid level Fullstack Software Engineer (TypeScript / Node.js)",
@@ -4006,7 +4021,7 @@
       "job_id": "4153999",
       "posted": "2026-03-10T11:01:14+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:04:51.946512+00:00"
+      "scraped_at": "2026-03-13T19:28:33.004893+00:00"
     },
     {
       "title": "Sigmanesting Programmer",
@@ -4019,7 +4034,7 @@
       "job_id": "4150007",
       "posted": "2026-03-10T11:26:24+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.654324+00:00"
+      "scraped_at": "2026-03-13T19:28:40.986943+00:00"
     },
     {
       "title": "Integration Programmer",
@@ -4032,7 +4047,7 @@
       "job_id": "4148012",
       "posted": "2026-03-11T09:52:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.655778+00:00"
+      "scraped_at": "2026-03-13T19:28:40.988333+00:00"
     },
     {
       "title": "Integration Programmer",
@@ -4045,7 +4060,7 @@
       "job_id": "4150414",
       "posted": "2026-03-10T22:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.657144+00:00"
+      "scraped_at": "2026-03-13T19:28:40.991836+00:00"
     },
     {
       "title": "Junior COBOL Programmer(IT 13)/Junior COBOL Programeerder(IT 13)",
@@ -4058,7 +4073,7 @@
       "job_id": "4160014",
       "posted": "2026-03-10T00:49:13+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.658532+00:00"
+      "scraped_at": "2026-03-13T19:28:40.993829+00:00"
     },
     {
       "title": "CNC Programmer / Operator/Setter",
@@ -4071,7 +4086,7 @@
       "job_id": "4160167",
       "posted": "2026-03-11T07:49:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.659902+00:00"
+      "scraped_at": "2026-03-13T19:28:40.995281+00:00"
     },
     {
       "title": "Senior Analyst Programmer (Magic) - 24 Months Contract",
@@ -4084,7 +4099,7 @@
       "job_id": "4160613",
       "posted": "2026-03-11T00:47:00+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.662797+00:00"
+      "scraped_at": "2026-03-13T19:28:40.996669+00:00"
     },
     {
       "title": "Integration Programmer (Permanent) Western Cape/Hybrid",
@@ -4097,7 +4112,7 @@
       "job_id": "4148339",
       "posted": "2026-03-06T14:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.664219+00:00"
+      "scraped_at": "2026-03-13T19:28:40.998090+00:00"
     },
     {
       "title": "PLC Programmer",
@@ -4110,7 +4125,7 @@
       "job_id": "4161085",
       "posted": "2026-03-12T01:26:41+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.665631+00:00"
+      "scraped_at": "2026-03-13T19:28:40.999509+00:00"
     },
     {
       "title": "Software Developers/Programmer (Kloof)",
@@ -4123,7 +4138,7 @@
       "job_id": "4054770",
       "posted": "2026-02-26T13:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.667549+00:00"
+      "scraped_at": "2026-03-13T19:28:41.001020+00:00"
     },
     {
       "title": "Field services / PLC Programmer",
@@ -4136,7 +4151,7 @@
       "job_id": "4151021",
       "posted": "2026-03-11T02:54:17+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.669120+00:00"
+      "scraped_at": "2026-03-13T19:28:41.002394+00:00"
     },
     {
       "title": "CNC Programmer, Operator & Setter",
@@ -4149,7 +4164,7 @@
       "job_id": "4145460",
       "posted": "2026-03-08T11:01:11+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.671965+00:00"
+      "scraped_at": "2026-03-13T19:28:41.003861+00:00"
     },
     {
       "title": "Laser Nesting Programmer",
@@ -4162,7 +4177,7 @@
       "job_id": "4149691",
       "posted": "2026-03-05T09:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.673542+00:00"
+      "scraped_at": "2026-03-13T19:28:41.005259+00:00"
     },
     {
       "title": "CNC Vertical Boring Mill Programmer - Germiston",
@@ -4175,7 +4190,7 @@
       "job_id": "4151500",
       "posted": "2026-03-12T08:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.675060+00:00"
+      "scraped_at": "2026-03-13T19:28:41.008967+00:00"
     },
     {
       "title": "Senior COBOL Programmer(IT 14)/ Senior COBOL Programmeerder(IT 14)",
@@ -4188,7 +4203,7 @@
       "job_id": "4160031",
       "posted": "2026-03-10T07:39:39+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.676726+00:00"
+      "scraped_at": "2026-03-13T19:28:41.012616+00:00"
     },
     {
       "title": "CNC Programmer",
@@ -4201,7 +4216,7 @@
       "job_id": "4152066",
       "posted": "2026-03-12T04:53:01+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.679191+00:00"
+      "scraped_at": "2026-03-13T19:28:41.016087+00:00"
     },
     {
       "title": "PLC Programmer",
@@ -4214,7 +4229,7 @@
       "job_id": "4159228",
       "posted": "2026-03-10T02:41:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.680645+00:00"
+      "scraped_at": "2026-03-13T19:28:41.019525+00:00"
     },
     {
       "title": "CNC Programmer",
@@ -4227,7 +4242,7 @@
       "job_id": "4160990",
       "posted": "2026-03-12T00:48:02+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.682207+00:00"
+      "scraped_at": "2026-03-13T19:28:41.023160+00:00"
     },
     {
       "title": "CNC Programmer Operator- Turning",
@@ -4240,7 +4255,7 @@
       "job_id": "4160606",
       "posted": "2026-03-11T00:42:01+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.683577+00:00"
+      "scraped_at": "2026-03-13T19:28:41.026596+00:00"
     },
     {
       "title": "CNC Programmer/Setter/Operator",
@@ -4253,7 +4268,7 @@
       "job_id": "4159286",
       "posted": "2026-03-10T08:00:36+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.684958+00:00"
+      "scraped_at": "2026-03-13T19:28:41.028191+00:00"
     },
     {
       "title": "CNC TURNING OPERATOR/PROGRAMMER",
@@ -4266,7 +4281,7 @@
       "job_id": "4158872",
       "posted": "2026-03-09T09:49:22+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.686298+00:00"
+      "scraped_at": "2026-03-13T19:28:41.029623+00:00"
     },
     {
       "title": "PLC Programmer",
@@ -4279,7 +4294,7 @@
       "job_id": "4157967",
       "posted": "2026-03-06T09:59:52+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.687703+00:00"
+      "scraped_at": "2026-03-13T19:28:41.031053+00:00"
     },
     {
       "title": "Precision Engineering: CnC Programmer(15 years exp.Siemens literacy)",
@@ -4292,7 +4307,7 @@
       "job_id": "4158173",
       "posted": "2026-03-08T13:17:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.689092+00:00"
+      "scraped_at": "2026-03-13T19:28:41.032467+00:00"
     },
     {
       "title": "PLC PROGRAMMER / DESIGNER / INSTRUMENTATION & CONTROL TECHNICIAN",
@@ -4305,7 +4320,7 @@
       "job_id": "4110069",
       "posted": "2026-03-05T11:01:16+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.690533+00:00"
+      "scraped_at": "2026-03-13T19:28:41.033959+00:00"
     },
     {
       "title": "PLC Programmer",
@@ -4318,7 +4333,7 @@
       "job_id": "4155529",
       "posted": "2026-03-04T02:18:30+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:00.691881+00:00"
+      "scraped_at": "2026-03-13T19:28:41.035317+00:00"
     },
     {
       "title": "Software Tester",
@@ -4331,7 +4346,7 @@
       "job_id": "4151532",
       "posted": "2026-03-08T01:03:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.257746+00:00"
+      "scraped_at": "2026-03-13T19:28:47.898351+00:00"
     },
     {
       "title": "Software Tester",
@@ -4344,7 +4359,7 @@
       "job_id": "4157644",
       "posted": "2026-03-06T10:54:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.259180+00:00"
+      "scraped_at": "2026-03-13T19:28:47.899765+00:00"
     },
     {
       "title": "Intermediate Manual Test Analyst",
@@ -4357,7 +4372,7 @@
       "job_id": "4148908",
       "posted": "2026-03-07T10:01:05+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.260730+00:00"
+      "scraped_at": "2026-03-13T19:28:47.902080+00:00"
     },
     {
       "title": "QA Tester",
@@ -4370,7 +4385,7 @@
       "job_id": "4150609",
       "posted": "2026-03-11T03:55:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.262192+00:00"
+      "scraped_at": "2026-03-13T19:28:47.903680+00:00"
     },
     {
       "title": "Salesforce Automation Tester",
@@ -4383,7 +4398,7 @@
       "job_id": "4157741",
       "posted": "2026-03-06T09:49:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.263574+00:00"
+      "scraped_at": "2026-03-13T19:28:47.905201+00:00"
     },
     {
       "title": "QA Tester",
@@ -4396,7 +4411,7 @@
       "job_id": "4150213",
       "posted": "2026-03-10T04:27:57+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.265042+00:00"
+      "scraped_at": "2026-03-13T19:28:47.906893+00:00"
     },
     {
       "title": "QA Tester - Telecom (Order Management & ServiceNow)",
@@ -4409,7 +4424,7 @@
       "job_id": "4156993",
       "posted": "2026-03-05T13:33:58+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.266672+00:00"
+      "scraped_at": "2026-03-13T19:28:47.908465+00:00"
     },
     {
       "title": "Junior Manual Tester",
@@ -4422,7 +4437,7 @@
       "job_id": "4142565",
       "posted": "2026-02-26T06:01:10+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.270229+00:00"
+      "scraped_at": "2026-03-13T19:28:47.909980+00:00"
     },
     {
       "title": "Software Test Engineer (Embedded / Firmware)",
@@ -4435,7 +4450,7 @@
       "job_id": "4142068",
       "posted": "2026-02-25T12:01:29+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.273970+00:00"
+      "scraped_at": "2026-03-13T19:28:47.911646+00:00"
     },
     {
       "title": "Quality Assurance Engineer",
@@ -4448,7 +4463,7 @@
       "job_id": "4157282",
       "posted": "2026-03-05T03:13:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.276902+00:00"
+      "scraped_at": "2026-03-13T19:28:47.913135+00:00"
     },
     {
       "title": "Automation Test Engineer (Contract)",
@@ -4461,7 +4476,7 @@
       "job_id": "4147481",
       "posted": "2026-03-10T13:01:08+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.280280+00:00"
+      "scraped_at": "2026-03-13T19:28:47.914638+00:00"
     },
     {
       "title": "Test Analyst",
@@ -4474,7 +4489,7 @@
       "job_id": "4152032",
       "posted": "2026-03-12T15:01:22+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.283694+00:00"
+      "scraped_at": "2026-03-13T19:28:47.917739+00:00"
     },
     {
       "title": "Test Engineer / Analyst",
@@ -4487,7 +4502,7 @@
       "job_id": "4112816",
       "posted": "2026-03-12T08:29:21+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.285766+00:00"
+      "scraped_at": "2026-03-13T19:28:47.921265+00:00"
     },
     {
       "title": "Senior Specialist: Automation Test Analyst",
@@ -4500,7 +4515,7 @@
       "job_id": "4112850",
       "posted": "2026-03-12T08:24:39+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.287787+00:00"
+      "scraped_at": "2026-03-13T19:28:47.924754+00:00"
     },
     {
       "title": "Automation Test Analyst",
@@ -4513,7 +4528,7 @@
       "job_id": "4160739",
       "posted": "2026-03-11T14:29:49+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.289547+00:00"
+      "scraped_at": "2026-03-13T19:28:47.926310+00:00"
     },
     {
       "title": "Test Lead & Analyst",
@@ -4526,7 +4541,7 @@
       "job_id": "4159913",
       "posted": "2026-03-10T05:45:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.291141+00:00"
+      "scraped_at": "2026-03-13T19:28:47.927972+00:00"
     },
     {
       "title": "Senior Test and Automation Engineer",
@@ -4539,7 +4554,7 @@
       "job_id": "4151098",
       "posted": "2026-03-11T13:40:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.292550+00:00"
+      "scraped_at": "2026-03-13T19:28:47.929662+00:00"
     },
     {
       "title": "Performance Tester",
@@ -4552,7 +4567,7 @@
       "job_id": "4159922",
       "posted": "2026-03-10T08:48:42+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.294172+00:00"
+      "scraped_at": "2026-03-13T19:28:47.931194+00:00"
     },
     {
       "title": "Test Engineer - (Land Based Gaming) (CapeTown)",
@@ -4565,7 +4580,7 @@
       "job_id": "4124605",
       "posted": "2026-03-04T08:14:28+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.295669+00:00"
+      "scraped_at": "2026-03-13T19:28:47.932617+00:00"
     },
     {
       "title": "Automation Tester",
@@ -4578,7 +4593,7 @@
       "job_id": "4158434",
       "posted": "2026-03-09T09:03:12+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.297300+00:00"
+      "scraped_at": "2026-03-13T19:28:47.934050+00:00"
     },
     {
       "title": "Senior Test Analyst",
@@ -4591,7 +4606,7 @@
       "job_id": "4156728",
       "posted": "2026-03-05T10:00:52+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.300061+00:00"
+      "scraped_at": "2026-03-13T19:28:47.936798+00:00"
     },
     {
       "title": "Manager: Test Engineering",
@@ -4604,7 +4619,7 @@
       "job_id": "4161583",
       "posted": "2026-03-12T09:37:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.305427+00:00"
+      "scraped_at": "2026-03-13T19:28:47.939877+00:00"
     },
     {
       "title": "Software Quality Assurance Specialist",
@@ -4617,7 +4632,7 @@
       "job_id": "4125069",
       "posted": "2026-03-12T07:17:57+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:07.309459+00:00"
+      "scraped_at": "2026-03-13T19:28:47.941747+00:00"
     },
     {
       "title": "Senior Project Manager: SAP, Infrastructure & Software Development",
@@ -4630,7 +4645,7 @@
       "job_id": "4161000",
       "posted": "2026-03-12T07:38:53+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.792693+00:00"
+      "scraped_at": "2026-03-13T19:28:55.033765+00:00"
     },
     {
       "title": "Software Engineering Lead",
@@ -4643,7 +4658,7 @@
       "job_id": "4161692",
       "posted": "2026-03-12T17:14:18+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.800128+00:00"
+      "scraped_at": "2026-03-13T19:28:55.042998+00:00"
     },
     {
       "title": "Software Development Team Lead (C# and SQL) (Hybrid)",
@@ -4656,7 +4671,7 @@
       "job_id": "4065997",
       "posted": "2026-03-12T14:23:56+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.806867+00:00"
+      "scraped_at": "2026-03-13T19:28:55.046208+00:00"
     },
     {
       "title": "Software Engineer_Linux Infrastructure & Security (Contract) - Gauteng/Hybrid - ISB9402727",
@@ -4669,7 +4684,7 @@
       "job_id": "4054435",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.819159+00:00"
+      "scraped_at": "2026-03-13T19:28:55.052033+00:00"
     },
     {
       "title": "Advanced Software Engineer - HPC & Linux Systems (Contract) - Gauteng/Hybrid - ISB9403108",
@@ -4682,7 +4697,7 @@
       "job_id": "4100980",
       "posted": "2026-03-12T10:01:06+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.823036+00:00"
+      "scraped_at": "2026-03-13T19:28:55.055059+00:00"
     },
     {
       "title": "Technical Sales (OWN CAR) Durban - software/hardware, PLC’s, VSD’s",
@@ -4695,7 +4710,7 @@
       "job_id": "4151593",
       "posted": "2026-03-12T09:01:25+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.825917+00:00"
+      "scraped_at": "2026-03-13T19:28:55.057982+00:00"
     },
     {
       "title": "Software Developer in Test Role (Intermediate to Senior)",
@@ -4708,7 +4723,7 @@
       "job_id": "4154036",
       "posted": "2026-03-12T07:52:04+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.828951+00:00"
+      "scraped_at": "2026-03-13T19:28:55.060800+00:00"
     },
     {
       "title": "Head of Systems, Software and IT",
@@ -4721,7 +4736,7 @@
       "job_id": "3961087",
       "posted": "2026-03-12T08:23:07+02:00",
       "source": "Pnet",
-      "scraped_at": "2026-03-12T22:05:14.830611+00:00"
+      "scraped_at": "2026-03-13T19:28:55.062318+00:00"
     }
   ]
 }
