@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "total_jobs": 3746,
-    "jobs_with_experience": 2930,
-    "jobs_without_experience": 816,
+    "total_jobs": 3985,
+    "jobs_with_experience": 3107,
+    "jobs_without_experience": 878,
     "breakdown": {
-      "junior": 553,
-      "mid": 1449,
-      "senior": 928,
-      "with_numeric_years": 2930
+      "junior": 574,
+      "mid": 1537,
+      "senior": 996,
+      "with_numeric_years": 3107
     }
   },
   "experience": [
@@ -29978,6 +29978,1918 @@
       "level": null,
       "raw_text": null,
       "has_requirement": false
+    },
+    {
+      "job_id": "2347928",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347612",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347799",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347406",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347358",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347504",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2346853",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347534",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347301",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347441",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2341557",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2341562",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347759",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347588",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2347647",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2347702",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635411",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "over 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635316",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635326",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635295",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635400",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635451",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635425",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635303",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635328",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635306",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635298",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635373",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635466",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635415",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4 - 6 yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2630462",
+      "min_years": 7,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "7-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635407",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "at least 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635427",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635430",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "at least 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635450",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635435",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "minimum of 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635433",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "minimum of 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635395",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635278",
+      "min_years": 5,
+      "max_years": 8,
+      "level": "mid",
+      "raw_text": "5 to 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635452",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635359",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635351",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635419",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635229",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635318",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2 to 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635438",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635382",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635340",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 - 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635347",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635428",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635348",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635329",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635357",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635319",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635410",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635406",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635378",
+      "min_years": 5,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "5-7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635304",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635313",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635454",
+      "min_years": 50,
+      "max_years": 50,
+      "level": "senior",
+      "raw_text": "more than 50 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635383",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635388",
+      "min_years": 1,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "1-2 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635470",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635341",
+      "min_years": 4,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "4 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635408",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635270",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum of 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635349",
+      "min_years": 2,
+      "max_years": 4,
+      "level": "junior",
+      "raw_text": "2 to 4 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2630706",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635273",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum of 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635308",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "minimum of 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635398",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635243",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635323",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4 - 6 yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635455",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635421",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4 - 6 yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635358",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5 to 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635350",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635294",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "minimum 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635461",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635439",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635434",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635418",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635464",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635469",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635444",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635431",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635423",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635387",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635384",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635364",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635367",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "less than 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635324",
+      "min_years": 60,
+      "max_years": 60,
+      "level": "senior",
+      "raw_text": "over 60 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635317",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635299",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635297",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635292",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635291",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635290",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635269",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635245",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635238",
+      "min_years": 1,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "1-2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635236",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635417",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635279",
+      "min_years": 23,
+      "max_years": 23,
+      "level": "senior",
+      "raw_text": "more than 23 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635462",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635312",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635412",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635250",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635252",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635251",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635343",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635285",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635242",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635233",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635231",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635366",
+      "min_years": 4,
+      "max_years": 4,
+      "level": "mid",
+      "raw_text": "at least 4 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635237",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635234",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "2635265",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635264",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635263",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635262",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635390",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "2635280",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163633",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163914",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "over 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163609",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163367",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162878",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162996",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163152",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163027",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4164082",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163592",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163584",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4164180",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163571",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162700",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 -5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162623",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4153062",
+      "min_years": 5,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "5-7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163201",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163573",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4161859",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162863",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162052",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4066305",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162219",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162224",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4152429",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4137806",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162276",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2 - 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4121628",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4094186",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163509",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "minimum 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161755",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4153003",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163895",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162720",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162786",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163098",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163561",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161173",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4164008",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163261",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162575",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4153543",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4152000",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163158",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4122134",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162859",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162576",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162547",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4161870",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161778",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4138969",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163811",
+      "min_years": 3,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "3-7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161982",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "7 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4162513",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "at least 7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "3412332",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4164321",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4137421",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4154248",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4121762",
+      "min_years": 5,
+      "max_years": 10,
+      "level": "mid",
+      "raw_text": "5-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4164281",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4154107",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4153822",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4137630",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163907",
+      "min_years": 5,
+      "max_years": 8,
+      "level": "mid",
+      "raw_text": "5 - 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163052",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4 - 6 yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163180",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163153",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162679",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4162341",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4161875",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "minimum 7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4161740",
+      "min_years": 7,
+      "max_years": 7,
+      "level": "senior",
+      "raw_text": "minimum 7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163464",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163459",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4008742",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4154333",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163458",
+      "min_years": 2,
+      "max_years": 4,
+      "level": "junior",
+      "raw_text": "2-4 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4153604",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163327",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4154480",
+      "min_years": 17,
+      "max_years": 17,
+      "level": "senior",
+      "raw_text": "over 17 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4164142",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4164127",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4154113",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4153804",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4138301",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4142688",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4164431",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163818",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163323",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "4163097",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "4163235",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005602/Sam",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005603/Sam",
+      "min_years": 3,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "3-7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005604/Caity",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007521/Mon",
+      "min_years": 5,
+      "max_years": 8,
+      "level": "mid",
+      "raw_text": "5 - 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007523/DAP",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007424/LM",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007459/LM",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "experience: mid level",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007517/Mon",
+      "min_years": 10,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "min 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA002262/Prem",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003060/Prem",
+      "min_years": 5,
+      "max_years": 8,
+      "level": "mid",
+      "raw_text": "5-8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003396/BOM",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003907/Prem",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003937/Prem",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA004320/Prem",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005565/Raees",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005567/Raees",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007015/DAP",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: graduate",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=BIT005568/Raees",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007488/DAP",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007518/DAP",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE007519/DAP",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum of 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003291/BOM",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "min 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003394/BOM",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003395/BOM",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA003209/BOM",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
     }
   ]
 }
