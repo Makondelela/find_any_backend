@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "total_jobs": 5056,
-    "jobs_with_experience": 3936,
-    "jobs_without_experience": 1120,
+    "total_jobs": 5354,
+    "jobs_with_experience": 4133,
+    "jobs_without_experience": 1221,
     "breakdown": {
-      "junior": 701,
-      "mid": 1933,
-      "senior": 1302,
-      "with_numeric_years": 3936
+      "junior": 732,
+      "mid": 2030,
+      "senior": 1371,
+      "with_numeric_years": 4133
     }
   },
   "experience": [
@@ -40458,6 +40458,2390 @@
       "level": "mid",
       "raw_text": "5+ years",
       "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-jurumani-solutions-4392423618",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-i-at-capitec-4397023802",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-junior-intermediate-senior-at-executiveplacements-com-4391950614",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-data-analyst-at-executiveplacements-com-4394441616",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-i-at-capitec-4394606334",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-dariel-4395047227",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-power-bi-at-tech-mahindra-4397525618",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-4sight-holdings-limited-4389201262",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-engineer-at-communicate-recruitment-4395569586",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-gotyme-bank-4394623950",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-ii-at-moo-4390103856",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4394424621",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-network-recruitment-4395850690",
+      "min_years": 1,
+      "max_years": null,
+      "level": "junior",
+      "raw_text": "1+ year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-gotyme-bank-4394630541",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-nedbank-4396853398",
+      "min_years": 7,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "7 - 10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-developer-back-end-engineer-at-azakaw-4391876208",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "minimum 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-remote-at-crossing-hurdles-4395018839",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-tenth-revolution-group-4396959322",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-profound-consulting-4393568867",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-samaha-consulting-4389075650",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-ii-at-capitec-4396851129",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-aristo-sourcing-4393419498",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-data-engineer-%C3%A2%C2%80%C2%93-ai-at-executiveplacements-com-4394428814",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4394443646",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-sql-%2B-power-bi-at-indsafri-4389185807",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4394409770",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-python-cloud-graduate-level-at-canonical-4389961312",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-executiveplacements-com-4394409769",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4394252409",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-executiveplacements-com-4391804038",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-executiveplacements-com-4394233514",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-at-ikhokha-4396458518",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4394448596",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/realtime-analyst-at-wns-4392960264",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "at least 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-at-impact-com-4385026286",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-psybergate-pty-ltd-4393553531",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-takealot-com-4387510013",
+      "min_years": 1,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "1-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/copywriter-designer-data-tracking-analyst-58555432548-at-somewhere-4393586052",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-communicate-recruitment-4390012222",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/content-specialist-ai-at-hirexe-4392932058",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-finance-regulatory-reporting-at-jobgether-4392176752",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-hybrid-contract-12-months-at-soit-business-solutions-pty-limited-4395054720",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/human-data-associate-%2445-hr-remote-at-crossing-hurdles-4390967188",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-advania-uk-4393411899",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-at-massmart-4396935366",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-e-commerce-at-bigtalent-4390863204",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-remote-recruitment-4395366410",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "at least 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/marketing-data-analyst-at-gotyme-bank-4391578362",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/remuneration-data-analyst-intern-fixed-term-contract-germiston-at-interwaste-pty-ltd-4390844170",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-ii-at-capitec-4397050743",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-operations-associate-%2445-hr-remote-at-crossing-hurdles-4390959335",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-quantitative-analyst-at-indsafri-4395660454",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4389526328",
+      "min_years": 1,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "1 to 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4392173109",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-anyvan-4387507025",
+      "min_years": 2,
+      "max_years": 4,
+      "level": "junior",
+      "raw_text": "2-4 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-executiveplacements-com-4388682212",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/power-bi-microsoft-power-platform-specialist-at-bluestones-offshore-partners-4391858495",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-banking-at-monocle-solutions-4397503060",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/landscape-gis-data-analyst-remote-at-crossing-hurdles-4390922228",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/forecasting-analyst-at-dash-bpo-4392465360",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-solutions-analyst-iii-at-capitec-4392911926",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/associate-researcher-at-gems-at-government-employees-medical-scheme-4396591811",
+      "min_years": 1,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "1-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-network-recruitment-4395049162",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-network-recruitment-4395051833",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/machine-learning-engineer-at-dijkstrack-4392431358",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-data-scientist-at-executiveplacements-com-4388672663",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "2 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/%09data-scientist-ioc-at-exxaro-resources-4396958591",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-network-recruitment-4391071430",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-tenth-revolution-group-4396972838",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/react-native-engineer-at-mindworx-consulting-and-academy-4392439326",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-executiveplacements-com-4394445614",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-executiveplacements-com-4394435729",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-tenth-revolution-group-4396955192",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-and-automation-specialists-at-bamboo-works-4392920516",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-science-ai-enablement-executive-at-clicks-group-4396673220",
+      "min_years": 12,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "12+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-synergy-ai-pty-ltd-4385027484",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-parvana-4388403169",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-executiveplacements-com-4392169379",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-lyra-health-4392435641",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-executiveplacements-com-4391958347",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/machine-learning-engineer-remote-in-south-africa-at-knowbe4-4396030097",
+      "min_years": 15,
+      "max_years": 15,
+      "level": "senior",
+      "raw_text": "over 15 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-specialist-at-executiveplacements-com-4388674693",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-trainer-freelance-data-annotator-at-toloka-annotators-4397044640",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "minimum 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-trainer-freelance-data-annotator-at-toloka-annotators-4397052349",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "minimum 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-iii-at-the-shoprite-group-of-companies-4390850618",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-trainer-freelance-data-annotator-at-toloka-annotators-4397054273",
+      "min_years": 1,
+      "max_years": 1,
+      "level": "junior",
+      "raw_text": "minimum 1 year",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/researcher-%E2%80%93-strategic-resourcing-talent-mapping-at-recruitment-matters-africa-pvt-ltd-4395016152",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/research-scientist-internship-ibm-research-south-africa-at-ibm-4390045114",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-guardrisk-4391680584",
+      "min_years": 3,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "3-6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-developer-at-dy-dx-digital-4395030314",
+      "min_years": 3,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "3-6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-specialist-engineer-scientist-at-executiveplacements-com-4394427832",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-architect-at-guardrisk-4392951048",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/solution-architect-data-ai-at-altron-digital-business-4390938169",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-gvw-group-4395167266",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/satic-salesforce-solution-architect-at-pwc-careers-africa-4396120822",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-12-month-contract-at-dearx-4391866282",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-architect-6-month-contract-with-potential-for-extension-at-gig-engineer-4391065768",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/professional-architect-data-centre-at-aecom-4389850419",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "over 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/cloud-solution-architect-data-security-at-microsoft-4392598895",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/professional-architect-data-centre-at-aecom-4388080674",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "over 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/professional-architect-data-centre-at-aecom-4389840691",
+      "min_years": 8,
+      "max_years": 8,
+      "level": "senior",
+      "raw_text": "over 8 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-architect-at-paracon-4392467718",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/solutions-network-security-architect-at-executiveplacements-com-4392156611",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-executiveplacements-com-4394441624",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-solutions-architect-army-vantage-at-janus-research-group-4386110243",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-kingmakers-4386674547",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-senior-at-decision-inc-4393468281",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4-6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-tenth-revolution-group-4396968884",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-tenth-revolution-group-4396989718",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-communicate-recruitment-4390003680",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-dlg-digital-luxury-group-4395208920",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "at least 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-executiveplacements-com-4392157541",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-ch1218-at-executiveplacements-com-4394417720",
+      "min_years": 8,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "8-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-yoco-4380464509",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-experian-4392937623",
+      "min_years": 7,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "7-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/satic-junior-bi-consultant-in-l-d-at-pwc-south-africa-4387579311",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-controller-at-red-bull-4395309912",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-manager-business-intelligence-at-african-bank-4392885488",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/group-analyst-business-intelligence-at-aspen-pharma-group-4393926368",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/dashboard-and-report-developer-at-mediclinic-group-4390755775",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/customer-insights-analyst-at-woolworths-financial-services-4393430219",
+      "min_years": 1,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "1 - 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-specialist-at-confidential-4391729970",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-intelligence-lead-fintech-at-optasia-4393573549",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/dashboard-and-report-developer-at-mediclinic-4393635085",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-at-tektalent-4397929046",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-at-moburst-growth-done-right-4397709630",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-at-executiveplacements-com-4393088781",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "over 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/power-bi-developer-at-qe-services-it-recruitment-4395306989",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-bi-developer-at-executiveplacements-com-4394230615",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-power-bi-developer-contract-cpt-at-executiveplacements-com-4394404866",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-intelligence-developer-mmh260127-42-at-momentum-4392852575",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-bi-analyst-%E2%80%93-strategic-data-problem-solver-at-executiveplacements-com-4389859526",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/bi-operations-analyst-at-avi-limited-4386695261",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/bi-operations-analyst-at-avi-limited-4388042422",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-developer-at-executiveplacements-com-4393401085",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-sql-ssrs-developer-at-executiveplacements-com-4394439666",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/sql-developer-at-executiveplacements-com-4391635916",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/sql-ssrs-developer-reporter-at-executiveplacements-com-4397513661",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/sql-developer-at-serr-synergy-4396973957",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/sql-ssrs-developer-reporter-at-executiveplacements-com-4397525292",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/tableau-report-visualisation-developer-at-executiveplacements-com-4397508772",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/tableau-report-visualisation-developer-at-datonomy-solutions-at-datonomy-solutions-4397300566",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-full-stack-developer-at-remote-choice-4391726229",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-products-manager-at-cv-4391777812",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/satic-data-product-manager-at-pwc-careers-africa-4396162271",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-data-at-revolut-4391301191",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: entry-level",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-ml-engineer-at-badger-holdings-pty-ltd-4391543032",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-ml-engineer-full-remote-south-africa-at-ada-meher-4386687070",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-back-end-at-digioutsource-4322150631",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3 to 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-at-moo-4390925748",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-security-privacy-at-jobgether-4395037067",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-%E2%80%93-qa-intermediate-level-at-hello-group-4391350098",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-engineer-data-scientist-remote-at-executiveplacements-com-4392150687",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-intermediate-at-synergy-ai-pty-ltd-4390137466",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "experience: intermediate",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-specialist-engineer-scientist-at-network-recruitment-4386686410",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-executiveplacements-com-4388670744",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-azure-at-executiveplacements-com-4384638423",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "5 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-executiveplacements-com-4391641901",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-developer-at-momentum-4390110508",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-developer-at-momentum-4390120225",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-developer-mmh260203-1-at-momentum-4390348279",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-specialist-data-engineer-data-analyst-at-executiveplacements-com-4393094332",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-iii-at-lexisnexis-4392449825",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-platform-engineer-at-paymentology-4377158579",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/intermediate-data-engineer-at-betsoftware-4388093678",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-warehouse-developer-mmh250718-13-at-momentum-4390337856",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/ai-data-quality-analyst-at-alignerr-4394339914",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-labeling-specialist-at-alignerr-4393283352",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/internal-auditor-data-analytics-at-executiveplacements-com-4388673655",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-operations-specialist-at-sanlam-4392195693",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/tester-data-product-at-woolworths-financial-services-4395329624",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/internal-auditor-data-analytics-at-salix-recruitment-4394963069",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum of 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/product-analyst-a-b-testing-digital-optimization-at-indsafri-4388406270",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/statistical-specialist-remote-at-crossing-hurdles-4395022787",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/internal-auditor-data-analytics-at-executiveplacements-com-4393081991",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum of 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-reporting-analytics-specialist-fixed-term-contract-at-anglo-american-4396638580",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/data-specialist-at-spinnaker-support-4393445876",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/microsoft-fabric-specialist-data-engineering-governance-dwh-onsite-%E2%80%93-jhb-contract-at-executiveplacements-com-4393092482",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/performance-management-senior-specialist-at-old-mutual-south-africa-4393907228",
+      "min_years": 6,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "6-10yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/group-specialist-enterprise-resource-planning-at-aspen-pharma-group-4389717623",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/1016-full-stack-developer-senior-at-executiveplacements-com-4391236177",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-intellect-design-arena-ltd-4392390865",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-discovery-limited-4396641990",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-fundstream-4390586806",
+      "min_years": 60,
+      "max_years": 60,
+      "level": "senior",
+      "raw_text": "over 60 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-product-focused-at-codekeeper-4394658302",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-specialist-at-indsafri-4396860545",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-resourgenix-pty-ltd-4396965439",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-specialist-at-indsafri-4396617765",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-novonesis-4392890237",
+      "min_years": 3,
+      "max_years": 4,
+      "level": "mid",
+      "raw_text": "3-4 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-cell-c-4397516807",
+      "min_years": 4,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "4-7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-executiveplacements-com-4394244468",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum of 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-specialist-at-executiveplacements-com-4394419663",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-solutions-analyst-at-executiveplacements-com-4391653067",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-retail-intermediate-at-parvana-4388098171",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "minimum 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-executiveplacements-com-4391697865",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-monocle-solutions-4391914913",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-solutions-analyst-at-fedgroup-4391575152",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-aj5d-projects-4396964269",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-project-manager-at-executiveplacements-com-4393098243",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "at least 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-equal-experts-south-africa-4387811534",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-product-owner-at-executiveplacements-com-4391699896",
+      "min_years": 5,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "minimum 5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-advania-uk-4393431127",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-cpt-onsite-at-executiveplacements-com-4391956419",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-executiveplacements-com-4394248408",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/head-of-ba-commercial-excellence-at-epiroc-4390974193",
+      "min_years": 10,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "10 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/technical-business-analyst-compass-at-acuity-consultants-4395661089",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-executiveplacements-com-4388684126",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-rpa-robotics-at-tfg-the-foschini-group-4390380388",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-technical-business-analyst-%E2%80%93-constantia-cape-town-hybrid-3-days-onsite-at-smart4-energy-4397864836",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-specialist-%E2%80%93-contracting-role-at-dearx-4397414193",
+      "min_years": 8,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "8+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-acca-careers-4396597058",
+      "min_years": 7,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "7-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-careers-at-dlk-group-4283465689",
+      "min_years": 7,
+      "max_years": 10,
+      "level": "senior",
+      "raw_text": "7-10 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-arch-retail-solutions-4339133548",
+      "min_years": 4,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "4+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-lula-4383923568",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "at least 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-software-developer-at-executiveplacements-com-4392148854",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developers-full-stack-back-end-front-end-at-executiveplacements-com-4397514645",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-developer-graduate-at-csg-4390912567",
+      "min_years": 40,
+      "max_years": 40,
+      "level": "senior",
+      "raw_text": "over 40 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-intermediate-at-kfml-holdings-pty-ltd-4392926539",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-asset-management-at-zutari-4392029373",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "at least 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-at-executiveplacements-com-4394402877",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-south-africa-at-toppan-security-4390971355",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-c%2B%2B-at-executiveplacements-com-4390415868",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-at-ria-money-transfer-4386183303",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-developer-at-dy-dx-digital-4395021594",
+      "min_years": 3,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "3-6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/intermediate-software-developer-at-executiveplacements-com-4390415873",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-%40-at-executiveplacements-com-4384637485",
+      "min_years": 4,
+      "max_years": 6,
+      "level": "mid",
+      "raw_text": "4 - 6 yrs",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-back-end-iii-at-capitec-4392672658",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-front-end-at-digioutsource-4392873543",
+      "min_years": 4,
+      "max_years": 4,
+      "level": "mid",
+      "raw_text": "4 years of experience",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/php-and-mobile-app-software-developer-at-executiveplacements-com-4382265005",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "at least 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-ii-at-the-shoprite-group-of-companies-4390332671",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-back-end-at-executiveplacements-com-4394413741",
+      "min_years": 6,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "6+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-at-klipboard-4372234718",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-python-django-postgresql-remote-at-executiveplacements-com-4383505821",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/net-developer-at-indomidas-advertising-pvt-ltd-4332827055",
+      "min_years": 7,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "7+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-software-engineer-at-executiveplacements-com-4390438741",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/front-end-developer-at-executiveplacements-com-4391688972",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-front-end-developer-at-touchfoundry-4391047916",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: junior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/account-developer-at-coca-cola-beverages-africa-4394602186",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/backend-developer-node-js-at-council-for-scientific-and-industrial-research-csir-4390334412",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/front-end-developer-at-somewhere-4391821333",
+      "min_years": 2,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "2-3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/account-developer-at-coca-cola-beverages-africa-4396032573",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/frontend-developer-at-allan-gray-4389190097",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: staff",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/front-end-developer-angular-at-executiveplacements-com-4394449610",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/account-developer-at-coca-cola-beverages-africa-4393934861",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-developer-at-executiveplacements-com-4390428808",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/javascript-developer-%2455-hr-remote-at-crossing-hurdles-4388904255",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/account-developer-at-coca-cola-beverages-africa-4396021912",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/account-developer-at-coca-cola-beverages-africa-4393944396",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/product-developer-cut-flowers-plants-at-woolworths-4395644682",
+      "min_years": 2,
+      "max_years": null,
+      "level": "junior",
+      "raw_text": "2+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/intermediate-full-stack-software-engineer-at-lekkeslaap-4384812052",
+      "min_years": 3,
+      "max_years": 5,
+      "level": "mid",
+      "raw_text": "3-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/backend-developer-at-executiveplacements-com-4386605294",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-developer-%2465-hr-remote-at-crossing-hurdles-4393853917",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/fullstack-developer-remote-at-crossing-hurdles-4386867053",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-quality-engineer-at-nedbank-4392280455",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-engineer-at-modern-day-strategy-4397911950",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/test-automation-engineer-at-capitec-4392682471",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-engineer-immediate-start-at-whiteshield-4395016046",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-developer-intermediate-at-spec-savers-distribution-4392903465",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/game-programmer-godot-remote-at-crossing-hurdles-4393451001",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/c%23-backend-developer-at-zensar-technologies-4386657870",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/c%23-developer-at-executiveplacements-com-4394433748",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-low-code-developer-at-gravity-group-4397054221",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-typescript-%2455-hr-remote-at-crossing-hurdles-4388689766",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-at-executiveplacements-com-4394231600",
+      "min_years": 6,
+      "max_years": 6,
+      "level": "senior",
+      "raw_text": "over 6 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/full-stack-mobile-developer-c%23-react-native-at-paracon-4395055394",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/manual-qa-tester-at-storyteq-4395856838",
+      "min_years": 2,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "minimum of 2 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/manual-qa-tester-at-block-labs-4392402073",
+      "min_years": 1,
+      "max_years": 3,
+      "level": "junior",
+      "raw_text": "1 to 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/agile-software-tester-at-council-for-scientific-and-industrial-research-csir-4390343171",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-engineer-at-ruby-labs-4393560806",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-analyst-tester-at-flash-group-4389560542",
+      "min_years": 2,
+      "max_years": 5,
+      "level": "junior",
+      "raw_text": "2-5 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-at-weplace-4390341705",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-at-executiveplacements-com-4391650818",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4392328953",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-at-executiveplacements-com-4390428804",
+      "min_years": 10,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "10+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/lead-software-quality-assurance-test-automation-engineer-at-council-for-scientific-and-industrial-research-csir-4391113902",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: lead",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4392338495",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4392333902",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/software-tester-ai-enabled-testing-specialist-%C3%A2%C2%80%C2%93-contract-at-executiveplacements-com-4391955472",
+      "min_years": 5,
+      "max_years": 7,
+      "level": "mid",
+      "raw_text": "5 -7 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4392350011",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/qa-engineer-iii-at-the-shoprite-group-of-companies-4390856534",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-at-indsafri-4397835307",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-in-test-full-stack-python-at-mindrift-4392330935",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-payjustnow-at-weaver-fintech-ltd-4389060165",
+      "min_years": 3,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "3+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/quality-assurance-engineer-automation-focused-at-executiveplacements-com-4389871111",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/audio-annotation-quality-assurance-engineer-%2455-hr-remote-at-crossing-hurdles-4390109185",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-development-engineer-in-test-at-the-rank-group-plc-4397576745",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: senior",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/part-time-technical-support-consultant-istore-constantia-cape-town-at-istore-south-africa-4395325852",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/support-engineer-at-bidvest-international-logistics-4393565738",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-software-developer-intern-at-hello-group-4394664264",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/executive-assistant-at-kearney-4393277816",
+      "min_years": 5,
+      "max_years": null,
+      "level": "senior",
+      "raw_text": "experience: principal",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/management-consulting-graduate-programme-fy2027-at-kpmg-south-africa-4390869566",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: graduate",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/it-graduate-at-rectron-south-africa-4388750821",
+      "min_years": 0,
+      "max_years": 2,
+      "level": "junior",
+      "raw_text": "experience: graduate",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/welcome-call-agent-at-rand-refinery-limited-4387773783",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/junior-support-agent-jhb-at-executiveplacements-com-4389521670",
+      "min_years": 3,
+      "max_years": 3,
+      "level": "mid",
+      "raw_text": "min 3 years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/it-technician-at-hyde-johannesburg-rosebank-4372543779",
+      "min_years": 5,
+      "max_years": null,
+      "level": "mid",
+      "raw_text": "5+ years",
+      "has_requirement": true
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/speculative-application-cape-town-at-accso-4395049103",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/backend-engineer-at-moonpay-4395303545",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
+    },
+    {
+      "job_id": "https://za.linkedin.com/jobs/view/draftsmen-at-executiveplacements-com-4391958341",
+      "min_years": null,
+      "max_years": null,
+      "level": null,
+      "raw_text": null,
+      "has_requirement": false
     }
   ]
 }
