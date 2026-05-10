@@ -18,6 +18,7 @@ import io
 import time
 import random
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Dict, List, Optional
 
 import requests
@@ -37,8 +38,9 @@ root_logger.addHandler(_handler)
 log = logging.getLogger(__name__)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-INPUT_FILE = "data/data_jobs_combined.json"
-OUTPUT_FILE = "data/data_jobs_descriptions.json"
+SCRIPT_DIR = Path(__file__).parent.parent  # Go up to find_any_backend
+INPUT_FILE = SCRIPT_DIR / "data" / "data_jobs_combined.json"
+OUTPUT_FILE = SCRIPT_DIR / "data" / "data_jobs_descriptions.json"
 DELAY_MIN = 5.0  # Increased to reduce rate limiting
 DELAY_MAX = 10.0  # Increased to reduce rate limiting
 REQUEST_TIMEOUT = 90  # Increased timeout for slow-loading pages like PNet
@@ -405,6 +407,7 @@ def main():
     log.info(f"Loading jobs from: {INPUT_FILE}")
     try:
         with open(INPUT_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
             data = json.load(f)
     except FileNotFoundError:
         log.error(f"Input file not found: {INPUT_FILE}")

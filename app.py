@@ -252,18 +252,39 @@ def get_firebase_config():
                 'error': 'Firebase configuration not available'
             }), 500
         
-        # Parse the full config to extract only client-safe values
+        # Parse the full config to extract client-safe values
         cred_dict = json.loads(firebase_config)
+        
+        project_id = cred_dict.get('project_id', '')
+        client_id = cred_dict.get('client_id', '')
+        
+        # Use the GOOGLE_API_KEY from environment (this is the actual web API key)
+        api_key = os.environ.get('GOOGLE_API_KEY')
+        if not api_key:
+            log.error("GOOGLE_API_KEY environment variable not set")
+            return jsonify({
+                'success': False,
+                'error': 'Firebase API key not configured'
+            }), 500
+        
+        # The messaging sender ID is derived from the numeric project ID
+        messaging_sender_id = os.environ.get('FIREBASE_MESSAGING_SENDER_ID', client_id)
+        
+        # App ID is typically from Firebase console, but we can use project_id as fallback
+        app_id = os.environ.get('FIREBASE_APP_ID', f"1:{client_id}:web:{project_id[:10]}")
         
         # Extract only the public client configuration
         client_config = {
-            'apiKey': os.environ.get('FIREBASE_API_KEY'),
-            'authDomain': f"{cred_dict.get('project_id')}.firebaseapp.com",
-            'projectId': cred_dict.get('project_id'),
-            'storageBucket': f"{cred_dict.get('project_id')}.firebasestorage.app",
-            'messagingSenderId': os.environ.get('FIREBASE_MESSAGING_SENDER_ID'),
-            'appId': os.environ.get('FIREBASE_APP_ID')
+            'apiKey': api_key,
+            'authDomain': f"{project_id}.firebaseapp.com",
+            'projectId': project_id,
+            'storageBucket': f"{project_id}.firebasestorage.app",
+            'messagingSenderId': messaging_sender_id,
+            'appId': app_id,
+            'databaseURL': os.environ.get('FIREBASE_DATABASE_URL')
         }
+        
+        log.info(f"Providing Firebase config for project: {project_id}")
         
         return jsonify({
             'success': True,
@@ -696,13 +717,67 @@ def trigger_scrape():
             log.info(f"Scraper completed with return code: {process.returncode}")
             
             if process.returncode == 0:
+                # Update status to combining
                 scraping_status.update({
-                    'running': False,
-                    'status': 'complete',
-                    'message': 'Scraping completed successfully!',
-                    'progress': 100,
+                    'running': True,
+                    'status': 'combining',
+                    'message': 'Combining jobs from all sources...',
+                    'progress': 95,
                     'last_update': datetime.now().isoformat()
                 })
+                
+                log.info("Starting combine_jobs.py...")
+                
+                # Run combine_jobs.py
+                combine_script = base_dir / 'combine_jobs.py'
+                
+                if not combine_script.exists():
+                    log.error(f"combine_jobs.py not found: {combine_script}")
+                    scraping_status.update({
+                        'running': False,
+                        'status': 'error',
+                        'message': f'combine_jobs.py not found',
+                        'progress': 0,
+                        'last_update': datetime.now().isoformat()
+                    })
+                    return
+                
+                # Run the combine script
+                combine_process = subprocess.Popen(
+                    [sys.executable, str(combine_script)],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                    encoding='utf-8',
+                    errors='replace',
+                    cwd=str(base_dir)
+                )
+                
+                combine_process.wait()
+                combine_stdout = combine_process.stdout.read()
+                
+                log.info(f"combine_jobs.py completed with return code: {combine_process.returncode}")
+                log.info(f"combine_jobs.py output: {combine_stdout}")
+                
+                if combine_process.returncode == 0:
+                    scraping_status.update({
+                        'running': False,
+                        'status': 'complete',
+                        'message': 'Scraping and combining completed successfully!',
+                        'progress': 100,
+                        'last_update': datetime.now().isoformat()
+                    })
+                else:
+                    combine_stderr = combine_process.stderr.read()
+                    error_msg = combine_stderr[:500] if combine_stderr else 'Unknown error'
+                    log.error(f"combine_jobs.py failed: {error_msg}")
+                    scraping_status.update({
+                        'running': False,
+                        'status': 'error',
+                        'message': f'Combining failed: {error_msg}',
+                        'progress': 0,
+                        'last_update': datetime.now().isoformat()
+                    })
             else:
                 stderr_output = process.stderr.read()
                 error_msg = stderr_output[:500] if stderr_output else 'Unknown error'
