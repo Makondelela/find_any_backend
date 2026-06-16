@@ -408,7 +408,6 @@ def main():
     try:
         with open(INPUT_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-            data = json.load(f)
     except FileNotFoundError:
         log.error(f"Input file not found: {INPUT_FILE}")
         sys.exit(1)
@@ -482,7 +481,7 @@ def save_descriptions(descriptions: List[Dict], original_meta: Dict):
     """Save descriptions to JSON file."""
     output = {
         "meta": {
-            "source_file": INPUT_FILE,
+            "source_file": str(INPUT_FILE),
             "total_jobs": len(descriptions),
             "jobs_with_descriptions": sum(1 for d in descriptions if d.get("description")),
             "jobs_without_descriptions": sum(1 for d in descriptions if not d.get("description")),
@@ -492,8 +491,15 @@ def save_descriptions(descriptions: List[Dict], original_meta: Dict):
         "descriptions": descriptions
     }
     
+    def json_serializer(obj):
+        """Custom JSON serializer for non-standard types."""
+        try:
+            return obj.isoformat() if hasattr(obj, 'isoformat') else str(obj)
+        except TypeError:
+            return str(obj)
+    
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2, default=json_serializer)
     
     log.info(f"✓ Saved {len(descriptions)} descriptions to {OUTPUT_FILE}")
 

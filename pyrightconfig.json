@@ -1,0 +1,8 @@
+{
+  "include": ["backend", "scrapers"],
+  "exclude": ["venv", "node_modules", ".venv"],
+  "pythonVersion": "3.9",
+  "pythonPlatform": "Darwin",
+  "typeCheckingMode": "basic",
+  "extraPaths": ["backend"]
+}

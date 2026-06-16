@@ -48,10 +48,15 @@ import time
 import random
 import re
 from datetime import datetime, timezone
+from typing import Optional
 from urllib.parse import urlencode, quote_plus
 
 import requests
 from bs4 import BeautifulSoup
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
 
 from search_config import DEFAULT_SEARCH_SLUGS
 
@@ -77,16 +82,21 @@ DELAY_MAX = 4.0
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/122.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-ZA,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "en-ZA,en-GB;q=0.9,en;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
+    "Cache-Control": "max-age=0",
     "Connection": "keep-alive",
+    "DNT": "1",
     "Upgrade-Insecure-Requests": "1",
-    "Referer": "https://www.careerjunction.co.za/",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
 }
 
 
@@ -118,7 +128,7 @@ def build_url(keyword: str, page: int = 1) -> str:
     return url
 
 
-def get_page(session: requests.Session, url: str) -> BeautifulSoup | None:
+def get_page(session: requests.Session, url: str) -> Optional[BeautifulSoup]:
     try:
         r = session.get(url, headers=HEADERS, timeout=25)
         if r.status_code == 403:
