@@ -1257,6 +1257,12 @@ h4 {
     background-color: #F9FAFB;
     max-height: 420px;
     object-fit: contain;
+    cursor: pointer;
+}
+
+.assistant-screenshot:focus {
+    outline: 2px solid var(--primary-color, #2196F3);
+    outline-offset: 2px;
 }
 
 .assistant-url-row {

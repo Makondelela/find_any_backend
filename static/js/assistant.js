@@ -148,6 +148,72 @@ function startAssistantScreenshotPolling() {
     assistantScreenshotPoller = setInterval(assistantRefreshScreenshot, 1000);
 }
 
+// Map a click/coords on the displayed (possibly scaled) <img> back to real
+// pixel coordinates in the remote page's viewport.
+function assistantImageToPageCoords(img, clientX, clientY) {
+    const rect = img.getBoundingClientRect();
+    const scaleX = img.naturalWidth / rect.width;
+    const scaleY = img.naturalHeight / rect.height;
+    return {
+        x: (clientX - rect.left) * scaleX,
+        y: (clientY - rect.top) * scaleY,
+    };
+}
+
+async function assistantHandleClick(event) {
+    const { screenshot } = assistantEls();
+    if (!screenshot || !screenshot.naturalWidth) return;
+    screenshot.focus();
+    const { x, y } = assistantImageToPageCoords(screenshot, event.clientX, event.clientY);
+    try {
+        await assistantCall('/api/click', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ x, y }),
+        });
+    } catch (err) {
+        assistantLog(`Click failed: ${err.message}`, true);
+    }
+    assistantRefreshScreenshot();
+}
+
+const ASSISTANT_MODIFIER_KEYS = new Set(['Shift', 'Control', 'Alt', 'Meta', 'CapsLock']);
+
+async function assistantHandleKeydown(event) {
+    if (ASSISTANT_MODIFIER_KEYS.has(event.key)) return;
+    event.preventDefault();
+    try {
+        await assistantCall('/api/key', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ key: event.key }),
+        });
+    } catch (err) {
+        assistantLog(`Key press failed: ${err.message}`, true);
+    }
+    assistantRefreshScreenshot();
+}
+
+let assistantScrollBusy = false;
+
+async function assistantHandleWheel(event) {
+    event.preventDefault();
+    if (assistantScrollBusy) return;
+    assistantScrollBusy = true;
+    try {
+        await assistantCall('/api/scroll', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ deltaX: event.deltaX, deltaY: event.deltaY }),
+        });
+    } catch (err) {
+        // Silent: wheel events fire rapidly, avoid spamming the log.
+    } finally {
+        assistantScrollBusy = false;
+    }
+    assistantRefreshScreenshot();
+}
+
 async function assistantFillIn() {
     assistantLog('Filling in the current page...');
     try {
@@ -176,13 +242,19 @@ function assistantCopyLink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { header, copyBtn, refreshBtn, fillBtn, panel } = assistantEls();
+    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot } = assistantEls();
     if (!panel) return;
 
     header.addEventListener('click', () => panel.classList.toggle('assistant-collapsed'));
     copyBtn.addEventListener('click', assistantCopyLink);
     refreshBtn.addEventListener('click', assistantRefreshStatus);
     fillBtn.addEventListener('click', assistantFillIn);
+
+    if (screenshot) {
+        screenshot.addEventListener('click', assistantHandleClick);
+        screenshot.addEventListener('keydown', assistantHandleKeydown);
+        screenshot.addEventListener('wheel', assistantHandleWheel, { passive: false });
+    }
 
     assistantRefreshStatus();
     startAssistantStatusPolling();

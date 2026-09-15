@@ -102,6 +102,41 @@ class AssistantBrowser:
             "image": f"data:image/jpeg;base64,{encoded}",
         }
 
+    async def _active_page(self):
+        if not getattr(self, "page", None) or self.page.is_closed():
+            return None
+        return self.page
+
+    def click(self, x, y):
+        return self._run(self._click(x, y))
+
+    async def _click(self, x, y):
+        page = await self._active_page()
+        if page is None:
+            return {"running": False}
+        await page.mouse.click(x, y)
+        return await self._status()
+
+    def press_key(self, key):
+        return self._run(self._press_key(key))
+
+    async def _press_key(self, key):
+        page = await self._active_page()
+        if page is None or not key:
+            return {"running": False}
+        await page.keyboard.press(key)
+        return await self._status()
+
+    def scroll(self, delta_x, delta_y):
+        return self._run(self._scroll(delta_x, delta_y))
+
+    async def _scroll(self, delta_x, delta_y):
+        page = await self._active_page()
+        if page is None:
+            return {"running": False}
+        await page.mouse.wheel(delta_x, delta_y)
+        return await self._status()
+
     def fill(self):
         return self._run(self._fill())
 

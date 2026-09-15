@@ -152,7 +152,7 @@ def save_user_history(data):
 # ROUTES
 # ══════════════════════════════════════════════════════════════════════════════
 
-ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status', 'screenshot'}
+ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status', 'screenshot', 'click', 'key', 'scroll'}
 
 
 @app.route('/assistant/api/<endpoint>', methods=['GET', 'POST', 'OPTIONS'])
@@ -174,6 +174,12 @@ def assistant_proxy(endpoint):
             result = assistant_browser.status()
         elif endpoint == 'screenshot':
             result = assistant_browser.screenshot()
+        elif endpoint == 'click':
+            result = assistant_browser.click(float(data.get('x', 0)), float(data.get('y', 0)))
+        elif endpoint == 'key':
+            result = assistant_browser.press_key(data.get('key', ''))
+        elif endpoint == 'scroll':
+            result = assistant_browser.scroll(float(data.get('deltaX', 0)), float(data.get('deltaY', 0)))
         elif endpoint == 'fill':
             result = assistant_browser.fill()
         else:
