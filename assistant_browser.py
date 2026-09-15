@@ -52,6 +52,7 @@ class AssistantBrowser:
         if not getattr(self, "context", None):
             self.playwright = await async_playwright().start()
             self.browser = await self.playwright.chromium.launch(
+                channel="chromium",
                 headless=True,
                 args=["--no-sandbox", "--disable-dev-shm-usage"],
             )
