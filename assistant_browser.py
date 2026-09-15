@@ -1,6 +1,7 @@
 """Headless browser used by the FindFast application assistant."""
 
 import asyncio
+import base64
 import re
 import threading
 from pathlib import Path
@@ -56,7 +57,9 @@ class AssistantBrowser:
                 args=["--no-sandbox", "--disable-dev-shm-usage"],
             )
             self.context = await self.browser.new_context(accept_downloads=False)
+            self.context.set_default_timeout(10000)
         self.page = await self.context.new_page()
+        await self.page.set_viewport_size({"width": 390, "height": 720})
         return self.page
 
     def open(self, url):
@@ -83,6 +86,44 @@ class AssistantBrowser:
         if not getattr(self, "page", None) or self.page.is_closed():
             return {"running": False, "url": None}
         return {"running": True, "url": self.page.url}
+
+    def screenshot(self):
+        return self._run(self._screenshot())
+
+    async def _screenshot(self):
+        page = await self._ensure_page()
+        image = await page.screenshot(type="jpeg", quality=75)
+        return {"image": base64.b64encode(image).decode("ascii"), "url": page.url}
+
+    def tap(self, x, y):
+        return self._run(self._tap(x, y))
+
+    async def _tap(self, x, y):
+        page = await self._ensure_page()
+        await page.mouse.click(float(x), float(y))
+        await page.wait_for_timeout(500)
+        return await self._screenshot()
+
+    def type_text(self, text):
+        return self._run(self._type_text(text))
+
+    async def _type_text(self, text):
+        page = await self._ensure_page()
+        await page.keyboard.type(text)
+        return await self._screenshot()
+
+    def navigate_history(self, direction):
+        return self._run(self._navigate_history(direction))
+
+    async def _navigate_history(self, direction):
+        page = await self._ensure_page()
+        if direction == "back":
+            await page.go_back(wait_until="domcontentloaded", timeout=15000)
+        elif direction == "forward":
+            await page.go_forward(wait_until="domcontentloaded", timeout=15000)
+        else:
+            await page.reload(wait_until="domcontentloaded", timeout=15000)
+        return await self._screenshot()
 
     def fill(self):
         return self._run(self._fill())
