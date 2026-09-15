@@ -13,8 +13,10 @@ import os
 from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
+import requests
 import firebase_admin
 from firebase_admin import credentials, auth, db as firebase_db
+from assistant_browser import assistant_browser
 
 # Load environment variables from .env file
 load_dotenv()
@@ -149,6 +151,36 @@ def save_user_history(data):
 # ══════════════════════════════════════════════════════════════════════════════
 # ROUTES
 # ══════════════════════════════════════════════════════════════════════════════
+
+ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status'}
+
+
+@app.route('/assistant/api/<endpoint>', methods=['GET', 'POST', 'OPTIONS'])
+@login_required
+def assistant_proxy(endpoint):
+    """Control the in-process Render-hosted assistant browser."""
+    if endpoint not in ASSISTANT_ENDPOINTS:
+        return jsonify({'ok': False, 'error': 'Unknown assistant endpoint'}), 404
+    if request.method == 'OPTIONS':
+        return ('', 204)
+
+    try:
+        data = request.get_json(silent=True) or {}
+        if endpoint == 'open':
+            result = assistant_browser.open((data.get('url') or '').strip())
+        elif endpoint == 'reset':
+            result = {'reset': assistant_browser.reset(), **assistant_browser.status()}
+        elif endpoint == 'status':
+            result = assistant_browser.status()
+        else:
+            result = assistant_browser.fill()
+        return jsonify({'ok': True, **result})
+    except Exception as exc:  # noqa: BLE001
+        log.warning('Assistant browser error: %s', exc)
+        return jsonify({
+            'ok': False,
+            'error': str(exc),
+        }), 502
 
 @app.route('/')
 @login_required

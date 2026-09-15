@@ -6,7 +6,7 @@
    then use "Fill In" to auto-populate whatever application form they land on.
    ═══════════════════════════════════════════════════════════════════════════ */
 
-const ASSISTANT_BASE = 'http://127.0.0.1:5050';
+const ASSISTANT_BASE = '/assistant';
 let assistantOpenSequence = 0;
 let assistantLastUrl = '';
 let assistantStatusPoller = null;
@@ -86,7 +86,7 @@ async function openInAssistant(url) {
         assistantLog('Opened. Sign in / navigate to the application form, then click Fill In.');
     } catch (err) {
         assistantLog(
-            `Could not reach the assistant browser (is it running? "python3 app.py" in the Apply folder). Opening in a normal tab instead. ${err.message}`,
+            `The hosted assistant browser could not open this job. Opening it in a normal tab instead. ${err.message}`,
             true
         );
         window.open(url, '_blank', 'noopener,noreferrer');
