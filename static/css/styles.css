@@ -1284,47 +1284,6 @@ h4 {
     gap: 0.5rem;
 }
 
-.assistant-webview {
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-}
-
-.assistant-webview-toolbar,
-.assistant-type-row {
-    display: flex;
-    gap: 0.4rem;
-}
-
-.assistant-screen-button {
-    display: block;
-    padding: 0;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    background: #111827;
-    overflow: hidden;
-    cursor: crosshair;
-    line-height: 0;
-}
-
-.assistant-screen-button img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 420px;
-    object-fit: contain;
-    object-position: top;
-}
-
-.assistant-type-row input {
-    min-width: 0;
-    flex: 1;
-    padding: 0.45rem 0.6rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    font-size: 0.8rem;
-}
-
 .assistant-log {
     max-height: 140px;
     overflow-y: auto;

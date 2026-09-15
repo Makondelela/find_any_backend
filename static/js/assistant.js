@@ -19,45 +19,8 @@ function assistantEls() {
         copyBtn: document.getElementById('assistantCopyBtn'),
         refreshBtn: document.getElementById('assistantRefreshBtn'),
         fillBtn: document.getElementById('assistantFillBtn'),
-        webview: document.getElementById('assistantWebview'),
-        screenButton: document.getElementById('assistantScreenButton'),
-        screen: document.getElementById('assistantScreen'),
-        typeInput: document.getElementById('assistantTypeInput'),
-        typeBtn: document.getElementById('assistantTypeBtn'),
-        backBtn: document.getElementById('assistantBackBtn'),
-        forwardBtn: document.getElementById('assistantForwardBtn'),
-        reloadBtn: document.getElementById('assistantReloadBtn'),
         log: document.getElementById('assistantLog'),
     };
-}
-
-function assistantShowScreen(data) {
-    const { screen, webview } = assistantEls();
-    if (!screen || !webview || !data.image) return;
-    screen.src = `data:image/jpeg;base64,${data.image}`;
-    webview.hidden = false;
-    if (data.url) {
-        assistantLastUrl = data.url;
-        assistantEls().urlInput.value = data.url;
-    }
-}
-
-async function assistantScreenshot() {
-    const data = await assistantCall('/api/screenshot', { method: 'GET' });
-    assistantShowScreen(data);
-}
-
-async function assistantBrowserAction(endpoint, body = {}) {
-    try {
-        const data = await assistantCall(`/api/${endpoint}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(body),
-        });
-        assistantShowScreen(data);
-    } catch (err) {
-        assistantLog(`${endpoint} failed: ${err.message}`, true);
-    }
 }
 
 function assistantLog(message, isError) {
@@ -70,12 +33,10 @@ function assistantLog(message, isError) {
 }
 
 function clearAssistantState() {
-    const { urlInput, log, screen, webview } = assistantEls();
+    const { urlInput, log } = assistantEls();
     assistantLastUrl = '';
     if (urlInput) urlInput.value = '';
     if (log) log.replaceChildren();
-    if (screen) screen.removeAttribute('src');
-    if (webview) webview.hidden = true;
 }
 
 function assistantExpand() {
@@ -122,7 +83,6 @@ async function openInAssistant(url) {
         });
         assistantLastUrl = data.url || url;
         assistantEls().urlInput.value = assistantLastUrl;
-        await assistantScreenshot();
         assistantLog('Opened. Sign in / navigate to the application form, then click Fill In.');
     } catch (err) {
         assistantLog(
@@ -140,9 +100,6 @@ async function assistantRefreshStatus(isPolling = false) {
         const changed = currentUrl !== assistantLastUrl;
         assistantLastUrl = currentUrl;
         assistantEls().urlInput.value = currentUrl;
-        if (data.running && changed) {
-            await assistantScreenshot();
-        }
         if (!data.running && changed) {
             assistantLog('Assistant browser is not open yet - click a job\'s "View Job" button to start.');
         }
@@ -169,7 +126,6 @@ async function assistantFillIn() {
             body: JSON.stringify({}),
         });
         assistantEls().urlInput.value = data.url || '';
-        await assistantScreenshot();
         (data.log || '')
             .split('\n')
             .filter(Boolean)
@@ -189,31 +145,13 @@ function assistantCopyLink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { header, copyBtn, refreshBtn, fillBtn, panel, screenButton, typeInput, typeBtn, backBtn, forwardBtn, reloadBtn } = assistantEls();
+    const { header, copyBtn, refreshBtn, fillBtn, panel } = assistantEls();
     if (!panel) return;
 
     header.addEventListener('click', () => panel.classList.toggle('assistant-collapsed'));
     copyBtn.addEventListener('click', assistantCopyLink);
     refreshBtn.addEventListener('click', assistantRefreshStatus);
     fillBtn.addEventListener('click', assistantFillIn);
-    screenButton.addEventListener('click', (event) => {
-        const rect = event.currentTarget.getBoundingClientRect();
-        const image = assistantEls().screen;
-        const scaleX = image.naturalWidth / image.clientWidth;
-        const scaleY = image.naturalHeight / image.clientHeight;
-        assistantBrowserAction('tap', {
-            x: (event.clientX - rect.left) * scaleX,
-            y: (event.clientY - rect.top) * scaleY,
-        });
-    });
-    typeBtn.addEventListener('click', () => {
-        if (!typeInput.value) return;
-        assistantBrowserAction('type', { text: typeInput.value });
-        typeInput.value = '';
-    });
-    backBtn.addEventListener('click', () => assistantBrowserAction('back'));
-    forwardBtn.addEventListener('click', () => assistantBrowserAction('forward'));
-    reloadBtn.addEventListener('click', () => assistantBrowserAction('reload'));
 
     assistantRefreshStatus();
     startAssistantStatusPolling();

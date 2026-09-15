@@ -152,10 +152,7 @@ def save_user_history(data):
 # ROUTES
 # ══════════════════════════════════════════════════════════════════════════════
 
-ASSISTANT_ENDPOINTS = {
-    'open', 'reset', 'fill', 'status', 'screenshot', 'tap', 'type',
-    'back', 'forward', 'reload',
-}
+ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status'}
 
 
 @app.route('/assistant/api/<endpoint>', methods=['GET', 'POST', 'OPTIONS'])
@@ -177,14 +174,8 @@ def assistant_proxy(endpoint):
             result = assistant_browser.status()
         elif endpoint == 'fill':
             result = assistant_browser.fill()
-        elif endpoint == 'screenshot':
-            result = assistant_browser.screenshot()
-        elif endpoint == 'tap':
-            result = assistant_browser.tap(data.get('x', 0), data.get('y', 0))
-        elif endpoint == 'type':
-            result = assistant_browser.type_text(data.get('text', ''))
         else:
-            result = assistant_browser.navigate_history(endpoint)
+            result = assistant_browser.status()
         return jsonify({'ok': True, **result})
     except Exception as exc:  # noqa: BLE001
         log.warning('Assistant browser error: %s', exc)
