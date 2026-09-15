@@ -3,13 +3,12 @@
 Full Job Scraping Pipeline Orchestrator
 ========================================
 Runs the complete job scraping workflow:
-1. Start LinkedIn scraper (Node.js)
-2. Start Flask app
-3. Trigger scraping via API
-4. Wait for scraping to complete
-5. Combine jobs from all sources
-6. Scrape job descriptions
-7. Extract experience requirements
+1. Start Flask app
+2. Trigger scraping via API
+3. Wait for scraping to complete
+4. Combine jobs from all sources
+5. Scrape job descriptions
+6. Extract experience requirements
 
 Usage:
     python run_full_pipeline.py
@@ -26,13 +25,11 @@ from pathlib import Path
 from datetime import datetime
 
 # Configuration
-LINKEDIN_SCRAPER_DIR = Path(__file__).parent.parent / "linked_in_scraper"
 FLASK_APP_PATH = Path(__file__).parent / "app.py"
 COMBINE_SCRIPT = Path(__file__).parent / "combine_jobs.py"
 DESCRIPTION_SCRIPT = Path(__file__).parent / "backend" / "job_description_pipeline.py"
 EXPERIENCE_SCRIPT = Path(__file__).parent / "backend" / "extract_experience.py"
 
-LINKEDIN_SCRAPER_PORT = 3000
 FLASK_PORT = 5000
 FLASK_URL = f"http://127.0.0.1:{FLASK_PORT}"
 SCRAPE_ENDPOINT = f"{FLASK_URL}/api/scrape"
@@ -78,75 +75,6 @@ def signal_handler(sig, frame):
 
 # Register signal handler
 signal.signal(signal.SIGINT, signal_handler)
-
-def check_npm_available():
-    """Check if npm is available in PATH"""
-    try:
-        result = subprocess.run(
-            ["npm", "--version"],
-            capture_output=True,
-            text=True,
-            timeout=5
-        )
-        return result.returncode == 0
-    except Exception:
-        return False
-
-def start_linkedin_scraper():
-    """Start Node.js LinkedIn scraper"""
-    log("Starting LinkedIn scraper (Node.js)...")
-    
-    if not LINKEDIN_SCRAPER_DIR.exists():
-        error(f"LinkedIn scraper directory not found: {LINKEDIN_SCRAPER_DIR}")
-        return False
-    
-    # Check if npm is available
-    if not check_npm_available():
-        error("npm is not installed or not in PATH")
-        error("To install Node.js and npm:")
-        error("  Windows: Download from https://nodejs.org/")
-        error("  Or use: choco install nodejs (if using Chocolatey)")
-        error("")
-        log("Continuing pipeline without LinkedIn scraper...")
-        return True  # Return True to continue without LinkedIn scraper
-    
-    try:
-        # Check if node_modules exists, if not run npm install
-        if not (LINKEDIN_SCRAPER_DIR / "node_modules").exists():
-            log("Installing Node dependencies...")
-            result = subprocess.run(
-                ["npm", "install"],
-                cwd=LINKEDIN_SCRAPER_DIR,
-                capture_output=True,
-                text=True,
-                timeout=120
-            )
-            if result.returncode != 0:
-                error(f"npm install failed: {result.stderr}")
-                return False
-            log("Node dependencies installed")
-        
-        # Start the scraper
-        proc = subprocess.Popen(
-            ["npm", "start"],
-            cwd=LINKEDIN_SCRAPER_DIR,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        processes.append(proc)
-        time.sleep(2)  # Give it time to start
-        
-        if proc.poll() is not None:
-            stdout, stderr = proc.communicate()
-            error(f"LinkedIn scraper failed to start: {stderr}")
-            return False
-        
-        success(f"LinkedIn scraper started (PID: {proc.pid})")
-        return True
-    except Exception as e:
-        error(f"Failed to start LinkedIn scraper: {e}")
-        return False
 
 def start_flask_app():
     """Start Flask application"""
@@ -390,68 +318,63 @@ def main():
     print("="*70 + "\n")
     
     try:
-        # Step 1: Start LinkedIn scraper (npm start)
-        log("Step 1: Starting LinkedIn scraper...")
-        start_linkedin_scraper()  # Try to start, but continue if npm not available
-        time.sleep(1)
-        
-        # Step 2: Start Flask app and wait for it to be ready
-        log("Step 2: Starting Flask app...")
+        # Step 1: Start Flask app and wait for it to be ready
+        log("Step 1: Starting Flask app...")
         if not start_flask_app():
             error("Failed to start Flask app. Exiting.")
             cleanup()
             sys.exit(1)
-        
+
         if not wait_for_flask():
             error("Flask app did not respond. Exiting.")
             cleanup()
             sys.exit(1)
         time.sleep(1)
-        
-        # Step 3: Trigger scraping and wait for completion
-        log("Step 3: Triggering scraping...")
+
+        # Step 2: Trigger scraping and wait for completion
+        log("Step 2: Triggering scraping...")
         if not trigger_scraping():
             error("Failed to trigger scraping. Exiting.")
             cleanup()
             sys.exit(1)
-        
-        log("Step 4: Waiting for scraping to complete...")
+
+        log("Step 3: Waiting for scraping to complete...")
         if not wait_for_scraping_complete():
             error("Scraping did not complete in time. Exiting.")
             cleanup()
             sys.exit(1)
-        
+
         success("Scraping completed!")
         time.sleep(1)
-        
-        # Clean up Flask and Node apps
+
+        # Clean up Flask app
         log("Cleaning up background processes...")
         cleanup()
         time.sleep(2)
-        
-        # Step 5: Combine jobs and wait for completion
-        log("Step 5: Combining jobs...")
+
+        # Step 4: Combine jobs and wait for completion
+        log("Step 4: Combining jobs...")
         if not run_python_script(COMBINE_SCRIPT, "combine_jobs.py"):
             error("Failed to combine jobs. Exiting.")
             sys.exit(1)
         time.sleep(1)
-        
-        # Step 6: Scrape job descriptions and wait for completion
-        log("Step 6: Scraping job descriptions...")
+
+        # Step 5: Scrape job descriptions and wait for completion
+        log("Step 5: Scraping job descriptions...")
         if not run_python_script(DESCRIPTION_SCRIPT, "job_description_pipeline.py"):
             error("Failed to scrape job descriptions. Exiting.")
             sys.exit(1)
         time.sleep(1)
-        
-        # Step 7: Extract experience and wait for completion
-        log("Step 7: Extracting experience requirements...")
+
+        # Step 6: Extract experience and wait for completion
+        log("Step 6: Extracting experience requirements...")
         if not run_python_script(EXPERIENCE_SCRIPT, "extract_experience.py"):
             error("Failed to extract experience. Exiting.")
             sys.exit(1)
         time.sleep(1)
-        
-        # Step 8: Push to git and wait for completion
-        log("Step 8: Pushing to git...")
+
+        # Step 7: Push to git and wait for completion
+        log("Step 7: Pushing to git...")
         if not push_to_git():
             error("Failed to push to git. Exiting.")
             sys.exit(1)
