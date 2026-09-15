@@ -8,10 +8,10 @@
 /* CSS Custom Properties */
 :root {
     /* Brand Colors */
-    --primary-color: #c09023;
-    --primary-hover: #c9a144;
-    --primary-active: #cda64f;
-    --primary-border: #c69b39;
+    --primary-color: #2196F3;
+    --primary-hover: #42A5F5;
+    --primary-active: #64B5F6;
+    --primary-border: #1E88E5;
     
     /* Text Colors */
     --body-bg: #FFFFFF;
@@ -25,15 +25,18 @@
     
     /* Border & Shadows */
     --border-color: #DEE2E6;
-    --shadow-rgb: 168, 128, 36;
-    
+    --shadow-rgb: 33, 150, 243;
+
+    /* Icon Colors */
+    --icon-color: #000000;
+
     /* Button Colors */
     --btn-color: #212529;
-    --btn-bg: #c09023;
-    --btn-hover-bg: #c9a144;
-    --btn-active-bg: #cda64f;
-    --btn-border: #c09023;
-    --btn-hover-border: #c69b39;
+    --btn-bg: #2196F3;
+    --btn-hover-bg: #42A5F5;
+    --btn-active-bg: #64B5F6;
+    --btn-border: #2196F3;
+    --btn-hover-border: #1E88E5;
     --btn-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     
     /* Layout */
@@ -101,7 +104,7 @@ main {
     display: inline-block;
     padding: 0.5rem 1.75rem;
     border: 1px solid var(--btn-border);
-    border-radius: 10rem;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -143,7 +146,7 @@ main {
 .btn-signin {
     background-color: var(--bg-lighter);
     padding: 0.5rem 1.75rem;
-    border-radius: 10rem;
+    border-radius: 8px;
 }
 
 .btn-signin:hover {
@@ -424,7 +427,7 @@ h4 {
 .form-control:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(192, 144, 35, 0.1);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
 }
 
 .password-header {

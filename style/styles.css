@@ -8,10 +8,10 @@
 /* CSS Custom Properties */
 :root {
     /* Brand Colors */
-    --primary-color: #c09023;
-    --primary-hover: #c9a144;
-    --primary-active: #cda64f;
-    --primary-border: #c69b39;
+    --primary-color: #2196F3;
+    --primary-hover: #42A5F5;
+    --primary-active: #64B5F6;
+    --primary-border: #1E88E5;
     
     /* Text Colors */
     --body-bg: #FFFFFF;
@@ -25,15 +25,21 @@
     
     /* Border & Shadows */
     --border-color: #DEE2E6;
-    --shadow-rgb: 168, 128, 36;
+    --shadow-rgb: 33, 150, 243;
+    
+    /* Icon Colors */
+    --icon-color: #000000;
+    
+    /* Text-on-accent (readable text/icons over the blue accent) */
+    --on-accent-color: #FFFFFF;
     
     /* Button Colors */
     --btn-color: #212529;
-    --btn-bg: #c09023;
-    --btn-hover-bg: #c9a144;
-    --btn-active-bg: #cda64f;
-    --btn-border: #c09023;
-    --btn-hover-border: #c69b39;
+    --btn-bg: #2196F3;
+    --btn-hover-bg: #42A5F5;
+    --btn-active-bg: #64B5F6;
+    --btn-border: #2196F3;
+    --btn-hover-border: #1E88E5;
     --btn-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     
     /* Layout */
@@ -45,6 +51,12 @@
 
 /* Dark Mode Variables */
 :root.dark-mode {
+    /* Brand Colors */
+    --primary-color: #FFC107;
+    --primary-hover: #FFCA28;
+    --primary-active: #FFD54F;
+    --primary-border: #FFB300;
+    
     /* Text Colors */
     --body-bg: #030c16;
     --body-color: #e0e0e0;
@@ -57,9 +69,21 @@
     
     /* Border & Shadows */
     --border-color: #2a3f5a;
+    --shadow-rgb: 255, 193, 7;
+    
+    /* Icon Colors */
+    --icon-color: #FFFFFF;
+    
+    /* Text-on-accent (readable text/icons over the yellow accent) */
+    --on-accent-color: #1A1A1A;
     
     /* Button Colors */
-    --btn-color: #e0e0e0;
+    --btn-color: #1A1A1A;
+    --btn-bg: #FFC107;
+    --btn-hover-bg: #FFCA28;
+    --btn-active-bg: #FFD54F;
+    --btn-border: #FFC107;
+    --btn-hover-border: #FFB300;
 }
 
 /* Reset & Base */
@@ -152,7 +176,7 @@ h4 {
     display: inline-block;
     padding: 0.5rem 1.75rem;
     border: 1px solid var(--btn-border);
-    border-radius: 10rem;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -214,7 +238,7 @@ h4 {
 .btn-signin {
     background-color: var(--bg-lighter);
     padding: 0.5rem 1.75rem;
-    border-radius: 10rem;
+    border-radius: 8px;
 }
 
 .btn-signin:hover {
@@ -525,11 +549,11 @@ h4 {
     justify-content: center;
     align-items: flex-start;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
 }
 
 .split-text h2 {
-    color: #FFFFFF;
+    color: var(--on-accent-color);
 }
 
 .split-text p {
@@ -776,6 +800,7 @@ h4 {
 
 .social-icon:hover {
     background-color: var(--primary-color);
+    color: var(--on-accent-color);
 }
 
 .footer-copyright {
@@ -1092,9 +1117,9 @@ h4 {
 
 .stat-box button:hover {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(192, 144, 35, 0.25);
+    box-shadow: 0 4px 8px rgba(var(--shadow-rgb), 0.25);
 }
 
 .stat-box button:active {
@@ -1142,7 +1167,7 @@ h4 {
 .search-btn {
     padding: 0.75rem 1.5rem;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border: none;
     cursor: pointer;
     font-size: 1rem;
@@ -1178,7 +1203,7 @@ h4 {
 }
 
 .filter-label i {
-    color: var(--primary-color);
+    color: var(--icon-color);
 }
 
 .filter-select {
@@ -1270,7 +1295,7 @@ h4 {
 .job-source {
     display: inline-block;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -1313,8 +1338,19 @@ h4 {
 .job-location i,
 .job-salary i,
 .job-date i {
-    color: var(--primary-color);
+    color: var(--icon-color);
     width: 16px;
+}
+
+.job-link {
+    background-color: #E5E7EB;
+    border-color: #E5E7EB;
+    color: var(--body-color);
+}
+
+.job-link:hover {
+    background-color: #D1D5DB;
+    border-color: #D1D5DB;
 }
 
 .btn-sm {
@@ -1350,7 +1386,7 @@ h4 {
 
 .pagination-btn:hover:not(:disabled) {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
     transform: translateY(-2px);
 }
@@ -1388,7 +1424,7 @@ h4 {
 
 .pagination-num.active {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
 }
 
@@ -1621,7 +1657,18 @@ h4 {
 }
 
 :root.dark-mode .job-card:hover {
-    box-shadow: 0 4px 12px rgba(192, 144, 35, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.15);
+}
+
+:root.dark-mode .job-link {
+    background-color: var(--border-color);
+    border-color: var(--border-color);
+    color: var(--icon-color);
+}
+
+:root.dark-mode .job-link:hover {
+    background-color: #3D5A80;
+    border-color: #3D5A80;
 }
 
 :root.dark-mode .search-filter-section {
@@ -1691,6 +1738,6 @@ h4 {
 
 :root.dark-mode .pagination-num.active {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
 }

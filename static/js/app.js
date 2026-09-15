@@ -309,7 +309,7 @@ function createJobCard(job) {
             ${job.job_type ? `<span style="font-size: 0.85rem; color: #6B7280;"><i class="fas fa-briefcase"></i> ${escapeHtml(job.job_type)}</span>` : ''}
         </div>
 
-        <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm job-link" style="margin-top: 1rem; display: inline-block;">
+        <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm job-link" style="margin-top: 1rem;">
             View Job <i class="fas fa-arrow-right"></i>
         </a>
     `;
@@ -671,7 +671,7 @@ async function filterJobsWithAI(isRefresh = false) {
     filterBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
     
     // Show loading state
-    jobsList.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6B7280;"><i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: #c09023; margin-bottom: 1rem;"></i><br>Processing jobs with AI...<br><small>This may take a moment</small></div>';
+    jobsList.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #6B7280;"><i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--icon-color); margin-bottom: 1rem;"></i><br>Processing jobs with AI...<br><small>This may take a moment</small></div>';
     if (!isRefresh) {
         resultDiv.style.display = 'none';
     }
@@ -764,7 +764,7 @@ function renderAIFilteredJobs(jobs) {
     const jobsList = document.getElementById('jobsList');
     
     if (!jobs || jobs.length === 0) {
-        jobsList.innerHTML = '<div style="text-align: center; padding: 2rem; grid-column: 1/-1; color: #6B7280;"><i class="fas fa-search" style="font-size: 2rem; color: #c09023; margin-bottom: 0.5rem;"></i><br>No jobs match your criteria.<br><small>Try different search terms.</small></div>';
+        jobsList.innerHTML = '<div style="text-align: center; padding: 2rem; grid-column: 1/-1; color: #6B7280;"><i class="fas fa-search" style="font-size: 2rem; color: var(--icon-color); margin-bottom: 0.5rem;"></i><br>No jobs match your criteria.<br><small>Try different search terms.</small></div>';
         return;
     }
     

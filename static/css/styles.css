@@ -8,10 +8,10 @@
 /* CSS Custom Properties */
 :root {
     /* Brand Colors */
-    --primary-color: #c09023;
-    --primary-hover: #c9a144;
-    --primary-active: #cda64f;
-    --primary-border: #c69b39;
+    --primary-color: #2196F3;
+    --primary-hover: #42A5F5;
+    --primary-active: #64B5F6;
+    --primary-border: #1E88E5;
     
     /* Text Colors */
     --body-bg: #FFFFFF;
@@ -25,15 +25,21 @@
     
     /* Border & Shadows */
     --border-color: #DEE2E6;
-    --shadow-rgb: 168, 128, 36;
-    
+    --shadow-rgb: 33, 150, 243;
+
+    /* Icon Colors */
+    --icon-color: #000000;
+
+    /* Text-on-accent (readable text/icons over the blue accent) */
+    --on-accent-color: #FFFFFF;
+
     /* Button Colors */
     --btn-color: #212529;
-    --btn-bg: #c09023;
-    --btn-hover-bg: #c9a144;
-    --btn-active-bg: #cda64f;
-    --btn-border: #c09023;
-    --btn-hover-border: #c69b39;
+    --btn-bg: #2196F3;
+    --btn-hover-bg: #42A5F5;
+    --btn-active-bg: #64B5F6;
+    --btn-border: #2196F3;
+    --btn-hover-border: #1E88E5;
     --btn-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     
     /* Layout */
@@ -45,18 +51,39 @@
 
 /* Dark Mode Variables */
 :root.dark-mode {
+    /* Brand Colors */
+    --primary-color: #FFC107;
+    --primary-hover: #FFCA28;
+    --primary-active: #FFD54F;
+    --primary-border: #FFB300;
+
     /* Text Colors */
     --body-bg: #030c16;
     --body-color: #e0e0e0;
     --text-muted: #a0a0a0;
     --text-dark: #d0d0d0;
-    
+
     /* Background Colors */
     --bg-light: #051220;
     --bg-lighter: #081120;
-    
+
     /* Border & Shadows */
     --border-color: #2a3f5a;
+    --shadow-rgb: 255, 193, 7;
+
+    /* Icon Colors */
+    --icon-color: #FFFFFF;
+
+    /* Text-on-accent (readable text/icons over the yellow accent) */
+    --on-accent-color: #1A1A1A;
+
+    /* Button Colors */
+    --btn-color: #1A1A1A;
+    --btn-bg: #FFC107;
+    --btn-hover-bg: #FFCA28;
+    --btn-active-bg: #FFD54F;
+    --btn-border: #FFC107;
+    --btn-hover-border: #FFB300;
 }
 
 /* ==========================================
@@ -143,7 +170,7 @@
 .login-select:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(192, 144, 35, 0.1);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
 }
 
 .btn-login {
@@ -157,7 +184,7 @@
 .user-info {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(192, 144, 35, 0.1);
+    background: rgba(33, 150, 243, 0.1);
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     font-size: 0.9rem;
@@ -178,8 +205,8 @@
 }
 
 .btn-logout:hover {
-    color: var(--primary-color);
-    background: rgba(192, 144, 35, 0.1);
+    color: var(--icon-color);
+    background: rgba(var(--shadow-rgb), 0.1);
 }
 
 /* Reset & Base */
@@ -283,7 +310,7 @@ h4 {
     display: inline-block;
     padding: 0.5rem 1.75rem;
     border: 1px solid var(--btn-border);
-    border-radius: 10rem;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -352,7 +379,7 @@ h4 {
 
 .btn-refresh {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 6px;
@@ -740,7 +767,7 @@ h4 {
 }
 
 .filter-label i {
-    color: var(--primary-color);
+    color: var(--icon-color);
     flex-shrink: 0;
 }
 
@@ -798,7 +825,7 @@ h4 {
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(192, 144, 35, 0.08);
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.08);
 }
 
 .ai-filter-header {
@@ -808,7 +835,7 @@ h4 {
 .ai-filter-header h3 {
     font-size: 1.25rem;
     font-weight: 700;
-    color: #c09023;
+    color: #2196F3;
     margin: 0 0 0.5rem 0;
     display: flex;
     align-items: center;
@@ -841,8 +868,8 @@ h4 {
 
 .ai-filter-input:focus {
     outline: none;
-    border-color: #c09023;
-    box-shadow: 0 0 0 3px rgba(192, 144, 35, 0.1);
+    border-color: #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
 }
 
 .ai-filter-input::placeholder {
@@ -964,7 +991,7 @@ h4 {
 .job-source {
     display: inline-block;
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -1007,8 +1034,19 @@ h4 {
 .job-location i,
 .job-salary i,
 .job-date i {
-    color: var(--primary-color);
+    color: var(--icon-color);
     width: 16px;
+}
+
+.job-link {
+    background-color: #E5E7EB;
+    border-color: #E5E7EB;
+    color: var(--body-color);
+}
+
+.job-link:hover {
+    background-color: #D1D5DB;
+    border-color: #D1D5DB;
 }
 
 .btn-sm {
@@ -1047,7 +1085,7 @@ h4 {
 
 .pagination-btn:hover:not(:disabled) {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
     transform: translateY(-2px);
 }
@@ -1090,7 +1128,7 @@ h4 {
 
 .pagination-num.active {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
 }
 
@@ -1299,6 +1337,7 @@ h4 {
 
 .social-icon:hover {
     background-color: var(--primary-color);
+    color: var(--on-accent-color);
 }
 
 .footer-copyright {
@@ -2005,13 +2044,24 @@ h4 {
 }
 
 :root.dark-mode .job-card:hover {
-    box-shadow: 0 4px 12px rgba(192, 144, 35, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 235, 59, 0.15);
 }
 
 :root.dark-mode .job-card.job-viewed {
     opacity: 0.6;
     background-color: rgba(55, 65, 81, 0.5);
     border-color: #4B5563;
+}
+
+:root.dark-mode .job-link {
+    background-color: var(--border-color);
+    border-color: var(--border-color);
+    color: var(--icon-color);
+}
+
+:root.dark-mode .job-link:hover {
+    background-color: #3D5A80;
+    border-color: #3D5A80;
 }
 
 :root.dark-mode .job-title {
@@ -2024,24 +2074,24 @@ h4 {
 }
 
 :root.dark-mode .ai-filter-section {
-    background: linear-gradient(135deg, rgba(200, 180, 130, 0.1) 0%, rgba(200, 180, 130, 0.05) 100%);
-    border-color: rgba(192, 144, 35, 0.3);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border-color: rgba(255, 193, 7, 0.3);
 }
 
 :root.dark-mode .ai-filter-input {
     background-color: var(--bg-lighter);
     color: var(--body-color);
-    border-color: rgba(192, 144, 35, 0.2);
+    border-color: rgba(255, 193, 7, 0.2);
 }
 
 :root.dark-mode .ai-filter-input:focus {
-    border-color: #c09023;
-    box-shadow: 0 0 0 3px rgba(192, 144, 35, 0.2);
+    border-color: #FFC107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
 }
 
 :root.dark-mode .ai-filter-result {
     background-color: var(--bg-lighter);
-    border-color: rgba(192, 144, 35, 0.2);
+    border-color: rgba(255, 193, 7, 0.2);
 }
 
 :root.dark-mode .ai-filter-explanation {
@@ -2110,7 +2160,7 @@ h4 {
 
 :root.dark-mode .pagination-num.active {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--on-accent-color);
     border-color: var(--primary-color);
 }
 
