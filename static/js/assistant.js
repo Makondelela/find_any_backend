@@ -7,6 +7,9 @@
    ═══════════════════════════════════════════════════════════════════════════ */
 
 const ASSISTANT_BASE = 'http://127.0.0.1:5050';
+let assistantOpenSequence = 0;
+let assistantLastUrl = '';
+let assistantStatusPoller = null;
 
 function assistantEls() {
     return {
@@ -29,6 +32,13 @@ function assistantLog(message, isError) {
     log.prepend(line);
 }
 
+function clearAssistantState() {
+    const { urlInput, log } = assistantEls();
+    assistantLastUrl = '';
+    if (urlInput) urlInput.value = '';
+    if (log) log.replaceChildren();
+}
+
 function assistantExpand() {
     const { panel } = assistantEls();
     panel.classList.remove('assistant-collapsed');
@@ -48,7 +58,22 @@ async function assistantCall(path, options) {
  * instead of a plain new tab.
  */
 async function openInAssistant(url) {
+    const openSequence = ++assistantOpenSequence;
     assistantExpand();
+    clearAssistantState();
+    assistantLog(`Starting a fresh application context for: ${url}`);
+    try {
+        await assistantCall('/api/reset', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+        });
+    } catch (err) {
+        assistantLog(`Could not reset the previous application: ${err.message}`, true);
+    }
+
+    // A newer View Job click owns the browser now.
+    if (openSequence !== assistantOpenSequence) return;
+
     assistantLog(`Opening in assistant browser: ${url}`);
     try {
         const data = await assistantCall('/api/open', {
@@ -56,7 +81,8 @@ async function openInAssistant(url) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ url }),
         });
-        assistantEls().urlInput.value = data.url || url;
+        assistantLastUrl = data.url || url;
+        assistantEls().urlInput.value = assistantLastUrl;
         assistantLog('Opened. Sign in / navigate to the application form, then click Fill In.');
     } catch (err) {
         assistantLog(
@@ -67,16 +93,28 @@ async function openInAssistant(url) {
     }
 }
 
-async function assistantRefreshStatus() {
+async function assistantRefreshStatus(isPolling = false) {
     try {
         const data = await assistantCall('/api/status', { method: 'GET' });
-        assistantEls().urlInput.value = data.running ? (data.url || '') : '';
-        if (!data.running) {
+        const currentUrl = data.running ? (data.url || '') : '';
+        const changed = currentUrl !== assistantLastUrl;
+        assistantLastUrl = currentUrl;
+        assistantEls().urlInput.value = currentUrl;
+        if (!data.running && changed) {
             assistantLog('Assistant browser is not open yet - click a job\'s "View Job" button to start.');
         }
     } catch (err) {
-        assistantLog(`Assistant server unreachable: ${err.message}`, true);
+        // Avoid filling the assistant log with the same polling error every
+        // two seconds; the manual refresh button still reports it immediately.
+        if (!isPolling) {
+            assistantLog(`Assistant server unreachable: ${err.message}`, true);
+        }
     }
+}
+
+function startAssistantStatusPolling() {
+    if (assistantStatusPoller) clearInterval(assistantStatusPoller);
+    assistantStatusPoller = setInterval(() => assistantRefreshStatus(true), 2000);
 }
 
 async function assistantFillIn() {
@@ -116,4 +154,5 @@ document.addEventListener('DOMContentLoaded', () => {
     fillBtn.addEventListener('click', assistantFillIn);
 
     assistantRefreshStatus();
+    startAssistantStatusPolling();
 });
