@@ -1188,6 +1188,124 @@ h4 {
     gap: 1rem;
 }
 
+/* Application Assistant Panel */
+.assistant-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 340px;
+    max-width: calc(100vw - 40px);
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.assistant-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.85rem 1rem;
+    background-color: var(--primary-color, #2196F3);
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.assistant-chevron {
+    transition: transform 0.2s ease;
+}
+
+.assistant-collapsed .assistant-chevron {
+    transform: rotate(180deg);
+}
+
+.assistant-collapsed .assistant-body {
+    display: none;
+}
+
+.assistant-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.assistant-hint {
+    font-size: 0.8rem;
+    color: #6B7280;
+    margin: 0;
+}
+
+.assistant-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.assistant-url-row {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.assistant-url-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    background-color: #F9FAFB;
+    color: #374151;
+}
+
+.assistant-icon-btn {
+    border: 1px solid var(--border-color);
+    background-color: #F9FAFB;
+    border-radius: 6px;
+    width: 34px;
+    flex-shrink: 0;
+    cursor: pointer;
+    color: #374151;
+}
+
+.assistant-icon-btn:hover {
+    background-color: #EEF2F7;
+}
+
+.assistant-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.assistant-log {
+    max-height: 140px;
+    overflow-y: auto;
+    font-size: 0.75rem;
+    color: #4B5563;
+    background-color: #F9FAFB;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.assistant-log-line {
+    word-break: break-word;
+}
+
+.assistant-log-error {
+    color: #DC2626;
+}
+
 .toast {
     background-color: #FFFFFF;
     border: 1px solid var(--border-color);

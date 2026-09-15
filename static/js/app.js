@@ -314,10 +314,16 @@ function createJobCard(job) {
         </a>
     `;
     
-    // Track job view when link is clicked
+    // Track job view when link is clicked, and open it in the Application
+    // Assistant's shared browser window instead of a plain new tab so the
+    // "Fill In" button can act on it after the user signs in / navigates.
     const jobLink = card.querySelector('.job-link');
-    jobLink.addEventListener('click', () => {
+    jobLink.addEventListener('click', (event) => {
         trackJobView(job.job_id || job.url, job.url);
+        if (typeof openInAssistant === 'function') {
+            event.preventDefault();
+            openInAssistant(job.url);
+        }
     });
 
     return card;

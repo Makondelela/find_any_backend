@@ -242,8 +242,29 @@
     <!-- Toast Notification -->
     <div id="toastContainer" class="toast-container"></div>
 
+    <!-- Application Assistant Panel -->
+    <div id="assistantPanel" class="assistant-panel assistant-collapsed">
+        <button id="assistantHeader" class="assistant-header" type="button">
+            <span><i class="fas fa-robot"></i> Application Assistant</span>
+            <i class="fas fa-chevron-up assistant-chevron"></i>
+        </button>
+        <div class="assistant-body">
+            <p class="assistant-hint">Opens jobs in a real assistant browser window so you can sign in / navigate normally, then click Fill In once you're on the application form.</p>
+            <label class="assistant-label" for="assistantUrl">Current form link</label>
+            <div class="assistant-url-row">
+                <input type="text" id="assistantUrl" class="assistant-url-input" readonly placeholder="No job opened yet">
+                <button id="assistantCopyBtn" class="assistant-icon-btn" type="button" title="Copy link"><i class="fas fa-copy"></i></button>
+                <button id="assistantRefreshBtn" class="assistant-icon-btn" type="button" title="Refresh current link"><i class="fas fa-sync-alt"></i></button>
+            </div>
+            <div class="assistant-actions">
+                <button id="assistantFillBtn" class="btn btn-primary btn-sm" type="button"><i class="fas fa-magic"></i> Fill In</button>
+            </div>
+            <div id="assistantLog" class="assistant-log"></div>
+        </div>
+    </div>
 
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/assistant.js') }}"></script>
     <script>
         // Initialize dark mode on page load
         function initDarkMode() {
