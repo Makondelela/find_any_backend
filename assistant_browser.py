@@ -1,6 +1,7 @@
 """Headless browser used by the FindFast application assistant."""
 
 import asyncio
+import base64
 import re
 import threading
 from pathlib import Path
@@ -86,6 +87,20 @@ class AssistantBrowser:
         if not getattr(self, "page", None) or self.page.is_closed():
             return {"running": False, "url": None}
         return {"running": True, "url": self.page.url}
+
+    def screenshot(self):
+        return self._run(self._screenshot())
+
+    async def _screenshot(self):
+        if not getattr(self, "page", None) or self.page.is_closed():
+            return {"running": False, "image": None}
+        image_bytes = await self.page.screenshot(type="jpeg", quality=60)
+        encoded = base64.b64encode(image_bytes).decode("ascii")
+        return {
+            "running": True,
+            "url": self.page.url,
+            "image": f"data:image/jpeg;base64,{encoded}",
+        }
 
     def fill(self):
         return self._run(self._fill())

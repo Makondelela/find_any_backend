@@ -1,15 +1,18 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    FindFast - Application Assistant integration
-   Talks to the local autofill server (Apply/app.py) which drives a single,
-   real, visible Chrome window. "View Job" opens the link there instead of a
-   plain new browser tab, so the user can sign in / click through normally,
-   then use "Fill In" to auto-populate whatever application form they land on.
+   Talks to the hosted assistant server (app.py) which drives a headless
+   Chrome instance server-side. "View Job" opens the link there instead of a
+   plain new browser tab, and a polled screenshot is rendered into an <img>
+   so the page is actually visible, since a headless server-side browser has
+   no window to show directly. "Fill In" auto-populates whatever application
+   form is currently loaded.
    ═══════════════════════════════════════════════════════════════════════════ */
 
 const ASSISTANT_BASE = '/assistant';
 let assistantOpenSequence = 0;
 let assistantLastUrl = '';
 let assistantStatusPoller = null;
+let assistantScreenshotPoller = null;
 
 function assistantEls() {
     return {
@@ -20,6 +23,7 @@ function assistantEls() {
         refreshBtn: document.getElementById('assistantRefreshBtn'),
         fillBtn: document.getElementById('assistantFillBtn'),
         log: document.getElementById('assistantLog'),
+        screenshot: document.getElementById('assistantScreenshot'),
     };
 }
 
@@ -33,10 +37,14 @@ function assistantLog(message, isError) {
 }
 
 function clearAssistantState() {
-    const { urlInput, log } = assistantEls();
+    const { urlInput, log, screenshot } = assistantEls();
     assistantLastUrl = '';
     if (urlInput) urlInput.value = '';
     if (log) log.replaceChildren();
+    if (screenshot) {
+        screenshot.removeAttribute('src');
+        screenshot.style.display = 'none';
+    }
 }
 
 function assistantExpand() {
@@ -117,6 +125,29 @@ function startAssistantStatusPolling() {
     assistantStatusPoller = setInterval(() => assistantRefreshStatus(true), 2000);
 }
 
+async function assistantRefreshScreenshot() {
+    const { screenshot } = assistantEls();
+    if (!screenshot) return;
+    try {
+        const data = await assistantCall('/api/screenshot', { method: 'GET' });
+        if (data.running && data.image) {
+            screenshot.src = data.image;
+            screenshot.style.display = 'block';
+        } else {
+            screenshot.removeAttribute('src');
+            screenshot.style.display = 'none';
+        }
+    } catch (err) {
+        // Silent: the status poller already reports connectivity errors,
+        // no need to duplicate them every second.
+    }
+}
+
+function startAssistantScreenshotPolling() {
+    if (assistantScreenshotPoller) clearInterval(assistantScreenshotPoller);
+    assistantScreenshotPoller = setInterval(assistantRefreshScreenshot, 1000);
+}
+
 async function assistantFillIn() {
     assistantLog('Filling in the current page...');
     try {
@@ -155,4 +186,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     assistantRefreshStatus();
     startAssistantStatusPolling();
+    startAssistantScreenshotPolling();
 });
