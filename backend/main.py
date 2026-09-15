@@ -66,7 +66,9 @@ from bs4 import BeautifulSoup
 
 from search_config import (
     DEFAULT_SEARCH_SLUGS,
-    parse_search_terms
+    parse_search_terms,
+    normalize_search_slugs,
+    slugify_term,
 )
 
 # Try to import Playwright — optional for Pnet scraper
@@ -229,6 +231,7 @@ class Careers24Scraper:
     @staticmethod
     def scrape_slug(session: requests.Session, slug: str) -> list[dict]:
         jobs = []
+        slug = slugify_term(slug)
         log.info(f"\n--- Slug: '{slug}' ---")
 
         url_p1 = f"{Careers24Scraper.BASE_URL}/jobs/kw-{slug}/rmt-incl/"
@@ -266,7 +269,7 @@ class Careers24Scraper:
         log.info("=" * 60)
 
         # Use provided search slugs or fall back to default
-        slugs = search_slugs if search_slugs else DEFAULT_SEARCH_SLUGS
+        slugs = normalize_search_slugs(search_slugs) if search_slugs else normalize_search_slugs(DEFAULT_SEARCH_SLUGS)
 
         session = requests.Session()
         log.info("Warming up session ...")

@@ -28,7 +28,7 @@ from pathlib import Path
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
 
-from search_config import DEFAULT_SEARCH_SLUGS
+from search_config import DEFAULT_SEARCH_SLUGS, slugify_term, normalize_search_slugs
 
 # ── UTF-8 safe logging ────────────────────────────────────────────────────────
 root_logger = logging.getLogger()
@@ -208,10 +208,11 @@ def parse_cards(soup: BeautifulSoup, debug_slug: str = "") -> list[dict]:
 
 def scrape_slug(session: requests.Session, slug: str) -> list[dict]:
     jobs = []
+    slug = slugify_term(slug)
     log.info(f"\n--- Slug: '{slug}' ---")
 
-    # Page 1 - note: slug URL pattern uses trailing dash
-    url_p1 = f"{BASE_URL}/jobs/kw-{slug}-/rmt-incl/"
+    # Page 1
+    url_p1 = f"{BASE_URL}/jobs/kw-{slug}/rmt-incl/"
     log.debug(f"  URL: {url_p1}")
     soup = get_page(session, url_p1)
     if soup is None:
@@ -232,8 +233,7 @@ def scrape_slug(session: requests.Session, slug: str) -> list[dict]:
 
     for pg in range(2, total_pages + 1):
         sleep()
-        # Include trailing dash in pagination URL too
-        url = f"{BASE_URL}/jobs/kw-{slug}-/rmt-incl/?pg={pg}"
+        url = f"{BASE_URL}/jobs/kw-{slug}/rmt-incl/?pg={pg}"
         log.info(f"  Page {pg}/{total_pages}: {url}")
         soup = get_page(session, url)
         if soup is None:
@@ -265,7 +265,7 @@ def main():
     all_jobs  = []
     seen_keys = set()
 
-    for slug in DEFAULT_SEARCH_SLUGS:
+    for slug in normalize_search_slugs(DEFAULT_SEARCH_SLUGS):
         jobs = scrape_slug(session, slug)
         for job in jobs:
             key = job.get("job_id") or job.get("url") or f"{job['title']}|{job['company']}"

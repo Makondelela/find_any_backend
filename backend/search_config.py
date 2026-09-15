@@ -12,6 +12,8 @@ Used by:
   - network_recruit_scraper.py (standalone)
 """
 
+import re
+
 # Search slugs and keywords are now provided by the user via the frontend modal
 # No default search terms - they must be passed to scrapers
 
@@ -103,6 +105,26 @@ DEFAULT_SEARCH_SLUGS = [
 ]
 
 
+def slugify_term(term: str) -> str:
+    """Convert a human-readable job title into a URL-safe slug."""
+    if term is None:
+        return ""
+
+    slug = re.sub(r"[^a-z0-9]+", "-", term.lower().strip())
+    slug = re.sub(r"-+", "-", slug).strip("-")
+    return slug
+
+
+def normalize_search_slugs(terms: list[str]) -> list[str]:
+    """Return URL-safe slugs without duplicates."""
+    slugs: list[str] = []
+    for term in terms or []:
+        slug = slugify_term(term)
+        if slug and slug not in slugs:
+            slugs.append(slug)
+    return slugs
+
+
 def parse_search_terms(search_string: str) -> tuple[list[str], list[str]]:
     """
     Convert user search terms to both slug and keyword formats.
@@ -126,9 +148,9 @@ def parse_search_terms(search_string: str) -> tuple[list[str], list[str]]:
     keywords = []
     
     for term in terms:
-        # Create slug: lowercase with hyphens
-        slug = term.lower().replace(' ', '-')
-        slugs.append(slug)
+        slug = slugify_term(term)
+        if slug:
+            slugs.append(slug)
         
         # Create keyword: title case
         keyword = ' '.join(word.capitalize() for word in term.split())
