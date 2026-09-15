@@ -1,16 +1,11 @@
 services:
   - type: web
     name: findfast-job-portal
-    env: python
+    env: docker
     region: oregon
     plan: free
-    buildCommand: pip install -r requirements.txt && python -m playwright install chromium
-    startCommand: gunicorn app:app
+    dockerfilePath: ./Dockerfile
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.0
-      - key: PLAYWRIGHT_BROWSERS_PATH
-        value: /opt/render/.cache/ms-playwright
       - key: FIREBASE_DATABASE_URL
         value: https://find-any-55a42-default-rtdb.firebaseio.com/
       - key: FLASK_SECRET_KEY
