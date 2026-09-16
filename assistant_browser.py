@@ -13,6 +13,9 @@ NAME = "Makondelela"
 SURNAME = "Mutshinya"
 EMAIL = "makondelelamaps@gmail.com"
 CELLPHONE = "0795171404"
+CURRENT_POSITION = "Software Engineer"
+CURRENT_EMPLOYER = "Lexis Nexis"
+CURRENT_CITY = "Johannesburg"
 CV_FILE_PATH = Path(__file__).parent / "Makondelela_Mutshinya_FlowCV_Resume_2026-06-23.pdf"
 
 STEALTH_USER_AGENT = (
@@ -185,6 +188,9 @@ class AssistantBrowser:
             "e-mail": EMAIL,
             "cell": CELLPHONE,
             "mobile": CELLPHONE,
+            "job title": CURRENT_POSITION,
+            "company name": CURRENT_EMPLOYER,
+            "city": CURRENT_CITY,
         }
         filled = []
         skipped = []
