@@ -15,6 +15,28 @@ EMAIL = "makondelelamaps@gmail.com"
 CELLPHONE = "0795171404"
 CV_FILE_PATH = Path(__file__).parent / "Makondelela_Mutshinya_FlowCV_Resume_2026-06-23.pdf"
 
+STEALTH_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+)
+
+# Patches the most common signals bot-detection scripts check for on a
+# freshly-launched headless Chromium (navigator.webdriver, missing
+# chrome.runtime/plugins, permissions.query quirks). Runs before any page
+# script, on every page in the context.
+STEALTH_INIT_SCRIPT = """
+Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+window.chrome = window.chrome || { runtime: {} };
+Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+const originalQuery = window.navigator.permissions.query;
+window.navigator.permissions.query = (parameters) => (
+    parameters.name === 'notifications'
+        ? Promise.resolve({ state: Notification.permission })
+        : originalQuery(parameters)
+);
+"""
+
 
 class AssistantBrowser:
     """Expose a synchronous Flask-friendly facade over async Playwright."""
@@ -55,10 +77,18 @@ class AssistantBrowser:
             self.browser = await self.playwright.chromium.launch(
                 channel="chromium",
                 headless=True,
-                args=["--no-sandbox", "--disable-dev-shm-usage"],
+                args=[
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                    "--disable-blink-features=AutomationControlled",
+                ],
             )
-            self.context = await self.browser.new_context(accept_downloads=False)
+            self.context = await self.browser.new_context(
+                accept_downloads=False,
+                user_agent=STEALTH_USER_AGENT,
+            )
             self.context.set_default_timeout(10000)
+            await self.context.add_init_script(STEALTH_INIT_SCRIPT)
         self.page = await self.context.new_page()
         await self.page.set_viewport_size({"width": 390, "height": 720})
         return self.page
