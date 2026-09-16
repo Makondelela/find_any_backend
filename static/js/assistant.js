@@ -1,18 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    FindFast - Application Assistant integration
-   Talks to the hosted assistant server (app.py) which drives a headless
-   Chrome instance server-side. "View Job" opens the link there instead of a
-   plain new browser tab, and a polled screenshot is rendered into an <img>
-   so the page is actually visible, since a headless server-side browser has
-   no window to show directly. "Fill In" auto-populates whatever application
-   form is currently loaded.
+   Talks to the local autofill server (Apply/app.py) which drives a single,
+   real, visible Chrome window. "View Job" opens the link there instead of a
+   plain new browser tab, so the user can sign in / click through normally,
+   then use "Fill In" to auto-populate whatever application form they land on.
    ═══════════════════════════════════════════════════════════════════════════ */
 
-const ASSISTANT_BASE = '/assistant';
+const ASSISTANT_BASE = 'http://127.0.0.1:5050';
 let assistantOpenSequence = 0;
 let assistantLastUrl = '';
 let assistantStatusPoller = null;
-let assistantScreenshotPoller = null;
 
 function assistantEls() {
     return {
@@ -23,7 +20,6 @@ function assistantEls() {
         refreshBtn: document.getElementById('assistantRefreshBtn'),
         fillBtn: document.getElementById('assistantFillBtn'),
         log: document.getElementById('assistantLog'),
-        screenshot: document.getElementById('assistantScreenshot'),
     };
 }
 
@@ -37,14 +33,10 @@ function assistantLog(message, isError) {
 }
 
 function clearAssistantState() {
-    const { urlInput, log, screenshot } = assistantEls();
+    const { urlInput, log } = assistantEls();
     assistantLastUrl = '';
     if (urlInput) urlInput.value = '';
     if (log) log.replaceChildren();
-    if (screenshot) {
-        screenshot.removeAttribute('src');
-        screenshot.style.display = 'none';
-    }
 }
 
 function assistantExpand() {
@@ -94,7 +86,7 @@ async function openInAssistant(url) {
         assistantLog('Opened. Sign in / navigate to the application form, then click Fill In.');
     } catch (err) {
         assistantLog(
-            `The hosted assistant browser could not open this job. Opening it in a normal tab instead. ${err.message}`,
+            `Could not reach the assistant browser (is it running? "python3 app.py" in the Apply folder). Opening in a normal tab instead. ${err.message}`,
             true
         );
         window.open(url, '_blank', 'noopener,noreferrer');
@@ -125,95 +117,6 @@ function startAssistantStatusPolling() {
     assistantStatusPoller = setInterval(() => assistantRefreshStatus(true), 2000);
 }
 
-async function assistantRefreshScreenshot() {
-    const { screenshot } = assistantEls();
-    if (!screenshot) return;
-    try {
-        const data = await assistantCall('/api/screenshot', { method: 'GET' });
-        if (data.running && data.image) {
-            screenshot.src = data.image;
-            screenshot.style.display = 'block';
-        } else {
-            screenshot.removeAttribute('src');
-            screenshot.style.display = 'none';
-        }
-    } catch (err) {
-        // Silent: the status poller already reports connectivity errors,
-        // no need to duplicate them every second.
-    }
-}
-
-function startAssistantScreenshotPolling() {
-    if (assistantScreenshotPoller) clearInterval(assistantScreenshotPoller);
-    assistantScreenshotPoller = setInterval(assistantRefreshScreenshot, 1000);
-}
-
-// Map a click/coords on the displayed (possibly scaled) <img> back to real
-// pixel coordinates in the remote page's viewport.
-function assistantImageToPageCoords(img, clientX, clientY) {
-    const rect = img.getBoundingClientRect();
-    const scaleX = img.naturalWidth / rect.width;
-    const scaleY = img.naturalHeight / rect.height;
-    return {
-        x: (clientX - rect.left) * scaleX,
-        y: (clientY - rect.top) * scaleY,
-    };
-}
-
-async function assistantHandleClick(event) {
-    const { screenshot } = assistantEls();
-    if (!screenshot || !screenshot.naturalWidth) return;
-    screenshot.focus();
-    const { x, y } = assistantImageToPageCoords(screenshot, event.clientX, event.clientY);
-    try {
-        await assistantCall('/api/click', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ x, y }),
-        });
-    } catch (err) {
-        assistantLog(`Click failed: ${err.message}`, true);
-    }
-    assistantRefreshScreenshot();
-}
-
-const ASSISTANT_MODIFIER_KEYS = new Set(['Shift', 'Control', 'Alt', 'Meta', 'CapsLock']);
-
-async function assistantHandleKeydown(event) {
-    if (ASSISTANT_MODIFIER_KEYS.has(event.key)) return;
-    event.preventDefault();
-    try {
-        await assistantCall('/api/key', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ key: event.key }),
-        });
-    } catch (err) {
-        assistantLog(`Key press failed: ${err.message}`, true);
-    }
-    assistantRefreshScreenshot();
-}
-
-let assistantScrollBusy = false;
-
-async function assistantHandleWheel(event) {
-    event.preventDefault();
-    if (assistantScrollBusy) return;
-    assistantScrollBusy = true;
-    try {
-        await assistantCall('/api/scroll', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ deltaX: event.deltaX, deltaY: event.deltaY }),
-        });
-    } catch (err) {
-        // Silent: wheel events fire rapidly, avoid spamming the log.
-    } finally {
-        assistantScrollBusy = false;
-    }
-    assistantRefreshScreenshot();
-}
-
 async function assistantFillIn() {
     assistantLog('Filling in the current page...');
     try {
@@ -242,7 +145,7 @@ function assistantCopyLink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot } = assistantEls();
+    const { header, copyBtn, refreshBtn, fillBtn, panel } = assistantEls();
     if (!panel) return;
 
     header.addEventListener('click', () => panel.classList.toggle('assistant-collapsed'));
@@ -250,13 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
     refreshBtn.addEventListener('click', assistantRefreshStatus);
     fillBtn.addEventListener('click', assistantFillIn);
 
-    if (screenshot) {
-        screenshot.addEventListener('click', assistantHandleClick);
-        screenshot.addEventListener('keydown', assistantHandleKeydown);
-        screenshot.addEventListener('wheel', assistantHandleWheel, { passive: false });
-    }
-
     assistantRefreshStatus();
     startAssistantStatusPolling();
-    startAssistantScreenshotPolling();
 });

@@ -1193,7 +1193,7 @@ h4 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 420px;
+    width: 340px;
     max-width: calc(100vw - 40px);
     background-color: #FFFFFF;
     border: 1px solid var(--border-color);
@@ -1247,22 +1247,6 @@ h4 {
     font-size: 0.8rem;
     font-weight: 600;
     color: #374151;
-}
-
-.assistant-screenshot {
-    display: none;
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
-    background-color: #F9FAFB;
-    max-height: 420px;
-    object-fit: contain;
-    cursor: pointer;
-}
-
-.assistant-screenshot:focus {
-    outline: 2px solid var(--primary-color, #2196F3);
-    outline-offset: 2px;
 }
 
 .assistant-url-row {
