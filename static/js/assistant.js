@@ -14,6 +14,7 @@ let assistantOpenSequence = 0;
 let assistantLastUrl = '';
 let assistantStatusPoller = null;
 let assistantScreenshotPoller = null;
+let assistantWebviewHidden = false;
 
 function assistantEls() {
     return {
@@ -25,6 +26,8 @@ function assistantEls() {
         fillBtn: document.getElementById('assistantFillBtn'),
         log: document.getElementById('assistantLog'),
         screenshot: document.getElementById('assistantScreenshot'),
+        webview: document.getElementById('assistantWebview'),
+        webviewCloseBtn: document.getElementById('assistantWebviewCloseBtn'),
     };
 }
 
@@ -38,14 +41,13 @@ function assistantLog(message, isError) {
 }
 
 function clearAssistantState() {
-    const { urlInput, log, screenshot } = assistantEls();
+    const { urlInput, log, screenshot, webview } = assistantEls();
     assistantLastUrl = '';
+    assistantWebviewHidden = false;
     if (urlInput) urlInput.value = '';
     if (log) log.replaceChildren();
-    if (screenshot) {
-        screenshot.removeAttribute('src');
-        screenshot.style.display = 'none';
-    }
+    if (screenshot) screenshot.removeAttribute('src');
+    if (webview) webview.style.display = 'none';
 }
 
 function assistantExpand() {
@@ -127,16 +129,16 @@ function startAssistantStatusPolling() {
 }
 
 async function assistantRefreshScreenshot() {
-    const { screenshot } = assistantEls();
+    const { screenshot, webview } = assistantEls();
     if (!screenshot) return;
     try {
         const data = await assistantCall('/api/screenshot', { method: 'GET' });
         if (data.running && data.image) {
             screenshot.src = data.image;
-            screenshot.style.display = 'block';
+            if (webview && !assistantWebviewHidden) webview.style.display = 'flex';
         } else {
             screenshot.removeAttribute('src');
-            screenshot.style.display = 'none';
+            if (webview) webview.style.display = 'none';
         }
     } catch (err) {
         // Silent: the status poller already reports connectivity errors,
@@ -224,13 +226,18 @@ async function assistantFillIn() {
             body: JSON.stringify({}),
         });
         assistantEls().urlInput.value = data.url || '';
-        (data.log || '')
-            .split('\n')
-            .filter(Boolean)
-            .forEach((line) => assistantLog(line));
+        const filled = data.filled || [];
+        const skipped = data.skipped || [];
+        assistantLog(
+            filled.length ? `Filled: ${filled.join(', ')}` : 'No matching fields were found to fill.'
+        );
+        if (skipped.length) {
+            assistantLog(`Skipped (no match for CV data): ${skipped.join(', ')}`);
+        }
     } catch (err) {
         assistantLog(`Fill in failed: ${err.message}`, true);
     }
+    assistantRefreshScreenshot();
 }
 
 function assistantCopyLink() {
@@ -243,13 +250,24 @@ function assistantCopyLink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot } = assistantEls();
+    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot, webview, webviewCloseBtn } = assistantEls();
     if (!panel) return;
 
-    header.addEventListener('click', () => panel.classList.toggle('assistant-collapsed'));
+    header.addEventListener('click', () => {
+        const collapsed = panel.classList.toggle('assistant-collapsed');
+        // Re-expanding the small tab also brings back a preview you'd closed.
+        if (!collapsed) assistantWebviewHidden = false;
+    });
     copyBtn.addEventListener('click', assistantCopyLink);
     refreshBtn.addEventListener('click', assistantRefreshStatus);
     fillBtn.addEventListener('click', assistantFillIn);
+
+    if (webviewCloseBtn) {
+        webviewCloseBtn.addEventListener('click', () => {
+            assistantWebviewHidden = true;
+            if (webview) webview.style.display = 'none';
+        });
+    }
 
     if (screenshot) {
         screenshot.addEventListener('click', assistantHandleClick);

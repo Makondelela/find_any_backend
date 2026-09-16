@@ -242,7 +242,17 @@
     <!-- Toast Notification -->
     <div id="toastContainer" class="toast-container"></div>
 
-    <!-- Application Assistant Panel -->
+    <!-- Live screenshot overlay: separate from the assistant tab and behind
+         it in z-index, so the tab stays usable on top of it. -->
+    <div id="assistantWebview" class="assistant-webview">
+        <div class="assistant-webview-header">
+            <span><i class="fas fa-desktop"></i> Assistant Browser</span>
+            <button id="assistantWebviewCloseBtn" class="assistant-icon-btn assistant-webview-close" type="button" title="Close preview"><i class="fas fa-times"></i></button>
+        </div>
+        <img id="assistantScreenshot" class="assistant-screenshot" alt="Assistant browser preview" tabindex="0">
+    </div>
+
+    <!-- Application Assistant Panel: stays small, bottom-right corner -->
     <div id="assistantPanel" class="assistant-panel assistant-collapsed">
         <button id="assistantHeader" class="assistant-header" type="button">
             <span><i class="fas fa-robot"></i> Application Assistant</span>
@@ -250,7 +260,6 @@
         </button>
         <div class="assistant-body">
             <p class="assistant-hint">Opens jobs in the hosted assistant browser, tracks the current page, and fills supported fields when you are on the application form. Click the preview to focus it, then type, click, or scroll on it like a real page.</p>
-            <img id="assistantScreenshot" class="assistant-screenshot" alt="Assistant browser preview" tabindex="0">
             <label class="assistant-label" for="assistantUrl">Current form link</label>
             <div class="assistant-url-row">
                 <input type="text" id="assistantUrl" class="assistant-url-input" readonly placeholder="No job opened yet">

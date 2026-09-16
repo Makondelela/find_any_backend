@@ -1193,13 +1193,13 @@ h4 {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 420px;
+    width: 340px;
     max-width: calc(100vw - 40px);
     background-color: #FFFFFF;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-    z-index: 9999;
+    z-index: 10000;
     overflow: hidden;
 }
 
@@ -1249,20 +1249,60 @@ h4 {
     color: #374151;
 }
 
-.assistant-screenshot {
+/* Separate from the small assistant tab: a big overlay for the live
+   screenshot, sat behind the tab (lower z-index) so the tab stays usable
+   even when this covers most of the screen. */
+.assistant-webview {
     display: none;
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid var(--border-color);
+    flex-direction: column;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80vw;
+    height: 90vh;
     background-color: #F9FAFB;
-    max-height: 420px;
-    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    z-index: 9000;
+    overflow: hidden;
+}
+
+.assistant-webview-header {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.85rem 1rem;
+    background-color: var(--primary-color, #2196F3);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.assistant-webview-close {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.assistant-webview-close:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.assistant-screenshot {
+    display: block;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: fill;
     cursor: pointer;
 }
 
 .assistant-screenshot:focus {
     outline: 2px solid var(--primary-color, #2196F3);
-    outline-offset: 2px;
+    outline-offset: -2px;
 }
 
 .assistant-url-row {

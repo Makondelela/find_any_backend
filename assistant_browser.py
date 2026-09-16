@@ -90,7 +90,10 @@ class AssistantBrowser:
             self.context.set_default_timeout(10000)
             await self.context.add_init_script(STEALTH_INIT_SCRIPT)
         self.page = await self.context.new_page()
-        await self.page.set_viewport_size({"width": 390, "height": 720})
+        # Desktop-ish landscape viewport so the screenshot's aspect ratio
+        # matches the wide preview overlay (avoids letterboxing) and forms
+        # render in their normal desktop layout rather than mobile.
+        await self.page.set_viewport_size({"width": 1280, "height": 800})
         return self.page
 
     def open(self, url):
