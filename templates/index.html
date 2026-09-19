@@ -30,6 +30,11 @@
                                 <span class="user-info" id="userInfo">--</span>
                             </li>
                             <li>
+                                <a href="/profile" class="btn-profile" title="My Profile" aria-label="My Profile">
+                                    <i class="fas fa-user-circle"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
                                     <i class="fas fa-moon"></i>
                                 </button>
@@ -249,7 +254,10 @@
             <span><i class="fas fa-desktop"></i> Assistant Browser</span>
             <button id="assistantWebviewCloseBtn" class="assistant-icon-btn assistant-webview-close" type="button" title="Close preview"><i class="fas fa-times"></i></button>
         </div>
-        <img id="assistantScreenshot" class="assistant-screenshot" alt="Assistant browser preview" tabindex="0">
+        <div class="assistant-webview-stage">
+            <img id="assistantScreenshot" class="assistant-screenshot" alt="Assistant browser preview" tabindex="0">
+            <div id="assistantDropdown" class="assistant-dropdown" hidden></div>
+        </div>
     </div>
 
     <!-- Application Assistant Panel: stays small, bottom-right corner -->

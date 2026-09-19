@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="theme-color" content="#2196F3">
+    <title>My Profile | FindFast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <nav class="navbar desktop-nav">
+                <div class="container nav-container">
+                    <div class="nav-header">
+                        <a href="/" class="logo">
+                            <span style="font-size: 1.8rem; font-weight: 700; color: var(--primary-color);">FindFast</span>
+                        </a>
+
+                        <ul class="nav-right">
+                            <li>
+                                <span class="user-info" id="userInfo">--</span>
+                            </li>
+                            <li>
+                                <a href="/" class="btn-profile" title="Back to Jobs" aria-label="Back to Jobs">
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn-logout" id="logoutBtn" title="Sign out">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="profile-section">
+                <div class="container">
+                    <h2 class="profile-page-title"><i class="fas fa-id-card"></i> My Profile</h2>
+                    <p class="profile-page-subtitle">This information is used to help pre-fill job applications.</p>
+
+                    <form id="profileForm">
+                        <!-- CV Upload -->
+                        <div class="profile-card">
+                            <h3 class="profile-card-title">Upload Your CV</h3>
+                            <p class="profile-card-subtitle">Upload a CV (PDF, DOCX, or TXT) and we'll auto-fill as much of your profile as possible.</p>
+                            <div class="cv-upload-row">
+                                <input type="file" id="cvFileInput" accept=".pdf,.docx,.txt">
+                                <button type="button" class="btn btn-secondary btn-sm" id="uploadCvBtn">
+                                    <i class="fas fa-file-import"></i> Extract from CV
+                                </button>
+                            </div>
+                            <p id="cvUploadStatus" class="cv-upload-status"></p>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <div class="profile-card">
+                            <h3 class="profile-card-title">Personal Information</h3>
+                            <div class="profile-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="idNumber">ID Number</label>
+                                    <input type="text" id="idNumber" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="tel" id="contactNumber" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <input type="text" id="country" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ethnicity">Ethnicity</label>
+                                    <select id="ethnicity" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Profile -->
+                        <div class="profile-card">
+                            <h3 class="profile-card-title">Professional Profile</h3>
+                            <div class="profile-grid">
+                                <div class="form-group form-group-wide">
+                                    <label for="professionalHeadline">Professional Headline</label>
+                                    <input type="text" id="professionalHeadline" class="form-control">
+                                </div>
+                                <div class="form-group form-group-wide">
+                                    <label for="professionalSummary">Professional Summary</label>
+                                    <textarea id="professionalSummary" class="form-control" rows="4"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="currentJobTitle">Current Job Title</label>
+                                    <input type="text" id="currentJobTitle" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="currentCompany">Current Company</label>
+                                    <input type="text" id="currentCompany" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="yearsOfExperience">Years of Experience</label>
+                                    <input type="number" id="yearsOfExperience" class="form-control" min="0" step="0.1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="careerLevel">Career Level</label>
+                                    <select id="careerLevel" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="desiredJobTitle">Desired Job Title</label>
+                                    <input type="text" id="desiredJobTitle" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="desiredSalary">Desired Salary</label>
+                                    <input type="text" id="desiredSalary" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="currency">Currency</label>
+                                    <input type="text" id="currency" class="form-control" placeholder="ZAR, USD, GBP">
+                                </div>
+                                <div class="form-group">
+                                    <label for="linkedinProfile">LinkedIn</label>
+                                    <input type="url" id="linkedinProfile" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="githubProfile">GitHub</label>
+                                    <input type="url" id="githubProfile" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="portfolioWebsite">Portfolio / Website</label>
+                                    <input type="url" id="portfolioWebsite" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Application Information -->
+                        <div class="profile-card">
+                            <h3 class="profile-card-title">Application Information</h3>
+                            <div class="profile-grid">
+                                <div class="form-group">
+                                    <label for="driversLicense">Driver's License</label>
+                                    <select id="driversLicense" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="licenseType">License Type</label>
+                                    <select id="licenseType" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ownTransport">Own Transport</label>
+                                    <select id="ownTransport" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="workAuthorisation">Work Authorisation</label>
+                                    <select id="workAuthorisation" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="visaStatus">Visa Status</label>
+                                    <input type="text" id="visaStatus" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredWorkArrangement">Preferred Work Arrangement</label>
+                                    <select id="preferredWorkArrangement" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredEmploymentType">Preferred Employment Type</label>
+                                    <select id="preferredEmploymentType" class="form-control">
+                                        <option value="">Select...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredJobLocation">Preferred Job Location</label>
+                                    <input type="text" id="preferredJobLocation" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="willingToRelocate">Willing to Relocate</label>
+                                    <select id="willingToRelocate" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="willingToTravel">Willing to Travel</label>
+                                    <select id="willingToTravel" class="form-control">
+                                        <option value="">Select...</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="noticePeriod">Notice Period</label>
+                                    <input type="text" id="noticePeriod" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="availabilityDate">Availability Date</label>
+                                    <input type="date" id="availabilityDate" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Education</h3>
+                            </div>
+                            <div id="educationList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addEducationBtn">
+                                <i class="fas fa-plus"></i> Add Education
+                            </button>
+                        </div>
+
+                        <!-- Work Experience -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Work Experience</h3>
+                            </div>
+                            <div id="experienceList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addExperienceBtn">
+                                <i class="fas fa-plus"></i> Add Work Experience
+                            </button>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Skills</h3>
+                            </div>
+                            <div id="skillsList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addSkillBtn">
+                                <i class="fas fa-plus"></i> Add Skill
+                            </button>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Certifications</h3>
+                            </div>
+                            <div id="certificationsList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addCertificationBtn">
+                                <i class="fas fa-plus"></i> Add Certification
+                            </button>
+                        </div>
+
+                        <!-- Languages -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Languages</h3>
+                            </div>
+                            <div id="languagesList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addLanguageBtn">
+                                <i class="fas fa-plus"></i> Add Language
+                            </button>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Projects</h3>
+                            </div>
+                            <div id="projectsList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addProjectBtn">
+                                <i class="fas fa-plus"></i> Add Project
+                            </button>
+                        </div>
+
+                        <!-- Professional Memberships -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Professional Memberships</h3>
+                            </div>
+                            <div id="membershipsList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addMembershipBtn">
+                                <i class="fas fa-plus"></i> Add Membership
+                            </button>
+                        </div>
+
+                        <!-- References -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">References</h3>
+                            </div>
+                            <div id="referencesList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addReferenceBtn">
+                                <i class="fas fa-plus"></i> Add Reference
+                            </button>
+                        </div>
+
+                        <!-- Documents -->
+                        <div class="profile-card">
+                            <div class="profile-card-header">
+                                <h3 class="profile-card-title">Documents</h3>
+                            </div>
+                            <div id="documentsList" class="repeatable-list"></div>
+                            <button type="button" class="btn btn-secondary btn-sm" id="addDocumentBtn">
+                                <i class="fas fa-plus"></i> Add Document
+                            </button>
+                        </div>
+
+                        <div class="profile-actions">
+                            <button type="submit" class="btn btn-primary" id="saveProfileBtn">
+                                <i class="fas fa-save"></i> Save Profile
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>© 2026 FindFast - Your Job Search Made Easy</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="{{ url_for('static', filename='js/profile.js') }}"></script>
+</body>
+</html>

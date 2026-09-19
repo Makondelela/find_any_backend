@@ -309,9 +309,14 @@ function createJobCard(job) {
             ${job.job_type ? `<span style="font-size: 0.85rem; color: #6B7280;"><i class="fas fa-briefcase"></i> ${escapeHtml(job.job_type)}</span>` : ''}
         </div>
 
-        <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm job-link" style="margin-top: 1rem;">
+        <div class="job-actions" style="margin-top: 1rem;">
+            <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm job-link">
             View Job <i class="fas fa-arrow-right"></i>
-        </a>
+            </a>
+            <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm extension-job-link" title="Open in a normal tab for the FindFast Chrome extension">
+                Open in Chrome <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
     `;
     
     // Track job view when link is clicked, and open it in the Application
@@ -324,6 +329,11 @@ function createJobCard(job) {
             event.preventDefault();
             openInAssistant(job.url);
         }
+    });
+
+    const extensionJobLink = card.querySelector('.extension-job-link');
+    extensionJobLink.addEventListener('click', () => {
+        trackJobView(job.job_id || job.url, job.url);
     });
 
     return card;
@@ -856,6 +866,7 @@ function initializeAuth() {
     
     // Logout button
     logoutBtn.addEventListener('click', () => {
+        sessionStorage.removeItem('firebaseUser');
         fetch('/api/auth/logout', { method: 'POST' })
             .then(r => r.json())
             .then(data => {

@@ -1,0 +1,135 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FindFast - Profile Page Styles
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.profile-section {
+    padding: 2rem 0 4rem;
+}
+
+.profile-page-title {
+    margin-bottom: 0.25rem;
+}
+
+.profile-page-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.profile-card {
+    background: var(--body-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-card-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.profile-card-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.cv-upload-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cv-upload-row input[type="file"] {
+    flex: 1;
+    min-width: 200px;
+    font-size: 0.9rem;
+}
+
+.cv-upload-status {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.cv-upload-status.success {
+    color: #16A34A;
+}
+
+.cv-upload-status.error {
+    color: #DC2626;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1.5rem;
+}
+
+.repeatable-entry {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem 1rem 0.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.repeatable-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.repeatable-entry-title {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.btn-remove-entry {
+    background: transparent;
+    border: none;
+    color: #DC2626;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn-remove-entry:hover {
+    color: #B91C1C;
+}
+
+.repeatable-entry .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+    .profile-grid,
+    .repeatable-entry .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

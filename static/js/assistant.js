@@ -27,6 +27,8 @@ function assistantEls() {
         log: document.getElementById('assistantLog'),
         screenshot: document.getElementById('assistantScreenshot'),
         webview: document.getElementById('assistantWebview'),
+        webviewStage: document.querySelector('.assistant-webview-stage'),
+        dropdown: document.getElementById('assistantDropdown'),
         webviewCloseBtn: document.getElementById('assistantWebviewCloseBtn'),
     };
 }
@@ -41,12 +43,16 @@ function assistantLog(message, isError) {
 }
 
 function clearAssistantState() {
-    const { urlInput, log, screenshot, webview } = assistantEls();
+    const { urlInput, log, screenshot, webview, dropdown } = assistantEls();
     assistantLastUrl = '';
     assistantWebviewHidden = false;
     if (urlInput) urlInput.value = '';
     if (log) log.replaceChildren();
     if (screenshot) screenshot.removeAttribute('src');
+    if (dropdown) {
+        dropdown.replaceChildren();
+        dropdown.hidden = true;
+    }
     if (webview) webview.style.display = 'none';
 }
 
@@ -164,20 +170,61 @@ function assistantImageToPageCoords(img, clientX, clientY) {
 }
 
 async function assistantHandleClick(event) {
-    const { screenshot } = assistantEls();
+    const { screenshot, dropdown } = assistantEls();
     if (!screenshot || !screenshot.naturalWidth) return;
     screenshot.focus();
     const { x, y } = assistantImageToPageCoords(screenshot, event.clientX, event.clientY);
     try {
-        await assistantCall('/api/click', {
+        const data = await assistantCall('/api/click', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ x, y }),
         });
+        if (data.dropdown) assistantShowDropdown(data.dropdown, event.clientX, event.clientY);
+        else if (dropdown) dropdown.hidden = true;
     } catch (err) {
         assistantLog(`Click failed: ${err.message}`, true);
     }
     assistantRefreshScreenshot();
+}
+
+function assistantShowDropdown(dropdownData, clientX, clientY) {
+    const { dropdown, webviewStage } = assistantEls();
+    if (!dropdown || !webviewStage) return;
+    dropdown.replaceChildren();
+    const stageRect = webviewStage.getBoundingClientRect();
+    dropdown.style.left = `${Math.max(4, clientX - stageRect.left)}px`;
+    dropdown.style.top = `${Math.max(4, clientY - stageRect.top)}px`;
+
+    dropdownData.options.forEach(option => {
+        const optionButton = document.createElement('button');
+        optionButton.type = 'button';
+        optionButton.className = 'assistant-dropdown-option';
+        optionButton.textContent = option.label || '(blank)';
+        optionButton.disabled = option.disabled;
+        if (option.selected) optionButton.classList.add('selected');
+        optionButton.addEventListener('click', async event => {
+            event.stopPropagation();
+            try {
+                await assistantCall('/api/select', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        fieldId: dropdownData.id,
+                        fieldName: dropdownData.name,
+                        index: option.index,
+                    }),
+                });
+                dropdown.hidden = true;
+                assistantLog(`Selected: ${option.label || '(blank)'}`);
+                assistantRefreshScreenshot();
+            } catch (err) {
+                assistantLog(`Dropdown selection failed: ${err.message}`, true);
+            }
+        });
+        dropdown.appendChild(optionButton);
+    });
+    dropdown.hidden = false;
 }
 
 const ASSISTANT_MODIFIER_KEYS = new Set(['Shift', 'Control', 'Alt', 'Meta', 'CapsLock']);
@@ -250,7 +297,7 @@ function assistantCopyLink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot, webview, webviewCloseBtn } = assistantEls();
+    const { header, copyBtn, refreshBtn, fillBtn, panel, screenshot, webview, webviewCloseBtn, dropdown } = assistantEls();
     if (!panel) return;
 
     header.addEventListener('click', () => {
@@ -266,6 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
         webviewCloseBtn.addEventListener('click', () => {
             assistantWebviewHidden = true;
             if (webview) webview.style.display = 'none';
+            if (dropdown) dropdown.hidden = true;
         });
     }
 

@@ -17,6 +17,25 @@ import requests
 import firebase_admin
 from firebase_admin import credentials, auth, db as firebase_db
 from assistant_browser import assistant_browser
+from user_profile import service as profile_service
+from user_profile.constants import (
+    ETHNICITY_OPTIONS,
+    GENDER_OPTIONS,
+    WORK_ARRANGEMENTS,
+    EMPLOYMENT_TYPES,
+    INSTITUTION_TYPES,
+    SKILL_CATEGORIES,
+    PROFICIENCY_LEVELS,
+    LANGUAGE_PROFICIENCY,
+    CAREER_LEVELS,
+    DOCUMENT_TYPES,
+    MEMBERSHIP_TYPES,
+    REFERENCE_RELATIONSHIPS,
+    WORK_AUTHORIZATION_OPTIONS,
+    DRIVING_LICENSE_TYPES,
+    EMPLOYMENT_STATUSES,
+)
+from user_profile.cv_parser import extract_text, parse_cv, CVParseError
 
 # Load environment variables from .env file
 load_dotenv()
@@ -30,6 +49,17 @@ app = Flask(__name__,
 if not os.environ.get('FLASK_SECRET_KEY'):
     raise ValueError("FLASK_SECRET_KEY environment variable must be set")
 app.secret_key = os.environ.get('FLASK_SECRET_KEY')
+
+
+@app.after_request
+def allow_extension_profile_requests(response):
+    """Allow the companion extension to read the logged-in profile session."""
+    origin = request.headers.get('Origin', '')
+    if request.path == '/api/profile' and origin.startswith('chrome-extension://'):
+        response.headers['Access-Control-Allow-Origin'] = origin
+        response.headers['Access-Control-Allow-Credentials'] = 'true'
+        response.headers['Vary'] = 'Origin'
+    return response
 
 # Configure logging (must be before Firebase init)
 logging.basicConfig(
@@ -74,6 +104,16 @@ def login_required(f):
     def decorated_function(*args, **kwargs):
         if 'user' not in session:
             return redirect(url_for('login'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+
+def api_login_required(f):
+    """Like login_required, but returns JSON 401 instead of redirecting (for API routes)."""
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'user' not in session:
+            return jsonify({'success': False, 'error': 'Authentication required'}), 401
         return f(*args, **kwargs)
     return decorated_function
 
@@ -152,7 +192,7 @@ def save_user_history(data):
 # ROUTES
 # ══════════════════════════════════════════════════════════════════════════════
 
-ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status', 'screenshot', 'click', 'key', 'scroll'}
+ASSISTANT_ENDPOINTS = {'open', 'reset', 'fill', 'status', 'screenshot', 'click', 'select', 'key', 'scroll'}
 
 
 @app.route('/assistant/api/<endpoint>', methods=['GET', 'POST', 'OPTIONS'])
@@ -176,12 +216,20 @@ def assistant_proxy(endpoint):
             result = assistant_browser.screenshot()
         elif endpoint == 'click':
             result = assistant_browser.click(float(data.get('x', 0)), float(data.get('y', 0)))
+        elif endpoint == 'select':
+            result = assistant_browser.select_option(
+                field_id=data.get('fieldId', ''),
+                field_name=data.get('fieldName', ''),
+                index=int(data.get('index', 0)),
+            )
         elif endpoint == 'key':
             result = assistant_browser.press_key(data.get('key', ''))
         elif endpoint == 'scroll':
             result = assistant_browser.scroll(float(data.get('deltaX', 0)), float(data.get('deltaY', 0)))
         elif endpoint == 'fill':
-            result = assistant_browser.fill()
+            uid = session.get('user', {}).get('uid')
+            profile = profile_service.get_profile(uid) if uid else {}
+            result = assistant_browser.fill(profile=profile, user=session.get('user'))
         else:
             result = assistant_browser.status()
         return jsonify({'ok': True, **result})
@@ -206,6 +254,13 @@ def login():
     if 'user' in session:
         return redirect(url_for('index'))
     return render_template('login.html')
+
+
+@app.route('/profile')
+@login_required
+def profile_page():
+    """Profile page - requires authentication"""
+    return render_template('profile.html')
 
 
 @app.route('/api/auth/login', methods=['POST'])
@@ -981,6 +1036,498 @@ def track_job():
 def not_found(error):
     """Handle 404 errors"""
     return render_template('404.html'), 404
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# PROFILE API ENDPOINTS
+# ══════════════════════════════════════════════════════════════════════════════
+
+@app.route('/api/profile/constants')
+def get_profile_constants():
+    """Shared dropdown options for the comprehensive profile form."""
+    return jsonify({
+        'success': True,
+        'ethnicity_options': ETHNICITY_OPTIONS,
+        'gender_options': GENDER_OPTIONS,
+        'work_arrangement_options': WORK_ARRANGEMENTS,
+        'employment_type_options': EMPLOYMENT_TYPES,
+        'institution_type_options': INSTITUTION_TYPES,
+        'skill_category_options': SKILL_CATEGORIES,
+        'proficiency_level_options': PROFICIENCY_LEVELS,
+        'language_proficiency_options': LANGUAGE_PROFICIENCY,
+        'career_level_options': CAREER_LEVELS,
+        'document_type_options': DOCUMENT_TYPES,
+        'membership_type_options': MEMBERSHIP_TYPES,
+        'reference_relationship_options': REFERENCE_RELATIONSHIPS,
+        'work_authorisation_options': WORK_AUTHORIZATION_OPTIONS,
+        'driving_license_type_options': DRIVING_LICENSE_TYPES,
+        'employment_status_options': EMPLOYMENT_STATUSES,
+    })
+
+
+@app.route('/api/profile', methods=['GET'])
+@api_login_required
+def get_profile():
+    """Get the current user's full profile (personal info, education, experience)."""
+    try:
+        uid = session['user']['uid']
+        return jsonify({'success': True, 'profile': profile_service.get_profile(uid)})
+    except Exception as e:
+        log.error(f"Error in get_profile: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/personal', methods=['PUT'])
+@api_login_required
+def update_profile_personal():
+    """Create/update the current user's personal information."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        personal = profile_service.save_personal(uid, data)
+        return jsonify({'success': True, 'personal': personal})
+    except Exception as e:
+        log.error(f"Error in update_profile_personal: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/professional', methods=['PUT'])
+@api_login_required
+def update_profile_professional():
+    """Create/update the professional profile section for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.save_professional(uid, data)
+        return jsonify({'success': True, 'professional_profile': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_professional: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/application-info', methods=['PUT'])
+@api_login_required
+def update_profile_application_info():
+    """Create/update the additional application information section for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.save_application_info(uid, data)
+        return jsonify({'success': True, 'application_info': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_application_info: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+CV_UPLOAD_MAX_BYTES = 5 * 1024 * 1024  # 5 MB
+
+
+@app.route('/api/profile/parse-cv', methods=['POST'])
+@api_login_required
+def parse_profile_cv():
+    """Upload a CV (PDF/DOCX/TXT) and extract profile data instead of manual entry."""
+    try:
+        uploaded = request.files.get('cv')
+        if not uploaded or not uploaded.filename:
+            return jsonify({'success': False, 'error': 'No file uploaded'}), 400
+
+        file_bytes = uploaded.read()
+        if len(file_bytes) > CV_UPLOAD_MAX_BYTES:
+            return jsonify({'success': False, 'error': 'File is too large (max 5MB)'}), 400
+
+        cv_text = extract_text(uploaded.filename, file_bytes)
+        extracted = parse_cv(cv_text)
+
+        return jsonify({'success': True, 'extracted': extracted})
+    except CVParseError as e:
+        return jsonify({'success': False, 'error': str(e)}), 422
+    except Exception as e:
+        log.error(f"Error in parse_profile_cv: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/education', methods=['POST'])
+@api_login_required
+def create_profile_education():
+    """Add a new education record for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_education(uid, data)
+        return jsonify({'success': True, 'education': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_education: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/education/<edu_id>', methods=['PUT'])
+@api_login_required
+def update_profile_education(edu_id):
+    """Update an education record for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_education(uid, edu_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Education record not found'}), 404
+        return jsonify({'success': True, 'education': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_education: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/education/<edu_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_education(edu_id):
+    """Remove an education record for the current user."""
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_education(uid, edu_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Education record not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_education: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/experience', methods=['POST'])
+@api_login_required
+def create_profile_experience():
+    """Add a new work experience record for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_experience(uid, data)
+        return jsonify({'success': True, 'experience': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_experience: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/experience/<exp_id>', methods=['PUT'])
+@api_login_required
+def update_profile_experience(exp_id):
+    """Update a work experience record for the current user."""
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_experience(uid, exp_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Experience record not found'}), 404
+        return jsonify({'success': True, 'experience': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_experience: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/experience/<exp_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_experience(exp_id):
+    """Remove a work experience record for the current user."""
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_experience(uid, exp_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Experience record not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_experience: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/skills', methods=['POST'])
+@api_login_required
+def create_profile_skill():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_skill(uid, data)
+        return jsonify({'success': True, 'skill': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_skill: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/skills/<skill_id>', methods=['PUT'])
+@api_login_required
+def update_profile_skill(skill_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_skill(uid, skill_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Skill not found'}), 404
+        return jsonify({'success': True, 'skill': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_skill: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/skills/<skill_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_skill(skill_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_skill(uid, skill_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Skill not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_skill: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/certifications', methods=['POST'])
+@api_login_required
+def create_profile_certification():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_certification(uid, data)
+        return jsonify({'success': True, 'certification': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_certification: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/certifications/<cert_id>', methods=['PUT'])
+@api_login_required
+def update_profile_certification(cert_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_certification(uid, cert_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Certification not found'}), 404
+        return jsonify({'success': True, 'certification': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_certification: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/certifications/<cert_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_certification(cert_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_certification(uid, cert_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Certification not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_certification: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/languages', methods=['POST'])
+@api_login_required
+def create_profile_language():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_language(uid, data)
+        return jsonify({'success': True, 'language': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_language: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/languages/<lang_id>', methods=['PUT'])
+@api_login_required
+def update_profile_language(lang_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_language(uid, lang_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Language not found'}), 404
+        return jsonify({'success': True, 'language': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_language: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/languages/<lang_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_language(lang_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_language(uid, lang_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Language not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_language: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/projects', methods=['POST'])
+@api_login_required
+def create_profile_project():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_project(uid, data)
+        return jsonify({'success': True, 'project': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_project: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/projects/<project_id>', methods=['PUT'])
+@api_login_required
+def update_profile_project(project_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_project(uid, project_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Project not found'}), 404
+        return jsonify({'success': True, 'project': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_project: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/projects/<project_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_project(project_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_project(uid, project_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Project not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_project: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/memberships', methods=['POST'])
+@api_login_required
+def create_profile_membership():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_membership(uid, data)
+        return jsonify({'success': True, 'membership': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_membership: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/memberships/<membership_id>', methods=['PUT'])
+@api_login_required
+def update_profile_membership(membership_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_membership(uid, membership_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Membership not found'}), 404
+        return jsonify({'success': True, 'membership': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_membership: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/memberships/<membership_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_membership(membership_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_membership(uid, membership_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Membership not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_membership: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/references', methods=['POST'])
+@api_login_required
+def create_profile_reference():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_reference(uid, data)
+        return jsonify({'success': True, 'reference': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_reference: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/references/<reference_id>', methods=['PUT'])
+@api_login_required
+def update_profile_reference(reference_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_reference(uid, reference_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Reference not found'}), 404
+        return jsonify({'success': True, 'reference': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_reference: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/references/<reference_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_reference(reference_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_reference(uid, reference_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Reference not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_reference: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/documents', methods=['POST'])
+@api_login_required
+def create_profile_document():
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.add_document(uid, data)
+        return jsonify({'success': True, 'document': record})
+    except Exception as e:
+        log.error(f"Error in create_profile_document: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/documents/<document_id>', methods=['PUT'])
+@api_login_required
+def update_profile_document(document_id):
+    try:
+        uid = session['user']['uid']
+        data = request.get_json(silent=True) or {}
+        record = profile_service.update_document(uid, document_id, data)
+        if record is None:
+            return jsonify({'success': False, 'error': 'Document not found'}), 404
+        return jsonify({'success': True, 'document': record})
+    except Exception as e:
+        log.error(f"Error in update_profile_document: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/profile/documents/<document_id>', methods=['DELETE'])
+@api_login_required
+def delete_profile_document(document_id):
+    try:
+        uid = session['user']['uid']
+        deleted = profile_service.delete_document(uid, document_id)
+        if not deleted:
+            return jsonify({'success': False, 'error': 'Document not found'}), 404
+        return jsonify({'success': True})
+    except Exception as e:
+        log.error(f"Error in delete_profile_document: {e}")
+        return jsonify({'success': False, 'error': str(e)}), 500
 
 
 @app.errorhandler(500)

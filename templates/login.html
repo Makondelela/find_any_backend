@@ -158,6 +158,16 @@
             }, 5000);
         }
 
+        function storeFirebaseUser(user) {
+            sessionStorage.setItem('firebaseUser', JSON.stringify({
+                uid: user.uid,
+                email: user.email || '',
+                displayName: user.displayName || '',
+                phoneNumber: user.phoneNumber || '',
+                photoURL: user.photoURL || '',
+            }));
+        }
+
         // Toggle between login and signup modes
         function toggleAuthMode() {
             isSignupMode = !isSignupMode;
@@ -285,6 +295,7 @@
                 });
                 
                 if (response.ok) {
+                    storeFirebaseUser(user);
                     if (isSignupMode) {
                         alert('Account created successfully! Welcome to FindFast!');
                     }
@@ -357,6 +368,7 @@
                 });
                 
                 if (response.ok) {
+                    storeFirebaseUser(user);
                     window.location.href = '/';
                 } else {
                     showError('Authentication failed. Please try again.');

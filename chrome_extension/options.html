@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FindFast Assistant settings</title>
+  <style>
+    body { max-width: 620px; margin: 40px auto; padding: 0 20px; font: 15px system-ui, sans-serif; color: #172033; }
+    label { display: block; margin: 20px 0 6px; font-weight: 600; }
+    input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #aab4c4; border-radius: 6px; }
+    button { margin-top: 16px; padding: 10px 16px; border: 0; border-radius: 6px; background: #1769e0; color: #fff; cursor: pointer; }
+    #status { margin-left: 10px; color: #087443; }
+  </style>
+</head>
+<body>
+  <h1>FindFast Assistant settings</h1>
+  <p>The extension requests your saved profile from this FindFast app URL.</p>
+  <label for="appUrl">FindFast app URL</label>
+  <input id="appUrl" type="url" placeholder="https://find-any-backend-1.onrender.com">
+  <button id="save" type="button">Save</button><span id="status" role="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

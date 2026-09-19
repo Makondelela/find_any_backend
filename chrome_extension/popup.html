@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FindFast Assistant</title>
+  <style>
+    body { width: 280px; margin: 0; padding: 16px; font: 14px system-ui, sans-serif; color: #172033; }
+    h1 { margin: 0 0 8px; font-size: 18px; }
+    p { color: #596579; line-height: 1.4; }
+    button { width: 100%; padding: 10px; border: 0; border-radius: 6px; background: #1769e0; color: white; cursor: pointer; font-weight: 600; }
+    button:disabled { opacity: .6; cursor: wait; }
+    #status { min-height: 20px; margin-top: 12px; }
+    .error { color: #b42318; }
+    .success { color: #087443; }
+    a { color: #1769e0; }
+  </style>
+</head>
+<body>
+  <h1>FindFast Assistant</h1>
+  <p>Inspect the current job application and fill matching fields from your FindFast profile.</p>
+  <button id="fill" type="button">Fill current form</button>
+  <div id="status" role="status"></div>
+  <p><a href="options.html" target="_blank">Connection settings</a></p>
+  <script src="popup.js"></script>
+</body>
+</html>

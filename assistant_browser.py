@@ -44,6 +44,72 @@ window.navigator.permissions.query = (parameters) => (
 class AssistantBrowser:
     """Expose a synchronous Flask-friendly facade over async Playwright."""
 
+    @staticmethod
+    def profile_to_fill_values(profile=None, user=None):
+        """Build the fill values for a target application form from the saved profile.
+
+        The user profile lives in Firebase, while the browser-side assistant page
+        only knows the authenticated session user. This helper normalizes both
+        sources into the same dictionary that the existing HTML/form matcher
+        already understands.
+        """
+        personal = (profile or {}).get('personal') or {}
+        professional = (profile or {}).get('professional_profile') or {}
+
+        user_email = (user or {}).get('email') or ''
+        user_name = (user or {}).get('name') or ''
+
+        first_name = personal.get('first_name') or personal.get('preferred_name') or ''
+        last_name = personal.get('last_name') or ''
+
+        if not first_name and user_name:
+            parts = user_name.strip().split()
+            first_name = parts[0] if parts else ''
+            last_name = ' '.join(parts[1:]) if len(parts) > 1 else ''
+
+        full_name = ' '.join(part for part in [first_name, last_name] if part).strip()
+        if not full_name and user_name:
+            full_name = user_name.strip()
+
+        profile_values = {
+            'first name': first_name or NAME,
+            'full name': full_name or NAME,
+            'surname': last_name or SURNAME,
+            'last name': last_name or SURNAME,
+            'email': personal.get('email') or user_email or EMAIL,
+            'e-mail': personal.get('email') or user_email or EMAIL,
+            'cell': personal.get('contact_number') or CELLPHONE,
+            'mobile': personal.get('contact_number') or CELLPHONE,
+            'job title': professional.get('current_job_title') or CURRENT_POSITION,
+            'company name': professional.get('current_company') or CURRENT_EMPLOYER,
+            'city': personal.get('city') or CURRENT_CITY,
+        }
+
+        if not profile_values['first name'] and NAME:
+            profile_values['first name'] = NAME
+        if not profile_values['full name'] and NAME:
+            profile_values['full name'] = NAME
+        if not profile_values['surname'] and SURNAME:
+            profile_values['surname'] = SURNAME
+        if not profile_values['last name'] and SURNAME:
+            profile_values['last name'] = SURNAME
+        if not profile_values['email'] and EMAIL:
+            profile_values['email'] = EMAIL
+        if not profile_values['e-mail'] and EMAIL:
+            profile_values['e-mail'] = EMAIL
+        if not profile_values['cell'] and CELLPHONE:
+            profile_values['cell'] = CELLPHONE
+        if not profile_values['mobile'] and CELLPHONE:
+            profile_values['mobile'] = CELLPHONE
+        if not profile_values['job title'] and CURRENT_POSITION:
+            profile_values['job title'] = CURRENT_POSITION
+        if not profile_values['company name'] and CURRENT_EMPLOYER:
+            profile_values['company name'] = CURRENT_EMPLOYER
+        if not profile_values['city'] and CURRENT_CITY:
+            profile_values['city'] = CURRENT_CITY
+
+        return profile_values
+
     def __init__(self):
         self.loop = None
         self.thread = None
@@ -150,8 +216,59 @@ class AssistantBrowser:
         page = await self._active_page()
         if page is None:
             return {"running": False}
+        dropdown = await page.evaluate(
+            """
+            ([x, y]) => {
+                const element = document.elementFromPoint(x, y);
+                if (!element || element.tagName.toLowerCase() !== 'select') return null;
+                return {
+                    id: element.id || '',
+                    name: element.name || '',
+                    options: Array.from(element.options).map((option, index) => ({
+                        index,
+                        label: option.text.trim(),
+                        disabled: option.disabled,
+                        selected: option.selected,
+                    })),
+                };
+            }
+            """,
+            [x, y],
+        )
+        if dropdown:
+            return {**await self._status(), "dropdown": dropdown}
         await page.mouse.click(x, y)
         return await self._status()
+
+    def select_option(self, field_id='', field_name='', index=0):
+        return self._run(self._select_option(field_id, field_name, index))
+
+    async def _select_option(self, field_id, field_name, index):
+        page = await self._active_page()
+        if page is None:
+            return {"running": False}
+        selected = await page.evaluate(
+            """
+            ([fieldId, fieldName, optionIndex]) => {
+                const selector = fieldId
+                    ? `select#${CSS.escape(fieldId)}`
+                    : `select[name="${CSS.escape(fieldName)}"]`;
+                const element = document.querySelector(selector);
+                if (!element || !element.options[optionIndex]) return null;
+                const option = element.options[optionIndex];
+                if (option.disabled) return null;
+                element.selectedIndex = optionIndex;
+                element.dispatchEvent(new Event('input', { bubbles: true }));
+                element.dispatchEvent(new Event('change', { bubbles: true }));
+                if (window.jQuery) window.jQuery(element).trigger('change');
+                return option.text.trim();
+            }
+            """,
+            [field_id, field_name, int(index)],
+        )
+        if selected is None:
+            raise ValueError('Dropdown option is no longer available')
+        return {**await self._status(), "selected": selected}
 
     def press_key(self, key):
         return self._run(self._press_key(key))
@@ -173,25 +290,13 @@ class AssistantBrowser:
         await page.mouse.wheel(delta_x, delta_y)
         return await self._status()
 
-    def fill(self):
-        return self._run(self._fill())
+    def fill(self, profile=None, user=None):
+        return self._run(self._fill(profile=profile, user=user))
 
-    async def _fill(self):
+    async def _fill(self, profile=None, user=None):
         page = await self._ensure_page()
         await page.wait_for_load_state("domcontentloaded", timeout=10000)
-        values = {
-            "first name": NAME,
-            "full name": NAME,
-            "surname": SURNAME,
-            "last name": SURNAME,
-            "email": EMAIL,
-            "e-mail": EMAIL,
-            "cell": CELLPHONE,
-            "mobile": CELLPHONE,
-            "job title": CURRENT_POSITION,
-            "company name": CURRENT_EMPLOYER,
-            "city": CURRENT_CITY,
-        }
+        values = self.profile_to_fill_values(profile=profile, user=user)
         filled = []
         skipped = []
         fields = page.locator("input, textarea, select")
