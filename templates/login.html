@@ -158,7 +158,7 @@
             }, 5000);
         }
 
-        function storeFirebaseUser(user) {
+        function storeFirebaseUser(user, fieldMappings = null) {
             sessionStorage.setItem('firebaseUser', JSON.stringify({
                 uid: user.uid,
                 email: user.email || '',
@@ -166,6 +166,9 @@
                 phoneNumber: user.phoneNumber || '',
                 photoURL: user.photoURL || '',
             }));
+            if (fieldMappings) {
+                sessionStorage.setItem('findFastFieldMappings', JSON.stringify(fieldMappings));
+            }
         }
 
         // Toggle between login and signup modes
@@ -295,7 +298,8 @@
                 });
                 
                 if (response.ok) {
-                    storeFirebaseUser(user);
+                    const loginData = await response.json();
+                    storeFirebaseUser(user, loginData.field_mappings);
                     if (isSignupMode) {
                         alert('Account created successfully! Welcome to FindFast!');
                     }
@@ -368,7 +372,8 @@
                 });
                 
                 if (response.ok) {
-                    storeFirebaseUser(user);
+                    const loginData = await response.json();
+                    storeFirebaseUser(user, loginData.field_mappings);
                     window.location.href = '/';
                 } else {
                     showError('Authentication failed. Please try again.');

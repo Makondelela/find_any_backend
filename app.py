@@ -36,6 +36,7 @@ from user_profile.constants import (
     EMPLOYMENT_STATUSES,
 )
 from user_profile.cv_parser import extract_text, parse_cv, CVParseError
+from user_profile.field_mappings import FIELD_MAPPINGS
 
 # Load environment variables from .env file
 load_dotenv()
@@ -296,7 +297,8 @@ def auth_login():
             'user': {
                 'email': email,
                 'name': name
-            }
+            },
+            'field_mappings': FIELD_MAPPINGS,
         })
         
     except Exception as e:
@@ -1065,13 +1067,24 @@ def get_profile_constants():
     })
 
 
+@app.route('/api/profile/field-mappings')
+@api_login_required
+def get_profile_field_mappings():
+    """Return standard profile field names and aliases for form fillers."""
+    return jsonify({'success': True, 'field_mappings': FIELD_MAPPINGS})
+
+
 @app.route('/api/profile', methods=['GET'])
 @api_login_required
 def get_profile():
     """Get the current user's full profile (personal info, education, experience)."""
     try:
         uid = session['user']['uid']
-        return jsonify({'success': True, 'profile': profile_service.get_profile(uid)})
+        return jsonify({
+            'success': True,
+            'profile': profile_service.get_profile(uid),
+            'field_mappings': FIELD_MAPPINGS,
+        })
     except Exception as e:
         log.error(f"Error in get_profile: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500

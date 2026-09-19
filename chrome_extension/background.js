@@ -18,10 +18,10 @@ async function requestProfile() {
   if (!response.ok || !data.success) {
     throw new Error(data.error || `FindFast returned HTTP ${response.status}`);
   }
-  return data.profile;
+  return { profile: data.profile, fieldMappings: data.field_mappings || {} };
 }
 
-async function fillTab(tabId, profile) {
+async function fillTab(tabId, profile, fieldMappings) {
   if (!tabId) throw new Error('No active tab was found.');
 
   try {
@@ -35,14 +35,18 @@ async function fillTab(tabId, profile) {
     );
   }
 
-  return chrome.tabs.sendMessage(tabId, { type: 'FILL_PROFILE', profile });
+  return chrome.tabs.sendMessage(tabId, { type: 'FILL_PROFILE', profile, fieldMappings });
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type !== 'FILL_ACTIVE_TAB') return undefined;
 
   requestProfile()
-    .then(profile => fillTab(message.tabId || sender.tab?.id, profile))
+    .then(({ profile, fieldMappings }) => fillTab(
+      message.tabId || sender.tab?.id,
+      profile,
+      fieldMappings,
+    ))
     .then(result => sendResponse({ ok: true, result }))
     .catch(error => {
       const messageText = error.message.includes('Receiving end does not exist')

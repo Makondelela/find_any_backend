@@ -867,6 +867,7 @@ function initializeAuth() {
     // Logout button
     logoutBtn.addEventListener('click', () => {
         sessionStorage.removeItem('firebaseUser');
+        sessionStorage.removeItem('findFastFieldMappings');
         fetch('/api/auth/logout', { method: 'POST' })
             .then(r => r.json())
             .then(data => {

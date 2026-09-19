@@ -6,25 +6,46 @@
   const compact = value => normalise(value).replace(/[^a-z0-9]/g, '');
 
   function fieldLabel(field) {
-    const labels = [];
+    const directLabels = [];
     if (field.id) {
       const linked = document.querySelector(`label[for="${CSS.escape(field.id)}"]`);
-      if (linked) labels.push(linked.innerText);
+      if (linked) directLabels.push(linked.innerText);
     }
     const parentLabel = field.closest('label');
-    if (parentLabel) labels.push(parentLabel.innerText);
-    ['aria-label', 'placeholder', 'name'].forEach(attribute => {
-      if (field.getAttribute(attribute)) labels.push(field.getAttribute(attribute));
+    if (parentLabel) directLabels.push(parentLabel.innerText);
+    ['aria-label', 'placeholder'].forEach(attribute => {
+      if (field.getAttribute(attribute)) directLabels.push(field.getAttribute(attribute));
     });
-    const row = field.closest('tr, .form-group, .field, .form-row, .form-field');
-    if (row) labels.push(row.innerText);
-    return normalise(labels.join(' '));
+
+    // Only use a nearby label when the control has no direct metadata. Never
+    // use the entire row/container text because it contains other fields'
+    // labels and can make every control look like the same field.
+    const container = field.closest('tr, .form-group, .field, .form-row, .form-field');
+    const nearbyLabel = container?.querySelector('label, .label, .field-label');
+    if (nearbyLabel && !nearbyLabel.contains(field)) {
+      directLabels.unshift(nearbyLabel.innerText);
+    }
+    ['name', 'id'].forEach(attribute => {
+      if (field.getAttribute(attribute)) directLabels.push(field.getAttribute(attribute));
+    });
+    return normalise(directLabels.join(' '));
   }
 
   function profileValues(profile) {
     const personal = profile.personal || {};
     const professional = profile.professional_profile || {};
     const application = profile.application_info || {};
+    const experience = Array.isArray(profile.experience) ? profile.experience : [];
+    const education = Array.isArray(profile.education) ? profile.education : [];
+    const latestExperience = experience[experience.length - 1] || {};
+    const latestEducation = education[education.length - 1] || {};
+    const latestSkill = (profile.skills || [])[((profile.skills || []).length || 1) - 1] || {};
+    const latestCertification = (profile.certifications || [])[((profile.certifications || []).length || 1) - 1] || {};
+    const latestLanguage = (profile.languages || [])[((profile.languages || []).length || 1) - 1] || {};
+    const latestProject = (profile.projects || [])[((profile.projects || []).length || 1) - 1] || {};
+    const latestMembership = (profile.professional_memberships || [])[((profile.professional_memberships || []).length || 1) - 1] || {};
+    const latestReference = (profile.references || [])[((profile.references || []).length || 1) - 1] || {};
+    const latestDocument = (profile.documents || [])[((profile.documents || []).length || 1) - 1] || {};
     const firstName = personal.first_name || personal.preferred_name || '';
     const lastName = personal.last_name || '';
     const fullName = [firstName, lastName].filter(Boolean).join(' ');
@@ -53,11 +74,110 @@
       workAuthorisation: application.work_authorisation || personal.work_authorisation || '',
       noticePeriod: application.notice_period || personal.notice_period || '',
       preferredLocation: application.preferred_job_location || '',
+      experienceCompany: latestExperience.company || professional.current_company || '',
+      experiencePosition: latestExperience.position || professional.current_job_title || '',
+      experienceStartDate: latestExperience.start_date || '',
+      experienceEndDate: latestExperience.end_date || '',
+      experienceDescription: latestExperience.description || '',
+      experienceResponsibilities: latestExperience.responsibilities || '',
+      experienceAchievements: latestExperience.achievements || '',
+      experienceEmploymentType: latestExperience.employment_type || '',
+      educationInstitution: latestEducation.institution || '',
+      educationQualification: latestEducation.qualification || '',
+      educationFieldOfStudy: latestEducation.field_of_study || '',
+      educationStartDate: latestEducation.start_date || '',
+      educationEndDate: latestEducation.end_date || '',
+      educationDescription: latestEducation.description || '',
+      ...personal,
+      ...professional,
+      ...application,
+      education_institution: latestEducation.institution || '',
+      education_qualification: latestEducation.qualification || '',
+      education_field_of_study: latestEducation.field_of_study || '',
+      education_start_date: latestEducation.start_date || '',
+      education_end_date: latestEducation.end_date || '',
+      education_description: latestEducation.description || '',
+      education_institution_type: latestEducation.institution_type || '',
+      education_specialisation: latestEducation.specialisation || '',
+      education_currently_studying: latestEducation.currently_studying || '',
+      education_country: latestEducation.country || '',
+      education_province: latestEducation.province || '',
+      education_city: latestEducation.city || '',
+      education_grade: latestEducation.grade || '',
+      experience_company: latestExperience.company || '',
+      experience_position: latestExperience.position || '',
+      experience_start_date: latestExperience.start_date || '',
+      experience_end_date: latestExperience.end_date || '',
+      experience_responsibilities: latestExperience.responsibilities || '',
+      experience_achievements: latestExperience.achievements || '',
+      experience_description: latestExperience.description || '',
+      experience_employment_type: latestExperience.employment_type || '',
+      experience_country: latestExperience.country || '',
+      experience_province: latestExperience.province || '',
+      experience_city: latestExperience.city || '',
+      experience_currently_working_here: latestExperience.currently_working_here || '',
+      project_name: latestProject.project_name || '',
+      project_description: latestProject.description || '',
+      project_role: latestProject.role || '',
+      project_start_date: latestProject.start_date || '',
+      project_end_date: latestProject.end_date || '',
+      membership_organisation: latestMembership.organisation || '',
+      membership_type: latestMembership.membership_type || '',
+      membership_number: latestMembership.membership_number || '',
+      membership_start_date: latestMembership.start_date || '',
+      membership_end_date: latestMembership.end_date || '',
+      reference_full_name: latestReference.full_name || '',
+      reference_job_title: latestReference.job_title || '',
+      reference_company: latestReference.company || '',
+      reference_relationship: latestReference.relationship || '',
+      reference_email: latestReference.email || '',
+      reference_contact_number: latestReference.contact_number || '',
+      document_name: latestDocument.document_name || '',
+      document_type: latestDocument.document_type || '',
+      document_url: latestDocument.document_url || '',
+      file_name: latestDocument.file_name || '',
+      ...latestSkill,
+      ...latestCertification,
+      ...latestLanguage,
+      ...latestProject,
+      ...latestMembership,
+      ...latestReference,
+      ...latestDocument,
     };
   }
 
-  function valueForLabel(label, values) {
+  function aliasMatches(text, alias) {
+    const compactAlias = compact(alias);
+    return compactAlias === 'name'
+      ? text === compactAlias
+      : text.includes(compactAlias);
+  }
+
+  function valueForLabel(label, values, fieldMappings = {}) {
     const text = compact(label);
+    const valueKeyMap = {
+      first_name: 'firstName', last_name: 'lastName', full_name: 'fullName',
+      contact_number: 'phone', id_number: 'idNumber', date_of_birth: 'dateOfBirth',
+      street_address: 'address', current_job_title: 'jobTitle', current_company: 'company',
+      professional_summary: 'summary', linkedin_profile: 'linkedin', github_profile: 'github',
+      portfolio_website: 'portfolio', work_authorisation: 'workAuthorisation',
+      notice_period: 'noticePeriod', preferred_job_location: 'preferredLocation',
+      education_institution: 'educationInstitution', education_qualification: 'educationQualification',
+      education_field_of_study: 'educationFieldOfStudy', education_start_date: 'educationStartDate',
+      education_end_date: 'educationEndDate', education_description: 'educationDescription',
+      experience_company: 'experienceCompany', experience_position: 'experiencePosition',
+      experience_start_date: 'experienceStartDate', experience_end_date: 'experienceEndDate',
+      experience_responsibilities: 'experienceResponsibilities', experience_achievements: 'experienceAchievements',
+      experience_description: 'experienceDescription', experience_employment_type: 'experienceEmploymentType',
+    };
+    const mappingEntries = Object.entries(fieldMappings).sort(
+      ([, left], [, right]) => Math.max(...right.map(alias => compact(alias).length))
+        - Math.max(...left.map(alias => compact(alias).length))
+    );
+    for (const [standardKey, aliases] of mappingEntries) {
+      const value = values[valueKeyMap[standardKey] || standardKey];
+      if (value && aliases.some(alias => aliasMatches(text, alias))) return value;
+    }
     const matches = [
       [['firstname', 'givenname'], values.firstName],
       [['surname', 'lastname', 'familyname'], values.lastName],
@@ -74,8 +194,16 @@
       [['city', 'town', 'suburb'], values.city],
       [['postalcode', 'postcode', 'zipcode'], values.postalCode],
       [['streetaddress', 'residentialaddress', 'address'], values.address],
-      [['currentjobtitle', 'jobtitle', 'position', 'role'], values.jobTitle],
-      [['currentemployer', 'employer', 'company', 'companyname'], values.company],
+      [['currentjobtitle', 'currentposition', 'jobtitle', 'positiontitle', 'roletitle'], values.jobTitle],
+      [['currentemployer', 'currentcompany'], values.company],
+      [['employer', 'employername', 'company', 'companyname', 'organisation', 'organization'], values.experienceCompany],
+      [['jobtitle', 'position', 'positiontitle', 'roletitle', 'role'], values.experiencePosition],
+      [['startdate', 'fromdate', 'employmentstart'], values.experienceStartDate],
+      [['enddate', 'todate', 'employmentend'], values.experienceEndDate],
+      [['responsibilities', 'duties'], values.experienceResponsibilities],
+      [['achievements', 'accomplishments'], values.experienceAchievements],
+      [['workdescription', 'jobdescription', 'description'], values.experienceDescription],
+      [['employmenttype', 'typeofemployment'], values.experienceEmploymentType],
       [['summary', 'professionalprofile', 'aboutyou'], values.summary],
       [['linkedin'], values.linkedin],
       [['github'], values.github],
@@ -83,6 +211,12 @@
       [['eligibletowork', 'workauthorisation', 'workauthorization', 'visa'], values.workAuthorisation],
       [['noticeperiod'], values.noticePeriod],
       [['preferredlocation', 'joblocation'], values.preferredLocation],
+      [['institution', 'school', 'college', 'university'], values.educationInstitution],
+      [['qualification', 'degree', 'highestqualification'], values.educationQualification],
+      [['fieldofstudy', 'major', 'specialization', 'specialisation'], values.educationFieldOfStudy],
+      [['educationstartdate', 'studystartdate', 'fromdate'], values.educationStartDate],
+      [['educationenddate', 'studyenddate', 'todate'], values.educationEndDate],
+      [['educationdescription', 'coursedescription'], values.educationDescription],
     ];
     const match = matches.find(([keys, value]) => value && keys.some(key => text.includes(compact(key))));
     return match ? match[1] : '';
@@ -113,7 +247,7 @@
     return true;
   }
 
-  function inspectAndFill(profile) {
+  function inspectAndFill(profile, fieldMappings) {
     const values = profileValues(profile);
     const fields = [...document.querySelectorAll('input, textarea, select')];
     const result = { inspected: fields.length, filled: [], skipped: [] };
@@ -121,7 +255,7 @@
     fields.forEach(field => {
       const type = normalise(field.type);
       if (['hidden', 'submit', 'button', 'reset', 'file'].includes(type) || field.disabled) return;
-      const value = valueForLabel(fieldLabel(field), values);
+      const value = valueForLabel(fieldLabel(field), values, fieldMappings);
       if (!value) {
         result.skipped.push(fieldLabel(field) || field.name || field.id || 'unlabelled field');
         return;
@@ -139,7 +273,7 @@
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type !== 'FILL_PROFILE') return undefined;
     try {
-      sendResponse({ ok: true, result: inspectAndFill(message.profile || {}) });
+      sendResponse({ ok: true, result: inspectAndFill(message.profile || {}, message.fieldMappings || {}) });
     } catch (error) {
       sendResponse({ ok: false, error: error.message });
     }
