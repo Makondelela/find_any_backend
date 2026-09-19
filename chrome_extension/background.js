@@ -21,15 +21,35 @@ async function requestProfile() {
   return data.profile;
 }
 
+async function fillTab(tabId, profile) {
+  if (!tabId) throw new Error('No active tab was found.');
+
+  try {
+    await chrome.scripting.executeScript({
+      target: { tabId },
+      files: ['content.js'],
+    });
+  } catch (error) {
+    throw new Error(
+      'This page does not allow extensions. Open the application in a normal web tab, then try again.'
+    );
+  }
+
+  return chrome.tabs.sendMessage(tabId, { type: 'FILL_PROFILE', profile });
+}
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type !== 'FILL_ACTIVE_TAB') return undefined;
 
   requestProfile()
-    .then(profile =>
-      chrome.tabs.sendMessage(message.tabId || sender.tab?.id, { type: 'FILL_PROFILE', profile })
-    )
+    .then(profile => fillTab(message.tabId || sender.tab?.id, profile))
     .then(result => sendResponse({ ok: true, result }))
-    .catch(error => sendResponse({ ok: false, error: error.message }));
+    .catch(error => {
+      const messageText = error.message.includes('Receiving end does not exist')
+        ? 'The form helper could not start on this tab. Refresh the application page and try again.'
+        : error.message;
+      sendResponse({ ok: false, error: messageText });
+    });
 
   return true;
 });
