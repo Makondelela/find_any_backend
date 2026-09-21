@@ -8,10 +8,93 @@ Saves results to data_jobs_experience.json for fast filtering.
 import json
 import re
 import logging
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, Iterable, Tuple
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
+
+
+EXPERIENCE_WORDS = r"(?:experience|exp|work history|background)"
+LEVELS = {
+    'junior': ('junior', 'entry level', 'entry-level', 'graduate', 'trainee', 'intern'),
+    'mid': ('mid level', 'mid-level', 'intermediate'),
+    'senior': ('senior', 'lead', 'principal', 'staff', 'expert', 'manager'),
+}
+RECRUITER_CONTEXT = re.compile(
+    r"(?:recruit(?:er|ment)|staffing|consult(?:ing|ancy)|agency|company history|"
+    r"our team|years'? experience in (?:recruiting|the industry))",
+    re.IGNORECASE,
+)
+
+
+def _sentences(text: str) -> Iterable[str]:
+    cleaned = re.sub(r"\s+", " ", text.replace("\r", " ").replace("\n", " ")).strip()
+    return (part.strip(" •-\t") for part in re.split(r"(?<=[.!?;])\s+|\s*•\s*", cleaned) if part.strip())
+
+
+def _years(number: str, unit: str) -> float:
+    value = float(number.replace(',', '.'))
+    return value / 12 if unit.lower().startswith('month') else value
+
+
+def _normalise_year(value: float) -> int | float:
+    return int(value) if value.is_integer() else round(value, 2)
+
+
+def _level_from_years(years: Optional[float]) -> Optional[str]:
+    if years is None:
+        return None
+    if years <= 2:
+        return 'junior'
+    if years <= 5:
+        return 'mid'
+    return 'senior'
+
+
+def _numeric_requirement(sentence: str) -> Optional[Tuple[Optional[float], Optional[float], str]]:
+    number = r"\d+(?:[.,]\d+)?"
+    unit = r"(?:years?|yrs?|months?)"
+    range_patterns = (
+        rf"({number})\s*(?:-|–|—|to)\s*({number})\s*({unit})",
+        rf"between\s+({number})\s+and\s+({number})\s*({unit})",
+    )
+    for pattern in range_patterns:
+        match = re.search(pattern, sentence, re.IGNORECASE)
+        if match:
+            low = _years(match.group(1), match.group(3))
+            high = _years(match.group(2), match.group(3))
+            return low, high, match.group(0)
+
+    patterns = (
+        (rf"(?:minimum|min(?:imum)?|at least)\s*(?:of\s*)?({number})\s*({unit})", 'minimum'),
+        (rf"({number})\s*\+\s*({unit})", 'minimum'),
+        (rf"(?:more than|over|greater than)\s*({number})\s*({unit})", 'minimum'),
+        (rf"(?:less than|under|up to)\s*({number})\s*({unit})", 'maximum'),
+        (rf"({number})\s*({unit})\s*(?:of\s*)?{EXPERIENCE_WORDS}", 'exact'),
+        (rf"{EXPERIENCE_WORDS}\s*(?:of|in)?\s*({number})\s*({unit})", 'exact'),
+    )
+    for pattern, kind in patterns:
+        match = re.search(pattern, sentence, re.IGNORECASE)
+        if match:
+            years = _years(match.group(1), match.group(2))
+            if kind == 'maximum':
+                return 0, years, match.group(0)
+            return years, None if kind == 'minimum' else years, match.group(0)
+    return None
+
+
+def _candidate_score(sentence: str, index: int) -> int:
+    score = 0
+    lowered = sentence.lower()
+    if RECRUITER_CONTEXT.search(sentence):
+        return -100
+    if re.search(r"required|requirement|must|required|minimum|at least|essential|qualification", lowered):
+        score += 5
+    if re.search(r"relevant|professional|practical|commercial|industry", lowered):
+        score += 2
+    if re.search(EXPERIENCE_WORDS, lowered):
+        score += 2
+    return score - min(index, 3)
 
 
 def extract_experience_from_text(text: str) -> Optional[Dict[str, Any]]:
@@ -28,7 +111,6 @@ def extract_experience_from_text(text: str) -> Optional[Dict[str, Any]]:
     if not text:
         return None
     
-    text_lower = text.lower()
     result = {
         'min_years': None,
         'max_years': None,
@@ -36,100 +118,32 @@ def extract_experience_from_text(text: str) -> Optional[Dict[str, Any]]:
         'raw_text': None
     }
     
-    # Extract numeric experience requirements FIRST (most reliable)
-    patterns = [
+    candidates = []
+    for index, sentence in enumerate(_sentences(text)):
+        numeric = _numeric_requirement(sentence)
+        if numeric:
+            low, high, raw = numeric
+            score = _candidate_score(sentence, index)
+            if score >= 0:
+                candidates.append((score + 10, low, high, raw, sentence, None))
+            continue
+        lowered = sentence.lower()
+        found_level = next((level for level, words in LEVELS.items() if any(word in lowered for word in words)), None)
+        if found_level and re.search(r"experience|requirement|qualification|skills?|position|role", lowered):
+            score = _candidate_score(sentence, index)
+            if score < 0:
+                continue
+            bounds = {'junior': (0, 2), 'mid': (3, 5), 'senior': (5, None)}[found_level]
+            candidates.append((score, bounds[0], bounds[1], sentence, sentence, found_level))
 
-        (r'(\d+)\s*(?:-|-|to)\s*(\d+)\s*(?:years?|yrs?)', 'range'),
-
-        (r'between\s*(\d+)\s*and\s*(\d+)\s*(?:years?|yrs?)', 'range'),
-
-        (r'from\s*(\d+)\s*to\s*(\d+)\s*(?:years?|yrs?)', 'range'),
-
-        (r'(\d+)\+\s*(?:years?|yrs?)', 'plus'),
-
-        (r'(?:minimum|min|at\s+least)\s*(?:of)?\s*(\d+)\s*(?:years?|yrs?)', 'minimum'),
-
-        (r'(?:more\s+than|over|greater\s+than)\s*(\d+)\s*(?:years?|yrs?)', 'minimum'),
-
-        (r'(?:less\s+than|under|up\s*to)\s*(\d+)\s*(?:years?|yrs?)', 'maximum'),
-
-        (r'(\d+)\s*(?:years?|yrs?)\s*(?:of)?\s*(?:experience|exp)', 'exact'),
-
-        ]
-    
-    for pattern, pattern_type in patterns:
-        matches = list(re.finditer(pattern, text_lower))
-        if matches:
-            match = matches[0]  # Take first match
-            
-            if pattern_type == 'range':
-                min_val = int(match.group(1))
-                max_val = int(match.group(2))
-                result['min_years'] = min_val
-                result['max_years'] = max_val
-                result['raw_text'] = match.group(0)
-                
-                # Determine level based on range
-                if min_val <= 2:
-                    result['level'] = 'junior'
-                elif min_val <= 5:
-                    result['level'] = 'mid'
-                else:
-                    result['level'] = 'senior'
-                
-                return result
-            
-            else:
-                years = int(match.group(1))
-                result['min_years'] = years
-                result['raw_text'] = match.group(0)
-                
-                # Determine level based on years
-                if years <= 2:
-                    result['level'] = 'junior'
-                elif years <= 5:
-                    result['level'] = 'mid'
-                else:
-                    result['level'] = 'senior'
-                
-                if pattern_type == 'plus':
-                    result['max_years'] = None  # Open-ended
-                else:
-                    result['max_years'] = years
-                
-                return result
-    
-    # Only check seniority keywords if NO numeric requirement found
-    # Look for these in context of experience/requirements, not job titles
-    experience_context_pattern = r'(?:experience|requirement|qualifications?|skills?).*?(\b(?:junior|entry.?level|graduate|grad|mid.?level|intermediate|senior|lead|principal|staff)\b)'
-    
-    context_match = re.search(experience_context_pattern, text_lower, re.DOTALL)
-    if context_match:
-        keyword = context_match.group(1)
-        
-        if re.search(r'junior|entry.?level|graduate|grad', keyword):
-            result['level'] = 'junior'
-            result['min_years'] = 0
-            result['max_years'] = 2
-            result['raw_text'] = f'experience: {keyword}'
-            return result
-        
-        if re.search(r'mid.?level|intermediate', keyword):
-            result['level'] = 'mid'
-            result['min_years'] = 3
-            result['max_years'] = 5
-            result['raw_text'] = f'experience: {keyword}'
-            return result
-        
-        if re.search(r'senior|lead|principal|staff', keyword):
-            result['level'] = 'senior'
-            result['min_years'] = 5
-            result['max_years'] = None
-            result['raw_text'] = f'experience: {keyword}'
-            return result
-    
-    # No experience requirement found
-    return None
+    if not candidates:
+        return None
+    _, minimum, maximum, raw, sentence, explicit_level = max(candidates, key=lambda item: item[0])
+    result['min_years'] = _normalise_year(minimum) if minimum is not None else None
+    result['max_years'] = _normalise_year(maximum) if maximum is not None else None
+    result['level'] = explicit_level or _level_from_years(minimum)
+    result['raw_text'] = sentence.strip()[:500]
+    return result
 
 
 def process_job_descriptions(input_file: str = 'data/data_jobs_descriptions.json', 

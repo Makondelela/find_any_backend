@@ -247,13 +247,105 @@
     return true;
   }
 
-  function inspectAndFill(profile, fieldMappings) {
+  const SECTION_KEYS = {
+    education: ['education_', 'institution', 'qualification', 'degree', 'field of study', 'school'],
+    experience: ['experience_', 'employer', 'company', 'job title', 'position', 'responsibilities', 'employment'],
+  };
+
+  function sectionForLabel(label, field = null) {
+    const text = normalise(label);
+    if (SECTION_KEYS.education.some(token => text.includes(token))) return 'education';
+    if (['employer', 'employment', 'responsibilities', 'experience', 'work history'].some(token => text.includes(token))) return 'experience';
+    if (['job title', 'position', 'role'].some(token => text.includes(token))) {
+      const containerText = normalise(field?.closest('tr, .form-row, [data-experience], .experience-entry, .experience-item')?.innerText);
+      if (/experience|employment|work history/.test(containerText)) return 'experience';
+    }
+    return null;
+  }
+
+  function rowContainer(field) {
+    return field.closest(
+      '[data-education], [data-experience], .education-entry, .experience-entry,' +
+      ' .education-item, .experience-item, .education-row, .experience-row,' +
+      ' .work-experience, .work-history, .form-row, tr'
+    ) || field.parentElement;
+  }
+
+  function addButtonFor(section) {
+    const words = section === 'education'
+      ? /add\s+(education|qualification|school|degree)|add another education/i
+      : /add\s+(experience|employment|work)|add another (job|experience)/i;
+    return [...document.querySelectorAll('button, a, input[type="button"], input[type="submit"]')]
+      .find(button => words.test(normalise(button.innerText || button.value || button.getAttribute('aria-label'))));
+  }
+
+  function recordValues(baseValues, record, section) {
+    const values = { ...baseValues };
+    const prefix = section === 'education' ? 'education' : 'experience';
+    const fieldMap = section === 'education'
+      ? {
+        institution: 'educationInstitution', qualification: 'educationQualification',
+        field_of_study: 'educationFieldOfStudy', start_date: 'educationStartDate',
+        end_date: 'educationEndDate', description: 'educationDescription',
+        institution_type: 'education_institution_type', specialisation: 'education_specialisation',
+        currently_studying: 'education_currently_studying', country: 'education_country',
+        province: 'education_province', city: 'education_city', grade: 'education_grade',
+      }
+      : {
+        company: 'experienceCompany', position: 'experiencePosition', start_date: 'experienceStartDate',
+        end_date: 'experienceEndDate', responsibilities: 'experienceResponsibilities',
+        achievements: 'experienceAchievements', description: 'experienceDescription',
+        employment_type: 'experienceEmploymentType', country: 'experience_country',
+        province: 'experience_province', city: 'experience_city',
+        currently_working_here: 'experience_currently_working_here',
+      };
+    Object.entries(record).forEach(([key, value]) => {
+      values[`${prefix}_${key}`] = value;
+      values[fieldMap[key] || `${prefix}_${key}`] = value;
+    });
+    return values;
+  }
+
+  async function fillRepeatedSection(section, records, baseValues, fieldMappings, result) {
+    if (!records.length) return;
+    const orderedRecords = [...records].reverse();
+    let fields = [...document.querySelectorAll('input, textarea, select')]
+      .filter(field => sectionForLabel(fieldLabel(field), field) === section && !field.disabled);
+    const addButton = addButtonFor(section);
+    let attempts = 0;
+    while (addButton && attempts < orderedRecords.length - 1) {
+      const containers = new Set(fields.map(rowContainer));
+      if (containers.size >= orderedRecords.length) break;
+      addButton.click();
+      await new Promise(resolve => setTimeout(resolve, 150));
+      fields = [...document.querySelectorAll('input, textarea, select')]
+        .filter(field => sectionForLabel(fieldLabel(field), field) === section && !field.disabled);
+      attempts += 1;
+    }
+
+    const containers = [...new Set(fields.map(rowContainer))];
+    for (let index = 0; index < Math.min(containers.length, orderedRecords.length); index += 1) {
+      const values = recordValues(baseValues, orderedRecords[index], section);
+      const rowFields = [...containers[index].querySelectorAll('input, textarea, select')]
+        .filter(field => !field.disabled);
+      rowFields.forEach(field => {
+        const label = fieldLabel(field);
+        const value = valueForLabel(label, values, fieldMappings);
+        if (!value) return;
+        const filled = field.tagName === 'SELECT' ? selectValue(field, value) : (setNativeValue(field, value), true);
+        if (filled) result.filled.push(label);
+      });
+    }
+  }
+
+  async function inspectAndFill(profile, fieldMappings) {
     const values = profileValues(profile);
     const fields = [...document.querySelectorAll('input, textarea, select')];
     const result = { inspected: fields.length, filled: [], skipped: [] };
 
     fields.forEach(field => {
       const type = normalise(field.type);
+      if (sectionForLabel(fieldLabel(field), field)) return;
       if (['hidden', 'submit', 'button', 'reset', 'file'].includes(type) || field.disabled) return;
       const value = valueForLabel(fieldLabel(field), values, fieldMappings);
       if (!value) {
@@ -267,13 +359,17 @@
       else result.skipped.push(fieldLabel(field) || field.name || field.id);
     });
 
+    await fillRepeatedSection('education', profile.education || [], values, fieldMappings, result);
+    await fillRepeatedSection('experience', profile.experience || [], values, fieldMappings, result);
     return result;
   }
 
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type !== 'FILL_PROFILE') return undefined;
     try {
-      sendResponse({ ok: true, result: inspectAndFill(message.profile || {}, message.fieldMappings || {}) });
+      inspectAndFill(message.profile || {}, message.fieldMappings || {})
+        .then(result => sendResponse({ ok: true, result }))
+        .catch(error => sendResponse({ ok: false, error: error.message }));
     } catch (error) {
       sendResponse({ ok: false, error: error.message });
     }

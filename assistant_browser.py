@@ -312,6 +312,15 @@ class AssistantBrowser:
         values = self.profile_to_fill_values(profile=profile, user=user)
         filled = []
         skipped = []
+        repeated_result = await page.evaluate(
+            self._repeated_fill_script(),
+            [
+                profile or {},
+                values,
+                FIELD_MAPPINGS,
+            ],
+        )
+        filled.extend(repeated_result.get('filled', []))
         fields = page.locator("input, textarea, select")
         for index in range(await fields.count()):
             field = fields.nth(index)
@@ -319,6 +328,8 @@ class AssistantBrowser:
             if field_type in {"hidden", "submit", "button", "reset", "file"}:
                 continue
             label = (await self._label_for(field)).lower()
+            if re.search(r'education|institution|qualification|degree|field of study|employer|employment|responsibilities', label):
+                continue
             match = self.value_for_label(label, values)
             if match is None:
                 skipped.append(label or await field.get_attribute("name") or await field.get_attribute("id") or "unlabeled field")
@@ -352,6 +363,97 @@ class AssistantBrowser:
                 skipped.append(label or "unavailable field")
 
         return {"filled": filled, "skipped": skipped, "url": page.url}
+
+    @staticmethod
+    def _repeated_fill_script():
+        return """
+        async ([profile, baseValues, mappings]) => {
+            const normalize = value => String(value || '').trim().toLowerCase().replace(/\\s+/g, ' ');
+            const compact = value => normalize(value).replace(/[^a-z0-9]/g, '');
+            const labelFor = field => {
+                const labels = [];
+                if (field.id) {
+                    const linked = document.querySelector(`label[for="${CSS.escape(field.id)}"]`);
+                    if (linked) labels.push(linked.innerText);
+                }
+                const parent = field.closest('label');
+                if (parent) labels.push(parent.innerText);
+                ['aria-label', 'placeholder'].forEach(key => {
+                    if (field.getAttribute(key)) labels.push(field.getAttribute(key));
+                });
+                const container = field.closest('tr, .form-row, [data-education], [data-experience], .education-entry, .experience-entry');
+                const nearby = container && container.querySelector('label, .label, .field-label');
+                if (nearby && !nearby.contains(field)) labels.unshift(nearby.innerText);
+                labels.push(field.name || field.id || '');
+                return normalize(labels.join(' '));
+            };
+            const sectionOf = label => {
+                if (/education|institution|qualification|degree|field of study|school/.test(label)) return 'education';
+                if (/experience|employer|employment|responsibilities/.test(label)) return 'experience';
+                return '';
+            };
+            const resolve = (label, values) => {
+                const text = compact(label);
+                const entries = Object.entries(mappings).sort((left, right) =>
+                    Math.max(...right[1].map(alias => compact(alias).length)) - Math.max(...left[1].map(alias => compact(alias).length))
+                );
+                for (const [key, aliases] of entries) {
+                    const value = values[key];
+                    if (value && aliases.some(alias => compact(alias) === 'name' ? text === 'name' : text.includes(compact(alias)))) return value;
+                }
+                return '';
+            };
+            const setValue = (field, value) => {
+                if (field.tagName.toLowerCase() === 'select') {
+                    const target = normalize(value);
+                    const option = [...field.options].find(item => normalize(item.text) === target || normalize(item.value) === target)
+                        || [...field.options].find(item => normalize(item.text).includes(target) || target.includes(normalize(item.text)));
+                    if (!option) return false;
+                    field.value = option.value;
+                } else {
+                    const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value')?.set
+                        || Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype, 'value')?.set;
+                    if (setter) setter.call(field, value); else field.value = value;
+                }
+                field.dispatchEvent(new Event('input', {bubbles: true}));
+                field.dispatchEvent(new Event('change', {bubbles: true}));
+                return true;
+            };
+            const result = {filled: []};
+            for (const section of ['education', 'experience']) {
+                const records = [...(profile[section] || [])].reverse();
+                if (!records.length) continue;
+                let sectionFields = [...document.querySelectorAll('input, textarea, select')]
+                    .filter(field => sectionOf(labelFor(field)) === section && !field.disabled);
+                const addPattern = section === 'education'
+                    ? /add\\s+(education|qualification|school|degree)|add another education/i
+                    : /add\\s+(experience|employment|work)|add another (job|experience)/i;
+                const addButton = [...document.querySelectorAll('button, a, input[type="button"]')]
+                    .find(button => addPattern.test(normalize(button.innerText || button.value || button.getAttribute('aria-label'))));
+                for (let attempt = 0; addButton && attempt < records.length - 1; attempt += 1) {
+                    const containers = new Set(sectionFields.map(field => field.closest('tr, .form-row, [data-education], [data-experience], .education-entry, .experience-entry') || field.parentElement));
+                    if (containers.size >= records.length) break;
+                    addButton.click();
+                    await new Promise(resolveWait => setTimeout(resolveWait, 150));
+                    sectionFields = [...document.querySelectorAll('input, textarea, select')]
+                        .filter(field => sectionOf(labelFor(field)) === section && !field.disabled);
+                }
+                const containers = [...new Set(sectionFields.map(field => field.closest('tr, .form-row, [data-education], [data-experience], .education-entry, .experience-entry') || field.parentElement))];
+                for (let index = 0; index < Math.min(records.length, containers.length); index += 1) {
+                    const recordValues = {...baseValues};
+                    Object.entries(records[index]).forEach(([key, value]) => {
+                        recordValues[key] = value;
+                        recordValues[`${section}_${key}`] = value;
+                    });
+                    for (const field of containers[index].querySelectorAll('input, textarea, select')) {
+                        const value = resolve(labelFor(field), recordValues);
+                        if (value && setValue(field, value)) result.filled.push(labelFor(field));
+                    }
+                }
+            }
+            return result;
+        }
+        """
 
     @staticmethod
     async def _label_for(field):

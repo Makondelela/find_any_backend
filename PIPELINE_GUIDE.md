@@ -90,6 +90,20 @@ After completion, the following files are generated in `data/`:
 - **data_jobs_descriptions.json** - Job listings with full descriptions
 - **data_jobs_experience.json** - Jobs with extracted experience requirements
 
+### Description scraper performance
+
+`backend/job_description_pipeline.py` processes independent job URLs concurrently,
+uses isolated HTTP sessions per worker, retries previously empty descriptions,
+and checkpoints atomically every 10 completed jobs. Set the worker count with:
+
+```bash
+DESCRIPTION_WORKERS=4 python backend/job_description_pipeline.py
+```
+
+The router covers Careers24, CareerJunction, PNet, LinkedIn, and Network
+Recruitment International. Unknown hosts use a generic HTML description
+fallback so a new source is still attempted instead of being silently skipped.
+
 ## Troubleshooting
 
 ### "Flask app did not respond"

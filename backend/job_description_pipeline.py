@@ -17,9 +17,13 @@ import sys
 import io
 import time
 import random
+import os
+import tempfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
+from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -44,9 +48,9 @@ OUTPUT_FILE = SCRIPT_DIR / "data" / "data_jobs_descriptions.json"
 DELAY_MIN = 5.0  # Increased to reduce rate limiting
 DELAY_MAX = 10.0  # Increased to reduce rate limiting
 REQUEST_TIMEOUT = 90  # Increased timeout for slow-loading pages like PNet
-BATCH_SIZE = 10  # Process this many jobs before asking to continue
 MAX_RETRIES = 3  # Retry failed requests this many times
 RETRY_DELAY_BASE = 10  # Base delay for exponential backoff
+WORKERS = max(1, int(os.environ.get("DESCRIPTION_WORKERS", "4")))
 
 HEADERS = {
     "User-Agent": (
@@ -333,6 +337,31 @@ def scrape_linkedin_description(url: str) -> Optional[str]:
         return None
 
 
+def scrape_generic_description(session: requests.Session, url: str) -> Optional[str]:
+    """Best-effort fallback for a new job site not yet in the source router."""
+    try:
+        response = session.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        selectors = (
+            "[itemprop='description']", "[class*='job-description']",
+            "[class*='jobDescription']", "[class*='description']",
+            "article", "main",
+        )
+        candidates = []
+        for selector in selectors:
+            for element in soup.select(selector):
+                text = element.get_text(separator="\n", strip=True)
+                if len(text) > 200:
+                    candidates.append(text)
+        if not candidates:
+            return None
+        return max(candidates, key=len)
+    except requests.RequestException as exc:
+        log.warning("  Generic fallback failed for %s: %s", url, exc)
+        return None
+
+
 def scrape_job_description(session: requests.Session, job: Dict) -> Optional[str]:
     """
     Route to appropriate scraper based on job source/URL.
@@ -382,8 +411,8 @@ def scrape_job_description(session: requests.Session, job: Dict) -> Optional[str
         # LinkedIn requires JavaScript rendering - use Playwright
         return scrape_linkedin_description(url)
     else:
-        log.warning(f"  Unknown job source: {url}")
-        return None
+        log.warning("  Unknown job source %s (%s); using generic fallback", source, urlparse(url).netloc)
+        return scrape_generic_description(session, url)
 
 
 # ── Main Pipeline ─────────────────────────────────────────────────────────────
@@ -396,6 +425,32 @@ def load_existing_descriptions() -> List[Dict]:
             return data.get("descriptions", [])
     except (FileNotFoundError, json.JSONDecodeError):
         return []
+
+
+def build_description_record(job: Dict, description: Optional[str]) -> Dict:
+    return {
+        "job_id": job.get("job_id", "unknown"),
+        "url": job.get("url"),
+        "title": job.get("title"),
+        "company": job.get("company"),
+        "source": job.get("source"),
+        "description": description,
+        "scraped_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def job_key(job: Dict) -> str:
+    """Return a stable resume key even when a source omits job_id."""
+    return str(job.get("job_id") or job.get("url") or f"{job.get('source', '')}:{job.get('title', '')}")
+
+
+def scrape_one(job: Dict) -> Dict:
+    """Scrape one job in an isolated session so workers are thread-safe."""
+    session = requests.Session()
+    try:
+        return build_description_record(job, scrape_job_description(session, job))
+    finally:
+        session.close()
 
 
 def main():
@@ -419,54 +474,38 @@ def main():
     log.info(f"Found {len(jobs)} total jobs")
     
     # Load existing descriptions to resume
-    descriptions = load_existing_descriptions()
-    existing_job_ids = {d.get("job_id") for d in descriptions}
+    existing = {
+        job_key(d): d for d in load_existing_descriptions()
+        if job_key(d)
+    }
     
-    if existing_job_ids:
-        log.info(f"Found {len(existing_job_ids)} already processed jobs")
-    
-    # Initialize session
-    session = requests.Session()
+    successful_ids = {job_id for job_id, record in existing.items() if record.get("description")}
+    if successful_ids:
+        log.info(f"Found {len(successful_ids)} completed descriptions; empty records will be retried")
     
     log.info(f"\nProcessing all {len(jobs)} jobs...")
     log.info("-" * 70)
     
-    # Process all jobs
-    for idx, job in enumerate(jobs):
-        job_id = job.get("job_id", "unknown")
-        
-        # Skip if already processed
-        if job_id in existing_job_ids:
-            log.info(f"[{idx + 1}/{len(jobs)}] ✓ Already processed: {job_id}")
-            continue
-        
-        log.info(f"\n[{idx + 1}/{len(jobs)}] Processing job_id: {job_id}")
-        
-        description = scrape_job_description(session, job)
-        
-        # Create description record
-        desc_record = {
-            "job_id": job_id,
-            "url": job.get("url"),
-            "title": job.get("title"),
-            "company": job.get("company"),
-            "source": job.get("source"),
-            "description": description,
-            "scraped_at": datetime.now(timezone.utc).isoformat()
-        }
-        
-        descriptions.append(desc_record)
-        existing_job_ids.add(job_id)
-        
-        # Save after each job
-        save_descriptions(descriptions, data.get("meta", {}))
-        
-        # Be polite - delay between requests (skip for last job)
-        if idx < len(jobs) - 1 and description:
-            sleep()
+    pending = [job for job in jobs if job_key(job) not in successful_ids]
+    log.info("Processing %s pending jobs with %s workers", len(pending), WORKERS)
+    with ThreadPoolExecutor(max_workers=WORKERS) as executor:
+        futures = {executor.submit(scrape_one, job): job for job in pending}
+        for completed, future in enumerate(as_completed(futures), start=1):
+            job = futures[future]
+            job_id = job_key(job)
+            try:
+                existing[job_id] = future.result()
+            except Exception as exc:  # noqa: BLE001
+                log.exception("Unhandled scraper failure for %s: %s", job_id, exc)
+                existing[job_id] = build_description_record(job, None)
+            if completed % 10 == 0 or completed == len(pending):
+                ordered = [existing[job_key(j)] for j in jobs if job_key(j) in existing]
+                save_descriptions(ordered, data.get("meta", {}))
+                log.info("Checkpoint saved: %s/%s pending jobs", completed, len(pending))
     
     # Final save
     log.info("\nSaving final results...")
+    descriptions = [existing.get(job_key(job), build_description_record(job, None)) for job in jobs]
     save_descriptions(descriptions, data.get("meta", {}))
     
     log.info("=" * 70)
@@ -498,9 +537,11 @@ def save_descriptions(descriptions: List[Dict], original_meta: Dict):
         except TypeError:
             return str(obj)
     
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2, default=json_serializer)
-    
+    output_path = Path(OUTPUT_FILE)
+    with tempfile.NamedTemporaryFile("w", encoding="utf-8", dir=output_path.parent, delete=False) as temp:
+        temp_path = Path(temp.name)
+        json.dump(output, temp, ensure_ascii=False, indent=2, default=json_serializer)
+    temp_path.replace(output_path)
     log.info(f"✓ Saved {len(descriptions)} descriptions to {OUTPUT_FILE}")
 
 

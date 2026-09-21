@@ -2,6 +2,8 @@
 
 This extension fills job application forms in the user's real Chrome tab. It does not use the hosted headless assistant browser.
 
+The extension includes PNG icons in `icons/` for the Chrome toolbar, extensions page, and store package.
+
 ## Install locally
 
 1. Open `chrome://extensions` in Chrome.
