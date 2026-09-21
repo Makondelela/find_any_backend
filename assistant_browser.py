@@ -7,6 +7,7 @@ import threading
 from pathlib import Path
 
 from playwright.async_api import async_playwright
+from user_profile.field_mappings import FIELD_MAPPINGS
 
 
 NAME = "Makondelela"
@@ -53,8 +54,12 @@ class AssistantBrowser:
         sources into the same dictionary that the existing HTML/form matcher
         already understands.
         """
-        personal = (profile or {}).get('personal') or {}
-        professional = (profile or {}).get('professional_profile') or {}
+        profile = profile or {}
+        personal = profile.get('personal') or {}
+        professional = profile.get('professional_profile') or {}
+        application = profile.get('application_info') or {}
+        experience = profile.get('experience') or []
+        education = profile.get('education') or []
 
         user_email = (user or {}).get('email') or ''
         user_name = (user or {}).get('name') or ''
@@ -71,44 +76,52 @@ class AssistantBrowser:
         if not full_name and user_name:
             full_name = user_name.strip()
 
+        latest_experience = experience[-1] if experience else {}
+        latest_education = education[-1] if education else {}
         profile_values = {
-            'first name': first_name or NAME,
-            'full name': full_name or NAME,
-            'surname': last_name or SURNAME,
-            'last name': last_name or SURNAME,
-            'email': personal.get('email') or user_email or EMAIL,
-            'e-mail': personal.get('email') or user_email or EMAIL,
-            'cell': personal.get('contact_number') or CELLPHONE,
-            'mobile': personal.get('contact_number') or CELLPHONE,
-            'job title': professional.get('current_job_title') or CURRENT_POSITION,
-            'company name': professional.get('current_company') or CURRENT_EMPLOYER,
-            'city': personal.get('city') or CURRENT_CITY,
+            **personal,
+            **professional,
+            **application,
+            'first_name': first_name or (user_name.split()[0] if user_name else ''),
+            'last_name': last_name or ' '.join(user_name.split()[1:]),
+            'full_name': full_name or user_name,
+            'email': personal.get('email') or user_email,
+            'experience_company': latest_experience.get('company', ''),
+            'experience_position': latest_experience.get('position', ''),
+            'experience_start_date': latest_experience.get('start_date', ''),
+            'experience_end_date': latest_experience.get('end_date', ''),
+            'experience_responsibilities': latest_experience.get('responsibilities', ''),
+            'experience_achievements': latest_experience.get('achievements', ''),
+            'experience_description': latest_experience.get('description', ''),
+            'experience_employment_type': latest_experience.get('employment_type', ''),
+            'education_institution': latest_education.get('institution', ''),
+            'education_qualification': latest_education.get('qualification', ''),
+            'education_field_of_study': latest_education.get('field_of_study', ''),
+            'education_start_date': latest_education.get('start_date', ''),
+            'education_end_date': latest_education.get('end_date', ''),
+            'education_description': latest_education.get('description', ''),
         }
-
-        if not profile_values['first name'] and NAME:
-            profile_values['first name'] = NAME
-        if not profile_values['full name'] and NAME:
-            profile_values['full name'] = NAME
-        if not profile_values['surname'] and SURNAME:
-            profile_values['surname'] = SURNAME
-        if not profile_values['last name'] and SURNAME:
-            profile_values['last name'] = SURNAME
-        if not profile_values['email'] and EMAIL:
-            profile_values['email'] = EMAIL
-        if not profile_values['e-mail'] and EMAIL:
-            profile_values['e-mail'] = EMAIL
-        if not profile_values['cell'] and CELLPHONE:
-            profile_values['cell'] = CELLPHONE
-        if not profile_values['mobile'] and CELLPHONE:
-            profile_values['mobile'] = CELLPHONE
-        if not profile_values['job title'] and CURRENT_POSITION:
-            profile_values['job title'] = CURRENT_POSITION
-        if not profile_values['company name'] and CURRENT_EMPLOYER:
-            profile_values['company name'] = CURRENT_EMPLOYER
-        if not profile_values['city'] and CURRENT_CITY:
-            profile_values['city'] = CURRENT_CITY
-
+        for section_name in ('skills', 'certifications', 'languages', 'projects', 'professional_memberships', 'references', 'documents'):
+            records = profile.get(section_name) or []
+            if records:
+                profile_values.update(records[-1])
         return profile_values
+
+    @staticmethod
+    def value_for_label(label, values):
+        """Resolve a form label through the shared backend alias registry."""
+        normalized = re.sub(r'[^a-z0-9]', '', label.lower())
+        aliases = sorted(
+            ((alias, key) for key, names in FIELD_MAPPINGS.items() for alias in names),
+            key=lambda item: len(re.sub(r'[^a-z0-9]', '', item[0])),
+            reverse=True,
+        )
+        for alias, key in aliases:
+            compact_alias = re.sub(r'[^a-z0-9]', '', alias.lower())
+            matches = normalized == 'name' if compact_alias == 'name' else compact_alias in normalized
+            if matches and values.get(key):
+                return values[key]
+        return ''
 
     def __init__(self):
         self.loop = None
@@ -306,16 +319,32 @@ class AssistantBrowser:
             if field_type in {"hidden", "submit", "button", "reset", "file"}:
                 continue
             label = (await self._label_for(field)).lower()
-            match = next(
-                (value for key, value in values.items() if re.search(rf"\b{re.escape(key)}\b", label)),
-                None,
-            )
+            match = self.value_for_label(label, values)
             if match is None:
                 skipped.append(label or await field.get_attribute("name") or await field.get_attribute("id") or "unlabeled field")
                 continue
             try:
                 if await field.evaluate("el => el.tagName.toLowerCase()") == "select":
-                    await field.select_option(label=match)
+                    await field.evaluate(
+                        """
+                        (el, wanted) => {
+                            const normalize = value => (value || '').trim().toLowerCase();
+                            const target = normalize(wanted);
+                            const option = Array.from(el.options).find(item =>
+                                normalize(item.text) === target || normalize(item.value) === target
+                            ) || Array.from(el.options).find(item =>
+                                normalize(item.text).includes(target) || target.includes(normalize(item.text))
+                            );
+                            if (!option) return false;
+                            el.value = option.value;
+                            el.dispatchEvent(new Event('input', {bubbles: true}));
+                            el.dispatchEvent(new Event('change', {bubbles: true}));
+                            if (window.jQuery) window.jQuery(el).trigger('change');
+                            return true;
+                        }
+                        """,
+                        match,
+                    )
                 else:
                     await field.fill(match)
                 filled.append(label)
@@ -334,7 +363,13 @@ class AssistantBrowser:
                 if (linked && linked.innerText.trim()) return linked.innerText.trim();
                 const parentLabel = el.closest('label');
                 if (parentLabel && parentLabel.innerText.trim()) return parentLabel.innerText.trim();
-                return el.getAttribute('aria-label') || el.getAttribute('placeholder') || '';
+                const direct = el.getAttribute('aria-label') || el.getAttribute('placeholder');
+                if (direct) return direct;
+                const container = el.closest('tr, .form-group, .field, .form-row, .form-field');
+                const nearby = container && container.querySelector('label, .label, .field-label');
+                return nearby && !nearby.contains(el)
+                    ? nearby.innerText
+                    : (el.getAttribute('name') || el.id || '');
             }
             """
         )
