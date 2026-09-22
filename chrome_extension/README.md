@@ -19,6 +19,6 @@ The default profile API is `https://find-any-backend-1.onrender.com/api/profile`
 
 ## How filling works
 
-The content script inspects visible inputs, textareas, and selects. It combines labels, associated labels, placeholders, names, IDs, and nearby form text to identify fields. The service worker requests the authenticated user's profile from FindFast and sends only that profile to the active tab. Values are written with native input/change events so common form frameworks detect them.
+The content script inspects visible inputs, textareas, and selects. It combines labels, associated labels, placeholders, names, IDs, and nearby form text to identify fields. The service worker requests the authenticated user's profile and backend field mappings from FindFast, caches them locally for 2 hours, and sends only that data to the active tab. Use **Refresh profile** in the extension popup after changing your profile. Values are written with native input/change events so common form frameworks detect them.
 
 Files that cannot be safely inferred, file uploads, CAPTCHA fields, and unknown controls are left untouched for review.

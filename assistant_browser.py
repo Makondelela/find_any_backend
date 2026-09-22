@@ -1,5 +1,6 @@
 """Headless browser used by the FindFast application assistant."""
 
+import atexit
 import asyncio
 import base64
 import re
@@ -190,10 +191,36 @@ class AssistantBrowser:
         return self._run(self._reset())
 
     async def _reset(self):
-        if getattr(self, "page", None) and not self.page.is_closed():
-            await self.page.goto("about:blank", wait_until="commit", timeout=10000)
-            return True
-        return False
+        page = getattr(self, "page", None)
+        was_running = bool(page and not page.is_closed())
+        await self._close_browser()
+        return was_running
+
+    def close(self):
+        """Release Chromium resources when the assistant is no longer needed."""
+        loop = self.loop
+        if loop and loop.is_running():
+            future = asyncio.run_coroutine_threadsafe(self._close_browser(), loop)
+            future.result(timeout=15)
+
+    async def _close_browser(self):
+        page = getattr(self, "page", None)
+        context = getattr(self, "context", None)
+        browser = getattr(self, "browser", None)
+        playwright = getattr(self, "playwright", None)
+        self.page = None
+        self.context = None
+        self.browser = None
+        self.playwright = None
+
+        if page and not page.is_closed():
+            await page.close()
+        if context:
+            await context.close()
+        if browser:
+            await browser.close()
+        if playwright:
+            await playwright.stop()
 
     def status(self):
         return self._run(self._status())
@@ -481,3 +508,4 @@ class AssistantBrowser:
 
 
 assistant_browser = AssistantBrowser()
+atexit.register(assistant_browser.close)

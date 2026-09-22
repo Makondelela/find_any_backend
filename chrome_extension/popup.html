@@ -9,6 +9,7 @@
     p { color: #596579; line-height: 1.4; }
     button { width: 100%; padding: 10px; border: 0; border-radius: 6px; background: #1769e0; color: white; cursor: pointer; font-weight: 600; }
     button:disabled { opacity: .6; cursor: wait; }
+    button.secondary { margin-top: 8px; background: #eef3fb; color: #1769e0; }
     #status { min-height: 20px; margin-top: 12px; }
     .error { color: #b42318; }
     .success { color: #087443; }
@@ -19,6 +20,7 @@
   <h1>FindFast Assistant</h1>
   <p>Inspect the current job application and fill matching fields from your FindFast profile.</p>
   <button id="fill" type="button">Fill current form</button>
+  <button id="refreshProfile" class="secondary" type="button">Refresh profile</button>
   <div id="status" role="status"></div>
   <p><a href="options.html" target="_blank">Connection settings</a></p>
   <script src="popup.js"></script>

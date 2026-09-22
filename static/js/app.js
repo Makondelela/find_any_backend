@@ -310,27 +310,12 @@ function createJobCard(job) {
         </div>
 
         <div class="job-actions" style="margin-top: 1rem;">
-            <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm job-link">
-            View Job <i class="fas fa-arrow-right"></i>
-            </a>
             <a href="${escapeHtml(job.url)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm extension-job-link" title="Open in a normal tab for the FindFast Chrome extension">
                 Open in Chrome <i class="fas fa-external-link-alt"></i>
             </a>
         </div>
     `;
     
-    // Track job view when link is clicked, and open it in the Application
-    // Assistant's shared browser window instead of a plain new tab so the
-    // "Fill In" button can act on it after the user signs in / navigates.
-    const jobLink = card.querySelector('.job-link');
-    jobLink.addEventListener('click', (event) => {
-        trackJobView(job.job_id || job.url, job.url);
-        if (typeof openInAssistant === 'function') {
-            event.preventDefault();
-            openInAssistant(job.url);
-        }
-    });
-
     const extensionJobLink = card.querySelector('.extension-job-link');
     extensionJobLink.addEventListener('click', () => {
         trackJobView(job.job_id || job.url, job.url);

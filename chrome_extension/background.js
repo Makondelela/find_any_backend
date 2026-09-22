@@ -1,12 +1,21 @@
 const DEFAULT_APP_URL = 'https://find-any-backend-1.onrender.com';
+const PROFILE_CACHE_KEY = 'profileCache';
+const PROFILE_CACHE_TTL_MS = 2 * 60 * 60 * 1000;
 
 async function getAppUrl() {
   const stored = await chrome.storage.sync.get({ appUrl: DEFAULT_APP_URL });
   return stored.appUrl.replace(/\/$/, '');
 }
 
-async function requestProfile() {
+async function requestProfile(forceRefresh = false) {
   const appUrl = await getAppUrl();
+  if (!forceRefresh) {
+    const stored = await chrome.storage.local.get(PROFILE_CACHE_KEY);
+    const cached = stored[PROFILE_CACHE_KEY];
+    if (cached && cached.appUrl === appUrl && Date.now() - cached.fetchedAt < PROFILE_CACHE_TTL_MS) {
+      return { profile: cached.profile, fieldMappings: cached.fieldMappings, cached: true };
+    }
+  }
   const response = await fetch(`${appUrl}/api/profile`, {
     credentials: 'include',
     headers: { Accept: 'application/json' },
@@ -18,7 +27,11 @@ async function requestProfile() {
   if (!response.ok || !data.success) {
     throw new Error(data.error || `FindFast returned HTTP ${response.status}`);
   }
-  return { profile: data.profile, fieldMappings: data.field_mappings || {} };
+  const result = { profile: data.profile, fieldMappings: data.field_mappings || {} };
+  await chrome.storage.local.set({
+    [PROFILE_CACHE_KEY]: { ...result, appUrl, fetchedAt: Date.now() },
+  });
+  return { ...result, cached: false };
 }
 
 async function fillTab(tabId, profile, fieldMappings) {
@@ -39,6 +52,12 @@ async function fillTab(tabId, profile, fieldMappings) {
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === 'REFRESH_PROFILE') {
+    requestProfile(true)
+      .then(() => sendResponse({ ok: true }))
+      .catch(error => sendResponse({ ok: false, error: error.message }));
+    return true;
+  }
   if (message.type !== 'FILL_ACTIVE_TAB') return undefined;
 
   requestProfile()

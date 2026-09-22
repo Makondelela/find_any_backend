@@ -1,5 +1,23 @@
 const button = document.getElementById('fill');
+const refreshProfileButton = document.getElementById('refreshProfile');
 const status = document.getElementById('status');
+
+refreshProfileButton.addEventListener('click', async () => {
+  refreshProfileButton.disabled = true;
+  status.className = '';
+  status.textContent = 'Refreshing profile...';
+  try {
+    const response = await chrome.runtime.sendMessage({ type: 'REFRESH_PROFILE' });
+    if (!response?.ok) throw new Error(response?.error || 'Unable to refresh profile');
+    status.className = 'success';
+    status.textContent = 'Profile refreshed.';
+  } catch (error) {
+    status.className = 'error';
+    status.textContent = error.message;
+  } finally {
+    refreshProfileButton.disabled = false;
+  }
+});
 
 button.addEventListener('click', async () => {
   button.disabled = true;
