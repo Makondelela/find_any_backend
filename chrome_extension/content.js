@@ -364,6 +364,8 @@
     return result;
   }
 
+  window.__findFastFillProfile = inspectAndFill;
+
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type !== 'FILL_PROFILE') return undefined;
     try {

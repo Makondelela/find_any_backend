@@ -39,7 +39,7 @@ async function fillTab(tabId, profile, fieldMappings) {
 
   try {
     await chrome.scripting.executeScript({
-      target: { tabId },
+      target: { tabId, allFrames: true },
       files: ['content.js'],
     });
   } catch (error) {
@@ -48,7 +48,26 @@ async function fillTab(tabId, profile, fieldMappings) {
     );
   }
 
-  return chrome.tabs.sendMessage(tabId, { type: 'FILL_PROFILE', profile, fieldMappings });
+  const frameResults = await chrome.scripting.executeScript({
+    target: { tabId, allFrames: true },
+    func: async (profileData, mappings) => {
+      if (typeof window.__findFastFillProfile !== 'function') {
+        return { inspected: 0, filled: [], skipped: [] };
+      }
+      return window.__findFastFillProfile(profileData, mappings);
+    },
+    args: [profile, fieldMappings],
+  });
+  return {
+    ok: true,
+    result: frameResults.reduce((combined, frame) => {
+      const result = frame.result || {};
+      combined.inspected += result.inspected || 0;
+      combined.filled.push(...(result.filled || []));
+      combined.skipped.push(...(result.skipped || []));
+      return combined;
+    }, { inspected: 0, filled: [], skipped: [] }),
+  };
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {

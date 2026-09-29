@@ -29,7 +29,7 @@ button.addEventListener('click', async () => {
     if (!response?.ok) throw new Error(response?.error || 'Unable to fill this page');
     const result = response.result?.result || {};
     status.className = 'success';
-    status.textContent = `Filled ${result.filled?.length || 0} fields; ${result.skipped?.length || 0} need review.`;
+    status.textContent = `Inspected ${result.inspected || 0}; filled ${result.filled?.length || 0} fields; ${result.skipped?.length || 0} need review.`;
   } catch (error) {
     status.className = 'error';
     status.textContent = error.message;
