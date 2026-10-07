@@ -782,7 +782,7 @@ class NRIScraper:
     }
 
     @staticmethod
-    def fetch_all_jobs() -> list[dict]:
+    def fetch_all_jobs() -> Optional[list[dict]]:
         url = f"{NRIScraper.BASE_API}/api/getallnetworkrecruitmentadsvianiche"
         params = {"niche": NRIScraper.NICHE, "pageSize": NRIScraper.PAGE_SIZE}
         log.info(f"Calling API: {url}  (pageSize={NRIScraper.PAGE_SIZE})")
@@ -795,15 +795,18 @@ class NRIScraper:
                 log.info(f"[OK] API returned {len(data)} records")
                 return data
             # Fallback if API returns dict with "ads" key
-            ads = data.get("ads", []) if isinstance(data, dict) else []
-            log.info(f"[OK] API returned {len(ads)} records")
-            return ads
+            if isinstance(data, dict) and isinstance(data.get("ads"), list):
+                ads = data["ads"]
+                log.info(f"[OK] API returned {len(ads)} records")
+                return ads
+            log.error("NRI API returned an unexpected response shape")
+            return None
         except requests.RequestException as e:
             log.error(f"API request failed: {e}")
-            return []
+            return None
         except json.JSONDecodeError as e:
             log.error(f"Failed to parse JSON: {e}")
-            return []
+            return None
 
     @staticmethod
     def is_data_role(record: dict) -> bool:
@@ -855,13 +858,13 @@ class NRIScraper:
         log.info("=" * 60)
 
         raw = NRIScraper.fetch_all_jobs()
-        if not raw:
-            log.warning("No data returned from API. Check connectivity.")
+        if raw is None:
+            log.error("NRI refresh failed; preserving the previous data file.")
             return {
                 "meta": {
                     "source": "Network Recruitment International",
                     "job_types": DEFAULT_SEARCH_SLUGS,
-                    "total_jobs": 0,
+                    "failed": True,
                     "scraped_at": datetime.now(timezone.utc).isoformat(),
                 },
                 "jobs": [],
@@ -1334,6 +1337,14 @@ Examples:
     if run_all or args.linkedin:
         results["LinkedIn"] = LinkedInScraper.run(search_keywords=search_keywords)
 
+    failed_sources = [
+        source for source, result in results.items()
+        if result and result.get("meta", {}).get("failed")
+    ]
+    if failed_sources:
+        log.error(f"Refresh failed for: {', '.join(failed_sources)}")
+        return 1
+
     # If --json flag is set, output only JSON to stdout for pipeline
     if args.json:
         # Combine all jobs from results
@@ -1355,4 +1366,4 @@ Examples:
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
