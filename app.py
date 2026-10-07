@@ -37,6 +37,7 @@ from user_profile.constants import (
 )
 from user_profile.cv_parser import extract_text, parse_cv, CVParseError
 from user_profile.field_mappings import FIELD_MAPPINGS
+from backend.job_personalization import prioritize_jobs_for_user
 
 # Load environment variables from .env file
 load_dotenv()
@@ -422,7 +423,8 @@ def get_jobs():
         keyword = request.args.get('keyword', '').lower()
         location = request.args.get('location', '')
         source = request.args.get('source', '')
-        sort = request.args.get('sort', 'recent')
+        requested_sort = request.args.get('sort')
+        sort = requested_sort or 'recent'
         
         # Apply filters
         filtered_jobs = jobs
@@ -460,6 +462,11 @@ def get_jobs():
         elif sort == 'salary':
             # Highest salary first (if salary data exists)
             filtered_jobs.sort(key=lambda x: extract_salary(x.get('salary', '')), reverse=True)
+
+        if not requested_sort:
+            filtered_jobs = prioritize_jobs_for_user(
+                filtered_jobs, session.get('user', {}).get('email')
+            )
         
         # Add checked status to jobs
         for job in filtered_jobs:
