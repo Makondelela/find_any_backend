@@ -4,5 +4,5 @@
   "pythonVersion": "3.9",
   "pythonPlatform": "Darwin",
   "typeCheckingMode": "basic",
-  "extraPaths": ["backend"]
+  "extraPaths": ["backend", "scrapers"]
 }

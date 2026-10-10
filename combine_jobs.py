@@ -23,6 +23,7 @@ SOURCE_FILES = [
     DATA_DIR / "data_jobs_pnet.json",
     DATA_DIR / "data_jobs_nri_api.json",
     DATA_DIR / "data_jobs_linkedin.json",
+    DATA_DIR / "data_jobs_executiveplacements.json",
 ]
 
 

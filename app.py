@@ -753,7 +753,7 @@ def trigger_scrape():
             
             # Track progress
             last_scraper = None
-            progress_map = {'careers24': 20, 'careerjunction': 40, 'pnet': 60, 'nri': 80, 'linkedin': 90}
+            progress_map = {'careers24': 20, 'careerjunction': 40, 'pnet': 60, 'nri': 80, 'linkedin': 90, 'executiveplacements': 95}
             
             # Read output line by line
             for line in process.stdout:
@@ -793,6 +793,13 @@ def trigger_scrape():
                     scraping_status.update({
                         'message': f'Scraping {last_scraper}...',
                         'progress': progress_map.get('linkedin', 90),
+                        'last_update': datetime.now().isoformat()
+                    })
+                elif 'executive placements' in line_lower:
+                    last_scraper = 'Executive Placements'
+                    scraping_status.update({
+                        'message': f'Scraping {last_scraper}...',
+                        'progress': progress_map.get('executiveplacements', 95),
                         'last_update': datetime.now().isoformat()
                     })
                 elif 'found' in line_lower and 'jobs' in line_lower:

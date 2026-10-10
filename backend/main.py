@@ -19,6 +19,8 @@ Supported Job Boards:
   2. CareerJunction (careerjunction.co.za) - Web scraping with requests + BeautifulSoup
   3. Pnet (pnet.co.za) - Browser automation with Playwright
   4. Network Recruitment International - Direct API (no scraping needed)
+    5. LinkedIn - Browser/API-backed job search
+    6. Executive Placements (executiveplacements.com) - Web scraping with requests + BeautifulSoup
 
 Usage:
     # Run all scrapers
@@ -29,6 +31,7 @@ Usage:
     python main.py --careerjunction
     python main.py --pnet
     python main.py --nri
+    python main.py --executiveplacements
 
     # Run subset
     python main.py --careers24 --careerjunction
@@ -70,6 +73,9 @@ from search_config import (
     normalize_search_slugs,
     slugify_term,
 )
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scrapers"))
+from executive_placements_scraper import ExecutivePlacementsScraper
 
 # Try to import Playwright — optional for Pnet scraper
 try:
@@ -1243,7 +1249,7 @@ def parse_search_terms(search_string: str) -> tuple[list[str], list[str]]:
     """
     if not search_string or not search_string.strip():
         return [], []
-    
+
     terms = [t.strip() for t in search_string.split(',') if t.strip()]
     
     # Convert to slugs (lowercase with hyphens)
@@ -1304,6 +1310,7 @@ Examples:
     parser.add_argument("--pnet", action="store_true", help="Run Pnet scraper (requires Playwright)")
     parser.add_argument("--nri", action="store_true", help="Run Network Recruitment Intl API scraper")
     parser.add_argument("--linkedin", action="store_true", help="Run LinkedIn scraper (requires API)")
+    parser.add_argument("--executiveplacements", action="store_true", help="Run Executive Placements scraper")
     parser.add_argument("--search", type=str, help="Comma-separated search terms (e.g., 'data engineer, python developer')")
     parser.add_argument("--json", action="store_true", help="Output jobs as JSON to stdout (for pipeline integration)")
 
@@ -1318,7 +1325,7 @@ Examples:
         log.info(f"  Keywords: {search_keywords}")
 
     # If no specific scraper selected, run all
-    run_all = not any([args.careers24, args.careerjunction, args.pnet, args.nri, args.linkedin])
+    run_all = not any([args.careers24, args.careerjunction, args.pnet, args.nri, args.linkedin, args.executiveplacements])
 
     results = {}
 
@@ -1336,6 +1343,8 @@ Examples:
 
     if run_all or args.linkedin:
         results["LinkedIn"] = LinkedInScraper.run(search_keywords=search_keywords)
+    if run_all or args.executiveplacements:
+        results["Executive Placements"] = ExecutivePlacementsScraper.run(search_keywords=search_keywords)
 
     failed_sources = [
         source for source, result in results.items()

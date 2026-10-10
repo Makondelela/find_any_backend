@@ -101,7 +101,7 @@ DESCRIPTION_WORKERS=4 python backend/job_description_pipeline.py
 ```
 
 The router covers Careers24, CareerJunction, PNet, LinkedIn, and Network
-Recruitment International. Unknown hosts use a generic HTML description
+Recruitment International, and Executive Placements. Unknown hosts use a generic HTML description
 fallback so a new source is still attempted instead of being silently skipped.
 
 ## Troubleshooting
