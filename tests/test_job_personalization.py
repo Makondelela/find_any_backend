@@ -5,6 +5,35 @@ from backend import job_personalization
 
 
 class JobPersonalizationTests(unittest.TestCase):
+    def test_data_user_sees_data_roles_with_lower_experience_first(self):
+        experience = {
+            "five-years": {"min_years": 5, "has_requirement": True},
+            "three-years": {"min_years": 3, "has_requirement": True},
+            "one-year": {"min_years": 1, "has_requirement": True},
+            "unspecified": {"min_years": None, "has_requirement": False},
+            "six-years": {"min_years": 6, "has_requirement": True},
+            "non-data": {"min_years": 1, "has_requirement": True},
+        }
+        jobs = [
+            {"job_id": "six-years", "title": "Data Engineer"},
+            {"job_id": "non-data", "title": "Software Developer"},
+            {"job_id": "five-years", "title": "Data Scientist"},
+            {"job_id": "unspecified", "title": "Data Analyst"},
+            {"job_id": "three-years", "title": "Analytics Engineer"},
+            {"job_id": "one-year", "title": "Business Intelligence Developer"},
+        ]
+
+        with patch.object(job_personalization, "_experience_by_job_id", return_value=experience):
+            ranked = job_personalization.prioritize_jobs_for_user(
+                jobs,
+                "Maswimewanga26@gmail.com",
+            )
+
+        self.assertEqual(
+            [job["job_id"] for job in ranked],
+            ["one-year", "three-years", "five-years", "unspecified", "six-years", "non-data"],
+        )
+
     def test_preferred_users_see_relevant_roles_and_experience_first(self):
         experience = {
             "under-two": {"min_years": 1, "has_requirement": True},

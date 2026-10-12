@@ -73,10 +73,64 @@
       "Technical Operations"
     ],
     "niche": "IT",
-    "total_jobs": 126,
-    "scraped_at": "2026-10-10T07:03:55.139526+00:00"
+    "total_jobs": 125,
+    "scraped_at": "2026-10-12T17:47:35.304276+00:00"
   },
   "jobs": [
+    {
+      "title": "Junior Software Engineer [Java]",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "My client based in Cape Town is urgently seeking a Junior Java Developer to design and develop high-quality Java applications using cutting edge technologies for Object Relational Mapping, Caching and",
+      "brief_description": "My client based in Cape Town is urgently seeking a Junior Java Developer to design and develop high-quality Java applications using cutting edge technologies for Object Relational Mapping, Caching and Service-Oriented Architecture",
+      "detail_description": "Requirements: Matric and Degree preferred 1 year Java programming language/syntax Exposure to or good understanding of HTML/CSS and Javascript Experience with SQL and RDBMS database concepts and design Exposure to Object Relational Mapping (e.g. Hibernate, EJB3) Exposure to Java servlet containers (e.g. Tomcat, GlassFish, Jetty) Experience with Java IDEs (e.g. Eclipse, IntelliJ, Netbeans) Practical database experience (e.g. MySQL, Oracle, MS SQL) Please send your cv, matric certificate and transcripts to pcalvin@networkrecruitment.co.za",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA004547/Prem",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA004547/Prem",
+      "vacancy_ref": "NWA004547/Prem",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.287890+00:00"
+    },
+    {
+      "title": "Software Developer (4+ years C# & Angular)",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg East",
+      "region": "Gauteng",
+      "town": "Johannesburg East",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "My client, based in Johannesburg East, is urgently looking for an Intermediate Software Developer with minimum 3 years experience in C#, SQL and Angular.",
+      "brief_description": "My client, based in Johannesburg East, is urgently looking for an Intermediate Software Developer with minimum 3 years experience in C#, SQL and Angular.",
+      "detail_description": "Location: Edenvale (Office Based) Duties: Design and code new development for existing and new clients Support and maintenance of existing systems, including troubleshooting and data support Interaction and communication with clients/users Compile technical specification documentation Continued learning of new technologies and skills Requirements: Degree or Diploma essential 3+ years' experience Strong knowledge of C# Experience with SQL Angular ASP.NET, ASP.NET Core, and VB Mobile development experience Please send your CV to pcalvin@networkrecruitment.co.za.",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA004548/Prem",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NWA004548/Prem",
+      "vacancy_ref": "NWA004548/Prem",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.287969+00:00"
+    },
+    {
+      "title": "Master Data & Pricing  Analyst",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "Ready to turn data into profit? Join a market-leading business where your analytical mindset and pricing expertise will directly influence revenue, profitability, and commercial strategy.",
+      "brief_description": "Ready to turn data into profit? Join a market-leading business where your analytical mindset and pricing expertise will directly influence revenue, profitability, and commercial strategy.",
+      "detail_description": "A well-established organisation in Johannesburg North is looking for a Master Data & Pricing Analyst to join its commercial team. This is an exciting opportunity for a commercially minded analyst who enjoys uncovering trends, building pricing models, and transforming complex data into actionable business insights. The successful candidate will play a critical role in pricing strategy, profitability analysis, and revenue optimisation while working closely with Finance, Sales, Procurement, and Commercial teams. If you thrive on solving problems with data and want to see the direct impact of your work on business performance, this role is for you. Key Responsibilities: Analyse pricing, sales, margin, and product performance data. Develop and maintain pricing models, reports, and dashboards. Monitor competitor pricing and market trends. Identify opportunities to improve margins and profitability. Support pricing strategies that drive revenue growth. Conduct margin, profitability, and commercial performance analysis. Deliver actionable insights and recommendations to key stakeholders. Assist with pricing reviews, promotions, and product changes. Ensure master data and pricing information remain accurate and up to date. Collaborate with cross-functional teams to support business objectives Job Experience and Skills Required: Relevant degree in Finance, Economics, Statistics, Business Analytics, or a related field. 2-4 years' experience in pricing, commercial analysis, financial analysis, or a similar analytical role. Advanced Microsoft Excel skills. Experience working with large datasets and translating data into business insights. Strong analytical, numerical, and problem-solving abilities. Solid understanding of pricing, margins, and profitability drivers. Experience with BI tools, ERP systems, or pricing software advantageous. Excellent communication and stakeholder engagement skills. Commercial mindset with the ability to influence business decisions. Apply now! For more exciting Finance vacancies, please visit: https://www.networkrecruitmentinternational.com/ My team also specialise in recruiting in the following: Junior Accountant Accounting Assistant Accounts Clerk Bookkeeper Debtors Clerk Creditors Clerk Finance Administrator Financial Accountant If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Mart-Marie Visser Specialist Recruitment Consultant &ndash; General Finance and Junior Finance Connect with me on LinkedIn! www.linkedin.com/in/mart-marie-visser-632a3042a",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NFC025347/Mar",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=NFC025347/Mar",
+      "vacancy_ref": "NFC025347/Mar",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.288165+00:00"
+    },
     {
       "title": "Business Analyst",
       "company": "Network Recruitment International",
@@ -93,7 +147,7 @@
       "vacancy_ref": "BIT002994/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.122998+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288248+00:00"
     },
     {
       "title": "PHP Developer",
@@ -111,7 +165,7 @@
       "vacancy_ref": "BIT002997/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123084+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288317+00:00"
     },
     {
       "title": "Intermediate Developer ( C++, C#)",
@@ -129,7 +183,7 @@
       "vacancy_ref": "ITA006399/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123216+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288441+00:00"
     },
     {
       "title": "Python Developer",
@@ -147,7 +201,7 @@
       "vacancy_ref": "ITA006418/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123361+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288588+00:00"
     },
     {
       "title": "IT Graduate (December Vacation Work Programmer)",
@@ -165,7 +219,7 @@
       "vacancy_ref": "ITA006425/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123467+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288724+00:00"
     },
     {
       "title": "Full Stack C# Developer (Angular)",
@@ -183,7 +237,7 @@
       "vacancy_ref": "ITA006429/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123679+00:00"
+      "scraped_at": "2026-10-12T17:47:35.288931+00:00"
     },
     {
       "title": "Data Scientist",
@@ -201,7 +255,61 @@
       "vacancy_ref": "ITA006430/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123853+00:00"
+      "scraped_at": "2026-10-12T17:47:35.289108+00:00"
+    },
+    {
+      "title": "DevOps Engineer (Azure)",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "Are you passionate about cloud infrastructure, automation, and building scalable, secure platforms? We're looking for a skilled DevOps Engineer to join a high-performing engineering team where you'll ",
+      "brief_description": "Are you passionate about cloud infrastructure, automation, and building scalable, secure platforms? We're looking for a skilled DevOps Engineer to join a high-performing engineering team where you'll play a key role in designing, automating, and optimizing enterprise-grade Microsoft Azure environments.If you thrive in a fast-paced Agile environment and enjoy working with modern cloud technologies, Infrastructure as Code, Kubernetes, and CI/CD, we'd love to hear from you",
+      "detail_description": "Requirements: 5+ years of experience in DevOps, Cloud Engineering, Infrastructure, or Software Engineering. Degree or Diploma in Computer Science, Information Technology, or a related field. Strong hands-on experience with Microsoft Azure production environments. Proven experience building and maintaining CI/CD pipelines using Azure DevOps. Solid experience with Infrastructure as Code (Terraform). Experience with Kubernetes (AKS) and Docker. Strong scripting skills using PowerShell and/or Bash. Experience with Azure SQL Database, Azure Cosmos DB, and Azure Cache for Redis. Experience with Azure Monitor, Log Analytics, Application Insights, and ELK Stack. Exposure to API Management platforms, Cloudflare, Microsoft Entra ID, and Azure Key Vault. Azure certifications will be highly advantageous. Responsibilities: Design, implement, and maintain Azure cloud infrastructure using Terraform. Build and optimize automated CI/CD pipelines using Azure DevOps. Deploy and manage containerized workloads across Kubernetes (AKS) environments. Administer Azure SQL Database, Cosmos DB, and Redis Cache, ensuring performance, scalability, availability, and security. Implement monitoring, logging, alerting, and observability solutions using Azure Monitor, Log Analytics, Application Insights, and ELK. Deploy, support, and optimize Azure Durable Functions for enterprise serverless workloads. Implement cloud security best practices, including identity management, network security, and secrets management. Troubleshoot complex production issues and continuously improve platform reliability and performance. Collaborate with development teams to promote DevOps and DevSecOps best practices. Produce and maintain clear technical documentation. Skills & Competencies: Strong troubleshooting and analytical abilities. Excellent communication and stakeholder engagement skills. Leadership and mentoring capabilities. Strong documentation and technical writing skills. Continuous improvement mindset. Ability to work effectively in Agile environments. Hands-on approach with strategic technical thinking. Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com If you have not had any response in two weeks, please consider the vacancy application unsuccessful. For more information contact: Raees Sadek IT Recruitment Researcher 011 622 9526",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006082/Raees",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006082/Raees",
+      "vacancy_ref": "ITA006082/Raees",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.289320+00:00"
+    },
+    {
+      "title": "Back end C# Developer",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Centurion",
+      "region": "Gauteng",
+      "town": "Centurion",
+      "job_type": "Not specified",
+      "salary": "Negotiable",
+      "summary": "A leading organisation within the IT & Internet sector is looking for a Senior Back-End Developer to join its Development and Engineering team. This is an opportunity to play a key role in the deliver",
+      "brief_description": "A leading organisation within the IT & Internet sector is looking for a Senior Back-End Developer to join its Development and Engineering team. This is an opportunity to play a key role in the delivery of strategic solutions while contributing to technical direction, best-practice development and the growth of other developers.",
+      "detail_description": "What You&rsquo;ll Be Doing: Provide technical leadership in the delivery of products and software solutions. Contribute to solution architecture and technical implementation decisions. Develop, maintain and enhance existing systems while supporting the adoption of new technologies. Deliver strategic development projects within agreed timelines, budgets and quality standards. Design and implement robust, scalable back-end solutions. Work closely with developers, technical leads, managers and architects. Mentor and coach Junior Developers, encouraging knowledge sharing and technical growth. Promote and maintain strong software development standards and best practices. Participate in testing, quality assurance and continuous improvement initiatives. Document systems and technical enhancements to support effective knowledge sharing. Work collaboratively within an Agile/Scrum development environment. What You&rsquo;ll Need: Degree or Diploma in an IT-related field. 4&ndash;6 years of relevant software development experience . Strong commercial experience with C# . Experience working within Scrum/Agile environments. Experience with SQL Server , including relational database design and complex SQL queries. Strong understanding of software development best practices and source-code configuration management. Experience with development principles such as SOLID, KISS, TDD, DDD and Clean Coding . A strong focus on quality, attention to detail and sustainable development practices. Advantageous Experience: .NET Core WCF Web API Azure DevOps / TFS / Git SQL Server Reporting Services (SSRS) Message-queuing technologies such as RabbitMQ , Apache ActiveMQ , and Apache Kafka Multi-threaded and parallel development Service-Oriented Architecture (SOA) Microsoft Certified Professional (MCP) certification Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com If you have not had any response in two weeks, please consider the vacancy application unsuccessful. For more information contact: Raees Sadek IT Recruitment Researcher 011 622 9526",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006178/Raees",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006178/Raees",
+      "vacancy_ref": "ITA006178/Raees",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.289437+00:00"
+    },
+    {
+      "title": "Data Engineers/Scientist",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Market Related",
+      "summary": "An opportunity is available for a Data Engineer / Analytics-focused data professional who enjoys working directly with data to uncover insights and solve business problems.",
+      "brief_description": "An opportunity is available for a Data Engineer / Analytics-focused data professional who enjoys working directly with data to uncover insights and solve business problems.",
+      "detail_description": "This role is ideal for someone who sits between Data Engineering and Analytics &mdash; someone with a solid understanding of data engineering principles, but who is equally comfortable exploring datasets, investigating data quality, performing analysis and translating business questions into meaningful data outputs. What You'll Be Doing Perform exploratory data analysis (EDA) and validate datasets. Use Python extensively for data analysis, investigation and problem-solving. Work with real-world and imperfect datasets to identify patterns, issues and insights. Support analytics, reporting and insight-driven initiatives . Translate client and business questions into clear data outputs and findings. Apply data engineering best practices to ensure data is reliable and fit for analytical use. Investigate data and communicate findings clearly to both technical and business stakeholders. Engage with stakeholders to understand analytical requirements and provide data-driven solutions. What We're Looking For 2+ years' experience in a Data Engineering, Analytics Engineering or similar data-focused role. A solid foundation in data engineering concepts . Strong hands-on experience working with data for analysis and insight generation . Strong Python skills, particularly pandas and NumPy . Experience performing data exploration, investigation and validation . Comfortable working with complex, imperfect or inconsistent datasets. Strong problem-solving abilities and an analytical mindset. The ability to interpret data within a business and client context . Strong communication skills, with the ability to explain data findings clearly. Apply now! For more exciting IT vacancies, please visit: www.networkrecruitmentinternational.com If you have not had any response in two weeks, please consider the vacancy application unsuccessful. For more information contact: Raees Sadek IT Recruitment Researcher 011 622 9526",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006285/Raees",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006285/Raees",
+      "vacancy_ref": "ITA006285/Raees",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.289537+00:00"
     },
     {
       "title": "Unity Developer",
@@ -219,7 +327,7 @@
       "vacancy_ref": "ITA006414/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.123994+00:00"
+      "scraped_at": "2026-10-12T17:47:35.289592+00:00"
     },
     {
       "title": "Cyber Security Consultant",
@@ -237,7 +345,7 @@
       "vacancy_ref": "ITA006415/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124084+00:00"
+      "scraped_at": "2026-10-12T17:47:35.289679+00:00"
     },
     {
       "title": "Senior Developer",
@@ -255,7 +363,7 @@
       "vacancy_ref": "ITA006416/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124204+00:00"
+      "scraped_at": "2026-10-12T17:47:35.289804+00:00"
     },
     {
       "title": "C# Full Stack Developer",
@@ -273,7 +381,7 @@
       "vacancy_ref": "NWA004576/EFA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124345+00:00"
+      "scraped_at": "2026-10-12T17:47:35.289953+00:00"
     },
     {
       "title": ".NET MAUI Mobile App Developer",
@@ -291,7 +399,7 @@
       "vacancy_ref": "ITE007360/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124492+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290093+00:00"
     },
     {
       "title": "IT Support Specialist",
@@ -309,7 +417,7 @@
       "vacancy_ref": "ITE007954/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124615+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290213+00:00"
     },
     {
       "title": "Front-End Developer (React)",
@@ -327,7 +435,7 @@
       "vacancy_ref": "ITE008135/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124720+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290319+00:00"
     },
     {
       "title": "Full Stack .NET Web Developer",
@@ -345,7 +453,7 @@
       "vacancy_ref": "ITE008142/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124838+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290447+00:00"
     },
     {
       "title": "Graduate Data Scientist",
@@ -363,7 +471,7 @@
       "vacancy_ref": "ITE008136/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.124989+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290600+00:00"
     },
     {
       "title": "Graduate Data Scientist",
@@ -381,7 +489,7 @@
       "vacancy_ref": "ITE008137/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125150+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290762+00:00"
     },
     {
       "title": "Graduate Data Scientist",
@@ -399,7 +507,7 @@
       "vacancy_ref": "ITE008138/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125288+00:00"
+      "scraped_at": "2026-10-12T17:47:35.290903+00:00"
     },
     {
       "title": "Graduate Data Analyst",
@@ -417,7 +525,7 @@
       "vacancy_ref": "ITE008139/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125448+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291062+00:00"
     },
     {
       "title": "Graduate Data Analyst",
@@ -435,7 +543,7 @@
       "vacancy_ref": "ITE008140/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125597+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291213+00:00"
     },
     {
       "title": "Graduate Data Analyst",
@@ -453,7 +561,7 @@
       "vacancy_ref": "ITE008141/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125765+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291384+00:00"
     },
     {
       "title": "Graduate Software Developer",
@@ -471,7 +579,7 @@
       "vacancy_ref": "ITE008143/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.125913+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291531+00:00"
     },
     {
       "title": "C# Software Developer",
@@ -489,7 +597,7 @@
       "vacancy_ref": "ITE008144/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126093+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291697+00:00"
     },
     {
       "title": "Graduate Data Scientist",
@@ -507,7 +615,7 @@
       "vacancy_ref": "ITE008145/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126249+00:00"
+      "scraped_at": "2026-10-12T17:47:35.291868+00:00"
     },
     {
       "title": "Graduate Data Analyst",
@@ -525,7 +633,7 @@
       "vacancy_ref": "ITE008146/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126419+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292033+00:00"
     },
     {
       "title": "Data Analyst | Data Scientist",
@@ -543,7 +651,7 @@
       "vacancy_ref": "ITA006404/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126484+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292097+00:00"
     },
     {
       "title": "Senior Full Stack Developer / Solution Architect",
@@ -561,7 +669,7 @@
       "vacancy_ref": "ITA006401/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126648+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292276+00:00"
     },
     {
       "title": "Platform Engineer",
@@ -579,7 +687,7 @@
       "vacancy_ref": "ITE008133/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126762+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292398+00:00"
     },
     {
       "title": "AI Engineering Lead",
@@ -597,7 +705,7 @@
       "vacancy_ref": "ITE008134/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126879+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292551+00:00"
     },
     {
       "title": "Technical Solutions Analyst",
@@ -615,7 +723,7 @@
       "vacancy_ref": "ITA006392/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.126994+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292689+00:00"
     },
     {
       "title": "Junior Developer",
@@ -633,7 +741,7 @@
       "vacancy_ref": "ITA006393/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127072+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292797+00:00"
     },
     {
       "title": "Junior Software Engineer",
@@ -651,7 +759,7 @@
       "vacancy_ref": "ITE007374/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127149+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292876+00:00"
     },
     {
       "title": "Junior Quality Assurance Analyst",
@@ -669,7 +777,7 @@
       "vacancy_ref": "ITE007537/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127229+00:00"
+      "scraped_at": "2026-10-12T17:47:35.292968+00:00"
     },
     {
       "title": "Business Analyst",
@@ -687,7 +795,7 @@
       "vacancy_ref": "ITE007612/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127297+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293037+00:00"
     },
     {
       "title": "Intermediate Developer",
@@ -705,7 +813,7 @@
       "vacancy_ref": "ITE007613/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127367+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293102+00:00"
     },
     {
       "title": "Junior Developer",
@@ -723,7 +831,7 @@
       "vacancy_ref": "ITE007614/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127431+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293173+00:00"
     },
     {
       "title": "Intermediate Software Developer",
@@ -741,7 +849,7 @@
       "vacancy_ref": "ITE007926/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127507+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293296+00:00"
     },
     {
       "title": "Data Scientist",
@@ -759,7 +867,7 @@
       "vacancy_ref": "ITE007927/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127583+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293389+00:00"
     },
     {
       "title": "Automation Developer",
@@ -777,7 +885,7 @@
       "vacancy_ref": "ITE007939/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127658+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293479+00:00"
     },
     {
       "title": ".NET Mobile App Developer",
@@ -795,7 +903,7 @@
       "vacancy_ref": "ITE007940/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127729+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293549+00:00"
     },
     {
       "title": "Full Stack .NET Web Developer",
@@ -813,7 +921,7 @@
       "vacancy_ref": "ITE007941/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127803+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293632+00:00"
     },
     {
       "title": "IT Operations Manager",
@@ -831,7 +939,7 @@
       "vacancy_ref": "ITE007946/STU",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.127908+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293737+00:00"
     },
     {
       "title": "Intermediate Data Analyst",
@@ -849,7 +957,7 @@
       "vacancy_ref": "ITE007964/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128071+00:00"
+      "scraped_at": "2026-10-12T17:47:35.293894+00:00"
     },
     {
       "title": "IT Operations Manager",
@@ -867,43 +975,7 @@
       "vacancy_ref": "ITE007974/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128204+00:00"
-    },
-    {
-      "title": "Java Developers",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "From RTBC per annum",
-      "summary": "Are you a skilled Java Developer looking for an opportunity to work on cutting-edge enterprise solutions while accelerating your career growth? Join a people-focused technology environment where innov",
-      "brief_description": "Are you a skilled Java Developer looking for an opportunity to work on cutting-edge enterprise solutions while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration, and continuous development are at the heart of success. This is your opportunity to solve complex business challenges, work with modern technologies, and make a meaningful impact across large-scale projects.",
-      "detail_description": "Our client is a leading technology consultancy that places people, growth, and innovation at the centre of its culture. They offer a collaborative and multidisciplinary environment where developers are empowered to grow their careers through mentorship, continuous learning, and exposure to diverse technologies and industries. As a Senior Java Developer, you will be responsible for designing, developing, and delivering world-class web and mobile applications while contributing throughout the Software Development Life Cycle. You will work closely with cross-functional teams, engage with customers, and deliver technology solutions that provide real business value. This opportunity offers exposure to enterprise-scale projects, modern cloud environments, and a culture that values technical excellence, leadership, and continuous improvement. If you're passionate about software engineering and enjoy solving complex problems, this role could be the perfect next step in your career. Key Responsibilities Develop enterprise-grade web and mobile applications for leading organisations. Participate in all phases of the Software Development Life Cycle, including design, analysis, scoping, estimation, and delivery. Drive improvements in software quality through modern engineering practices, DevOps principles, continuous integration, and automation. Research and implement emerging technologies that create business value. Collaborate with multidisciplinary teams to solve complex business challenges. Mentor and support fellow developers while promoting engineering best practices. Build strong customer relationships and understand business requirements. Manage stakeholder expectations and identify opportunities for service improvements. Ensure compliance with security standards, governance requirements, and industry regulations. Job Experience and Skills Required Bachelor's Degree in Information Technology, Engineering, Computer Science, or a related field. Minimum 6 years of software engineering experience within an enterprise environment. Strong understanding of software engineering fundamentals, clean code principles, and development best practices. Experience working across various technologies and frameworks. Ability to architect and structure projects within enterprise environments. Strong communication and collaboration skills. Customer-facing experience with strong stakeholder engagement capabilities. Ability to adapt to new technologies, frameworks, and tools. Experience working within Agile delivery environments. Comfortable working within a hybrid environment. Technical Environment Java, Spring, and Spring Boot. Front-end technologies including Angular, React, and Vue. ORM technologies including JPA, Spring Data, and Hibernate. Relational databases including Oracle, SQL Server, PostgreSQL, and MySQL. Non-relational databases including MongoDB and Cosmos DB. Build tools including Maven and Gradle. Cloud platforms including Azure and AWS. Infrastructure as Code technologies including Terraform, Bicep, and AWS CDK. Event-driven messaging platforms including Kafka, RabbitMQ, and Amazon SQS. What's in it for You? Competitive remuneration package. Guaranteed bonuses and twice-yearly salary reviews. Loyalty leave benefits. Employee wellness initiatives. Ongoing technical and leadership development programmes. Regular one-on-one mentorship and career development reviews. Exposure to enterprise projects across multiple industries and business domains. Hybrid work model offering flexibility and collaboration. Apply now! For more exciting vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers (Back-End / Front-End / Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI / UX Professionals Data & Analytics (Data Scientists, Data Analysts, Python, R, SQL, Machine Learning) AI & Automation (Artificial Intelligence, Machine Learning, Intelligent Automation, and Process Automation Solutions) Cloud Experts Infrastructure Specialists DevOps / SecOps Experts Cyber Security Specialists SEO / Digital Designers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. Frankie Deppe Specialist Recruitment Consultant Connect with me on LinkedIn: https://www.linkedin.com/in/frankie-deppe-9903b395/",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008083/FDg",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008083/FDg",
-      "vacancy_ref": "ITE008083/FDg",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128425+00:00"
-    },
-    {
-      "title": "Javascript Developers",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "From RTBC per annum",
-      "summary": "Are you a seasoned JavaScript Developer looking to work on enterprise-scale projects while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration",
-      "brief_description": "Are you a seasoned JavaScript Developer looking to work on enterprise-scale projects while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration, and continuous development are at the core of success. This is your opportunity to work alongside highly skilled professionals, solve complex challenges, and make a meaningful impact for some of South Africa's leading organisations.",
-      "detail_description": "Our client is a leading technology consultancy that places people, growth, and innovation at the centre of its culture. They offer a collaborative environment that promotes continuous learning, career development, and exposure to diverse technologies and industries. As a Senior JavaScript Developer, you will be responsible for developing world-class web and mobile applications while contributing across the entire software development lifecycle. You'll collaborate with multidisciplinary teams, engage with customers, and help deliver innovative technology solutions that solve real business challenges. This opportunity offers exposure to complex enterprise projects, modern technologies, and a high-performance culture that values technical excellence, teamwork, and professional growth. If you're passionate about software engineering and enjoy working in an environment that encourages innovation and continuous improvement, this role could be the perfect fit. Key Responsibilities Develop enterprise-grade web and mobile applications for leading organisations. Participate in all phases of the Software Development Life Cycle, including design, analysis, scoping, and estimation. Drive improvements in software quality through modern engineering practices, containerisation, and continuous integration. Research and implement innovative technologies that create business value. Collaborate with cross-functional teams to solve complex business challenges. Mentor and support fellow developers while promoting engineering best practices. Build strong customer relationships and understand business requirements. Manage stakeholder expectations and identify opportunities for service improvements. Ensure adherence to security standards and industry regulations. Job Experience and Skills Required Bachelor's Degree in Information Technology, Engineering, Computer Science, or a related field. Minimum 6 years of software engineering experience within an enterprise environment. Strong understanding of software engineering fundamentals, clean code principles, and development best practices. Experience working with multiple technologies and frameworks. Ability to architect and structure smaller-scale projects within complex environments. Strong communication and collaboration skills. Customer-facing experience with excellent stakeholder engagement capabilities. Adaptability and willingness to work across different technologies, environments, and toolsets. Experience working within Agile development environments. Technical Environment Front-end technologies: Angular, React, Vue.js. Back-end technologies: .NET, Java, Python. Frameworks: Express, NextJS. Build tools: Webpack, Grunt, Gulp. Package Management: NPM. Database Technologies: MongoDB and other non-relational databases. What's in it for You? Competitive remuneration package. Guaranteed bonuses and twice-yearly salary reviews. Loyalty leave benefits. Employee wellness initiatives. Ongoing technical and leadership development programmes. Regular one-on-one mentorship and career development reviews. Exposure to enterprise projects across multiple industries and business domains. Hybrid work model with a balance between office and remote work. Apply now! For more exciting vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers (Back-End / Front-End / Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI / UX Professionals Data & Analytics (Data Scientists, Data Analysts, Python, R, SQL, Machine Learning) AI & Automation (Artificial Intelligence, Machine Learning, Intelligent Automation, and Process Automation Solutions) Cloud Experts Infrastructure Specialists DevOps / SecOps Experts Cyber Security Specialists SEO / Digital Designers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. Frankie Deppe Specialist Recruitment Consultant Connect with me on LinkedIn: https://www.linkedin.com/in/frankie-deppe-9903b395/",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008084/FDg",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008084/FDg",
-      "vacancy_ref": "ITE008084/FDg",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128610+00:00"
+      "scraped_at": "2026-10-12T17:47:35.294031+00:00"
     },
     {
       "title": "Software Engineering Team Lead (JavaScript)",
@@ -921,7 +993,43 @@
       "vacancy_ref": "ITE008121/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128724+00:00"
+      "scraped_at": "2026-10-12T17:47:35.294165+00:00"
+    },
+    {
+      "title": "Java Developers",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "From RTBC per annum",
+      "summary": "Are you a skilled Java Developer looking for an opportunity to work on cutting-edge enterprise solutions while accelerating your career growth? Join a people-focused technology environment where innov",
+      "brief_description": "Are you a skilled Java Developer looking for an opportunity to work on cutting-edge enterprise solutions while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration, and continuous development are at the heart of success. This is your opportunity to solve complex business challenges, work with modern technologies, and make a meaningful impact across large-scale projects.",
+      "detail_description": "Our client is a leading technology consultancy that places people, growth, and innovation at the centre of its culture. They offer a collaborative and multidisciplinary environment where developers are empowered to grow their careers through mentorship, continuous learning, and exposure to diverse technologies and industries. As a Senior Java Developer, you will be responsible for designing, developing, and delivering world-class web and mobile applications while contributing throughout the Software Development Life Cycle. You will work closely with cross-functional teams, engage with customers, and deliver technology solutions that provide real business value. This opportunity offers exposure to enterprise-scale projects, modern cloud environments, and a culture that values technical excellence, leadership, and continuous improvement. If you're passionate about software engineering and enjoy solving complex problems, this role could be the perfect next step in your career. Key Responsibilities Develop enterprise-grade web and mobile applications for leading organisations. Participate in all phases of the Software Development Life Cycle, including design, analysis, scoping, estimation, and delivery. Drive improvements in software quality through modern engineering practices, DevOps principles, continuous integration, and automation. Research and implement emerging technologies that create business value. Collaborate with multidisciplinary teams to solve complex business challenges. Mentor and support fellow developers while promoting engineering best practices. Build strong customer relationships and understand business requirements. Manage stakeholder expectations and identify opportunities for service improvements. Ensure compliance with security standards, governance requirements, and industry regulations. Job Experience and Skills Required Bachelor's Degree in Information Technology, Engineering, Computer Science, or a related field. Minimum 6 years of software engineering experience within an enterprise environment. Strong understanding of software engineering fundamentals, clean code principles, and development best practices. Experience working across various technologies and frameworks. Ability to architect and structure projects within enterprise environments. Strong communication and collaboration skills. Customer-facing experience with strong stakeholder engagement capabilities. Ability to adapt to new technologies, frameworks, and tools. Experience working within Agile delivery environments. Comfortable working within a hybrid environment. Technical Environment Java, Spring, and Spring Boot. Front-end technologies including Angular, React, and Vue. ORM technologies including JPA, Spring Data, and Hibernate. Relational databases including Oracle, SQL Server, PostgreSQL, and MySQL. Non-relational databases including MongoDB and Cosmos DB. Build tools including Maven and Gradle. Cloud platforms including Azure and AWS. Infrastructure as Code technologies including Terraform, Bicep, and AWS CDK. Event-driven messaging platforms including Kafka, RabbitMQ, and Amazon SQS. What's in it for You? Competitive remuneration package. Guaranteed bonuses and twice-yearly salary reviews. Loyalty leave benefits. Employee wellness initiatives. Ongoing technical and leadership development programmes. Regular one-on-one mentorship and career development reviews. Exposure to enterprise projects across multiple industries and business domains. Hybrid work model offering flexibility and collaboration. Apply now! For more exciting vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers (Back-End / Front-End / Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI / UX Professionals Data & Analytics (Data Scientists, Data Analysts, Python, R, SQL, Machine Learning) AI & Automation (Artificial Intelligence, Machine Learning, Intelligent Automation, and Process Automation Solutions) Cloud Experts Infrastructure Specialists DevOps / SecOps Experts Cyber Security Specialists SEO / Digital Designers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. Frankie Deppe Specialist Recruitment Consultant Connect with me on LinkedIn: https://www.linkedin.com/in/frankie-deppe-9903b395/",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008083/FDg",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008083/FDg",
+      "vacancy_ref": "ITE008083/FDg",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.294376+00:00"
+    },
+    {
+      "title": "Javascript Developers",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "From RTBC per annum",
+      "summary": "Are you a seasoned JavaScript Developer looking to work on enterprise-scale projects while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration",
+      "brief_description": "Are you a seasoned JavaScript Developer looking to work on enterprise-scale projects while accelerating your career growth? Join a people-focused technology environment where innovation, collaboration, and continuous development are at the core of success. This is your opportunity to work alongside highly skilled professionals, solve complex challenges, and make a meaningful impact for some of South Africa's leading organisations.",
+      "detail_description": "Our client is a leading technology consultancy that places people, growth, and innovation at the centre of its culture. They offer a collaborative environment that promotes continuous learning, career development, and exposure to diverse technologies and industries. As a Senior JavaScript Developer, you will be responsible for developing world-class web and mobile applications while contributing across the entire software development lifecycle. You'll collaborate with multidisciplinary teams, engage with customers, and help deliver innovative technology solutions that solve real business challenges. This opportunity offers exposure to complex enterprise projects, modern technologies, and a high-performance culture that values technical excellence, teamwork, and professional growth. If you're passionate about software engineering and enjoy working in an environment that encourages innovation and continuous improvement, this role could be the perfect fit. Key Responsibilities Develop enterprise-grade web and mobile applications for leading organisations. Participate in all phases of the Software Development Life Cycle, including design, analysis, scoping, and estimation. Drive improvements in software quality through modern engineering practices, containerisation, and continuous integration. Research and implement innovative technologies that create business value. Collaborate with cross-functional teams to solve complex business challenges. Mentor and support fellow developers while promoting engineering best practices. Build strong customer relationships and understand business requirements. Manage stakeholder expectations and identify opportunities for service improvements. Ensure adherence to security standards and industry regulations. Job Experience and Skills Required Bachelor's Degree in Information Technology, Engineering, Computer Science, or a related field. Minimum 6 years of software engineering experience within an enterprise environment. Strong understanding of software engineering fundamentals, clean code principles, and development best practices. Experience working with multiple technologies and frameworks. Ability to architect and structure smaller-scale projects within complex environments. Strong communication and collaboration skills. Customer-facing experience with excellent stakeholder engagement capabilities. Adaptability and willingness to work across different technologies, environments, and toolsets. Experience working within Agile development environments. Technical Environment Front-end technologies: Angular, React, Vue.js. Back-end technologies: .NET, Java, Python. Frameworks: Express, NextJS. Build tools: Webpack, Grunt, Gulp. Package Management: NPM. Database Technologies: MongoDB and other non-relational databases. What's in it for You? Competitive remuneration package. Guaranteed bonuses and twice-yearly salary reviews. Loyalty leave benefits. Employee wellness initiatives. Ongoing technical and leadership development programmes. Regular one-on-one mentorship and career development reviews. Exposure to enterprise projects across multiple industries and business domains. Hybrid work model with a balance between office and remote work. Apply now! For more exciting vacancies, please visit: www.networkrecruitmentinternational.com I also specialise in recruiting in the following: Software Developers (Back-End / Front-End / Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI / UX Professionals Data & Analytics (Data Scientists, Data Analysts, Python, R, SQL, Machine Learning) AI & Automation (Artificial Intelligence, Machine Learning, Intelligent Automation, and Process Automation Solutions) Cloud Experts Infrastructure Specialists DevOps / SecOps Experts Cyber Security Specialists SEO / Digital Designers If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. Frankie Deppe Specialist Recruitment Consultant Connect with me on LinkedIn: https://www.linkedin.com/in/frankie-deppe-9903b395/",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008084/FDg",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008084/FDg",
+      "vacancy_ref": "ITE008084/FDg",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.294576+00:00"
     },
     {
       "title": "Junior SQL Developer",
@@ -939,7 +1047,7 @@
       "vacancy_ref": "ITE008123/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.128878+00:00"
+      "scraped_at": "2026-10-12T17:47:35.294785+00:00"
     },
     {
       "title": "Senior Python Developer",
@@ -957,7 +1065,7 @@
       "vacancy_ref": "ITE008124/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129039+00:00"
+      "scraped_at": "2026-10-12T17:47:35.294963+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -975,7 +1083,7 @@
       "vacancy_ref": "ITE008125/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129184+00:00"
+      "scraped_at": "2026-10-12T17:47:35.295114+00:00"
     },
     {
       "title": "Javascript Software Engineer",
@@ -993,7 +1101,7 @@
       "vacancy_ref": "ITE008128/EVA",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129337+00:00"
+      "scraped_at": "2026-10-12T17:47:35.295267+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -1011,7 +1119,7 @@
       "vacancy_ref": "ITE008129/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129582+00:00"
+      "scraped_at": "2026-10-12T17:47:35.295517+00:00"
     },
     {
       "title": "Android Developer",
@@ -1029,7 +1137,7 @@
       "vacancy_ref": "ITE008130/FDg",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129773+00:00"
+      "scraped_at": "2026-10-12T17:47:35.295745+00:00"
     },
     {
       "title": "Junior / Intermediate Technical Business & Data Analyst",
@@ -1047,7 +1155,7 @@
       "vacancy_ref": "ITA006380/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.129978+00:00"
+      "scraped_at": "2026-10-12T17:47:35.295993+00:00"
     },
     {
       "title": "Android Developer",
@@ -1065,7 +1173,7 @@
       "vacancy_ref": "ITA006385/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130062+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296089+00:00"
     },
     {
       "title": "Cloud Engineer",
@@ -1083,7 +1191,7 @@
       "vacancy_ref": "ITA006386/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130194+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296225+00:00"
     },
     {
       "title": "Junior AI Engineer",
@@ -1101,7 +1209,7 @@
       "vacancy_ref": "ITE008119/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130350+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296370+00:00"
     },
     {
       "title": "Data Engineer",
@@ -1119,7 +1227,7 @@
       "vacancy_ref": "ITA005754/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130514+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296476+00:00"
     },
     {
       "title": "PHP Developer",
@@ -1137,7 +1245,7 @@
       "vacancy_ref": "ITA005786/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130595+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296560+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -1155,7 +1263,7 @@
       "vacancy_ref": "ITA005788/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130675+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296643+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1173,7 +1281,7 @@
       "vacancy_ref": "ITE008118/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130788+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296740+00:00"
     },
     {
       "title": "Data Scientist",
@@ -1191,7 +1299,7 @@
       "vacancy_ref": "ITE008117/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.130939+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296886+00:00"
     },
     {
       "title": "Cybersecurity Engineer",
@@ -1209,7 +1317,7 @@
       "vacancy_ref": "ITA006363/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131054+00:00"
+      "scraped_at": "2026-10-12T17:47:35.296985+00:00"
     },
     {
       "title": "Senior Programmer",
@@ -1227,7 +1335,7 @@
       "vacancy_ref": "ITA006361/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131212+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297130+00:00"
     },
     {
       "title": "Mid-Level Backend PHP Developer",
@@ -1245,7 +1353,7 @@
       "vacancy_ref": "ITA006362/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131295+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297205+00:00"
     },
     {
       "title": "Senior Programmer",
@@ -1263,7 +1371,7 @@
       "vacancy_ref": "ITE008103/Mish",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131427+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297324+00:00"
     },
     {
       "title": "Java Developer",
@@ -1281,7 +1389,7 @@
       "vacancy_ref": "ITE008105/Mish",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131617+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297466+00:00"
     },
     {
       "title": "JavaScript Developer",
@@ -1299,7 +1407,7 @@
       "vacancy_ref": "ITE008106/Mish",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.131816+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297606+00:00"
     },
     {
       "title": "Network and Security Engineer",
@@ -1317,7 +1425,7 @@
       "vacancy_ref": "ITE008112/Mish",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132044+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297809+00:00"
     },
     {
       "title": "Senior Java Developer",
@@ -1335,7 +1443,7 @@
       "vacancy_ref": "ITA006356/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132243+00:00"
+      "scraped_at": "2026-10-12T17:47:35.297981+00:00"
     },
     {
       "title": "Senior Programmer",
@@ -1353,7 +1461,7 @@
       "vacancy_ref": "ITA006358/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132404+00:00"
+      "scraped_at": "2026-10-12T17:47:35.298122+00:00"
     },
     {
       "title": "Java Developer Team Lead",
@@ -1371,7 +1479,7 @@
       "vacancy_ref": "ITA006359/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132579+00:00"
+      "scraped_at": "2026-10-12T17:47:35.298278+00:00"
     },
     {
       "title": "Senior Programmer",
@@ -1389,7 +1497,7 @@
       "vacancy_ref": "ITE008094/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132708+00:00"
+      "scraped_at": "2026-10-12T17:47:35.298404+00:00"
     },
     {
       "title": "Java Developer",
@@ -1407,7 +1515,7 @@
       "vacancy_ref": "ITE008095/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.132890+00:00"
+      "scraped_at": "2026-10-12T17:47:35.298640+00:00"
     },
     {
       "title": "JavaScript Developer",
@@ -1425,7 +1533,7 @@
       "vacancy_ref": "ITE008097/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133062+00:00"
+      "scraped_at": "2026-10-12T17:47:35.298912+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -1443,7 +1551,7 @@
       "vacancy_ref": "BIT003897/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133219+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299115+00:00"
     },
     {
       "title": "Programmer (PHP/Laravel &  Javascript)",
@@ -1461,7 +1569,7 @@
       "vacancy_ref": "ITA006351/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133327+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299265+00:00"
     },
     {
       "title": "IT Support & Systems Technician",
@@ -1479,7 +1587,7 @@
       "vacancy_ref": "ITA006355/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133414+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299396+00:00"
     },
     {
       "title": "Network Operations Center (NOC) Manager",
@@ -1497,7 +1605,7 @@
       "vacancy_ref": "ITE008079/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133538+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299571+00:00"
     },
     {
       "title": "Senior C# Developer (C++)",
@@ -1515,7 +1623,7 @@
       "vacancy_ref": "ITA006185/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133645+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299722+00:00"
     },
     {
       "title": "Business Intelligence Manager",
@@ -1533,7 +1641,7 @@
       "vacancy_ref": "ITA006050/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133748+00:00"
+      "scraped_at": "2026-10-12T17:47:35.299856+00:00"
     },
     {
       "title": "Developer",
@@ -1551,7 +1659,7 @@
       "vacancy_ref": "ITA006326/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.133923+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300082+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -1569,7 +1677,7 @@
       "vacancy_ref": "ITA006327/Caity",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134095+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300308+00:00"
     },
     {
       "title": "Automation Developer",
@@ -1587,7 +1695,7 @@
       "vacancy_ref": "ITE007848/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134232+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300498+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1605,7 +1713,7 @@
       "vacancy_ref": "ITE007972/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134308+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300593+00:00"
     },
     {
       "title": "DevOps Engineer",
@@ -1623,7 +1731,7 @@
       "vacancy_ref": "ITA006323/Jess",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134404+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300700+00:00"
     },
     {
       "title": ".NET Mobile Developer (Maui)",
@@ -1641,7 +1749,7 @@
       "vacancy_ref": "ITE008075/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134483+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300787+00:00"
     },
     {
       "title": "Java Developer",
@@ -1659,7 +1767,7 @@
       "vacancy_ref": "ITA006319/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134568+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300878+00:00"
     },
     {
       "title": "Java Developer",
@@ -1677,7 +1785,7 @@
       "vacancy_ref": "ITA006320/Sam",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134626+00:00"
+      "scraped_at": "2026-10-12T17:47:35.300937+00:00"
     },
     {
       "title": "Master Data & Pricing  Analyst",
@@ -1695,7 +1803,7 @@
       "vacancy_ref": "NFC025205/Aya",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134738+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301064+00:00"
     },
     {
       "title": "C# Developer",
@@ -1713,7 +1821,7 @@
       "vacancy_ref": "NWA004113/Amy",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134798+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301128+00:00"
     },
     {
       "title": "Flutter Developer",
@@ -1731,7 +1839,7 @@
       "vacancy_ref": "NWA004127/Amy",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134865+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301201+00:00"
     },
     {
       "title": "Senior Software Engineer",
@@ -1749,7 +1857,7 @@
       "vacancy_ref": "NWA004206/Amy",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.134928+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301269+00:00"
     },
     {
       "title": "Full Stack Developer",
@@ -1767,7 +1875,7 @@
       "vacancy_ref": "NWA004233/Amy",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135006+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301352+00:00"
     },
     {
       "title": "Java Developer",
@@ -1785,7 +1893,7 @@
       "vacancy_ref": "NWA004259/Amy",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135072+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301421+00:00"
     },
     {
       "title": "Senior AI / Software Engineer",
@@ -1803,7 +1911,7 @@
       "vacancy_ref": "ITA006310/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135252+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301537+00:00"
     },
     {
       "title": "Senior DevOps Engineer | Cloud, Kubernetes & Automation",
@@ -1821,7 +1929,7 @@
       "vacancy_ref": "ITA006311/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135421+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301630+00:00"
     },
     {
       "title": "Senior Developer",
@@ -1839,7 +1947,7 @@
       "vacancy_ref": "ITA006312/Mel",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135584+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301744+00:00"
     },
     {
       "title": "WebMethods Developer",
@@ -1857,7 +1965,7 @@
       "vacancy_ref": "ITE008059/Lamee",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135694+00:00"
+      "scraped_at": "2026-10-12T17:47:35.301824+00:00"
     },
     {
       "title": "Data & BI Support Analyst",
@@ -1875,7 +1983,7 @@
       "vacancy_ref": "ITE008064/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.135997+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302071+00:00"
     },
     {
       "title": "Senior Data Engineer",
@@ -1893,7 +2001,7 @@
       "vacancy_ref": "ITE008066/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136191+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302225+00:00"
     },
     {
       "title": "Frontend Developer",
@@ -1911,7 +2019,7 @@
       "vacancy_ref": "ITE008067/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136360+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302362+00:00"
     },
     {
       "title": "WebMethods Developer",
@@ -1929,25 +2037,7 @@
       "vacancy_ref": "ITE008068/Sfund",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136528+00:00"
-    },
-    {
-      "title": "Senior Analyst",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "Not specified",
-      "summary": "Are you a data-driven problem solver who thrives on transforming information into actionable business insights? This opportunity offers the chance to lead analytics initiatives, drive automation, and ",
-      "brief_description": "Are you a data-driven problem solver who thrives on transforming information into actionable business insights? This opportunity offers the chance to lead analytics initiatives, drive automation, and leverage AI to shape decision-making across a fast-growing, international business.",
-      "detail_description": "A forward-thinking organisation is seeking a Senior Analyst to join its Central Intelligence team. This role is ideal for an experienced analytics professional who enjoys working at the intersection of data, business strategy, and technology. As a senior member of the team, you will take ownership of the reporting and analytics function, driving improvements in automation, self-service reporting, and data accessibility. You will work closely with stakeholders across the business to translate complex data into meaningful insights that support commercial growth and strategic decision-making. This is a hands-on role that combines advanced analytics, business intelligence, process optimisation, and AI-driven innovation. The successful candidate will play a key role in building scalable reporting frameworks and improving the way the organisation leverages data across multiple markets. Key Responsibilities Lead the development and optimisation of reporting and analytics processes. Drive automation initiatives to improve efficiency and reduce manual reporting requirements. Manage and enhance dashboards, reporting frameworks, and self-service analytics solutions. Perform quality assurance on automated and AI-generated outputs. Write, review, and optimise complex SQL queries supporting business intelligence initiatives. Partner with stakeholders to define reporting requirements and business objectives. Present insights and recommendations to senior leadership teams. Develop and maintain data models, templates, documentation, and reporting standards. Support data sourcing, cleansing, transformation, and preparation activities. Identify and address data quality issues across reporting environments. Job Experience and Skills Required Relevant qualification in Data Analytics, Business Intelligence, Computer Science, Information Systems, Statistics, or a related field. Minimum 5 years of experience within Analytics, Business Intelligence, Insights, or Research environments. Proven experience leading reporting automation or analytics transformation initiatives. Experience presenting findings and recommendations to senior stakeholders. Track record of delivering measurable improvements through process optimisation and automation. Experience working across multiple business functions to support strategic decision-making. Advanced SQL, including complex joins, aggregations, and window functions. Strong data manipulation and analysis skills. Experience with reporting and visualisation platforms such as Power BI, Tableau, Looker, Metabase, or similar. Data modelling and transformation experience. Exposure to Python, Power Query, or similar analytical tools. Practical experience working with AI and Large Language Models within analytical workflows. Prompt engineering and AI-assisted analysis experience. Dashboard development and reporting automation. Experience with CRM platforms such as HubSpot. Exposure to data-centric products or platforms. Experience supporting analytics functions across multiple markets or regions. Experience building scalable self-service reporting environments. Strong analytical and problem-solving abilities. Excellent attention to detail and commitment to data accuracy. Strong business acumen and commercial awareness. Outstanding communication and data storytelling skills. Ability to translate complex information into clear business insights. Proactive and collaborative approach to stakeholder engagement. Strong documentation and process improvement capabilities. Ability to work independently in a remote environment. Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006304/Caity",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006304/Caity",
-      "vacancy_ref": "ITA006304/Caity",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136786+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302497+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1965,7 +2055,25 @@
       "vacancy_ref": "ITA006305/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136876+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302602+00:00"
+    },
+    {
+      "title": "Senior Analyst",
+      "company": "Network Recruitment International",
+      "location": "Gauteng > Johannesburg North",
+      "region": "Gauteng",
+      "town": "Johannesburg North",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "Are you a data-driven problem solver who thrives on transforming information into actionable business insights? This opportunity offers the chance to lead analytics initiatives, drive automation, and ",
+      "brief_description": "Are you a data-driven problem solver who thrives on transforming information into actionable business insights? This opportunity offers the chance to lead analytics initiatives, drive automation, and leverage AI to shape decision-making across a fast-growing, international business.",
+      "detail_description": "A forward-thinking organisation is seeking a Senior Analyst to join its Central Intelligence team. This role is ideal for an experienced analytics professional who enjoys working at the intersection of data, business strategy, and technology. As a senior member of the team, you will take ownership of the reporting and analytics function, driving improvements in automation, self-service reporting, and data accessibility. You will work closely with stakeholders across the business to translate complex data into meaningful insights that support commercial growth and strategic decision-making. This is a hands-on role that combines advanced analytics, business intelligence, process optimisation, and AI-driven innovation. The successful candidate will play a key role in building scalable reporting frameworks and improving the way the organisation leverages data across multiple markets. Key Responsibilities Lead the development and optimisation of reporting and analytics processes. Drive automation initiatives to improve efficiency and reduce manual reporting requirements. Manage and enhance dashboards, reporting frameworks, and self-service analytics solutions. Perform quality assurance on automated and AI-generated outputs. Write, review, and optimise complex SQL queries supporting business intelligence initiatives. Partner with stakeholders to define reporting requirements and business objectives. Present insights and recommendations to senior leadership teams. Develop and maintain data models, templates, documentation, and reporting standards. Support data sourcing, cleansing, transformation, and preparation activities. Identify and address data quality issues across reporting environments. Job Experience and Skills Required Relevant qualification in Data Analytics, Business Intelligence, Computer Science, Information Systems, Statistics, or a related field. Minimum 5 years of experience within Analytics, Business Intelligence, Insights, or Research environments. Proven experience leading reporting automation or analytics transformation initiatives. Experience presenting findings and recommendations to senior stakeholders. Track record of delivering measurable improvements through process optimisation and automation. Experience working across multiple business functions to support strategic decision-making. Advanced SQL, including complex joins, aggregations, and window functions. Strong data manipulation and analysis skills. Experience with reporting and visualisation platforms such as Power BI, Tableau, Looker, Metabase, or similar. Data modelling and transformation experience. Exposure to Python, Power Query, or similar analytical tools. Practical experience working with AI and Large Language Models within analytical workflows. Prompt engineering and AI-assisted analysis experience. Dashboard development and reporting automation. Experience with CRM platforms such as HubSpot. Exposure to data-centric products or platforms. Experience supporting analytics functions across multiple markets or regions. Experience building scalable self-service reporting environments. Strong analytical and problem-solving abilities. Excellent attention to detail and commitment to data accuracy. Strong business acumen and commercial awareness. Outstanding communication and data storytelling skills. Ability to translate complex information into clear business insights. Proactive and collaborative approach to stakeholder engagement. Strong documentation and process improvement capabilities. Ability to work independently in a remote environment. Apply Now! For more exciting IT vacancies, visit: https://www.networkrecruitmentinternational.com/it-jobs We also specialise in recruiting for: Software Developers (Back-End, Front-End, Full Stack) Mobile Developers Business & Systems Analysts BI & SQL Experts UI/UX Professionals Data Scientists & Data Analysts Big Data Professionals Cloud Experts Infrastructure Specialists DevOps & SecOps Engineers Cybersecurity Specialists SEO / Digital Designers If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more information, contact: Caitlin Ferley Recruitment Consultant Linkedin: www.linkedin.com/in/caitlin-ferley-b94a80218",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006304/Caity",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006304/Caity",
+      "vacancy_ref": "ITA006304/Caity",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.302781+00:00"
     },
     {
       "title": "Analyst",
@@ -1983,7 +2091,7 @@
       "vacancy_ref": "ITA006306/Niki",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.136988+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302873+00:00"
     },
     {
       "title": "Junior Data Scientist",
@@ -2001,7 +2109,7 @@
       "vacancy_ref": "ITE007577/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137055+00:00"
+      "scraped_at": "2026-10-12T17:47:35.302931+00:00"
     },
     {
       "title": "Automation Developer",
@@ -2019,7 +2127,7 @@
       "vacancy_ref": "ITE007844/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137144+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303003+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2037,25 +2145,7 @@
       "vacancy_ref": "ITE007957/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137261+00:00"
-    },
-    {
-      "title": "Technical Business Analyst (fully remote)",
-      "company": "Network Recruitment International",
-      "location": "International > United Kingdom",
-      "region": "International",
-      "town": "United Kingdom",
-      "job_type": "Not specified",
-      "salary": "Not specified",
-      "summary": "A leading UK-based digital transformation consultancy is seeking an experienced Technical Business Analyst to join a major enterprise programme focused on workflow optimisation, process automation, an",
-      "brief_description": "A leading UK-based digital transformation consultancy is seeking an experienced Technical Business Analyst to join a major enterprise programme focused on workflow optimisation, process automation, and document management enhancement. This is a hands-on, client-facing position suited to someone who can bridge business needs with technical solutions, working closely with stakeholders, Architects, and delivery teams to design and support scalable digital workflow.",
-      "detail_description": "Key Responsibilities: Analyse business processes to identify optimisation and automation opportunities Gather, document, and validate detailed functional and technical requirements Collaborate with Solution Architects and Developers to translate requirements into solution designs Support the delivery of workflow automation, forms, and document management solutions (e.g., SharePoint, Nintex, K2, Power Platform, or equivalent) Facilitate workshops, user interviews, and requirements discovery sessions Map both as-is and to-be processes, supporting process re-engineering efforts Produce clear documentation, including user stories, process maps, and acceptance criteria Act as the interface between business stakeholders and technical delivery teams Assist with testing, UAT, and deployment to ensure that solutions align with business objectives Skills & Experience: Essential: 3+ years proven experience as a Business Analyst or Technical BA on automation or digital transformation projects Strong knowledge of business process modelling and continuous improvement methodologies Familiarity with document management systems (e.g., SharePoint, M-Files, and OpenText) Excellent communication skills with the ability to engage with both business and technical stakeholders Comfortable working autonomously and managing priorities in a hybrid client-facing environment Ability to identify and document data requirements, business logic, and domain-specific terminology in clear, accessible language Desirable: Experience with iManage document management systems Exposure to low-code or intelligent automation platforms Understanding of systems integration, data flows, and interoperability Experience in the legal sector Familiarity with agile delivery practices Interest in Copilot Studio / Agentic AI (as a user or configurator) Don't miss out on this opportunity, apply today! *Only South African citizens will be considered for this position.",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008017/Danni",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008017/Danni",
-      "vacancy_ref": "ITE008017/Danni",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137365+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303119+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2073,7 +2163,25 @@
       "vacancy_ref": "ITE007959/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137480+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303227+00:00"
+    },
+    {
+      "title": "Technical Business Analyst (fully remote)",
+      "company": "Network Recruitment International",
+      "location": "International > United Kingdom",
+      "region": "International",
+      "town": "United Kingdom",
+      "job_type": "Not specified",
+      "salary": "Not specified",
+      "summary": "A leading UK-based digital transformation consultancy is seeking an experienced Technical Business Analyst to join a major enterprise programme focused on workflow optimisation, process automation, an",
+      "brief_description": "A leading UK-based digital transformation consultancy is seeking an experienced Technical Business Analyst to join a major enterprise programme focused on workflow optimisation, process automation, and document management enhancement. This is a hands-on, client-facing position suited to someone who can bridge business needs with technical solutions, working closely with stakeholders, Architects, and delivery teams to design and support scalable digital workflow.",
+      "detail_description": "Key Responsibilities: Analyse business processes to identify optimisation and automation opportunities Gather, document, and validate detailed functional and technical requirements Collaborate with Solution Architects and Developers to translate requirements into solution designs Support the delivery of workflow automation, forms, and document management solutions (e.g., SharePoint, Nintex, K2, Power Platform, or equivalent) Facilitate workshops, user interviews, and requirements discovery sessions Map both as-is and to-be processes, supporting process re-engineering efforts Produce clear documentation, including user stories, process maps, and acceptance criteria Act as the interface between business stakeholders and technical delivery teams Assist with testing, UAT, and deployment to ensure that solutions align with business objectives Skills & Experience: Essential: 3+ years proven experience as a Business Analyst or Technical BA on automation or digital transformation projects Strong knowledge of business process modelling and continuous improvement methodologies Familiarity with document management systems (e.g., SharePoint, M-Files, and OpenText) Excellent communication skills with the ability to engage with both business and technical stakeholders Comfortable working autonomously and managing priorities in a hybrid client-facing environment Ability to identify and document data requirements, business logic, and domain-specific terminology in clear, accessible language Desirable: Experience with iManage document management systems Exposure to low-code or intelligent automation platforms Understanding of systems integration, data flows, and interoperability Experience in the legal sector Familiarity with agile delivery practices Interest in Copilot Studio / Agentic AI (as a user or configurator) Don't miss out on this opportunity, apply today! *Only South African citizens will be considered for this position.",
+      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008017/Danni",
+      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008017/Danni",
+      "vacancy_ref": "ITE008017/Danni",
+      "posted": "",
+      "source": "Network Recruitment Intl",
+      "scraped_at": "2026-10-12T17:47:35.303328+00:00"
     },
     {
       "title": "GRC Analyst",
@@ -2091,7 +2199,7 @@
       "vacancy_ref": "ITE007989/Danni",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137665+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303516+00:00"
     },
     {
       "title": "C# Developer | .NET | Software Development | Your Next Career Move Starts Here",
@@ -2109,7 +2217,7 @@
       "vacancy_ref": "ITA006229/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137734+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303586+00:00"
     },
     {
       "title": "DevOps Engineer | AWS or Azure | Docker | Kubernetes | CI/CD | Your Next Career Move Starts Here",
@@ -2127,7 +2235,7 @@
       "vacancy_ref": "ITA006231/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137812+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303663+00:00"
     },
     {
       "title": "Data Engineer | Microsoft Fabric | Azure | SQL | Python | Data Engineering | Your Next Career Move Starts Here",
@@ -2145,7 +2253,7 @@
       "vacancy_ref": "ITA006232/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137895+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303746+00:00"
     },
     {
       "title": "AI / Python Developer Graduates",
@@ -2163,7 +2271,7 @@
       "vacancy_ref": "ITA006291/Rein",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.137974+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303822+00:00"
     },
     {
       "title": "Data Analyst (Degree)",
@@ -2181,7 +2289,7 @@
       "vacancy_ref": "ITE008056/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138065+00:00"
+      "scraped_at": "2026-10-12T17:47:35.303912+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2199,7 +2307,7 @@
       "vacancy_ref": "ITE008057/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138155+00:00"
+      "scraped_at": "2026-10-12T17:47:35.304011+00:00"
     },
     {
       "title": "Data Analyst",
@@ -2217,133 +2325,7 @@
       "vacancy_ref": "ITE008058/Mon",
       "posted": "",
       "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138243+00:00"
-    },
-    {
-      "title": "DevOps Engineer",
-      "company": "Network Recruitment International",
-      "location": "Western Cape > Cape Winelands: Stellenbosch",
-      "region": "Western Cape",
-      "town": "Cape Winelands: Stellenbosch",
-      "job_type": "Not specified",
-      "salary": "R600 000 - R630 000 per annum",
-      "summary": "A leading South African technology and engineering business is looking for a DevOps Engineer to join a high-performing multidisciplinary team developing innovative IoT, energy management, and operatio",
-      "brief_description": "A leading South African technology and engineering business is looking for a DevOps Engineer to join a high-performing multidisciplinary team developing innovative IoT, energy management, and operational intelligence solutions across Africa.This is an exciting opportunity for a DevOps professional who enjoys building scalable cloud infrastructure, automating processes, and supporting cutting-edge technology solutions that deliver real-world impact.",
-      "detail_description": "What You'll Be Doing Own, design, deploy, and maintain cloud infrastructure and services Manage and optimise containerised environments for performance and cost efficiency Build, maintain, and improve CI/CD pipelines Implement infrastructure security controls, compliance measures, and vulnerability management processes Develop monitoring, observability, and alerting solutions using modern tooling Troubleshoot production incidents and implement preventative improvements Support products and services throughout their full lifecycle, including deployments, enhancements, and releases Collaborate closely with Software Engineers, QA teams, and Operations stakeholders to streamline delivery and improve reliability Minimum Requirements Bachelor's degree in Information Technology, Computer Science, or equivalent relevant qualification 2 to 5 years of DevOps experience Strong problem-solving and analytical skills Excellent communication abilities Experience writing technical documentation Practical experience with Linux environments Experience with scripting using Bash, Python, and/or Node.js Strong containerisation experience Experience with automation tools such as Terraform, Ansible, Jenkins, or GitLab CI/CD Database administration and design experience, preferably PostgreSQL and TimescaleDB Familiarity with cloud platforms such as AWS, Azure, GCP, Hetzner, or similar cloud technologies Working knowledge of quality management processes and standards Advantageous Experience UI/UX exposure AWS DevOps Engineer certification or similar cloud certifications Application Note: If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006297/Jess",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006297/Jess",
-      "vacancy_ref": "ITA006297/Jess",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138355+00:00"
-    },
-    {
-      "title": "Software Developer – AI & Automation",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "R45000.00  - R70000.00 per annum",
-      "summary": "Our client is looking for an experienced Developer to join their IT team and play a key role in developing, enhancing, and supporting business automation systems.This is an exciting opportunity for a ",
-      "brief_description": "Our client is looking for an experienced Developer to join their IT team and play a key role in developing, enhancing, and supporting business automation systems.This is an exciting opportunity for a software developer with 3&ndash;6 years&rsquo; experience who has a strong technical foundation and a practical understanding of Artificial Intelligence, automation, cloud technologies, APIs, and modern software architecture.The successful candidate will work across the full Software Development Lifecycle (SDLC), translating business requirements into scalable solutions while identifying opportunities to use AI and automation to improve business processes and create additional value.",
-      "detail_description": "The Role As a Developer, you will: Develop, enhance, integrate, and support business-critical software solutions. Work across the full SDLC, from requirements gathering and design through development, testing, deployment, and support. Translate business requirements into scalable, reliable technical solutions. Develop and maintain automation systems and integrations. Identify opportunities where AI, automation, and emerging technologies can improve business processes. Develop and integrate AI-enabled functionality into existing systems. Work with internal teams and third-party stakeholders to deliver effective technology solutions. Troubleshoot production issues and performance bottlenecks in high-availability environments. Contribute to coding standards, system architecture, development frameworks, and deployment methodologies. Mentor and support junior developers. Continuously improve system functionality, performance, security, and user experience. What You&rsquo;ll Need Qualifications Minimum Diploma or relevant qualification in Software Development, Information Technology, Computer Science, or a related field. A degree such as B.Eng., B.Sc., B.Com, or a related IT/software development qualification would be advantageous. Additional qualifications or certifications in Artificial Intelligence, Machine Learning, Data Science, or related disciplines would be advantageous. Experience 3&ndash;6 years&rsquo; relevant software development experience. Experience mentoring junior developers. Practical experience developing or integrating AI and AI-enabled solutions. Strong experience with: C# / .NET REST APIs Microservice architecture Relational and non-relational databases MSSQL and/or Cosmos DB Message brokers such as RabbitMQ, Azure Service Bus or AWS EventBridge Cloud platforms, particularly Azure XML and JSON Git/version control Production troubleshooting and debugging Third-party system integrations Performance optimisation Experience with Angular or React would be advantageous. Experience working in Agile/Scrum environments. Experience with CI/CD pipelines and deployment processes would be advantageous. Knowledge of Elasticsearch, Azure Durable Functions, and Azure DevOps would be advantageous. Skills & Knowledge Strong software development and programming capability. Practical knowledge of AI and its business applications. The ability to develop and implement AI-driven solutions. Excellent problem-solving and analytical skills. Strong communication skills and the ability to work with both technical and non-technical stakeholders. Good understanding of: Database design and principles System engineering and design TypeScript-based responsive web applications Cloud engineering practices Software architecture and modelling Experience within finance, invoicing, claims, insurance, or other relevant business environments would be advantageous.&rdquo; Application Note: If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more exciting IT vacancies, explore opportunities in: Software Development (Back-End, Front-End, Full Stack) Mobile Development Business & Systems Analysis BI, SQL & Data Engineering UI/UX Design Data Science & Analytics Big Data Engineering Cloud Engineering Infrastructure & Platform Engineering DevOps & SecOps Cybersecurity For more information, contact: Reinie Du Preez Senior Specialist Recruitment Consultant rdpreez@networkrecruitment.co.za",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006295/Rein",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006295/Rein",
-      "vacancy_ref": "ITA006295/Rein",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138565+00:00"
-    },
-    {
-      "title": "Senior Software Engineer",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Pretoria East",
-      "region": "Gauteng",
-      "town": "Pretoria East",
-      "job_type": "Not specified",
-      "salary": "Not specified",
-      "summary": "Ready to shape the future of software? Join a global tech leader building powerful in-house solutions, including a fully-fledged ERP system that drives efficiency across industries.We&rsquo;re looking",
-      "brief_description": "Ready to shape the future of software? Join a global tech leader building powerful in-house solutions, including a fully-fledged ERP system that drives efficiency across industries.We&rsquo;re looking for a Senior Full Stack Engineer with 7&ndash;10 years of experience to design, build, and refine innovative systems that make a real business impact.",
-      "detail_description": "Key Responsibilities: Design & Development: Build, refine, and maintain full‑stack software solutions using SQL, C#, ASP.Net Core, HTML, CSS, and modern frameworks (Blazor/React). System Architecture: Contribute to the design of scalable ERP and business systems that enhance efficiency and performance. Code Quality: Write clean, efficient, and well‑documented code; conduct peer reviews to ensure standards and best practices. Testing & Debugging: Perform unit, integration, and system testing; troubleshoot and resolve technical issues to maintain system stability. Collaboration: Work closely with cross‑functional teams (developers, testers, product managers) in Agile environments to deliver features. Version Control: Manage source code using Git, Azure DevOps, or Bitbucket. Business Insight: Apply basic accounting knowledge and understanding of mining/manufacturing processes to align software with business needs. Support & Maintenance: Monitor application performance, provide technical support, and implement improvements to existing systems. Continuous Improvement: Stay updated with emerging technologies, propose innovative solutions, and contribute to process optimization. Job Experience and Skills Required: Must have a minimum of 7 to 10 years of experience as a Software Developer Full Stack: SQL, Visual Studio, C#, ASP.Net Core, HTML and CSS. Blazor and/or React will be beneficial. Source Control: Git / Azure DevOps / Bitbucket A degree in a technical field such as computer science, information systems technology, or software engineering. Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com/it-jobs I also specialise in recruiting in the following: Software Developers Mobile Developers Business and Systems Analysts BI and SQL Experts Data & Analytics: Data Scientists, Data Analysts (Python, R, SQL, Machine Learning) AI & Machine Learning: ML Ops, NLP, Predictive Modelling Data Scientists If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles / positions. For more information, contact: Lameez Mohamed Specialist Recruitment Consultant Connect with me on LinkedIn! www.linkedin.com/in/lameezmohamed",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008046/Lamee",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008046/Lamee",
-      "vacancy_ref": "ITE008046/Lamee",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138690+00:00"
-    },
-    {
-      "title": "Software Developer (AI Focused)",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "Market Related",
-      "summary": "Are you a passionate Developer with a strong foundation in software engineering and an interest in AI-driven solutions? This is an exciting opportunity to work across the full software development lif",
-      "brief_description": "Are you a passionate Developer with a strong foundation in software engineering and an interest in AI-driven solutions? This is an exciting opportunity to work across the full software development lifecycle, build innovative business automation systems, and contribute to the development of intelligent solutions that improve business performance and user experiences.",
-      "detail_description": "Join a high-performing technology environment where innovation, continuous learning, and collaboration are at the heart of success. In this role, you will be responsible for developing, enhancing, and supporting business-critical systems while helping shape the future of AI-enabled solutions and automation. Working alongside experienced professionals, you will contribute to scalable application development, system integrations, cloud-based solutions, and emerging technologies. This opportunity offers exposure to modern software architecture, artificial intelligence initiatives, and complex enterprise environments, making it ideal for a developer who enjoys solving real business challenges through technology. Key Responsibilities: Develop, enhance, and maintain business automation and enterprise software solutions Work across the full Software Development Lifecycle, including analysis, design, development, testing, deployment, and support Collaborate with stakeholders to understand business requirements and deliver fit-for-purpose solutions Develop and maintain integrations with internal and third-party systems Design and implement REST APIs and microservice-based solutions Support the development and integration of AI-enabled functionality into business systems Troubleshoot performance bottlenecks and resolve production issues in high-availability environments Contribute to development standards, version control practices, and deployment processes Identify opportunities for automation, AI adoption, and process improvement Job Experience and Skills Required: Education: Diploma in Software Development, Information Technology, Computer Science, or a related field Preferred: Degree in IT, Software Development, Computer Science, Engineering, or related discipline Experience: 3&ndash;6 years' software development experience Experience mentoring junior developers Practical experience with Artificial Intelligence and AI-enabled solutions Experience working within Agile or Scrum environments Technical Skills: C# and .NET Development Client Server, .NET Remoting, and Windows Services REST API Development Microservice Architecture XML and JSON Relational and Non-Relational Databases Message Brokers (RabbitMQ, Azure Service Bus, AWS EventBridge, or similar) Cloud Platforms (Azure advantageous) Git Version Control Advantageous: Angular or React CI/CD Pipelines Azure DevOps Azure Durable Functions Elasticsearch Cosmos DB and MSSQL Additional Requirements: Strong problem-solving and analytical abilities Good understanding of database design and system architecture principles Strong communication skills with both technical and non-technical stakeholders Interest in AI, automation, and emerging technologies Experience within finance, invoicing, claims, or insurance environments advantageous Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com/ I also specialise in recruiting in the following: Data Engineer Software Developer Data Analyst Infrastructure Architecture &hellip;and more! If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles/positions. For more information, contact: Karmishka Naidoo Specialist Recruitment Consultant Connect with me on LinkedIn! https://za.linkedin.com/in/karmishka-naidoo-088772290",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008047/Mish",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008047/Mish",
-      "vacancy_ref": "ITE008047/Mish",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.138848+00:00"
-    },
-    {
-      "title": "Machine Learning Engineer",
-      "company": "Network Recruitment International",
-      "location": "Western Cape > Cape Town: City Bowl",
-      "region": "Western Cape",
-      "town": "Cape Town: City Bowl",
-      "job_type": "Not specified",
-      "salary": "Market Related",
-      "summary": "Are you a Machine Learning Engineer who wants to see your models make a real-world impact? This is an exciting opportunity to build and deploy AI and machine learning solutions that improve decision-m",
-      "brief_description": "Are you a Machine Learning Engineer who wants to see your models make a real-world impact? This is an exciting opportunity to build and deploy AI and machine learning solutions that improve decision-making, automate business processes, and create measurable value in a fast-paced, data-driven environment.",
-      "detail_description": "Join an innovative team where data science, machine learning, and software engineering come together to solve complex business challenges. This role is ideal for someone who enjoys bridging the gap between experimentation and production, transforming analytical models into scalable, reliable solutions that drive tangible business outcomes. You will collaborate with data scientists, engineers, and business stakeholders to develop intelligent systems, improve operational efficiency, and implement cutting-edge AI solutions. This is a hands-on engineering role offering exposure to modern machine learning, MLOps, cloud technologies, and large-scale data environments. If you are passionate about turning ideas into production-ready solutions and want to work at the forefront of AI and automation, this opportunity is for you. Key Responsibilities: Design, build, deploy, and maintain machine learning and AI solutions in production environments Develop intelligent systems for document processing, information extraction, automation, forecasting, classification, and optimisation Transform data science models and prototypes into scalable, production-ready applications and services Build and maintain APIs, pipelines, and automated scoring solutions Implement CI/CD, testing, orchestration, monitoring, and model management practices Monitor model performance, data quality, drift, and operational reliability Collaborate with software engineers and technical teams to integrate machine learning solutions into business systems Define success metrics and evaluate the business impact of deployed solutions Contribute to code reviews, technical documentation, and knowledge sharing initiatives Job Experience and Skills Required: Education: Degree in Computer Science, Data Science, Statistics, Mathematics, Engineering, or a related field Experience: Proven experience developing production-grade machine learning and AI solutions Strong software engineering experience using Python Experience deploying models through APIs, pipelines, or automated workflows Experience working with large and complex datasets Technical Skills: Python and data science libraries SQL and advanced data analysis REST API development Git version control Automated testing and software development best practices Machine learning model development, evaluation, and optimisation CI/CD and software deployment practices Advantageous: MLOps tooling and model lifecycle management Snowflake, Snowpark, dbt, or similar data platforms Containerisation and cloud-based deployments XGBoost, LightGBM, or similar modelling frameworks OCR, document intelligence, and information extraction solutions Financial services, lending, credit risk, fraud, or regulated industry experience Additional Requirements: Strong analytical and problem-solving abilities Excellent communication and stakeholder engagement skills Ability to balance technical excellence with business value Strong ownership mindset and commitment to delivering measurable outcomes Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com/ I also specialise in recruiting in the following: Data Engineer Software Developer Data Analyst Infrastructure Architecture ...and more! If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles/positions. For more information, contact: Karmishka Naidoo Specialist Recruitment Consultant Connect with me on LinkedIn! https://za.linkedin.com/in/karmishka-naidoo-088772290",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008049/Mish",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008049/Mish",
-      "vacancy_ref": "ITE008049/Mish",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.139024+00:00"
-    },
-    {
-      "title": "AI Engineer",
-      "company": "Network Recruitment International",
-      "location": "Western Cape > Cape Town: City Bowl",
-      "region": "Western Cape",
-      "town": "Cape Town: City Bowl",
-      "job_type": "Not specified",
-      "salary": "Market Related",
-      "summary": "Are you an AI Engineer who loves turning innovative ideas into real-world business solutions? This is an exciting opportunity to build production-grade AI applications, leverage machine learning techn",
-      "brief_description": "Are you an AI Engineer who loves turning innovative ideas into real-world business solutions? This is an exciting opportunity to build production-grade AI applications, leverage machine learning technologies, and deliver intelligent solutions that create measurable impact in a highly data-driven environment.",
-      "detail_description": "Join a forward-thinking technology environment where AI, machine learning, and software engineering come together to solve complex business challenges. This role is focused on building and deploying reliable, scalable AI-powered applications that improve operational efficiency, enhance customer experiences, and support business decision-making. You will work closely with product, engineering, data, and operational teams to transform experimental AI concepts into production-ready solutions. From intelligent automation and document processing to retrieval-augmented applications and large language model integrations, you will play a pivotal role in shaping the future of AI-driven innovation. This is an ideal opportunity for a hands-on engineer who enjoys building practical AI solutions, solving real-world problems, and taking ownership from concept through to production. Key Responsibilities: Design, build, and maintain production-ready AI and machine learning applications Develop intelligent automation solutions using LLMs, NLP, document intelligence, and AI technologies Translate business requirements into technical designs, implementation plans, and measurable outcomes Build modular and reusable Python-based services, APIs, and workflows Develop document processing and information extraction solutions using OCR and AI technologies Design retrieval-augmented applications, search capabilities, and knowledge management solutions Implement monitoring, logging, validation, testing, and observability practices Integrate AI solutions into existing systems, databases, and operational processes Collaborate with cross-functional teams to support delivery, adoption, and continuous improvement Create technical documentation, standards, and reusable frameworks to support scalability and maintainability Job Experience and Skills Required: Education: Degree in Computer Science, Software Engineering, Data Science, Engineering, or a related field Experience: Strong professional software engineering experience using Python Experience building production-grade AI, ML, or intelligent automation solutions Experience deploying AI capabilities through applications, APIs, workflows, or operational systems Experience working with databases, APIs, and semi-structured data Technical Skills: Python development SQL and database technologies REST API development and integration Large Language Models (LLMs) Natural Language Processing (NLP) Document Intelligence and OCR AI application development and automation Testing, logging, observability, and CI/CD practices Git version control Advantageous: Retrieval-Augmented Generation (RAG) Embeddings and Vector Databases LangChain, LangGraph, or similar AI orchestration frameworks Snowflake, Snowpark, dbt, or similar modern data platforms Docker and cloud-based deployments Financial services or regulated industry experience Additional Requirements: Strong analytical and problem-solving capabilities Excellent communication skills across technical and non-technical stakeholders Strong ownership mindset and delivery focus Ability to balance innovation, commercial value, and responsible AI practices Passion for continuous learning and emerging AI technologies Apply now! For more exciting IT vacancies, please visit: https://www.networkrecruitmentinternational.com/ I also specialise in recruiting in the following: Data Engineer Software Developer Data Analyst Infrastructure Architecture &hellip;and more! If you have not had any response in two weeks, please consider the vacancy application unsuccessful. Your profile will be kept on our database for any other suitable roles/positions. For more information, contact: Karmishka Naidoo Specialist Recruitment Consultant Connect with me on LinkedIn! https://za.linkedin.com/in/karmishka-naidoo-088772290",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008050/Mish",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITE008050/Mish",
-      "vacancy_ref": "ITE008050/Mish",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.139184+00:00"
-    },
-    {
-      "title": "AI / Python Developer Graduates",
-      "company": "Network Recruitment International",
-      "location": "Gauteng > Johannesburg North",
-      "region": "Gauteng",
-      "town": "Johannesburg North",
-      "job_type": "Not specified",
-      "salary": "Market Related",
-      "summary": "Are you a recent graduate passionate about Artificial Intelligence, Python, and technology? We&rsquo;re recruiting talented graduates on behalf of our client for an exciting opportunity to grow your c",
-      "brief_description": "Are you a recent graduate passionate about Artificial Intelligence, Python, and technology? We&rsquo;re recruiting talented graduates on behalf of our client for an exciting opportunity to grow your career in the tech industry.",
-      "detail_description": "We&rsquo;re looking for: A BSc/BEng degree in Computer Science, IT, Software Engineering, Data Science, Artificial Intelligence, Physics, Mathematics, Actuarial Science, or a related field. 1&ndash;2 years&rsquo; experience in software development, Python, AI, data, or a related field. Strong analytical and problem-solving skills. A solid foundation in Python and an interest in AI/Machine Learning. A passion for technology and a willingness to learn. Application Requirements: NB! Please submit - An updated CV Full tertiary academic transcripts Matric Certificate Ready to take the next step in your AI and Python career? Apply today! Application Note: If you have not received feedback within two weeks, please consider your application unsuccessful. Your profile will remain in our database for future opportunities. For more exciting IT vacancies, explore opportunities in: Software Development (Back-End, Front-End, Full Stack) Mobile Development Business & Systems Analysis BI, SQL & Data Engineering UI/UX Design Data Science & Analytics Big Data Engineering Cloud Engineering Infrastructure & Platform Engineering DevOps & SecOps Cybersecurity For more information, contact: Reinie Du Preez Senior Specialist Recruitment Consultant rdpreez@networkrecruitment.co.za",
-      "url": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006290/Rein",
-      "job_id": "https://www.networkrecruitmentinternational.com/job-details?instance=network1&vacancy_ref=ITA006290/Rein",
-      "vacancy_ref": "ITA006290/Rein",
-      "posted": "",
-      "source": "Network Recruitment Intl",
-      "scraped_at": "2026-10-10T07:03:55.139312+00:00"
+      "scraped_at": "2026-10-12T17:47:35.304088+00:00"
     }
   ]
 }

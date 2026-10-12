@@ -24,282 +24,22 @@
       "Software Tester",
       "software"
     ],
-    "total_jobs": 134,
-    "scraped_at": "2026-10-10T07:05:57.431706+00:00"
+    "total_jobs": 92,
+    "scraped_at": "2026-10-12T17:49:52.759179+00:00"
   },
   "jobs": [
-    {
-      "title": "Databricks Data Engineer",
-      "company": "Tenth Revolution Group",
-      "location": "City of Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/databricks-data-engineer-at-tenth-revolution-group-4470843739",
-      "job_id": "https://za.linkedin.com/jobs/view/databricks-data-engineer-at-tenth-revolution-group-4470843739",
-      "posted": "2026-09-28",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.812540+00:00"
-    },
-    {
-      "title": "Principal Data Engineer (Databricks)",
-      "company": "Vivo Energy",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 4 days ago",
-      "url": "https://za.linkedin.com/jobs/view/principal-data-engineer-databricks-at-vivo-energy-4432762719",
-      "job_id": "https://za.linkedin.com/jobs/view/principal-data-engineer-databricks-at-vivo-energy-4432762719",
-      "posted": "2026-10-05",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.812845+00:00"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "Indsafri",
-      "location": "Centurion, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Centurion, Gauteng, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-indsafri-4473151602",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-indsafri-4473151602",
-      "posted": "2026-10-02",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.813128+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "WeconnectU",
-      "location": "Somerset West, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Somerset West, Western Cape, South Africa Be an early applicant 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-weconnectu-4468620188",
-      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-weconnectu-4468620188",
-      "posted": "2026-09-17",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.813410+00:00"
-    },
-    {
-      "title": "Junior Data Engineer",
-      "company": "Lesaka Technologies Inc.",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/junior-data-engineer-at-lesaka-technologies-inc-4438872943",
-      "job_id": "https://za.linkedin.com/jobs/view/junior-data-engineer-at-lesaka-technologies-inc-4438872943",
-      "posted": "2026-10-02",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.813709+00:00"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "DigiOutsource",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-digioutsource-4193241796",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-digioutsource-4193241796",
-      "posted": "2026-09-22",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.813987+00:00"
-    },
-    {
-      "title": "Analytics Engineer",
-      "company": "Lyra Health",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/analytics-engineer-at-lyra-health-4468895216",
-      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-at-lyra-health-4468895216",
-      "posted": "2026-09-18",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.814266+00:00"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "Scytale",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 19 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-scytale-4440965541",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-scytale-4440965541",
-      "posted": "2026-10-09",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.814543+00:00"
-    },
-    {
-      "title": "Data Infrastructure Engineer (Remote)",
-      "company": "Hire Feed",
-      "location": "South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "South Africa 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-infrastructure-engineer-remote-at-hire-feed-4467076178",
-      "job_id": "https://za.linkedin.com/jobs/view/data-infrastructure-engineer-remote-at-hire-feed-4467076178",
-      "posted": "2026-09-14",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.814812+00:00"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "Momentum",
-      "location": "Centurion, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Centurion, Gauteng, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-momentum-4473373421",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-momentum-4473373421",
-      "posted": "2026-10-02",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:03:55.815082+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "SASSO CONSULTING",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa 4 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-at-sasso-consulting-4476877709",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-sasso-consulting-4476877709",
-      "posted": "2026-10-10",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.028837+00:00"
-    },
-    {
-      "title": "Embedded Data Analyst",
-      "company": "Stellenbosch University",
-      "location": "Stellenbosch, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/embedded-data-analyst-at-stellenbosch-university-4474364536",
-      "job_id": "https://za.linkedin.com/jobs/view/embedded-data-analyst-at-stellenbosch-university-4474364536",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.029090+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Capitec",
-      "location": "Stellenbosch, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-at-capitec-4471289416",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-capitec-4471289416",
-      "posted": "2026-09-29",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.029323+00:00"
-    },
-    {
-      "title": "BI Data Analyst (Senior)",
-      "company": "Discovery Limited",
-      "location": "Sandton, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Sandton, Gauteng, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/bi-data-analyst-senior-at-discovery-limited-4472921935",
-      "job_id": "https://za.linkedin.com/jobs/view/bi-data-analyst-senior-at-discovery-limited-4472921935",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.029552+00:00"
-    },
-    {
-      "title": "Data Analyst II_Pipeline",
-      "company": "Capitec",
-      "location": "Stellenbosch, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-ii-pipeline-at-capitec-4471282246",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-ii-pipeline-at-capitec-4471282246",
-      "posted": "2026-09-29",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.029781+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Pepkor Lifestyle",
-      "location": "Sandton, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Sandton, Gauteng, South Africa 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-at-pepkor-lifestyle-4474039388",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-pepkor-lifestyle-4474039388",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.030005+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Pepkor Lifestyle",
-      "location": "Sandton, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Sandton, Gauteng, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-at-pepkor-lifestyle-4471329435",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-pepkor-lifestyle-4471329435",
-      "posted": "2026-09-28",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.030228+00:00"
-    },
-    {
-      "title": "Data and Financial Analyst",
-      "company": "Lesaka Technologies Inc.",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-and-financial-analyst-at-lesaka-technologies-inc-4422416912",
-      "job_id": "https://za.linkedin.com/jobs/view/data-and-financial-analyst-at-lesaka-technologies-inc-4422416912",
-      "posted": "2026-09-18",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.030468+00:00"
-    },
-    {
-      "title": "Data Analyst",
-      "company": "Tenth Revolution Group",
-      "location": "City of Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-at-tenth-revolution-group-4470839584",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-at-tenth-revolution-group-4470839584",
-      "posted": "2026-09-28",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.030695+00:00"
-    },
-    {
-      "title": "Data Analyst (Retail Media)",
-      "company": "PEP",
-      "location": "Parow, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Parow, Western Cape, South Africa 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-analyst-retail-media-at-pep-4465997345",
-      "job_id": "https://za.linkedin.com/jobs/view/data-analyst-retail-media-at-pep-4465997345",
-      "posted": "2026-09-16",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:01.030916+00:00"
-    },
     {
       "title": "Senior Data Scientist",
       "company": "Lula",
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Be an early applicant 2 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Be an early applicant 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-data-scientist-at-lula-4475766312",
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-scientist-at-lula-4475766312",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.659112+00:00"
+      "scraped_at": "2026-10-12T17:47:48.622195+00:00"
     },
     {
       "title": "Talent Pool - Senior Data Scientist",
@@ -312,7 +52,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/talent-pool-senior-data-scientist-at-discovery-limited-3981304595",
       "posted": "2026-09-24",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.659394+00:00"
+      "scraped_at": "2026-10-12T17:47:48.622534+00:00"
     },
     {
       "title": "Senior Data Scientist (Credit)",
@@ -325,20 +65,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-scientist-credit-at-moniepoint-group-4463979910",
       "posted": "2026-10-02",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.659656+00:00"
-    },
-    {
-      "title": "Data Scientist",
-      "company": "SASSO CONSULTING",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 4 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/data-scientist-at-sasso-consulting-4476887371",
-      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-sasso-consulting-4476887371",
-      "posted": "2026-10-10",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.659917+00:00"
+      "scraped_at": "2026-10-12T17:47:48.622848+00:00"
     },
     {
       "title": "Data Scientist",
@@ -351,7 +78,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-draslovka-4470288841",
       "posted": "2026-09-22",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.660176+00:00"
+      "scraped_at": "2026-10-12T17:47:48.623152+00:00"
     },
     {
       "title": "Data Scientist",
@@ -359,12 +86,12 @@
       "location": "Durbanville, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durbanville, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-scientist-at-gvw-group-4468174823",
-      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-gvw-group-4468174823",
-      "posted": "2026-09-22",
+      "summary": "Durbanville, Western Cape, South Africa Be an early applicant 10 hours ago",
+      "url": "https://za.linkedin.com/jobs/view/data-scientist-at-gvw-group-4475676830",
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-gvw-group-4475676830",
+      "posted": "2026-10-12",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.660436+00:00"
+      "scraped_at": "2026-10-12T17:47:48.623449+00:00"
     },
     {
       "title": "Senior Fraud Data Scientist",
@@ -372,12 +99,12 @@
       "location": "City of Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa 2 weeks ago",
+      "summary": "City of Johannesburg, Gauteng, South Africa 3 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/senior-fraud-data-scientist-at-payinc-4453437976",
       "job_id": "https://za.linkedin.com/jobs/view/senior-fraud-data-scientist-at-payinc-4453437976",
       "posted": "2026-09-21",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.660691+00:00"
+      "scraped_at": "2026-10-12T17:47:48.623717+00:00"
     },
     {
       "title": "Data Scientist (Remote)",
@@ -385,25 +112,12 @@
       "location": "South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "South Africa 3 weeks ago",
+      "summary": "South Africa 4 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/data-scientist-remote-at-hire-feed-4467096425",
       "job_id": "https://za.linkedin.com/jobs/view/data-scientist-remote-at-hire-feed-4467096425",
       "posted": "2026-09-14",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.660947+00:00"
-    },
-    {
-      "title": "Data Scientist",
-      "company": "Unifi",
-      "location": "Stellenbosch, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-scientist-at-unifi-4468944881",
-      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-at-unifi-4468944881",
-      "posted": "2026-09-23",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.661207+00:00"
+      "scraped_at": "2026-10-12T17:47:48.623976+00:00"
     },
     {
       "title": "SENIOR DATA SCIENTIST – Build Models That Actually Make It Into Production – CAPE TOWN (Hybrid), R1.1m – R1.5m",
@@ -411,12 +125,38 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 4 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/senior-data-scientist-%E2%80%93-build-models-that-actually-make-it-into-production-%E2%80%93-cape-town-hybrid-r1-1m-%E2%80%93-r1-5m-at-acuity-consultants-4473619873",
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-scientist-%E2%80%93-build-models-that-actually-make-it-into-production-%E2%80%93-cape-town-hybrid-r1-1m-%E2%80%93-r1-5m-at-acuity-consultants-4473619873",
       "posted": "2026-10-05",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:07.661469+00:00"
+      "scraped_at": "2026-10-12T17:47:48.624245+00:00"
+    },
+    {
+      "title": "Data Scientist (Intermediate)",
+      "company": "Discovery Limited",
+      "location": "Sandton, Gauteng, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Sandton, Gauteng, South Africa Actively Hiring 4 days ago",
+      "url": "https://za.linkedin.com/jobs/view/data-scientist-intermediate-at-discovery-limited-4474466831",
+      "job_id": "https://za.linkedin.com/jobs/view/data-scientist-intermediate-at-discovery-limited-4474466831",
+      "posted": "2026-10-07",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:47:48.624514+00:00"
+    },
+    {
+      "title": "Senior Data Scientist, Product Data",
+      "company": "impact.com",
+      "location": "Cape Town, Western Cape, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 day ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-data-scientist-product-data-at-impact-com-4364164874",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-data-scientist-product-data-at-impact-com-4364164874",
+      "posted": "2026-10-10",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:47:48.624784+00:00"
     },
     {
       "title": "Senior Data Architect (Financial /Banking Services)",
@@ -429,20 +169,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-architect-financial-banking-services-at-indsafri-4468656121",
       "posted": "2026-09-17",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.729056+00:00"
-    },
-    {
-      "title": "Data Architect",
-      "company": "SASSO CONSULTING",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 4 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/data-architect-at-sasso-consulting-4476889348",
-      "job_id": "https://za.linkedin.com/jobs/view/data-architect-at-sasso-consulting-4476889348",
-      "posted": "2026-10-10",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.729341+00:00"
+      "scraped_at": "2026-10-12T17:47:56.106855+00:00"
     },
     {
       "title": "Senior Data Architect",
@@ -455,20 +182,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-architect-at-indsafri-4468381538",
       "posted": "2026-09-17",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.729608+00:00"
-    },
-    {
-      "title": "Data Migration Architect",
-      "company": "SASSO CONSULTING",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 4 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/data-migration-architect-at-sasso-consulting-4476883464",
-      "job_id": "https://za.linkedin.com/jobs/view/data-migration-architect-at-sasso-consulting-4476883464",
-      "posted": "2026-10-10",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.729886+00:00"
+      "scraped_at": "2026-10-12T17:47:56.107157+00:00"
     },
     {
       "title": "Data Platform & Governance Lead",
@@ -481,7 +195,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/data-platform-governance-lead-at-ntice-sourcing-solutions-4474158053",
       "posted": "2026-10-01",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.730150+00:00"
+      "scraped_at": "2026-10-12T17:47:56.107423+00:00"
     },
     {
       "title": "Manager: Data and AI",
@@ -489,12 +203,12 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 2 weeks ago",
+      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 3 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/manager-data-and-ai-at-kpmg-south-africa-4415348786",
       "job_id": "https://za.linkedin.com/jobs/view/manager-data-and-ai-at-kpmg-south-africa-4415348786",
       "posted": "2026-09-21",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.730423+00:00"
+      "scraped_at": "2026-10-12T17:47:56.107685+00:00"
     },
     {
       "title": "Senior Data/AI Technical Architect",
@@ -502,12 +216,12 @@
       "location": "Durban, KwaZulu-Natal, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 5 days ago",
+      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/senior-data-ai-technical-architect-at-ntt-data-inc-4427803517",
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-ai-technical-architect-at-ntt-data-inc-4427803517",
       "posted": "2026-10-04",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.730697+00:00"
+      "scraped_at": "2026-10-12T17:47:56.107955+00:00"
     },
     {
       "title": "Senior Data/AI Technical Architect",
@@ -515,12 +229,12 @@
       "location": "Port Elizabeth, Eastern Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Port Elizabeth, Eastern Cape, South Africa Actively Hiring 5 days ago",
+      "summary": "Port Elizabeth, Eastern Cape, South Africa Actively Hiring 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/senior-data-ai-technical-architect-at-ntt-data-inc-4427801531",
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-ai-technical-architect-at-ntt-data-inc-4427801531",
       "posted": "2026-10-04",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.730967+00:00"
+      "scraped_at": "2026-10-12T17:47:56.108219+00:00"
     },
     {
       "title": "Data & AI Architecture Lead",
@@ -528,38 +242,51 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 1 week ago",
+      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/data-ai-architecture-lead-at-kpmg-south-africa-4424970942",
       "job_id": "https://za.linkedin.com/jobs/view/data-ai-architecture-lead-at-kpmg-south-africa-4424970942",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.731230+00:00"
+      "scraped_at": "2026-10-12T17:47:56.108482+00:00"
     },
     {
-      "title": "SAP Analytics Cloud Lead (OVA5798)",
-      "company": "Ovations Talent Sourcing",
+      "title": "Data Architect",
+      "company": "SASSO CONSULTING",
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa 4 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/sap-analytics-cloud-lead-ova5798-at-ovations-talent-sourcing-4464596564",
-      "job_id": "https://za.linkedin.com/jobs/view/sap-analytics-cloud-lead-ova5798-at-ovations-talent-sourcing-4464596564",
-      "posted": "2026-09-10",
+      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 2 days ago",
+      "url": "https://za.linkedin.com/jobs/view/data-architect-at-sasso-consulting-4476889348",
+      "job_id": "https://za.linkedin.com/jobs/view/data-architect-at-sasso-consulting-4476889348",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:13.731483+00:00"
+      "scraped_at": "2026-10-12T17:47:56.108744+00:00"
     },
     {
-      "title": "Business Intelligence Developer (Intermediate)",
-      "company": "GVW Group",
-      "location": "Durbanville, Western Cape, South Africa",
+      "title": "Data Migration Architect",
+      "company": "SASSO CONSULTING",
+      "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durbanville, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/business-intelligence-developer-intermediate-at-gvw-group-4468191349",
-      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-intermediate-at-gvw-group-4468191349",
-      "posted": "2026-09-22",
+      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 2 days ago",
+      "url": "https://za.linkedin.com/jobs/view/data-migration-architect-at-sasso-consulting-4476883464",
+      "job_id": "https://za.linkedin.com/jobs/view/data-migration-architect-at-sasso-consulting-4476883464",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.092392+00:00"
+      "scraped_at": "2026-10-12T17:47:56.109004+00:00"
+    },
+    {
+      "title": "Senior Salesforce Data Cloud Specialist",
+      "company": "PEP",
+      "location": "Western Cape, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Western Cape, South Africa Be an early applicant 1 day ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-salesforce-data-cloud-specialist-at-pep-4475658317",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-salesforce-data-cloud-specialist-at-pep-4475658317",
+      "posted": "2026-10-11",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:47:56.109270+00:00"
     },
     {
       "title": "Business Intelligence Developer",
@@ -572,98 +299,20 @@
       "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-at-salix-recruitment-4473012231",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.092645+00:00"
+      "scraped_at": "2026-10-12T17:48:10.434409+00:00"
     },
     {
-      "title": "DATA VISUALISATION DEVELOPER",
-      "company": "Smollan",
-      "location": "Gauteng, South Africa",
+      "title": "Business Intelligence Developer (Intermediate)",
+      "company": "GVW Group",
+      "location": "Durbanville, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Gauteng, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/data-visualisation-developer-at-smollan-4460382274",
-      "job_id": "https://za.linkedin.com/jobs/view/data-visualisation-developer-at-smollan-4460382274",
-      "posted": "2026-09-19",
+      "summary": "Durbanville, Western Cape, South Africa Be an early applicant 10 hours ago",
+      "url": "https://za.linkedin.com/jobs/view/business-intelligence-developer-intermediate-at-gvw-group-4475686498",
+      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-developer-intermediate-at-gvw-group-4475686498",
+      "posted": "2026-10-12",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.093113+00:00"
-    },
-    {
-      "title": "Manager Business Intelligence Reporting",
-      "company": "DigiOutsource",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/manager-business-intelligence-reporting-at-digioutsource-4384260201",
-      "job_id": "https://za.linkedin.com/jobs/view/manager-business-intelligence-reporting-at-digioutsource-4384260201",
-      "posted": "2026-09-22",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.093343+00:00"
-    },
-    {
-      "title": "Analytics Engineer",
-      "company": "JUMO",
-      "location": "South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/analytics-engineer-at-jumo-4445479090",
-      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-at-jumo-4445479090",
-      "posted": "2026-09-22",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.093572+00:00"
-    },
-    {
-      "title": "BI Analyst and Developer - (Wackys)",
-      "company": "Pedros",
-      "location": "Durban, KwaZulu-Natal, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/bi-analyst-and-developer-wackys-at-pedros-4473030271",
-      "job_id": "https://za.linkedin.com/jobs/view/bi-analyst-and-developer-wackys-at-pedros-4473030271",
-      "posted": "2026-09-28",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.093793+00:00"
-    },
-    {
-      "title": "Senior Analytics Engineer",
-      "company": "Tenth Revolution Group",
-      "location": "Pretoria, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Pretoria, Gauteng, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-analytics-engineer-at-tenth-revolution-group-4473158184",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-analytics-engineer-at-tenth-revolution-group-4473158184",
-      "posted": "2026-10-02",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.094013+00:00"
-    },
-    {
-      "title": "Business Intelligence Business Analyst",
-      "company": "Old Mutual South Africa",
-      "location": "Pinelands, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Pinelands, Western Cape, South Africa Actively Hiring 4 days ago",
-      "url": "https://za.linkedin.com/jobs/view/business-intelligence-business-analyst-at-old-mutual-south-africa-4476106044",
-      "job_id": "https://za.linkedin.com/jobs/view/business-intelligence-business-analyst-at-old-mutual-south-africa-4476106044",
-      "posted": "2026-10-05",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.094241+00:00"
-    },
-    {
-      "title": "Senior Strategic BI and Business Analyst",
-      "company": "Stellenbosch University",
-      "location": "Stellenbosch, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-strategic-bi-and-business-analyst-at-stellenbosch-university-4474351894",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-strategic-bi-and-business-analyst-at-stellenbosch-university-4474351894",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:19.094469+00:00"
+      "scraped_at": "2026-10-12T17:48:10.434730+00:00"
     },
     {
       "title": "BI Developer",
@@ -671,12 +320,12 @@
       "location": "Durban, KwaZulu-Natal, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 18 hours ago",
+      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/bi-developer-at-nedbank-4475228261",
       "job_id": "https://za.linkedin.com/jobs/view/bi-developer-at-nedbank-4475228261",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:25.302686+00:00"
+      "scraped_at": "2026-10-12T17:48:10.435028+00:00"
     },
     {
       "title": "Senior Data Analyst",
@@ -689,7 +338,59 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-data-analyst-at-tenth-revolution-group-4473151460",
       "posted": "2026-10-02",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:25.302947+00:00"
+      "scraped_at": "2026-10-12T17:48:10.435300+00:00"
+    },
+    {
+      "title": "Senior Analytics Engineer",
+      "company": "Tenth Revolution Group",
+      "location": "Pretoria, Gauteng, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Pretoria, Gauteng, South Africa 1 week ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-analytics-engineer-at-tenth-revolution-group-4473158184",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-analytics-engineer-at-tenth-revolution-group-4473158184",
+      "posted": "2026-10-02",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:10.435574+00:00"
+    },
+    {
+      "title": "BI Analyst and Developer - (Wackys)",
+      "company": "Pedros",
+      "location": "Durban, KwaZulu-Natal, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Durban, KwaZulu-Natal, South Africa 1 week ago",
+      "url": "https://za.linkedin.com/jobs/view/bi-analyst-and-developer-wackys-at-pedros-4473030271",
+      "job_id": "https://za.linkedin.com/jobs/view/bi-analyst-and-developer-wackys-at-pedros-4473030271",
+      "posted": "2026-09-28",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:10.435851+00:00"
+    },
+    {
+      "title": "DATA VISUALISATION DEVELOPER",
+      "company": "Smollan",
+      "location": "Gauteng, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Gauteng, South Africa Actively Hiring 2 days ago",
+      "url": "https://za.linkedin.com/jobs/view/data-visualisation-developer-at-smollan-4460382274",
+      "job_id": "https://za.linkedin.com/jobs/view/data-visualisation-developer-at-smollan-4460382274",
+      "posted": "2026-10-10",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:10.436138+00:00"
+    },
+    {
+      "title": "Analytics Engineer",
+      "company": "JUMO",
+      "location": "South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "South Africa Actively Hiring 2 weeks ago",
+      "url": "https://za.linkedin.com/jobs/view/analytics-engineer-at-jumo-4445479090",
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-at-jumo-4445479090",
+      "posted": "2026-09-22",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:10.436416+00:00"
     },
     {
       "title": "Senior Power BI Developer",
@@ -702,7 +403,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-power-bi-developer-at-zensar-technologies-4467191625",
       "posted": "2026-09-17",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:25.304251+00:00"
+      "scraped_at": "2026-10-12T17:48:10.436700+00:00"
     },
     {
       "title": "Data Engineer at Datonomy Solutions",
@@ -710,12 +411,12 @@
       "location": "Parow, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Parow, Western Cape, South Africa Be an early applicant 2 days ago",
+      "summary": "Parow, Western Cape, South Africa Be an early applicant 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/data-engineer-at-datonomy-solutions-at-datonomy-solutions-4477805159",
       "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-datonomy-solutions-at-datonomy-solutions-4477805159",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:25.304522+00:00"
+      "scraped_at": "2026-10-12T17:48:10.436976+00:00"
     },
     {
       "title": "Software Engineer (Machine Learning)",
@@ -723,12 +424,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 day ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/software-engineer-machine-learning-at-sanlam-4475987443",
       "job_id": "https://za.linkedin.com/jobs/view/software-engineer-machine-learning-at-sanlam-4475987443",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.024727+00:00"
+      "scraped_at": "2026-10-12T17:48:19.366983+00:00"
     },
     {
       "title": "Machine Learning Engineer",
@@ -736,12 +437,25 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa 2 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa 1 day ago",
       "url": "https://za.linkedin.com/jobs/view/machine-learning-engineer-at-mind-detect-4474465799",
       "job_id": "https://za.linkedin.com/jobs/view/machine-learning-engineer-at-mind-detect-4474465799",
-      "posted": "2026-10-07",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.025031+00:00"
+      "scraped_at": "2026-10-12T17:48:19.367264+00:00"
+    },
+    {
+      "title": "Machine Learning Engineer: Ranking & Personalization",
+      "company": "Jobgether",
+      "location": "South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "South Africa 17 hours ago",
+      "url": "https://za.linkedin.com/jobs/view/machine-learning-engineer-ranking-personalization-at-jobgether-4477272723",
+      "job_id": "https://za.linkedin.com/jobs/view/machine-learning-engineer-ranking-personalization-at-jobgether-4477272723",
+      "posted": "2026-10-12",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:19.367525+00:00"
     },
     {
       "title": "Senior Machine Learning Engineer - AI / GenAI at Datonomy Solutions",
@@ -749,12 +463,12 @@
       "location": "Emfuleni, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Emfuleni, Gauteng, South Africa Be an early applicant 2 days ago",
+      "summary": "Emfuleni, Gauteng, South Africa Be an early applicant 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-machine-learning-engineer-ai-genai-at-datonomy-solutions-at-datonomy-solutions-4477693623",
       "job_id": "https://za.linkedin.com/jobs/view/senior-machine-learning-engineer-ai-genai-at-datonomy-solutions-at-datonomy-solutions-4477693623",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.025299+00:00"
+      "scraped_at": "2026-10-12T17:48:19.367796+00:00"
     },
     {
       "title": "Ai Engineer",
@@ -762,12 +476,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 day ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/ai-engineer-at-liquid-thought-4476203465",
       "job_id": "https://za.linkedin.com/jobs/view/ai-engineer-at-liquid-thought-4476203465",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.025568+00:00"
+      "scraped_at": "2026-10-12T17:48:19.368058+00:00"
     },
     {
       "title": "Machine Learning Engineer (Remote)",
@@ -780,7 +494,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/machine-learning-engineer-remote-at-quik-hire-staffing-4467460077",
       "posted": "2026-09-15",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.025831+00:00"
+      "scraped_at": "2026-10-12T17:48:19.368328+00:00"
     },
     {
       "title": "Artificial Intelligence Engineer",
@@ -788,12 +502,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Be an early applicant 20 hours ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/artificial-intelligence-engineer-at-acuity-consultants-4475208558",
       "job_id": "https://za.linkedin.com/jobs/view/artificial-intelligence-engineer-at-acuity-consultants-4475208558",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.026094+00:00"
+      "scraped_at": "2026-10-12T17:48:19.368589+00:00"
     },
     {
       "title": "SENIOR AI ENGINEER",
@@ -806,7 +520,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-ai-engineer-at-liquid-thought-4467150226",
       "posted": "2026-09-17",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.026358+00:00"
+      "scraped_at": "2026-10-12T17:48:19.368854+00:00"
     },
     {
       "title": "Artificial Intelligence Engineer",
@@ -819,7 +533,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/artificial-intelligence-engineer-at-jmr-software-pty-ltd-4474144900",
       "posted": "2026-10-01",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.026629+00:00"
+      "scraped_at": "2026-10-12T17:48:19.369090+00:00"
     },
     {
       "title": "ML Engineer | Hybrid",
@@ -827,25 +541,12 @@
       "location": "George, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "George, Western Cape, South Africa Be an early applicant 5 days ago",
+      "summary": "George, Western Cape, South Africa Be an early applicant 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/ml-engineer-hybrid-at-badger-holdings-pty-ltd-4476114265",
       "job_id": "https://za.linkedin.com/jobs/view/ml-engineer-hybrid-at-badger-holdings-pty-ltd-4476114265",
       "posted": "2026-10-05",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.026893+00:00"
-    },
-    {
-      "title": "Senior AI Engineer",
-      "company": "OfferZen",
-      "location": "City of Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-ai-engineer-at-offerzen-4470687954",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-ai-engineer-at-offerzen-4470687954",
-      "posted": "2026-09-23",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:32.027151+00:00"
+      "scraped_at": "2026-10-12T17:48:19.369323+00:00"
     },
     {
       "title": "Data & Analytics Engineer",
@@ -858,7 +559,20 @@
       "job_id": "https://za.linkedin.com/jobs/view/data-analytics-engineer-at-curvion-blue-4474558968",
       "posted": "2026-10-02",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:40.251176+00:00"
+      "scraped_at": "2026-10-12T17:48:25.504138+00:00"
+    },
+    {
+      "title": "Analytics Engineer",
+      "company": "Lyra Health",
+      "location": "Johannesburg, Gauteng, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 3 weeks ago",
+      "url": "https://za.linkedin.com/jobs/view/analytics-engineer-at-lyra-health-4468895216",
+      "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-at-lyra-health-4468895216",
+      "posted": "2026-09-18",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:25.504952+00:00"
     },
     {
       "title": "Analytics Engineer II_Pipeline",
@@ -866,12 +580,12 @@
       "location": "Stellenbosch, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Be an early applicant 3 days ago",
+      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 5 days ago",
       "url": "https://za.linkedin.com/jobs/view/analytics-engineer-ii-pipeline-at-capitec-4476557563",
       "job_id": "https://za.linkedin.com/jobs/view/analytics-engineer-ii-pipeline-at-capitec-4476557563",
       "posted": "2026-10-07",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:40.252369+00:00"
+      "scraped_at": "2026-10-12T17:48:25.505220+00:00"
     },
     {
       "title": "Data Engineer",
@@ -879,12 +593,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 week ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/data-engineer-at-vml-4472732630",
       "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-vml-4472732630",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:40.252904+00:00"
+      "scraped_at": "2026-10-12T17:48:25.505756+00:00"
     },
     {
       "title": "Data Engineer",
@@ -892,90 +606,25 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 week ago",
+      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/data-engineer-at-wpp-enterprise-solutions-4472728393",
       "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-wpp-enterprise-solutions-4472728393",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:40.253171+00:00"
+      "scraped_at": "2026-10-12T17:48:25.506030+00:00"
     },
     {
       "title": "Data Engineer",
-      "company": "DigiOutsource",
-      "location": "Cape Town, Western Cape, South Africa",
+      "company": "WeconnectU",
+      "location": "Somerset West, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 5 days ago",
-      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-digioutsource-4409344277",
-      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-digioutsource-4409344277",
-      "posted": "2026-10-04",
+      "summary": "Somerset West, Western Cape, South Africa Be an early applicant 3 weeks ago",
+      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-weconnectu-4468620188",
+      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-weconnectu-4468620188",
+      "posted": "2026-09-17",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:47.521434+00:00"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "Flash Group",
-      "location": "Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Western Cape, South Africa 1 day ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-flash-group-4467195789",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-data-engineer-at-flash-group-4467195789",
-      "posted": "2026-10-08",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:47.522770+00:00"
-    },
-    {
-      "title": "Junior Data Engineer",
-      "company": "BETSoftware",
-      "location": "Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Gauteng, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/junior-data-engineer-at-betsoftware-4471774156",
-      "job_id": "https://za.linkedin.com/jobs/view/junior-data-engineer-at-betsoftware-4471774156",
-      "posted": "2026-09-29",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:47.523295+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Tata Consultancy Services",
-      "location": "City of Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-tata-consultancy-services-4473732085",
-      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-tata-consultancy-services-4473732085",
-      "posted": "2026-09-30",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:52.951548+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Pepkor Lifestyle",
-      "location": "Johannesburg Metropolitan Area",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg Metropolitan Area 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-pepkor-lifestyle-4474900048",
-      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-pepkor-lifestyle-4474900048",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:52.952104+00:00"
-    },
-    {
-      "title": "Data Engineer",
-      "company": "Pepkor Lifestyle",
-      "location": "Sandton, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Sandton, Gauteng, South Africa 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/data-engineer-at-pepkor-lifestyle-4474055975",
-      "job_id": "https://za.linkedin.com/jobs/view/data-engineer-at-pepkor-lifestyle-4474055975",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:52.952881+00:00"
+      "scraped_at": "2026-10-12T17:48:25.506292+00:00"
     },
     {
       "title": "Master Data Analyst",
@@ -983,12 +632,12 @@
       "location": "Durban, KwaZulu-Natal, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 17 hours ago",
+      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/master-data-analyst-at-chep-4477697675",
       "job_id": "https://za.linkedin.com/jobs/view/master-data-analyst-at-chep-4477697675",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.327623+00:00"
+      "scraped_at": "2026-10-12T17:48:50.502276+00:00"
     },
     {
       "title": "Senior Private Equity Fund Data Analyst",
@@ -996,12 +645,12 @@
       "location": "Somerset West, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Somerset West, Western Cape, South Africa 4 days ago",
+      "summary": "Somerset West, Western Cape, South Africa 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/senior-private-equity-fund-data-analyst-at-allocator-4475579134",
       "job_id": "https://za.linkedin.com/jobs/view/senior-private-equity-fund-data-analyst-at-allocator-4475579134",
       "posted": "2026-10-05",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.327897+00:00"
+      "scraped_at": "2026-10-12T17:48:50.502625+00:00"
     },
     {
       "title": "Senior Analyst - Government",
@@ -1014,7 +663,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-analyst-government-at-vontier-4473798149",
       "posted": "2026-09-30",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.328159+00:00"
+      "scraped_at": "2026-10-12T17:48:50.502907+00:00"
     },
     {
       "title": "Data Integration Mapping Analyst",
@@ -1022,12 +671,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 3 weeks ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 days ago",
       "url": "https://za.linkedin.com/jobs/view/data-integration-mapping-analyst-at-circana-4466907713",
       "job_id": "https://za.linkedin.com/jobs/view/data-integration-mapping-analyst-at-circana-4466907713",
-      "posted": "2026-09-18",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.328429+00:00"
+      "scraped_at": "2026-10-12T17:48:50.503176+00:00"
     },
     {
       "title": "Senior Analyst - Mining",
@@ -1040,7 +689,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-analyst-mining-at-vontier-4473795238",
       "posted": "2026-09-30",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.328693+00:00"
+      "scraped_at": "2026-10-12T17:48:50.503464+00:00"
     },
     {
       "title": "Business Data Analyst at Datonomy Solutions",
@@ -1053,7 +702,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/business-data-analyst-at-datonomy-solutions-at-datonomy-solutions-4474759346",
       "posted": "2026-10-01",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.328949+00:00"
+      "scraped_at": "2026-10-12T17:48:50.503735+00:00"
     },
     {
       "title": "Data Quality Assurance Engineer (AVAILABLE IMMEDIATELY)",
@@ -1061,12 +710,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Be an early applicant 23 hours ago",
+      "summary": "City of Cape Town, Western Cape, South Africa 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/data-quality-assurance-engineer-available-immediately-at-embelo-4477649141",
       "job_id": "https://za.linkedin.com/jobs/view/data-quality-assurance-engineer-available-immediately-at-embelo-4477649141",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.329215+00:00"
+      "scraped_at": "2026-10-12T17:48:50.503995+00:00"
     },
     {
       "title": "Senior Reference and Master Data Specialist",
@@ -1074,12 +723,12 @@
       "location": "City of Tshwane, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Tshwane, Gauteng, South Africa Actively Hiring 1 week ago",
+      "summary": "City of Tshwane, Gauteng, South Africa Actively Hiring 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/senior-reference-and-master-data-specialist-at-datacentrix-4470852885",
       "job_id": "https://za.linkedin.com/jobs/view/senior-reference-and-master-data-specialist-at-datacentrix-4470852885",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.329481+00:00"
+      "scraped_at": "2026-10-12T17:48:50.504267+00:00"
     },
     {
       "title": "Data Coordinator",
@@ -1087,12 +736,12 @@
       "location": "Stellenbosch, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 1 day ago",
+      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/data-coordinator-at-peace-parks-foundation-4477181623",
       "job_id": "https://za.linkedin.com/jobs/view/data-coordinator-at-peace-parks-foundation-4477181623",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.329744+00:00"
+      "scraped_at": "2026-10-12T17:48:50.504537+00:00"
     },
     {
       "title": "Consultant - Data Governance Analyst",
@@ -1100,12 +749,12 @@
       "location": "Meredale, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Meredale, Gauteng, South Africa Actively Hiring 1 day ago",
+      "summary": "Meredale, Gauteng, South Africa Actively Hiring 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/consultant-data-governance-analyst-at-the-coca-cola-company-4475766884",
       "job_id": "https://za.linkedin.com/jobs/view/consultant-data-governance-analyst-at-the-coca-cola-company-4475766884",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:04:59.330008+00:00"
+      "scraped_at": "2026-10-12T17:48:50.504810+00:00"
     },
     {
       "title": "IT GOVERNANCE SPECIALIST",
@@ -1118,7 +767,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/it-governance-specialist-at-liquid-thought-4469047669",
       "posted": "2026-09-22",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:05.340001+00:00"
+      "scraped_at": "2026-10-12T17:48:58.003643+00:00"
     },
     {
       "title": "Data Solutions Analyst",
@@ -1126,12 +775,12 @@
       "location": "Stellenbosch, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 3 days ago",
+      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/data-solutions-analyst-at-capitec-4476300942",
       "job_id": "https://za.linkedin.com/jobs/view/data-solutions-analyst-at-capitec-4476300942",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:05.340263+00:00"
+      "scraped_at": "2026-10-12T17:48:58.003945+00:00"
     },
     {
       "title": "Process, Systems and Reporting Excellence Specialist",
@@ -1139,25 +788,12 @@
       "location": "Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Gauteng, South Africa Be an early applicant 18 hours ago",
+      "summary": "Gauteng, South Africa 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/process-systems-and-reporting-excellence-specialist-at-liquid-intelligent-technologies-4476288925",
       "job_id": "https://za.linkedin.com/jobs/view/process-systems-and-reporting-excellence-specialist-at-liquid-intelligent-technologies-4476288925",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:05.340525+00:00"
-    },
-    {
-      "title": "Laserfiche Records Management Consultant",
-      "company": "GovernmentFrameworks.com",
-      "location": "South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "South Africa 2 days ago",
-      "url": "https://za.linkedin.com/jobs/view/laserfiche-records-management-consultant-at-governmentframeworks-com-4476539938",
-      "job_id": "https://za.linkedin.com/jobs/view/laserfiche-records-management-consultant-at-governmentframeworks-com-4476539938",
-      "posted": "2026-10-07",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:05.340779+00:00"
+      "scraped_at": "2026-10-12T17:48:58.004240+00:00"
     },
     {
       "title": "IT Security Governance and Policy Specialist",
@@ -1165,12 +801,25 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 10 hours ago",
+      "summary": "Johannesburg, Gauteng, South Africa 2 days ago",
       "url": "https://za.linkedin.com/jobs/view/it-security-governance-and-policy-specialist-at-sasso-consulting-4476863075",
       "job_id": "https://za.linkedin.com/jobs/view/it-security-governance-and-policy-specialist-at-sasso-consulting-4476863075",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:05.341040+00:00"
+      "scraped_at": "2026-10-12T17:48:58.004535+00:00"
+    },
+    {
+      "title": "Laserfiche Records Management Consultant",
+      "company": "GovernmentFrameworks.com",
+      "location": "South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "South Africa 5 days ago",
+      "url": "https://za.linkedin.com/jobs/view/laserfiche-records-management-consultant-at-governmentframeworks-com-4476539938",
+      "job_id": "https://za.linkedin.com/jobs/view/laserfiche-records-management-consultant-at-governmentframeworks-com-4476539938",
+      "posted": "2026-10-07",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:48:58.004933+00:00"
     },
     {
       "title": "Senior Business Analyst",
@@ -1183,7 +832,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-fem-4466518385",
       "posted": "2026-09-15",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.584578+00:00"
+      "scraped_at": "2026-10-12T17:49:04.833558+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1191,12 +840,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/business-analyst-at-network-recruitment-4474065299",
       "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-network-recruitment-4474065299",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.584919+00:00"
+      "scraped_at": "2026-10-12T17:49:04.833847+00:00"
     },
     {
       "title": "IT Business Analyst (Product Development MFA)",
@@ -1209,20 +858,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/it-business-analyst-product-development-mfa-at-rmb-rand-merchant-bank-4473134974",
       "posted": "2026-10-02",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.585237+00:00"
-    },
-    {
-      "title": "Business Analyst | Johannesburg",
-      "company": "Seacom Ltd",
-      "location": "Johannesburg Metropolitan Area",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg Metropolitan Area 4 days ago",
-      "url": "https://za.linkedin.com/jobs/view/business-analyst-johannesburg-at-seacom-ltd-4473624118",
-      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-johannesburg-at-seacom-ltd-4473624118",
-      "posted": "2026-10-05",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.585542+00:00"
+      "scraped_at": "2026-10-12T17:49:04.834121+00:00"
     },
     {
       "title": "Business Analyst (Private Markets)",
@@ -1235,7 +871,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/business-analyst-private-markets-at-sonata-one-4472951341",
       "posted": "2026-10-01",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.585850+00:00"
+      "scraped_at": "2026-10-12T17:49:04.834400+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1243,25 +879,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa 3 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/business-analyst-at-exalto-consulting-4476324476",
       "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-exalto-consulting-4476324476",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.586113+00:00"
-    },
-    {
-      "title": "Senior Business Analyst",
-      "company": "Vodacom",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-vodacom-4476333397",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-vodacom-4476333397",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.586397+00:00"
+      "scraped_at": "2026-10-12T17:49:04.834670+00:00"
     },
     {
       "title": "IT Business Analyst Travel Risk Management",
@@ -1269,12 +892,25 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 5 days ago",
       "url": "https://za.linkedin.com/jobs/view/it-business-analyst-travel-risk-management-at-healix-international-4475107671",
       "job_id": "https://za.linkedin.com/jobs/view/it-business-analyst-travel-risk-management-at-healix-international-4475107671",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.586670+00:00"
+      "scraped_at": "2026-10-12T17:49:04.834940+00:00"
+    },
+    {
+      "title": "Senior Business Analyst",
+      "company": "Vodacom",
+      "location": "Johannesburg, Gauteng, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 6 days ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-vodacom-4476333397",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-business-analyst-at-vodacom-4476333397",
+      "posted": "2026-10-06",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:49:04.835214+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1282,12 +918,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 week ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 week ago",
       "url": "https://za.linkedin.com/jobs/view/business-analyst-at-parvana-4473760046",
       "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-parvana-4473760046",
       "posted": "2026-09-30",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.586933+00:00"
+      "scraped_at": "2026-10-12T17:49:04.835485+00:00"
     },
     {
       "title": "Business Analyst",
@@ -1295,12 +931,25 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa 3 weeks ago",
+      "summary": "Johannesburg, Gauteng, South Africa 4 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/business-analyst-at-blue-pearl-hq-4465766709",
       "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-blue-pearl-hq-4465766709",
       "posted": "2026-09-14",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:11.587191+00:00"
+      "scraped_at": "2026-10-12T17:49:04.835745+00:00"
+    },
+    {
+      "title": "Business Analyst",
+      "company": "Penta Consulting",
+      "location": "Johannesburg Metropolitan Area",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Johannesburg Metropolitan Area Actively Hiring 2 weeks ago",
+      "url": "https://za.linkedin.com/jobs/view/business-analyst-at-penta-consulting-4470404107",
+      "job_id": "https://za.linkedin.com/jobs/view/business-analyst-at-penta-consulting-4470404107",
+      "posted": "2026-09-22",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:49:04.836013+00:00"
     },
     {
       "title": "Software Development Engineer, AWS Kumo Health Experience",
@@ -1313,7 +962,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/software-development-engineer-aws-kumo-health-experience-at-amazon-web-services-aws-4455798466",
       "posted": "2026-10-01",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.242408+00:00"
+      "scraped_at": "2026-10-12T17:49:13.467804+00:00"
     },
     {
       "title": "Software Development Engineer, AWS Kumo Last-Mile",
@@ -1326,7 +975,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/software-development-engineer-aws-kumo-last-mile-at-amazon-web-services-aws-4455789973",
       "posted": "2026-09-30",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.242696+00:00"
+      "scraped_at": "2026-10-12T17:49:13.468134+00:00"
     },
     {
       "title": "Fullstack Senior Software Engineer",
@@ -1339,7 +988,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/fullstack-senior-software-engineer-at-redpanda-software-4470954562",
       "posted": "2026-09-23",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.242969+00:00"
+      "scraped_at": "2026-10-12T17:49:13.468451+00:00"
     },
     {
       "title": "Intermediate Java Software Engineer",
@@ -1347,12 +996,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/intermediate-java-software-engineer-at-entelect-4457459316",
       "job_id": "https://za.linkedin.com/jobs/view/intermediate-java-software-engineer-at-entelect-4457459316",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.243236+00:00"
+      "scraped_at": "2026-10-12T17:49:13.468759+00:00"
     },
     {
       "title": "Senior Java Software Engineer",
@@ -1360,12 +1009,12 @@
       "location": "City of Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 3 days ago",
+      "summary": "City of Cape Town, Western Cape, South Africa Actively Hiring 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-java-software-engineer-at-entelect-4454240106",
       "job_id": "https://za.linkedin.com/jobs/view/senior-java-software-engineer-at-entelect-4454240106",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.243497+00:00"
+      "scraped_at": "2026-10-12T17:49:13.469068+00:00"
     },
     {
       "title": "Senior Software Engineer (Backend): Cards",
@@ -1378,7 +1027,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-backend-cards-at-bvnk-4470455337",
       "posted": "2026-09-22",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.243752+00:00"
+      "scraped_at": "2026-10-12T17:49:13.469371+00:00"
     },
     {
       "title": "Senior Software Engineer (Cape Town)",
@@ -1391,20 +1040,20 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-cape-town-at-olx-4454574022",
       "posted": "2026-09-18",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.244013+00:00"
+      "scraped_at": "2026-10-12T17:49:13.469675+00:00"
     },
     {
-      "title": "Full Stack Java Developer",
-      "company": "Unifi",
-      "location": "Stellenbosch, Western Cape, South Africa",
+      "title": "Senior Software Engineer, Backend - Data Streaming",
+      "company": "Camunda",
+      "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Stellenbosch, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/full-stack-java-developer-at-unifi-4468962429",
-      "job_id": "https://za.linkedin.com/jobs/view/full-stack-java-developer-at-unifi-4468962429",
-      "posted": "2026-09-23",
+      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 57 minutes ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-backend-data-streaming-at-camunda-4476036352",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-backend-data-streaming-at-camunda-4476036352",
+      "posted": "2026-10-12",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.244279+00:00"
+      "scraped_at": "2026-10-12T17:49:13.469985+00:00"
     },
     {
       "title": "Intermediate Full Stack Engineer",
@@ -1412,12 +1061,12 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 3 weeks ago",
+      "summary": "Johannesburg, Gauteng, South Africa 4 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/intermediate-full-stack-engineer-at-hyperiondev-4477817642",
       "job_id": "https://za.linkedin.com/jobs/view/intermediate-full-stack-engineer-at-hyperiondev-4477817642",
       "posted": "2026-09-14",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.244542+00:00"
+      "scraped_at": "2026-10-12T17:49:13.470252+00:00"
     },
     {
       "title": "Intermediate Full Stack Engineer",
@@ -1425,12 +1074,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 3 weeks ago",
+      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 4 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/intermediate-full-stack-engineer-at-hyperiondev-4477831088",
       "job_id": "https://za.linkedin.com/jobs/view/intermediate-full-stack-engineer-at-hyperiondev-4477831088",
       "posted": "2026-09-14",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:18.244805+00:00"
+      "scraped_at": "2026-10-12T17:49:13.470523+00:00"
     },
     {
       "title": "Python Developer -Mid/Snr",
@@ -1438,12 +1087,12 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 week ago",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/python-developer-mid-snr-at-travelstart-4473057802",
       "job_id": "https://za.linkedin.com/jobs/view/python-developer-mid-snr-at-travelstart-4473057802",
       "posted": "2026-09-28",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:26.840761+00:00"
+      "scraped_at": "2026-10-12T17:49:20.712279+00:00"
     },
     {
       "title": "Java Developer",
@@ -1451,12 +1100,12 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa 1 week ago",
+      "summary": "Johannesburg, Gauteng, South Africa 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/java-developer-at-executiveplacements-com-4471073755",
       "job_id": "https://za.linkedin.com/jobs/view/java-developer-at-executiveplacements-com-4471073755",
       "posted": "2026-09-27",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:26.841833+00:00"
+      "scraped_at": "2026-10-12T17:49:20.713460+00:00"
     },
     {
       "title": "Senior Software Engineer, Backend - Data Layer",
@@ -1464,12 +1113,12 @@
       "location": "Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 14 hours ago",
+      "summary": "Johannesburg, Gauteng, South Africa Be an early applicant 3 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-backend-data-layer-at-camunda-4475241428",
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-backend-data-layer-at-camunda-4475241428",
       "posted": "2026-10-09",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:26.842103+00:00"
+      "scraped_at": "2026-10-12T17:49:20.713732+00:00"
     },
     {
       "title": "Senior JavaScript Software Engineer",
@@ -1477,233 +1126,12 @@
       "location": "City of Johannesburg, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa Actively Hiring 3 days ago",
+      "summary": "City of Johannesburg, Gauteng, South Africa Actively Hiring 6 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-javascript-software-engineer-at-entelect-4454236215",
       "job_id": "https://za.linkedin.com/jobs/view/senior-javascript-software-engineer-at-entelect-4454236215",
       "posted": "2026-10-06",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:26.842367+00:00"
-    },
-    {
-      "title": "Junior Software Engineer",
-      "company": "The Rank Group plc",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/junior-software-engineer-at-the-rank-group-plc-4471124424",
-      "job_id": "https://za.linkedin.com/jobs/view/junior-software-engineer-at-the-rank-group-plc-4471124424",
-      "posted": "2026-09-23",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:26.843150+00:00"
-    },
-    {
-      "title": "Software Engineer, Analytics",
-      "company": "Confluence",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/software-engineer-analytics-at-confluence-4454295000",
-      "job_id": "https://za.linkedin.com/jobs/view/software-engineer-analytics-at-confluence-4454295000",
-      "posted": "2026-09-29",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:33.836688+00:00"
-    },
-    {
-      "title": "Senior Software Engineer (Shopify)",
-      "company": "impact.com",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 6 days ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-shopify-at-impact-com-4434559060",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-shopify-at-impact-com-4434559060",
-      "posted": "2026-10-03",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:33.836951+00:00"
-    },
-    {
-      "title": "Senior Software Engineer",
-      "company": "impact.com",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 6 days ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-impact-com-4348501013",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-impact-com-4348501013",
-      "posted": "2026-10-03",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:33.837212+00:00"
-    },
-    {
-      "title": "Senior Backend Developer",
-      "company": "Tenth Revolution Group",
-      "location": "Johannesburg Metropolitan Area",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg Metropolitan Area 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-backend-developer-at-tenth-revolution-group-4472183862",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-backend-developer-at-tenth-revolution-group-4472183862",
-      "posted": "2026-09-30",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:40.257270+00:00"
-    },
-    {
-      "title": "Java Software Engineer",
-      "company": "Andela",
-      "location": "City of Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa Actively Hiring 3 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/java-software-engineer-at-andela-4465224810",
-      "job_id": "https://za.linkedin.com/jobs/view/java-software-engineer-at-andela-4465224810",
-      "posted": "2026-09-14",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:40.257532+00:00"
-    },
-    {
-      "title": "Senior Java Software Engineer",
-      "company": "Entelect",
-      "location": "Johannesburg Metropolitan Area",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg Metropolitan Area Actively Hiring 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-java-software-engineer-at-entelect-4454245072",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-java-software-engineer-at-entelect-4454245072",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:40.257793+00:00"
-    },
-    {
-      "title": "Software Tester - Financial Systems",
-      "company": "Linkfields Innovations (Pty) Ltd",
-      "location": "Johannesburg Metropolitan Area",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg Metropolitan Area Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/software-tester-financial-systems-at-linkfields-innovations-pty-ltd-4474149503",
-      "job_id": "https://za.linkedin.com/jobs/view/software-tester-financial-systems-at-linkfields-innovations-pty-ltd-4474149503",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.118126+00:00"
-    },
-    {
-      "title": "Junior Software Quality Analyst",
-      "company": "BETSoftware",
-      "location": "KwaZulu-Natal, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "KwaZulu-Natal, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/junior-software-quality-analyst-at-betsoftware-4453451428",
-      "job_id": "https://za.linkedin.com/jobs/view/junior-software-quality-analyst-at-betsoftware-4453451428",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.118431+00:00"
-    },
-    {
-      "title": "Intermediate Software Quality Engineer",
-      "company": "BETSoftware",
-      "location": "Durban, KwaZulu-Natal, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 2 days ago",
-      "url": "https://za.linkedin.com/jobs/view/intermediate-software-quality-engineer-at-betsoftware-4418399872",
-      "job_id": "https://za.linkedin.com/jobs/view/intermediate-software-quality-engineer-at-betsoftware-4418399872",
-      "posted": "2026-10-07",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.118711+00:00"
-    },
-    {
-      "title": "Software Quality Assurance / Testing Engineer: ServiceNow",
-      "company": "NTT DATA, Inc.",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 3 days ago",
-      "url": "https://za.linkedin.com/jobs/view/software-quality-assurance-testing-engineer-servicenow-at-ntt-data-inc-4464216570",
-      "job_id": "https://za.linkedin.com/jobs/view/software-quality-assurance-testing-engineer-servicenow-at-ntt-data-inc-4464216570",
-      "posted": "2026-10-06",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.118984+00:00"
-    },
-    {
-      "title": "Intermediate QA Tester",
-      "company": "Amaris Consulting  | Part of Mantu",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 2 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/intermediate-qa-tester-at-amaris-consulting-part-of-mantu-4441623181",
-      "job_id": "https://za.linkedin.com/jobs/view/intermediate-qa-tester-at-amaris-consulting-part-of-mantu-4441623181",
-      "posted": "2026-09-23",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.119274+00:00"
-    },
-    {
-      "title": "Manual Tester",
-      "company": "Inspired Thinking Group (ITG)",
-      "location": "South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "South Africa Actively Hiring 13 hours ago",
-      "url": "https://za.linkedin.com/jobs/view/manual-tester-at-inspired-thinking-group-itg-4477832595",
-      "job_id": "https://za.linkedin.com/jobs/view/manual-tester-at-inspired-thinking-group-itg-4477832595",
-      "posted": "2026-10-09",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.119597+00:00"
-    },
-    {
-      "title": "Senior Test Analyst",
-      "company": "Penta Consulting",
-      "location": "City of Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "City of Johannesburg, Gauteng, South Africa Actively Hiring 1 week ago",
-      "url": "https://za.linkedin.com/jobs/view/senior-test-analyst-at-penta-consulting-4474148124",
-      "job_id": "https://za.linkedin.com/jobs/view/senior-test-analyst-at-penta-consulting-4474148124",
-      "posted": "2026-10-01",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.119879+00:00"
-    },
-    {
-      "title": "QA Analyst",
-      "company": "Network International",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 day ago",
-      "url": "https://za.linkedin.com/jobs/view/qa-analyst-at-network-international-4475797150",
-      "job_id": "https://za.linkedin.com/jobs/view/qa-analyst-at-network-international-4475797150",
-      "posted": "2026-10-08",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.120165+00:00"
-    },
-    {
-      "title": "QA Engineer (Manual & Automation) - Cape Town",
-      "company": "Pinewood.AI",
-      "location": "Cape Town, Western Cape, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 4 weeks ago",
-      "url": "https://za.linkedin.com/jobs/view/qa-engineer-manual-automation-cape-town-at-pinewood-ai-4465687920",
-      "job_id": "https://za.linkedin.com/jobs/view/qa-engineer-manual-automation-cape-town-at-pinewood-ai-4465687920",
-      "posted": "2026-09-10",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.120436+00:00"
-    },
-    {
-      "title": "QA Analyst",
-      "company": "Network International",
-      "location": "Johannesburg, Gauteng, South Africa",
-      "job_type": "Full-time",
-      "salary": "Not specified",
-      "summary": "Johannesburg, Gauteng, South Africa Actively Hiring 1 day ago",
-      "url": "https://za.linkedin.com/jobs/view/qa-analyst-at-network-international-4475794268",
-      "job_id": "https://za.linkedin.com/jobs/view/qa-analyst-at-network-international-4475794268",
-      "posted": "2026-10-08",
-      "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:47.120710+00:00"
+      "scraped_at": "2026-10-12T17:49:20.714301+00:00"
     },
     {
       "title": "Senior Software Developer",
@@ -1711,12 +1139,12 @@
       "location": "Durban, KwaZulu-Natal, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 1 week ago",
+      "summary": "Durban, KwaZulu-Natal, South Africa Actively Hiring 2 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-software-developer-at-betsoftware-4375522738",
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-developer-at-betsoftware-4375522738",
-      "posted": "2026-09-29",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:52.645533+00:00"
+      "scraped_at": "2026-10-12T17:49:45.762705+00:00"
     },
     {
       "title": "Senior Software Engineer",
@@ -1724,12 +1152,12 @@
       "location": "Pretoria, Gauteng, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Pretoria, Gauteng, South Africa 1 day ago",
+      "summary": "Pretoria, Gauteng, South Africa 4 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-betway-global-4477132638",
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-betway-global-4477132638",
       "posted": "2026-10-08",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:52.646123+00:00"
+      "scraped_at": "2026-10-12T17:49:45.762941+00:00"
     },
     {
       "title": "Senior Software Development Engineer - Live",
@@ -1737,12 +1165,12 @@
       "location": "Durban, KwaZulu-Natal, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Durban, KwaZulu-Natal, South Africa Be an early applicant 1 week ago",
+      "summary": "Durban, KwaZulu-Natal, South Africa Be an early applicant 2 days ago",
       "url": "https://za.linkedin.com/jobs/view/senior-software-development-engineer-live-at-betsoftware-4472630486",
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-development-engineer-live-at-betsoftware-4472630486",
-      "posted": "2026-09-30",
+      "posted": "2026-10-10",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:52.646388+00:00"
+      "scraped_at": "2026-10-12T17:49:45.763172+00:00"
     },
     {
       "title": "Senior Software Engineer (Back-end)",
@@ -1755,7 +1183,7 @@
       "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-back-end-at-digioutsource-4125878632",
       "posted": "2026-09-22",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:52.646918+00:00"
+      "scraped_at": "2026-10-12T17:49:45.763640+00:00"
     },
     {
       "title": "Principal Backend Software Engineer",
@@ -1763,12 +1191,38 @@
       "location": "Cape Town, Western Cape, South Africa",
       "job_type": "Full-time",
       "salary": "Not specified",
-      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 week ago",
+      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 2 weeks ago",
       "url": "https://za.linkedin.com/jobs/view/principal-backend-software-engineer-at-kingmakers-4441094516",
       "job_id": "https://za.linkedin.com/jobs/view/principal-backend-software-engineer-at-kingmakers-4441094516",
       "posted": "2026-09-26",
       "source": "LinkedIn",
-      "scraped_at": "2026-10-10T07:05:52.647444+00:00"
+      "scraped_at": "2026-10-12T17:49:45.764098+00:00"
+    },
+    {
+      "title": "Senior Backend Engineer - Asset Sales",
+      "company": "M-KOPA",
+      "location": "Cape Town, Western Cape, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Cape Town, Western Cape, South Africa Be an early applicant 1 week ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-backend-engineer-asset-sales-at-m-kopa-4473781897",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-backend-engineer-asset-sales-at-m-kopa-4473781897",
+      "posted": "2026-09-30",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:49:45.764568+00:00"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "impact.com",
+      "location": "Cape Town, Western Cape, South Africa",
+      "job_type": "Full-time",
+      "salary": "Not specified",
+      "summary": "Cape Town, Western Cape, South Africa Actively Hiring 1 day ago",
+      "url": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-impact-com-4348501013",
+      "job_id": "https://za.linkedin.com/jobs/view/senior-software-engineer-at-impact-com-4348501013",
+      "posted": "2026-10-10",
+      "source": "LinkedIn",
+      "scraped_at": "2026-10-12T17:49:45.764796+00:00"
     }
   ]
 }
