@@ -10,6 +10,7 @@ from typing import Any
 PREFERRED_USERS = frozenset({
     "murendi.marytendani@gmail.com",
     "makondelelamaps@gmail.com",
+    "tshifanyisoa@gmail.com"
 })
 DATA_ROLE_USERS = frozenset({"maswimewanga26@gmail.com"})
 EXPERIENCE_FILE = Path(__file__).parent.parent / "data" / "data_jobs_experience.json"
