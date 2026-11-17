@@ -42,4 +42,5 @@ htmlcov/
 # OS
 Thumbs.db
 ehthumbs.db
-Desktop.inienv.txt
+Desktop.ini
+env.txt
