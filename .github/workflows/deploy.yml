@@ -126,29 +126,9 @@ jobs:
               --version-label "${VERSION_LABEL}" \
               --description "Deploy ${GITHUB_SHA::7}: $(git log -1 --format=%s | cut -c1-100)" \
               --source-bundle "S3Bucket=${BUCKET},S3Key=${KEY}"
-
-            # Wait for version to be PROCESSED (not just created)
-            echo "Waiting for application version to be PROCESSED..."
-            for i in {1..30}; do
-              STATUS=$(aws elasticbeanstalk describe-application-versions \
-                --application-name "${EB_APPLICATION}" \
-                --version-labels "${VERSION_LABEL}" \
-                --query 'ApplicationVersions[0].Status' --output text)
-              echo "Attempt $i/30: Version status = ${STATUS}"
-              if [ "${STATUS}" = "PROCESSED" ]; then
-                echo "✓ Version is PROCESSED"
-                break
-              fi
-              if [ "${STATUS}" = "FAILED" ]; then
-                echo "::error::Version processing FAILED"
-                exit 1
-              fi
-              sleep 10
-            done
           fi
 
-          # Final verification
-          echo "Verifying application version..."
+          # Verify version exists (should be UNPROCESSED - that's fine, EB processes during deploy)
           VERSION_CHECK=$(aws elasticbeanstalk describe-application-versions \
             --application-name "${EB_APPLICATION}" \
             --version-labels "${VERSION_LABEL}" \
@@ -165,7 +145,7 @@ jobs:
             exit 1
           fi
 
-          echo "✓ Application version verified: ${VERSION_LABEL}"
+          echo "✓ Application version created: ${VERSION_LABEL}"
           echo "version_label=${VERSION_LABEL}" >> $GITHUB_OUTPUT
 
       - name: Deploy to Elastic Beanstalk
