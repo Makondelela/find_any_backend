@@ -16,6 +16,10 @@ on:
         options:
           - findfast-env
         default: 'findfast-env'
+      version:
+        description: 'Version to deploy (overrides VERSION file)'
+        type: string
+        required: false
 
 concurrency:
   group: deploy-findfast
@@ -40,6 +44,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Read version
+        id: version
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+            echo "Using manual version input: ${VERSION}"
+          else
+            VERSION=$(cat VERSION)
+            echo "Using VERSION file: ${VERSION}"
+          fi
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "Deploying version: ${VERSION}"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -96,8 +113,7 @@ jobs:
         id: create-version
         run: |
           set -euo pipefail
-          TIMESTAMP=$(date +%Y%m%d-%H%M%S)
-          VERSION_LABEL="findfast-${TIMESTAMP}-${GITHUB_SHA::7}"
+          VERSION_LABEL="findfast-v${{ steps.version.outputs.version }}"
 
           echo "Creating version: ${VERSION_LABEL}"
 
