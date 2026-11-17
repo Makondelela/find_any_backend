@@ -128,7 +128,31 @@ jobs:
               --source-bundle "S3Bucket=${BUCKET},S3Key=${KEY}"
           fi
 
-          # Verify version exists (should be UNPROCESSED - that's fine, EB processes during deploy)
+          # Wait for version to be PROCESSED (critical - EB must process the zip before it can deploy)
+          echo "Waiting for application version to be PROCESSED..."
+          for i in {1..30}; do
+            STATUS=$(aws elasticbeanstalk describe-application-versions \
+              --application-name "${EB_APPLICATION}" \
+              --version-labels "${VERSION_LABEL}" \
+              --query 'ApplicationVersions[0].Status' --output text)
+            echo "Attempt $i/30: Version status = ${STATUS}"
+            if [ "${STATUS}" = "PROCESSED" ]; then
+              echo "✓ Version is PROCESSED and ready for deployment"
+              break
+            fi
+            if [ "${STATUS}" = "FAILED" ]; then
+              echo "::error::Version processing FAILED"
+              # Get failure reason
+              aws elasticbeanstalk describe-application-versions \
+                --application-name "${EB_APPLICATION}" \
+                --version-labels "${VERSION_LABEL}" \
+                --query 'ApplicationVersions[0].{Status:Status,Message:Message}' --output json
+              exit 1
+            fi
+            sleep 10
+          done
+
+          # Final verification
           VERSION_CHECK=$(aws elasticbeanstalk describe-application-versions \
             --application-name "${EB_APPLICATION}" \
             --version-labels "${VERSION_LABEL}" \
@@ -138,14 +162,10 @@ jobs:
 
           if [ "${VERSION_CHECK}" != "${VERSION_LABEL}" ]; then
             echo "::error::Application version ${VERSION_LABEL} not found after creation"
-            echo "Listing all versions for debugging:"
-            aws elasticbeanstalk describe-application-versions \
-              --application-name "${EB_APPLICATION}" \
-              --query 'ApplicationVersions[*].VersionLabel' --output text
             exit 1
           fi
 
-          echo "✓ Application version created: ${VERSION_LABEL}"
+          echo "✓ Application version verified and PROCESSED: ${VERSION_LABEL}"
           echo "version_label=${VERSION_LABEL}" >> $GITHUB_OUTPUT
 
       - name: Deploy to Elastic Beanstalk
