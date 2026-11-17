@@ -89,14 +89,21 @@ jobs:
       - name: Create EB application version
         id: create-version
         run: |
+          set -euo pipefail
           TIMESTAMP=$(date +%Y%m%d-%H%M%S)
           VERSION_LABEL="findfast-${TIMESTAMP}-${GITHUB_SHA::7}"
+
+          echo "Creating version: ${VERSION_LABEL}"
 
           # Upload to EB's S3 bucket
           BUCKET=$(aws elasticbeanstalk create-storage-location --query S3Bucket --output text)
           KEY="${EB_APPLICATION}/${VERSION_LABEL}.zip"
 
+          echo "Uploading to s3://${BUCKET}/${KEY}"
           aws s3 cp findfast-deploy.zip "s3://${BUCKET}/${KEY}"
+
+          # Verify upload
+          aws s3 ls "s3://${BUCKET}/${KEY}"
 
           # Check if version already exists (for re-runs of same commit)
           EXISTING=$(aws elasticbeanstalk describe-application-versions \
@@ -107,6 +114,7 @@ jobs:
           if [ "$EXISTING" != "0" ]; then
             echo "Version ${VERSION_LABEL} already exists, reusing it"
           else
+            echo "Creating application version..."
             aws elasticbeanstalk create-application-version \
               --application-name "${EB_APPLICATION}" \
               --version-label "${VERSION_LABEL}" \
@@ -115,17 +123,24 @@ jobs:
 
             # Wait for version to be processed
             echo "Waiting for application version to be processed..."
-            sleep 5
+            sleep 10
           fi
 
           # Verify version exists
+          echo "Verifying application version..."
           VERSION_CHECK=$(aws elasticbeanstalk describe-application-versions \
             --application-name "${EB_APPLICATION}" \
             --version-labels "${VERSION_LABEL}" \
             --query 'ApplicationVersions[0].VersionLabel' --output text)
 
+          echo "Version check result: '${VERSION_CHECK}'"
+
           if [ "${VERSION_CHECK}" != "${VERSION_LABEL}" ]; then
             echo "::error::Application version ${VERSION_LABEL} not found after creation"
+            echo "Listing all versions for debugging:"
+            aws elasticbeanstalk describe-application-versions \
+              --application-name "${EB_APPLICATION}" \
+              --query 'ApplicationVersions[*].VersionLabel' --output text
             exit 1
           fi
 
