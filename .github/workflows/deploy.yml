@@ -125,12 +125,27 @@ jobs:
             --version-label "${{ steps.create-version.outputs.version_label }}"
 
           # Wait for deployment to complete
+          echo "Waiting for environment update to complete..."
           aws elasticbeanstalk wait environment-updated --environment-names "${EB_ENVIRONMENT}"
 
+          # Give it a moment to settle
+          sleep 10
+
           # Verify the environment is actually running the new version
-          DEPLOYED_VERSION=$(aws elasticbeanstalk describe-environments \
-            --environment-names "${EB_ENVIRONMENT}" \
-            --query 'Environments[0].VersionLabel' --output text)
+          for i in {1..6}; do
+            DEPLOYED_VERSION=$(aws elasticbeanstalk describe-environments \
+              --environment-names "${EB_ENVIRONMENT}" \
+              --query 'Environments[0].VersionLabel' --output text)
+
+            echo "Attempt $i/6: Environment version = ${DEPLOYED_VERSION}"
+
+            if [ "${DEPLOYED_VERSION}" != "None" ] && [ -n "${DEPLOYED_VERSION}" ]; then
+              break
+            fi
+
+            echo "Waiting for version to be available..."
+            sleep 10
+          done
 
           echo "Environment now running version: ${DEPLOYED_VERSION}"
           EXPECTED_VERSION="${{ steps.create-version.outputs.version_label }}"
