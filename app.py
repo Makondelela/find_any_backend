@@ -482,6 +482,15 @@ def update_checked():
 
 
 @app.route('/api/stats')
+@app.route('/health')
+def health_check():
+    """Simple health check for load balancer - no external dependencies"""
+    return jsonify({
+        'status': 'healthy',
+        'service': 'findfast-api'
+    }), 200
+
+
 def get_stats():
     """API endpoint to get job statistics"""
     try:
