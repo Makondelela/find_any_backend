@@ -1,0 +1,144 @@
+# Deploy FindFast to AWS Elastic Beanstalk
+# =========================================
+# Triggers on push to main or manual dispatch
+# Deploys Python Flask app to Elastic Beanstalk
+
+name: Deploy FindFast to Elastic Beanstalk
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        type: choice
+        options:
+          - findfast-env
+        default: 'findfast-env'
+
+concurrency:
+  group: deploy-findfast
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  id-token: write  # For OIDC if using AWS roles
+
+env:
+  AWS_REGION: eu-north-1
+  EB_APPLICATION: findfast
+  EB_ENVIRONMENT: findfast-env
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  deploy:
+    name: Deploy to Elastic Beanstalk
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          # Playwright is not needed on EB (scraping runs separately)
+          # playwright install chromium
+
+      - name: Run tests
+        run: |
+          python -m py_compile app.py
+          python -m py_compile backend/job_service.py
+          python -m py_compile combine_jobs.py
+          # Add pytest if you have tests
+          # pytest tests/
+
+      - name: Create deployment package
+        run: |
+          # Create a clean deployment package
+          mkdir -p deploy_package
+          # Copy all necessary files
+          cp -r app.py backend/ user_profile/ scrapers/ templates/ static/ deploy_package/
+          cp requirements.txt runtime.txt deploy_package/
+          cp combine_jobs.py deploy_package/
+          cp trigger_scrape.py deploy_package/
+          # Create .ebextensions for EB configuration
+          mkdir -p deploy_package/.ebextensions
+          cp .ebextensions/* deploy_package/.ebextensions/ 2>/dev/null || true
+          # Create zip
+          cd deploy_package
+          zip -r ../findfast-deploy.zip . -x "*.pyc" "__pycache__/*" "*.git*" "venv/*" ".env*" "data/*.json" "*.log"
+          cd ..
+          echo "Package size: $(du -h findfast-deploy.zip | cut -f1)"
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Create EB application version
+        id: create-version
+        run: |
+          TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+          VERSION_LABEL="findfast-${TIMESTAMP}-${GITHUB_SHA::7}"
+
+          # Upload to EB's S3 bucket
+          BUCKET=$(aws elasticbeanstalk create-storage-location --query S3Bucket --output text)
+          KEY="${EB_APPLICATION}/${VERSION_LABEL}.zip"
+
+          aws s3 cp findfast-deploy.zip "s3://${BUCKET}/${KEY}"
+
+          aws elasticbeanstalk create-application-version \
+            --application-name "${EB_APPLICATION}" \
+            --version-label "${VERSION_LABEL}" \
+            --description "Deploy ${GITHUB_SHA::7}: $(git log -1 --format=%s | cut -c1-100)" \
+            --source-bundle "S3Bucket=${BUCKET},S3Key=${KEY}"
+
+          echo "version_label=${VERSION_LABEL}" >> $GITHUB_OUTPUT
+
+      - name: Deploy to Elastic Beanstalk
+        run: |
+          aws elasticbeanstalk update-environment \
+            --environment-name "${EB_ENVIRONMENT}" \
+            --version-label "${{ steps.create-version.outputs.version_label }}"
+
+          # Wait for deployment to complete
+          aws elasticbeanstalk wait environment-updated --environment-names "${EB_ENVIRONMENT}"
+
+      - name: Verify deployment
+        run: |
+          # Get environment URL
+          ENV_URL=$(aws elasticbeanstalk describe-environments \
+            --environment-names "${EB_ENVIRONMENT}" \
+            --query 'Environments[0].CNAME' --output text)
+
+          echo "Environment URL: http://${ENV_URL}"
+
+          # Wait for app to be ready and test health endpoint
+          for i in {1..20}; do
+            if curl -fsS "http://${ENV_URL}/api/stats" > /dev/null; then
+              echo "✓ Health check passed!"
+              exit 0
+            fi
+            echo "Waiting for app... (attempt $i/20)"
+            sleep 15
+          done
+
+          echo "✗ Health check failed after 5 minutes"
+          exit 1
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "Deployment failed! Check GitHub Actions logs for details."
+          # Could add Slack/Discord notification here

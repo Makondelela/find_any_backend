@@ -10,12 +10,11 @@ import json
 import logging
 import threading
 import os
-from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
 import requests
 import firebase_admin
-from firebase_admin import credentials, auth, db as firebase_db
+from firebase_admin import credentials, auth
 from assistant_browser import assistant_browser
 from user_profile import service as profile_service
 from user_profile.constants import (
@@ -38,6 +37,15 @@ from user_profile.constants import (
 from user_profile.cv_parser import extract_text, parse_cv, CVParseError
 from user_profile.field_mappings import FIELD_MAPPINGS
 from backend.job_personalization import prioritize_jobs_for_user
+from backend.job_service import (
+    load_jobs,
+    load_user_checked,
+    save_user_checked,
+    update_checked as update_checked_service,
+    get_jobs_statistics,
+    track_job_view_unified as track_job_view,
+    get_user_history,
+)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -94,12 +102,6 @@ try:
 except Exception as e:
     log.warning(f"Firebase initialization failed: {e}. Authentication will not work.")
 
-# Data file paths
-DATA_DIR = Path(__file__).parent / 'data'
-COMBINED_JOBS_FILE = DATA_DIR / 'data_jobs_combined.json'
-USER_CHECKED_FILE = DATA_DIR / 'user_checked.json'
-USER_HISTORY_FILE = DATA_DIR / 'user_history.json'
-
 # Authentication decorator
 def login_required(f):
     @wraps(f)
@@ -129,65 +131,6 @@ scraping_status = {
 }
 
 
-def load_jobs():
-    """Load jobs from the combined data file"""
-    try:
-        if COMBINED_JOBS_FILE.exists():
-            with open(COMBINED_JOBS_FILE, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data.get('jobs', [])
-        return []
-    except Exception as e:
-        log.error(f"Error loading jobs: {e}")
-        return []
-
-
-def load_user_checked():
-    """Load user checked jobs"""
-    try:
-        if USER_CHECKED_FILE.exists():
-            with open(USER_CHECKED_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        return {}
-    except Exception as e:
-        log.error(f"Error loading user checked data: {e}")
-        return {}
-
-
-def save_user_checked(data):
-    """Save user checked jobs"""
-    try:
-        DATA_DIR.mkdir(exist_ok=True)
-        with open(USER_CHECKED_FILE, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        return True
-    except Exception as e:
-        log.error(f"Error saving user checked data: {e}")
-        return False
-
-
-def load_user_history():
-    """Load user history data"""
-    try:
-        if USER_HISTORY_FILE.exists():
-            with open(USER_HISTORY_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        return {}
-    except Exception as e:
-        log.error(f"Error loading user history: {e}")
-        return {}
-
-
-def save_user_history(data):
-    """Save user history data"""
-    try:
-        DATA_DIR.mkdir(exist_ok=True)
-        with open(USER_HISTORY_FILE, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        return True
-    except Exception as e:
-        log.error(f"Error saving user history: {e}")
-        return False
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -509,24 +452,17 @@ def update_checked():
         job_id = data.get('job_id')
         user = data.get('user')
         checked = data.get('checked', False)
-        
+
         if not job_id or not user:
             return jsonify({
                 'success': False,
                 'error': 'Missing job_id or user'
             }), 400
-        
-        user_checked = load_user_checked()
-        
-        if job_id not in user_checked:
-            user_checked[job_id] = {}
-        
-        user_checked[job_id][user] = {
-            'checked': checked,
-            'timestamp': datetime.now().isoformat()
-        }
-        
-        if save_user_checked(user_checked):
+
+        # Use unified job service (handles Firebase or local fallback)
+        success = update_checked_service(job_id, user, checked)
+
+        if success:
             return jsonify({
                 'success': True,
                 'message': 'Checked status updated'
@@ -536,7 +472,7 @@ def update_checked():
                 'success': False,
                 'error': 'Failed to save'
             }), 500
-            
+
     except Exception as e:
         log.error(f"Error in update_checked: {e}")
         return jsonify({
@@ -549,36 +485,14 @@ def update_checked():
 def get_stats():
     """API endpoint to get job statistics"""
     try:
-        jobs = load_jobs()
-        
-        # Calculate stats
-        jobs_by_source = {}
-        jobs_by_location = {}
-        
-        for job in jobs:
-            source = job.get('source', 'Unknown')
-            location = job.get('location', 'Unknown')
-            
-            jobs_by_source[source] = jobs_by_source.get(source, 0) + 1
-            jobs_by_location[location] = jobs_by_location.get(location, 0) + 1
-        
-        # Get combined_at timestamp from meta
-        combined_at = 'Unknown'
-        try:
-            if COMBINED_JOBS_FILE.exists():
-                with open(COMBINED_JOBS_FILE, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    meta = data.get('meta', {})
-                    combined_at = meta.get('combined_at', 'Unknown')
-        except:
-            pass
-        
+        stats = get_jobs_statistics()
+
         return jsonify({
             'success': True,
-            'total_jobs': len(jobs),
-            'jobs_by_source': jobs_by_source,
-            'jobs_by_location': jobs_by_location,
-            'combined_at': combined_at
+            'total_jobs': stats['total_jobs'],
+            'jobs_by_source': stats['jobs_by_source'],
+            'jobs_by_location': stats['jobs_by_location'],
+            'combined_at': stats['combined_at']
         })
     except Exception as e:
         log.error(f"Error in get_stats: {e}")
@@ -677,7 +591,7 @@ def trigger_scrape():
             'message': scraping_status['message'],
             'progress': scraping_status['progress']
         })
-    
+
     # Handle POST request - trigger scraping
     if scraping_status['running']:
         return jsonify({
@@ -685,7 +599,42 @@ def trigger_scrape():
             'success': True,
             'message': 'Scraping already in progress'
         })
-    
+
+
+@app.route('/api/scrape/trigger', methods=['POST'])
+def trigger_scrape_remote():
+    """
+    Remote trigger endpoint for scraping (can be called from phone/app).
+    Requires SCRAPE_API_KEY environment variable for authentication.
+    """
+    # Check API key
+    api_key = request.headers.get('X-API-Key') or request.args.get('api_key')
+    expected_key = os.environ.get('SCRAPE_API_KEY')
+
+    if not expected_key:
+        return jsonify({
+            'success': False,
+            'error': 'Remote scraping not configured (SCRAPE_API_KEY not set)'
+        }), 503
+
+    if api_key != expected_key:
+        log.warning(f"Invalid API key attempt from {request.remote_addr}")
+        return jsonify({
+            'success': False,
+            'error': 'Invalid API key'
+        }), 401
+
+    if scraping_status['running']:
+        return jsonify({
+            'success': False,
+            'status': 'running',
+            'message': 'Scraping already in progress'
+        }), 409
+
+    # Optional: allow custom search terms from request
+    data = request.get_json(silent=True) or {}
+    search_terms = data.get('search_terms')
+
     # Start scraping in background thread
     def run_scraper():
         global scraping_status
@@ -693,7 +642,7 @@ def trigger_scrape():
             import subprocess
             import sys
             from pathlib import Path
-            
+
             scraping_status.update({
                 'running': True,
                 'status': 'running',
@@ -701,16 +650,16 @@ def trigger_scrape():
                 'progress': 0,
                 'last_update': datetime.now().isoformat()
             })
-            
-            log.info("POST /api/scrape - Starting scrape request")
-            
+
+            log.info("POST /api/scrape/trigger - Remote scrape request")
+
             # Get the correct path to main.py
             base_dir = Path(__file__).parent
             main_script = base_dir / 'backend' / 'main.py'
-            
+
             log.info(f"Base directory: {base_dir}")
             log.info(f"Main script path: {main_script}")
-            
+
             if not main_script.exists():
                 log.error(f"Script not found: {main_script}")
                 scraping_status.update({
@@ -720,28 +669,32 @@ def trigger_scrape():
                     'last_update': datetime.now().isoformat()
                 })
                 return
-            
-            # Get search terms
-            search_terms = (
-                'Data Engineer, Data Analyst, Data Scientist, Data Architect, '
-                'Business Intelligence, BI Developer, Machine Learning Engineer, '
-                'Analytics Engineer, ETL Developer, Data Warehouse Developer, '
-                'Data Quality Analyst, Data Governance Specialist, Business Analyst, '
-                'Software Developer, Developer, Software Engineer, Programmer, '
-                'Software Tester, software'
-            )
-            
-            log.info(f"Running scraper with {len(search_terms.split(','))} job types")
-            
+
+            # Use custom search terms or default
+            if search_terms:
+                search_terms_str = search_terms
+            else:
+                search_terms_str = (
+                    'Data Engineer, Data Analyst, Data Scientist, Data Architect, '
+                    'Business Intelligence, BI Developer, Machine Learning Engineer, '
+                    'Analytics Engineer, ETL Developer, Data Warehouse Developer, '
+                    'Data Quality Analyst, Data Governance Specialist, Business Analyst, '
+                    'Software Developer, Developer, Software Engineer, Programmer, '
+                    'Software Tester, software'
+                )
+
+            log.info(f"Running scraper with search terms: {search_terms_str[:100]}...")
+
             scraping_status.update({
                 'message': 'Scraping jobs from multiple sources...',
                 'progress': 10,
                 'last_update': datetime.now().isoformat()
             })
-            
-            # Run the scraper script with streaming output
+
+            # Run the scraper script
+            cmd = [sys.executable, str(main_script), '--json', '--search', search_terms_str]
             process = subprocess.Popen(
-                [sys.executable, str(main_script), '--json', '--search', search_terms],
+                cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
@@ -750,16 +703,15 @@ def trigger_scrape():
                 bufsize=1,
                 cwd=str(base_dir)
             )
-            
+
             # Track progress
             last_scraper = None
             progress_map = {'careers24': 20, 'careerjunction': 40, 'pnet': 60, 'nri': 80, 'linkedin': 90, 'executiveplacements': 95}
-            
+
             # Read output line by line
             for line in process.stdout:
                 line_lower = line.lower()
-                
-                # Update status based on scraper output
+
                 if 'careers24' in line_lower:
                     last_scraper = 'Careers24'
                     scraping_status.update({
@@ -803,7 +755,6 @@ def trigger_scrape():
                         'last_update': datetime.now().isoformat()
                     })
                 elif 'found' in line_lower and 'jobs' in line_lower:
-                    # Extract job count from lines like "Found 42 jobs"
                     try:
                         import re
                         match = re.search(r'(\d+)\s+jobs?', line_lower)
@@ -821,16 +772,13 @@ def trigger_scrape():
                         'progress': 95,
                         'last_update': datetime.now().isoformat()
                     })
-                
+
                 log.info(line.rstrip())
-            
-            # Wait for process to complete (no timeout - let it finish)
+
             process.wait()
-            
             log.info(f"Scraper completed with return code: {process.returncode}")
-            
+
             if process.returncode == 0:
-                # Update status to combining
                 scraping_status.update({
                     'running': True,
                     'status': 'combining',
@@ -838,12 +786,11 @@ def trigger_scrape():
                     'progress': 95,
                     'last_update': datetime.now().isoformat()
                 })
-                
+
                 log.info("Starting combine_jobs.py...")
-                
-                # Run combine_jobs.py
+
                 combine_script = base_dir / 'combine_jobs.py'
-                
+
                 if not combine_script.exists():
                     log.error(f"combine_jobs.py not found: {combine_script}")
                     scraping_status.update({
@@ -854,8 +801,7 @@ def trigger_scrape():
                         'last_update': datetime.now().isoformat()
                     })
                     return
-                
-                # Run the combine script
+
                 combine_process = subprocess.Popen(
                     [sys.executable, str(combine_script)],
                     stdout=subprocess.PIPE,
@@ -865,13 +811,13 @@ def trigger_scrape():
                     errors='replace',
                     cwd=str(base_dir)
                 )
-                
+
                 combine_process.wait()
                 combine_stdout = combine_process.stdout.read()
-                
+
                 log.info(f"combine_jobs.py completed with return code: {combine_process.returncode}")
                 log.info(f"combine_jobs.py output: {combine_stdout}")
-                
+
                 if combine_process.returncode == 0:
                     scraping_status.update({
                         'running': False,
@@ -902,7 +848,7 @@ def trigger_scrape():
                     'progress': 0,
                     'last_update': datetime.now().isoformat()
                 })
-                
+
         except Exception as e:
             log.error(f"Error in scraper: {e}", exc_info=True)
             scraping_status.update({
@@ -912,10 +858,16 @@ def trigger_scrape():
                 'progress': 0,
                 'last_update': datetime.now().isoformat()
             })
-    
-    # Start background thread
+
     thread = threading.Thread(target=run_scraper, daemon=True)
     thread.start()
+
+    return jsonify({
+        'success': True,
+        'status': 'started',
+        'message': 'Scraping started in background'
+    })
+    
     
     return jsonify({
         'status': 'success',
@@ -939,44 +891,24 @@ def scrape_status():
 
 @app.route('/api/user-history/<username>')
 def get_user_history(username):
-    """Get user's job viewing history from Firebase"""
+    """Get user's job viewing history"""
     try:
         if not username:
             return jsonify({
                 'success': False,
                 'error': 'Missing username'
             }), 400
-        
-        # Get viewed jobs from Firebase
-        ref = firebase_db.reference(f'user_job_views/{username}')
-        viewed_jobs_data = ref.get()
-        
-        if not viewed_jobs_data:
-            return jsonify({
-                'success': True,
-                'username': username,
-                'viewed_jobs': [],
-                'total_viewed': 0
-            })
-        
-        # Convert to list format
-        viewed_jobs = []
-        for job_id, job_data in viewed_jobs_data.items():
-            viewed_jobs.append({
-                'job_id': job_id,
-                'job_url': job_data.get('job_url', ''),
-                'viewed_at': job_data.get('viewed_at', '')
-            })
-        
-        log.info(f"Retrieved {len(viewed_jobs)} viewed jobs for user {username}")
-        
+
+        # Get viewed jobs from job service (handles Firebase or local fallback)
+        viewed_jobs = get_user_history(username)
+
         return jsonify({
             'success': True,
             'username': username,
             'viewed_jobs': viewed_jobs,
             'total_viewed': len(viewed_jobs)
         })
-        
+
     except Exception as e:
         log.error(f"Error in get_user_history: {e}")
         return jsonify({
@@ -987,59 +919,33 @@ def get_user_history(username):
 
 @app.route('/api/track-job', methods=['POST'])
 def track_job():
-    """Track when a user views a job - saves only to Firebase"""
+    """Track when a user views a job"""
     try:
         data = request.get_json()
         username = data.get('username')  # This should be the Firebase UID
         job_id = data.get('job_id')
         job_url = data.get('job_url')
-        
+
         if not username or not job_id:
             return jsonify({
                 'success': False,
                 'error': 'Missing username or job_id'
             }), 400
-        
-        # Hash the job_id if it's a LinkedIn URL (contains 'http://' or 'https://')
-        import hashlib
-        firebase_node_id = job_id
-        if job_id.startswith('http://') or job_id.startswith('https://'):
-            # Hash the URL to create a valid Firebase node name
-            firebase_node_id = hashlib.md5(job_id.encode('utf-8')).hexdigest()
-            log.info(f"Hashed LinkedIn URL: {job_id} -> {firebase_node_id}")
-        
-        # Check if already viewed in Firebase (prevent duplicates)
-        try:
-            ref = firebase_db.reference(f'user_job_views/{username}/{firebase_node_id}')
-            existing = ref.get()
-            
-            if existing:
-                log.info(f"Job already viewed: user={username}, job={job_id}")
-                return jsonify({
-                    'success': True,
-                    'message': 'Job already tracked'
-                })
-            
-            # Save to Firebase Realtime Database
-            ref.set({
-                'job_id': job_id,
-                'job_url': job_url,
-                'viewed_at': datetime.now().isoformat()
-            })
-            log.info(f"Job view saved to Firebase: user={username}, job={job_id}, firebase_node={firebase_node_id}")
-            
+
+        # Use unified job service (handles Firebase or local fallback)
+        success = track_job_view(username, job_id, job_url)
+
+        if success:
             return jsonify({
                 'success': True,
                 'message': 'Job view tracked'
             })
-            
-        except Exception as firebase_error:
-            log.error(f"Failed to save to Firebase: {firebase_error}")
+        else:
             return jsonify({
                 'success': False,
-                'error': f'Firebase error: {str(firebase_error)}'
+                'error': 'Failed to track job view'
             }), 500
-            
+
     except Exception as e:
         log.error(f"Error in track_job: {e}")
         return jsonify({
@@ -1571,8 +1477,7 @@ if __name__ == '__main__':
     log.info("Starting FindFast Flask application...")
     log.info(f"Template folder: {app.template_folder}")
     log.info(f"Static folder: {app.static_folder}")
-    log.info(f"Data directory: {DATA_DIR}")
-    
+
     # Run the Flask development server
     app.run(
         host='127.0.0.1',

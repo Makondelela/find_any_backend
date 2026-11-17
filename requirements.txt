@@ -3,10 +3,10 @@ Flask==3.0.0
 Flask-CORS==4.0.0
 Werkzeug==3.0.1
 
-# Scraping
+# Scraping (HTTP-based scrapers only - no Playwright on EB)
 requests==2.31.0
 beautifulsoup4==4.12.2
-playwright==1.58.0
+# playwright==1.58.0  # Not compatible with Elastic Beanstalk - run scrapers separately
 
 # AI Filtering
 google-genai==0.1.0
