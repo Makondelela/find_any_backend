@@ -140,42 +140,27 @@ jobs:
           # Deploy the version
           aws elasticbeanstalk update-environment \
             --environment-name "${EB_ENVIRONMENT}" \
-            --version-label "${VERSION_LABEL}"
+            --version-label "${VERSION_LABEL}" \
+            --query '[EnvironmentName,VersionLabel,Status]' --output text
 
           # Wait for deployment to complete
           echo "Waiting for environment update to complete..."
           aws elasticbeanstalk wait environment-updated --environment-names "${EB_ENVIRONMENT}"
 
-          # Give it a moment to settle
-          sleep 10
-
           # Verify the environment is actually running the new version
-          # Use a longer timeout and check differently
-          for i in {1..12}; do
-            DEPLOYED_VERSION=$(aws elasticbeanstalk describe-environments \
-              --environment-names "${EB_ENVIRONMENT}" \
-              --query 'Environments[0].VersionLabel' --output text)
+          echo "Checking deployed version..."
+          read -r DEPLOYED_VERSION HEALTH <<< "$(aws elasticbeanstalk describe-environments \
+            --environment-names "${EB_ENVIRONMENT}" \
+            --query 'Environments[0].[VersionLabel,Health]' --output text)"
 
-            echo "Attempt $i/12: Environment version = '${DEPLOYED_VERSION}'"
+          echo "Environment is on version: ${DEPLOYED_VERSION}, health: ${HEALTH}"
 
-            if [ "${DEPLOYED_VERSION}" = "${VERSION_LABEL}" ]; then
-              echo "✓ Version matches: ${DEPLOYED_VERSION}"
-              break
-            fi
+          if [ "${DEPLOYED_VERSION}" != "${VERSION_LABEL}" ]; then
+            echo "::error::The environment did not switch to ${VERSION_LABEL}; Beanstalk rolled back or the deploy failed. Check the environment's Events and logs."
+            exit 1
+          fi
 
-            if [ "${DEPLOYED_VERSION}" != "None" ] && [ -n "${DEPLOYED_VERSION}" ] && [ "${DEPLOYED_VERSION}" != "null" ]; then
-              echo "::error::Version mismatch! Expected ${VERSION_LABEL}, got ${DEPLOYED_VERSION}"
-              exit 1
-            fi
-
-            if [ $i -eq 12 ]; then
-              echo "::error::Timeout waiting for version ${VERSION_LABEL}. Last seen: ${DEPLOYED_VERSION}"
-              exit 1
-            fi
-
-            echo "Waiting for version to be available..."
-            sleep 10
-          done
+          echo "✓ Version verified: ${DEPLOYED_VERSION}"
 
       - name: Verify deployment
         run: |
@@ -184,19 +169,19 @@ jobs:
             --environment-names "${EB_ENVIRONMENT}" \
             --query 'Environments[0].CNAME' --output text)
 
-          echo "Environment URL: http://${ENV_URL}"
+          echo "Environment URL: https://${ENV_URL}"
 
           # Wait for app to be ready and test health endpoint
-          for i in {1..20}; do
-            if curl -fsS "http://${ENV_URL}/api/stats" > /dev/null; then
+          for i in {1..12}; do
+            if curl -fsS "https://${ENV_URL}/api/stats" > /dev/null; then
               echo "✓ Health check passed!"
               exit 0
             fi
-            echo "Waiting for app... (attempt $i/20)"
-            sleep 15
+            echo "Waiting for app... (attempt $i/12)"
+            sleep 10
           done
 
-          echo "✗ Health check failed after 5 minutes"
+          echo "✗ Health check failed after 2 minutes"
           exit 1
 
       - name: Notify on failure
