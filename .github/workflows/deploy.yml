@@ -66,18 +66,24 @@ jobs:
           # Create a clean deployment package
           mkdir -p deploy_package
           # Copy all necessary files
-          cp -r app.py backend/ user_profile/ scrapers/ templates/ static/ deploy_package/
+          cp -r app.py backend/ user_profile/ templates/ static/ deploy_package/
           cp requirements.txt runtime.txt deploy_package/
           cp combine_jobs.py deploy_package/
           cp trigger_scrape.py deploy_package/
+          cp Procfile deploy_package/
           # Create .ebextensions for EB configuration
           mkdir -p deploy_package/.ebextensions
           cp .ebextensions/* deploy_package/.ebextensions/ 2>/dev/null || true
+          # Verify key files exist
+          ls -la deploy_package/
+          ls -la deploy_package/.ebextensions/
           # Create zip
           cd deploy_package
           zip -r ../findfast-deploy.zip . -x "*.pyc" "__pycache__/*" "*.git*" "venv/*" ".env*" "data/*.json" "*.log"
           cd ..
           echo "Package size: $(du -h findfast-deploy.zip | cut -f1)"
+          # Verify zip contents
+          unzip -l findfast-deploy.zip | head -30
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
