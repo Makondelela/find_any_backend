@@ -112,17 +112,35 @@ jobs:
               --version-label "${VERSION_LABEL}" \
               --description "Deploy ${GITHUB_SHA::7}: $(git log -1 --format=%s | cut -c1-100)" \
               --source-bundle "S3Bucket=${BUCKET},S3Key=${KEY}"
+
+            # Wait for version to be processed
+            echo "Waiting for application version to be processed..."
+            sleep 5
           fi
 
+          # Verify version exists
+          VERSION_CHECK=$(aws elasticbeanstalk describe-application-versions \
+            --application-name "${EB_APPLICATION}" \
+            --version-labels "${VERSION_LABEL}" \
+            --query 'ApplicationVersions[0].VersionLabel' --output text)
+
+          if [ "${VERSION_CHECK}" != "${VERSION_LABEL}" ]; then
+            echo "::error::Application version ${VERSION_LABEL} not found after creation"
+            exit 1
+          fi
+
+          echo "✓ Application version verified: ${VERSION_LABEL}"
           echo "version_label=${VERSION_LABEL}" >> $GITHUB_OUTPUT
 
       - name: Deploy to Elastic Beanstalk
         run: |
-          echo "Deploying version: ${{ steps.create-version.outputs.version_label }}"
+          VERSION_LABEL="${{ steps.create-version.outputs.version_label }}"
+          echo "Deploying version: ${VERSION_LABEL}"
 
+          # Deploy the version
           aws elasticbeanstalk update-environment \
             --environment-name "${EB_ENVIRONMENT}" \
-            --version-label "${{ steps.create-version.outputs.version_label }}"
+            --version-label "${VERSION_LABEL}"
 
           # Wait for deployment to complete
           echo "Waiting for environment update to complete..."
@@ -132,30 +150,32 @@ jobs:
           sleep 10
 
           # Verify the environment is actually running the new version
-          for i in {1..6}; do
+          # Use a longer timeout and check differently
+          for i in {1..12}; do
             DEPLOYED_VERSION=$(aws elasticbeanstalk describe-environments \
               --environment-names "${EB_ENVIRONMENT}" \
               --query 'Environments[0].VersionLabel' --output text)
 
-            echo "Attempt $i/6: Environment version = ${DEPLOYED_VERSION}"
+            echo "Attempt $i/12: Environment version = '${DEPLOYED_VERSION}'"
 
-            if [ "${DEPLOYED_VERSION}" != "None" ] && [ -n "${DEPLOYED_VERSION}" ]; then
+            if [ "${DEPLOYED_VERSION}" = "${VERSION_LABEL}" ]; then
+              echo "✓ Version matches: ${DEPLOYED_VERSION}"
               break
+            fi
+
+            if [ "${DEPLOYED_VERSION}" != "None" ] && [ -n "${DEPLOYED_VERSION}" ] && [ "${DEPLOYED_VERSION}" != "null" ]; then
+              echo "::error::Version mismatch! Expected ${VERSION_LABEL}, got ${DEPLOYED_VERSION}"
+              exit 1
+            fi
+
+            if [ $i -eq 12 ]; then
+              echo "::error::Timeout waiting for version ${VERSION_LABEL}. Last seen: ${DEPLOYED_VERSION}"
+              exit 1
             fi
 
             echo "Waiting for version to be available..."
             sleep 10
           done
-
-          echo "Environment now running version: ${DEPLOYED_VERSION}"
-          EXPECTED_VERSION="${{ steps.create-version.outputs.version_label }}"
-
-          if [ "${DEPLOYED_VERSION}" != "${EXPECTED_VERSION}" ]; then
-            echo "::error::Version mismatch! Expected ${EXPECTED_VERSION}, got ${DEPLOYED_VERSION}"
-            exit 1
-          fi
-
-          echo "✓ Version verified: ${DEPLOYED_VERSION}"
 
       - name: Verify deployment
         run: |
